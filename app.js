@@ -1497,7 +1497,7 @@ const CSVImporter = {
     cpm:                { name: 'CPM',               unit: '' },
     cost:               { name: 'Costo / Inversión', unit: '' },
     spend:              { name: 'Costo / Inversión', unit: '' },
-    amount spent:       { name: 'Costo / Inversión', unit: '' },
+    'amount spent':     { name: 'Costo / Inversión', unit: '' },
     budget:             { name: 'Presupuesto',       unit: '' },
     conversions:        { name: 'Conversiones',      unit: '' },
     conversion:         { name: 'Conversiones',      unit: '' },
