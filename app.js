@@ -1546,8 +1546,16 @@ const CSVImporter = {
     costo:              { name: 'Costo / Inversión', unit: '' },
     inversion:          { name: 'Costo / Inversión', unit: '' },
     inversión:          { name: 'Costo / Inversión', unit: '' },
+    'importe gastado':  { name: 'Costo / Inversión', unit: '' },
     interacciones:      { name: 'Interacciones',    unit: '' },
     reacciones:         { name: 'Reacciones',        unit: '' },
+    'conversaciones iniciadas': { name: 'Conversaciones Iniciadas', unit: '' },
+    'costo por conversación iniciada': { name: 'Costo por Conversación', unit: '' },
+    'costo por conversacion iniciada': { name: 'Costo por Conversación', unit: '' },
+    'costo por resultado': { name: 'CPA', unit: '' },
+    'clics en enlace':  { name: 'Clics en enlace',  unit: '' },
+    'messaging conversations started': { name: 'Conversaciones Iniciadas', unit: '' },
+    'cost per messaging conversation started': { name: 'Costo por Conversación', unit: '' },
   },
 
   // Parse CSV text → array of row objects
@@ -1556,12 +1564,15 @@ const CSVImporter = {
     const delimiters = [',', ';', '\t', '|'];
     const firstLine = text.split('\n')[0];
     const delimiter = delimiters.reduce((best, d) => {
-      const count = (firstLine.match(new RegExp('\\' + d === '|' ? '\\|' : d, 'g')) || []).length;
+      const count = (firstLine.match(new RegExp(d === '|' ? '\\|' : d, 'g')) || []).length;
       return count > (best.count || 0) ? { d, count } : best;
     }, { d: ',', count: 0 }).d;
 
     const lines = text.split(/\r?\n/).filter(l => l.trim());
     if (lines.length < 2) return { headers: [], rows: [], delimiter };
+
+    // Helper to check if a parsed row is entirely empty
+    const isEmptyRow = cells => cells.every(c => c.trim() === '');
 
     const parseRow = line => {
       const cells = [];
@@ -1577,12 +1588,14 @@ const CSVImporter = {
     };
 
     const headers = parseRow(lines[0]);
-    const rows = lines.slice(1).map(l => {
-      const cells = parseRow(l);
-      const obj = {};
-      headers.forEach((h, i) => { obj[h] = cells[i] ?? ''; });
-      return obj;
-    });
+    const rows = lines.slice(1)
+      .map(l => parseRow(l))
+      .filter(cells => !isEmptyRow(cells))
+      .map(cells => {
+        const obj = {};
+        headers.forEach((h, i) => { obj[h] = cells[i] ?? ''; });
+        return obj;
+      });
     return { headers, rows, delimiter };
   },
 
