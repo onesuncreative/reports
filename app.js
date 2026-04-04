@@ -1,6 +1,6 @@
 /* ============================================================
    SOCIAL REPORTS — OneSun
-   Complete SPA with hash routing, localStorage persistence
+   Complete SPA with hash routing, cloud + localStorage persistence
    ============================================================ */
 
 // ===== CONSTANTS =====
@@ -32,6 +32,164 @@ const DB = {
     const data = this.load();
     data.globalMetrics = metrics;
     this.save(data);
+  }
+};
+
+// ===== CLOUD SYNC =====
+const CloudSync = {
+  REPO: 'onesuncreative/reports',
+  FILE: 'data.json',
+  BRANCH: 'main',
+  _token: null,
+  _sha: null,
+  _saving: false,
+  _autoSaveTimer: null,
+
+  getToken() {
+    if (this._token) return this._token;
+    this._token = localStorage.getItem('onesun_gh_token') || null;
+    return this._token;
+  },
+
+  setToken(token) {
+    this._token = token;
+    localStorage.setItem('onesun_gh_token', token);
+  },
+
+  isConfigured() {
+    return !!this.getToken();
+  },
+
+  async loadFromCloud() {
+    if (!this.isConfigured()) return false;
+    try {
+      const resp = await fetch(`https://api.github.com/repos/${this.REPO}/contents/${this.FILE}?ref=${this.BRANCH}`, {
+        headers: { 'Authorization': `token ${this.getToken()}`, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (!resp.ok) return false;
+      const meta = await resp.json();
+      this._sha = meta.sha;
+      const content = atob(meta.content.replace(/\n/g, ''));
+      const data = JSON.parse(new TextDecoder().decode(Uint8Array.from(content, c => c.charCodeAt(0))));
+      DB.save(data);
+      return true;
+    } catch (err) {
+      console.error('CloudSync load error:', err);
+      return false;
+    }
+  },
+
+  async saveToCloud() {
+    if (!this.isConfigured() || this._saving) return false;
+    this._saving = true;
+    try {
+      const data = DB.load();
+      const raw = JSON.stringify(data, null, 2);
+      const encoded = btoa(unescape(encodeURIComponent(raw)));
+
+      // Get current SHA if we don't have it
+      if (!this._sha) {
+        try {
+          const resp = await fetch(`https://api.github.com/repos/${this.REPO}/contents/${this.FILE}?ref=${this.BRANCH}`, {
+            headers: { 'Authorization': `token ${this.getToken()}`, 'Accept': 'application/vnd.github.v3+json' }
+          });
+          if (resp.ok) {
+            const meta = await resp.json();
+            this._sha = meta.sha;
+          }
+        } catch {}
+      }
+
+      const body = {
+        message: `sync: ${new Date().toLocaleString('es-MX')}`,
+        content: encoded,
+        branch: this.BRANCH
+      };
+      if (this._sha) body.sha = this._sha;
+
+      const resp = await fetch(`https://api.github.com/repos/${this.REPO}/contents/${this.FILE}`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${this.getToken()}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+      });
+
+      if (!resp.ok) {
+        const err = await resp.json();
+        throw new Error(err.message || 'Save failed');
+      }
+      const result = await resp.json();
+      this._sha = result.content.sha;
+      this._saving = false;
+      return true;
+    } catch (err) {
+      console.error('CloudSync save error:', err);
+      this._saving = false;
+      return false;
+    }
+  },
+
+  // Auto-save every 15 minutes
+  startAutoSave() {
+    this.stopAutoSave();
+    if (!this.isConfigured()) return;
+    this._autoSaveTimer = setInterval(async () => {
+      const ok = await this.saveToCloud();
+      if (ok) {
+        const now = new Date().toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' });
+        Toast.show(`Guardado automático completado — ${now}`, 'success', 4000);
+      } else {
+        Toast.show('Error al guardar automáticamente', 'error', 4000);
+      }
+    }, 15 * 60 * 1000); // 15 minutes
+  },
+
+  stopAutoSave() {
+    if (this._autoSaveTimer) {
+      clearInterval(this._autoSaveTimer);
+      this._autoSaveTimer = null;
+    }
+  },
+
+  // Manual save with feedback
+  async manualSave() {
+    if (!this.isConfigured()) {
+      this.showTokenModal();
+      return;
+    }
+    Toast.show('Guardando en la nube...', 'info', 2000);
+    const ok = await this.saveToCloud();
+    if (ok) {
+      const now = new Date().toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' });
+      Toast.show(`Guardado exitosamente — ${now}`, 'success', 4000);
+    } else {
+      Toast.show('Error al guardar. Verifica tu token de GitHub.', 'error', 5000);
+    }
+  },
+
+  showTokenModal() {
+    const current = this.getToken() || '';
+    const modal = createModal('Configurar sincronización en la nube', `
+      <div style="margin-bottom:14px;font-size:0.85rem;color:var(--text-muted);line-height:1.6;">
+        Para que los cambios sean visibles en todos los dispositivos, conecta tu repositorio de GitHub con un <strong>Personal Access Token</strong>.
+      </div>
+      <div class="form-group">
+        <label>GitHub Token</label>
+        <input type="password" id="m-gh-token" value="${current}" placeholder="ghp_xxxxxxxxxxxx" style="font-family:monospace;">
+        <div class="password-hint">Token con permiso <code>repo</code>. Se guarda solo en este navegador.</div>
+      </div>
+    `, () => {
+      const token = document.getElementById('m-gh-token')?.value?.trim();
+      if (!token) { Toast.show('Ingresa un token', 'error'); return false; }
+      this.setToken(token);
+      this.startAutoSave();
+      Toast.show('Token guardado. Sincronización activada.', 'success');
+    });
+    document.getElementById('app').appendChild(modal);
+    setTimeout(() => modal.classList.add('show'), 10);
   }
 };
 
@@ -278,6 +436,8 @@ const App = {
       <header class="app-header">
         <div class="logo"><span class="logo-badge">OS</span> OneSun Reports</div>
         <div class="header-actions">
+          <button class="btn btn-primary btn-sm" onclick="CloudSync.manualSave()" style="gap:6px;">💾 Guardar</button>
+          <button class="btn btn-ghost btn-sm" onclick="CloudSync.showTokenModal()" title="Configurar sincronización">☁️ Sync</button>
           <button class="theme-toggle" onclick="App.toggleTheme()">
             <span id="theme-icon">${document.body.classList.contains('dark') ? '☀️' : '🌙'}</span>
             <span id="theme-label">${document.body.classList.contains('dark') ? 'Claro' : 'Oscuro'}</span>
@@ -293,6 +453,7 @@ const App = {
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap;">
             <button class="btn btn-ghost btn-sm" onclick="App.showGlobalMetricsModal()">📋 Métricas globales</button>
+            <button class="btn btn-ghost btn-sm" onclick="BulkCSV.open()">📂 Importar campañas</button>
             <button class="btn btn-accent" onclick="App.showAddClientModal()">+ Nuevo cliente</button>
           </div>
         </div>
@@ -755,6 +916,7 @@ const App = {
       <header class="app-header">
         <div class="logo"><span class="logo-badge">✏️</span> Editor — ${esc(client.name)}</div>
         <div class="header-actions">
+          <button class="btn btn-primary btn-sm" onclick="CloudSync.manualSave()" style="gap:6px;">💾 Guardar</button>
           <button class="btn btn-ghost btn-sm" onclick="Router.navigate('/client/${esc(slug)}')">👁 Ver reporte</button>
           <button class="theme-toggle" onclick="App.toggleTheme()">
             <span>${document.body.classList.contains('dark') ? '☀️' : '🌙'}</span>
@@ -1442,11 +1604,18 @@ const App = {
   },
 
   // ---- INIT ----
-  init() {
+  async init() {
     // restore theme
     const savedTheme = localStorage.getItem('onesun_theme') || 'dark';
     document.body.classList.remove('dark', 'light');
     document.body.classList.add(savedTheme);
+
+    // Load from cloud if configured (merges into localStorage)
+    if (CloudSync.isConfigured()) {
+      await CloudSync.loadFromCloud();
+      CloudSync.startAutoSave();
+    }
+
     Router.listen();
   }
 };
@@ -1479,6 +1648,298 @@ function createModal(title, bodyHtml, onConfirm, options = {}) {
   }
   return overlay;
 }
+
+// ===== BULK CSV CAMPAIGN IMPORTER =====
+const BulkCSV = {
+  _parsed: null,
+  _step: 1,
+  _targetSlug: null,
+
+  open() {
+    this._step = 1;
+    this._parsed = null;
+    this._targetSlug = null;
+    this._renderModal();
+  },
+
+  _renderModal() {
+    document.getElementById('bulk-csv-overlay')?.remove();
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.id = 'bulk-csv-overlay';
+    overlay.innerHTML = `
+      <div class="modal" style="max-width:800px;">
+        <div class="modal-header">
+          <h3>📂 Importar campañas desde CSV</h3>
+          <button class="modal-close" onclick="document.getElementById('bulk-csv-overlay').remove()">&times;</button>
+        </div>
+        <div id="bulk-csv-body">${this._renderStep()}</div>
+      </div>`;
+    overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+    document.getElementById('app').appendChild(overlay);
+    setTimeout(() => overlay.classList.add('show'), 10);
+    if (this._step === 1) setTimeout(() => this._bindDropzone(), 50);
+  },
+
+  _renderStep() {
+    if (this._step === 1) return this._renderStep1();
+    if (this._step === 2) return this._renderStep2();
+    if (this._step === 3) return this._renderStep3();
+  },
+
+  _renderStep1() {
+    const clients = DB.getClients();
+    const options = Object.values(clients).map(c =>
+      `<option value="${esc(c.slug)}">${esc(c.name)}</option>`
+    ).join('');
+
+    return `
+      <div style="margin-bottom:16px; display:flex; gap:8px; align-items:center;">
+        <span style="background:var(--primary);color:#fff;width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700;flex-shrink:0;">1</span>
+        <span style="font-weight:600;">Cargar CSV</span>
+        <span style="color:var(--text-muted);">→</span>
+        <span style="opacity:0.4;">2 Revisar</span>
+        <span style="color:var(--text-muted);">→</span>
+        <span style="opacity:0.4;">3 Confirmar</span>
+      </div>
+      <div class="form-group" style="margin-bottom:16px;">
+        <label>Cliente destino</label>
+        <select id="bulk-csv-client" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;color:var(--text);font-size:0.85rem;width:100%;">
+          <option value="">— Seleccionar cliente —</option>
+          ${options}
+        </select>
+      </div>
+      <div id="bulk-csv-dropzone" style="
+        border: 2px dashed var(--border);
+        border-radius: var(--radius);
+        padding: 48px 24px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        margin-bottom: 16px;
+      ">
+        <div style="font-size:2.5rem;margin-bottom:12px;">📄</div>
+        <div style="font-weight:700;margin-bottom:6px;">Arrastra tu CSV aquí</div>
+        <div style="color:var(--text-muted);font-size:0.85rem;margin-bottom:16px;">o haz clic para seleccionar el archivo</div>
+        <button class="btn btn-ghost btn-sm" onclick="document.getElementById('bulk-csv-file').click()">Seleccionar archivo</button>
+        <input type="file" id="bulk-csv-file" accept=".csv,.tsv,.txt" style="display:none;">
+      </div>
+      <div style="color:var(--text-muted);font-size:0.78rem;line-height:1.6;">
+        <strong>Formato esperado:</strong> La primera columna debe ser <code>Nombre Campaña</code>, seguida opcionalmente de <code>Fecha Inicio</code> y <code>Fecha de término</code>. Las columnas restantes son métricas (cada columna = una métrica, cada fila = una campaña).
+      </div>`;
+  },
+
+  _renderStep2() {
+    const { campaigns, metricHeaders } = this._parsed;
+
+    const rows = campaigns.map((c, i) => {
+      const metricsPreview = metricHeaders.slice(0, 5).map(h => {
+        const val = c.metrics.find(m => m.csvCol === h);
+        return val ? `<span style="background:var(--surface2);padding:2px 6px;border-radius:4px;font-size:0.75rem;">${esc(val.name)}: <strong>${val.displayValue}</strong></span>` : '';
+      }).join(' ');
+      const extra = metricHeaders.length > 5 ? `<span style="color:var(--text-muted);font-size:0.75rem;">+${metricHeaders.length - 5} más</span>` : '';
+
+      return `
+        <tr>
+          <td style="padding:8px 10px;border-bottom:1px solid var(--border);">
+            <label style="display:flex;align-items:center;gap:8px;">
+              <input type="checkbox" checked data-bulk-idx="${i}" style="width:14px;height:14px;accent-color:var(--primary);">
+              <strong>${esc(c.name)}</strong>
+            </label>
+          </td>
+          <td style="padding:8px 10px;border-bottom:1px solid var(--border);font-size:0.82rem;color:var(--text-muted);">${c.startDate ? fmtDate(c.startDate) : '—'}</td>
+          <td style="padding:8px 10px;border-bottom:1px solid var(--border);font-size:0.82rem;color:var(--text-muted);">${c.endDate ? fmtDate(c.endDate) : '—'}</td>
+          <td style="padding:8px 10px;border-bottom:1px solid var(--border);">
+            <div style="display:flex;gap:4px;flex-wrap:wrap;">${metricsPreview} ${extra}</div>
+          </td>
+        </tr>`;
+    }).join('');
+
+    return `
+      <div style="margin-bottom:16px; display:flex; gap:8px; align-items:center;">
+        <span style="background:var(--surface2);color:var(--text-muted);width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700;flex-shrink:0;">1</span>
+        <span style="opacity:0.4;">Archivo</span>
+        <span style="color:var(--text-muted);">→</span>
+        <span style="background:var(--primary);color:#fff;width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700;flex-shrink:0;">2</span>
+        <span style="font-weight:600;">Revisar campañas</span>
+        <span style="color:var(--text-muted);">→</span>
+        <span style="opacity:0.4;">3 Confirmar</span>
+      </div>
+      <div style="background:rgba(0,221,255,0.08);border:1px solid rgba(0,221,255,0.25);border-radius:var(--radius-sm);padding:10px 14px;margin-bottom:14px;font-size:0.82rem;">
+        📊 <strong>${campaigns.length} campaña${campaigns.length !== 1 ? 's' : ''}</strong> detectada${campaigns.length !== 1 ? 's' : ''} con <strong>${metricHeaders.length}</strong> métricas cada una.
+      </div>
+      <div style="overflow-x:auto;margin-bottom:16px;max-height:400px;overflow-y:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.82rem;">
+          <thead>
+            <tr style="background:var(--surface2);position:sticky;top:0;">
+              <th style="padding:8px 10px;text-align:left;">Campaña</th>
+              <th style="padding:8px 10px;text-align:left;">Inicio</th>
+              <th style="padding:8px 10px;text-align:left;">Fin</th>
+              <th style="padding:8px 10px;text-align:left;">Métricas</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <div style="display:flex;gap:10px;justify-content:flex-end;">
+        <button class="btn btn-ghost btn-sm" onclick="BulkCSV._step=1; BulkCSV._renderModal();">← Regresar</button>
+        <button class="btn btn-primary" onclick="BulkCSV._doImport()">Importar ${campaigns.length} campañas →</button>
+      </div>`;
+  },
+
+  _renderStep3() {
+    return `
+      <div style="text-align:center;padding:32px 0;">
+        <div style="font-size:3.5rem;margin-bottom:16px;">✅</div>
+        <h3 style="font-size:1.3rem;margin-bottom:8px;">¡Importación exitosa!</h3>
+        <p style="color:var(--text-muted);margin-bottom:24px;">
+          Se importaron <strong style="color:var(--secondary2);">${this._importedCount} campaña${this._importedCount !== 1 ? 's' : ''}</strong> al cliente.
+        </p>
+        <div style="display:flex;gap:10px;justify-content:center;">
+          <button class="btn btn-ghost" onclick="document.getElementById('bulk-csv-overlay').remove()">Cerrar</button>
+          <button class="btn btn-primary" onclick="document.getElementById('bulk-csv-overlay').remove(); App.openClientEditor('${esc(this._targetSlug)}');">Ir al editor</button>
+        </div>
+      </div>`;
+  },
+
+  _bindDropzone() {
+    const dz = document.getElementById('bulk-csv-dropzone');
+    const input = document.getElementById('bulk-csv-file');
+    if (!dz || !input) return;
+
+    dz.addEventListener('dragover', e => { e.preventDefault(); dz.style.borderColor = 'var(--primary)'; dz.style.background = 'rgba(0,0,255,0.04)'; });
+    dz.addEventListener('dragleave', () => { dz.style.borderColor = ''; dz.style.background = ''; });
+    dz.addEventListener('drop', e => {
+      e.preventDefault();
+      dz.style.borderColor = ''; dz.style.background = '';
+      if (e.dataTransfer.files[0]) this._readFile(e.dataTransfer.files[0]);
+    });
+    dz.addEventListener('click', e => { if (e.target.tagName !== 'BUTTON') input.click(); });
+    input.addEventListener('change', () => { if (input.files[0]) this._readFile(input.files[0]); });
+  },
+
+  _readFile(file) {
+    const slug = document.getElementById('bulk-csv-client')?.value;
+    if (!slug) { Toast.show('Selecciona un cliente primero', 'error'); return; }
+    this._targetSlug = slug;
+
+    const reader = new FileReader();
+    reader.onload = e => {
+      try {
+        const parsed = this._parseCSV(e.target.result);
+        if (!parsed.campaigns.length) { Toast.show('No se detectaron campañas válidas', 'error'); return; }
+        this._parsed = parsed;
+        this._step = 2;
+        const body = document.getElementById('bulk-csv-body');
+        if (body) body.innerHTML = this._renderStep2();
+      } catch (err) {
+        Toast.show('Error al leer el CSV', 'error');
+        console.error(err);
+      }
+    };
+    reader.readAsText(file, 'UTF-8');
+  },
+
+  _parseCSV(text) {
+    const { headers, rows } = CSVImporter.parse(text);
+    if (!headers.length || !rows.length) return { campaigns: [], metricHeaders: [] };
+
+    // Find special columns by normalized name
+    const normalize = s => String(s).toLowerCase().trim().replace(/[_\-\.]/g, ' ').replace(/\s+/g, ' ');
+    const nameAliases = ['nombre campaña', 'nombre de campaña', 'campaign name', 'campaña', 'nombre', 'campaign'];
+    const startAliases = ['fecha inicio', 'fecha de inicio', 'start date', 'inicio', 'start'];
+    const endAliases = ['fecha de término', 'fecha termino', 'fecha de termino', 'fecha fin', 'end date', 'fin', 'end', 'fecha de fin'];
+
+    const findCol = (aliases) => headers.find(h => aliases.includes(normalize(h)));
+    const nameCol = findCol(nameAliases) || headers[0]; // fallback to first column
+    const startCol = findCol(startAliases);
+    const endCol = findCol(endAliases);
+
+    // Metric columns = everything that's not name/start/end
+    const specialCols = new Set([nameCol, startCol, endCol].filter(Boolean));
+    const metricHeaders = headers.filter(h => !specialCols.has(h));
+
+    // Parse date: handle dd/mm/yy, dd/mm/yyyy, yyyy-mm-dd
+    const parseDate = (val) => {
+      if (!val) return '';
+      const s = String(val).trim();
+      // dd/mm/yy or dd/mm/yyyy
+      const slashMatch = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
+      if (slashMatch) {
+        let [, day, month, year] = slashMatch;
+        if (year.length === 2) year = (parseInt(year) > 50 ? '19' : '20') + year;
+        return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+      }
+      // already ISO
+      if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+      return '';
+    };
+
+    const campaigns = rows
+      .filter(row => row[nameCol] && String(row[nameCol]).trim())
+      .map(row => {
+        const metrics = metricHeaders
+          .filter(h => row[h] !== undefined && String(row[h]).trim() !== '')
+          .map(h => {
+            const raw = String(row[h]).trim();
+            const cleaned = raw.replace(/[$,%\s]/g, '');
+            const num = parseFloat(cleaned);
+            const match = CSVImporter.matchColumn(h);
+            const name = match ? match.name : h;
+            const unit = match ? match.unit : (raw.includes('%') ? '%' : raw.startsWith('$') ? '$' : '');
+            return {
+              csvCol: h,
+              name,
+              value: isNaN(num) ? raw : num,
+              displayValue: isNaN(num) ? raw : num.toLocaleString('es-MX'),
+              unit
+            };
+          });
+        return {
+          name: String(row[nameCol]).trim(),
+          startDate: parseDate(row[startCol]),
+          endDate: parseDate(row[endCol]),
+          metrics
+        };
+      });
+
+    return { campaigns, metricHeaders };
+  },
+
+  _doImport() {
+    const client = DB.getClient(this._targetSlug);
+    if (!client) { Toast.show('Cliente no encontrado', 'error'); return; }
+
+    // Get selected campaigns
+    const checkboxes = document.querySelectorAll('[data-bulk-idx]');
+    const selectedIdxs = new Set();
+    checkboxes.forEach(cb => { if (cb.checked) selectedIdxs.add(parseInt(cb.dataset.bulkIdx)); });
+
+    const toImport = this._parsed.campaigns.filter((_, i) => selectedIdxs.has(i));
+    if (!toImport.length) { Toast.show('Selecciona al menos una campaña', 'error'); return; }
+
+    for (const c of toImport) {
+      const campaign = newCampaign();
+      campaign.name = c.name;
+      campaign.startDate = c.startDate;
+      campaign.endDate = c.endDate;
+      campaign.metrics = c.metrics.map(m => ({
+        id: uid(),
+        name: m.name,
+        value: m.value,
+        unit: m.unit
+      }));
+      client.campaigns.push(campaign);
+    }
+
+    DB.saveClient(client);
+    this._importedCount = toImport.length;
+    this._step = 3;
+    const body = document.getElementById('bulk-csv-body');
+    if (body) body.innerHTML = this._renderStep3();
+    Toast.show(`${toImport.length} campaña${toImport.length !== 1 ? 's' : ''} importada${toImport.length !== 1 ? 's' : ''}`, 'success');
+  }
+};
 
 // ===== CSV IMPORTER =====
 const CSVImporter = {
