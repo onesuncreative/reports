@@ -1610,10 +1610,25 @@ const App = {
     document.body.classList.remove('dark', 'light');
     document.body.classList.add(savedTheme);
 
-    // Load from cloud if configured (merges into localStorage)
+    // Load from cloud if token configured (admin devices)
     if (CloudSync.isConfigured()) {
       await CloudSync.loadFromCloud();
       CloudSync.startAutoSave();
+    } else {
+      // No token — try loading public data.json (client devices)
+      const local = DB.load();
+      const hasData = local.clients && Object.keys(local.clients).length > 0;
+      if (!hasData) {
+        try {
+          const resp = await fetch('data.json?_=' + Date.now());
+          if (resp.ok) {
+            const data = await resp.json();
+            if (data.clients && Object.keys(data.clients).length > 0) {
+              DB.save(data);
+            }
+          }
+        } catch (e) { console.warn('Could not load public data.json:', e); }
+      }
     }
 
     Router.listen();
