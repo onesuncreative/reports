@@ -369,7 +369,27 @@
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "nyo0m2z8",
+              "image": "https://drive.google.com/file/d/1lyS5yQYnaoZxyLFFwif_jle5WH7QxG9Q/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "swpfq4wc",
+                  "name": "Leads",
+                  "value": "23",
+                  "unit": ""
+                },
+                {
+                  "id": "ne36lmmh",
+                  "name": "Costo Por Lead",
+                  "value": "$90.09",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -447,7 +467,27 @@
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "ia5qp8i7",
+              "image": "https://drive.google.com/file/d/1ZuOAwWGiGNmFx8sreSGBt8MBidD_tDA1/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "zf9a1zns",
+                  "name": "Leads",
+                  "value": "5",
+                  "unit": ""
+                },
+                {
+                  "id": "t1633e9u",
+                  "name": "Costo Por Lead",
+                  "value": "$256.09",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -525,7 +565,27 @@
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "yddulir0",
+              "image": "https://drive.google.com/file/d/1OtQOWuQ_CyDIcDgERAVQ2r4goHM0Mtht/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "qtc56xev",
+                  "name": "Leads",
+                  "value": "19",
+                  "unit": ""
+                },
+                {
+                  "id": "22fr1yxt",
+                  "name": "Costo Por Lead",
+                  "value": "$98.58",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -603,7 +663,27 @@
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "5jjixmci",
+              "image": "https://drive.google.com/file/d/1OtQOWuQ_CyDIcDgERAVQ2r4goHM0Mtht/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "pklklf5u",
+                  "name": "Leads",
+                  "value": "1",
+                  "unit": ""
+                },
+                {
+                  "id": "abvqmyex",
+                  "name": "Costo Por Lead",
+                  "value": "$933.44",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -681,7 +761,27 @@
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "czp101r8",
+              "image": "https://drive.google.com/file/d/1lyS5yQYnaoZxyLFFwif_jle5WH7QxG9Q/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "uyk28irn",
+                  "name": "Leads",
+                  "value": "2",
+                  "unit": ""
+                },
+                {
+                  "id": "zwv3bcjc",
+                  "name": "Costo Por Lead",
+                  "value": "$329.04",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -759,7 +859,27 @@
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "99g0z9ui",
+              "image": "https://drive.google.com/file/d/1izMWOc4f7WCiVKU6KZdqh7sVl3K2k2bL/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "qbtbqnxo",
+                  "name": "Leads",
+                  "value": "2",
+                  "unit": ""
+                },
+                {
+                  "id": "2ds69sl2",
+                  "name": "Costo Por Lead",
+                  "value": "$228.27",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         }
       ],
