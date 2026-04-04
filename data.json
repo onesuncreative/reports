@@ -1,1 +1,735 @@
-{}
+{
+  "clients": {
+    "taskility": {
+      "id": "qyxc3lai",
+      "slug": "taskility",
+      "name": "Taskility",
+      "password": "Taskility.1",
+      "logo": "",
+      "theme": "dark",
+      "reportTitle": "Reporte de Resultados",
+      "reportSubtitle": "Campañas Digitales",
+      "viewStart": "",
+      "viewEnd": "",
+      "campaigns": [
+        {
+          "id": "9nnzhjx3",
+          "name": "WhatsApp - Aduanas",
+          "channel": "Facebook Ads",
+          "startDate": "2026-02-25",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "1mi8d78r",
+              "name": "Importe Gastado",
+              "value": "1293.46",
+              "unit": "$"
+            },
+            {
+              "id": "vv3rz7ja",
+              "name": "Impresiones",
+              "value": "5281",
+              "unit": ""
+            },
+            {
+              "id": "rjkzmxeu",
+              "name": "CPM",
+              "value": "243.09",
+              "unit": "$"
+            },
+            {
+              "id": "5yzmvxze",
+              "name": "Alcance",
+              "value": 1944,
+              "unit": ""
+            },
+            {
+              "id": "pb87ff7h",
+              "name": "Frecuencia",
+              "value": "1.68",
+              "unit": ""
+            },
+            {
+              "id": "1lltwqyp",
+              "name": "Clics",
+              "value": "47",
+              "unit": ""
+            },
+            {
+              "id": "m1rmzmxd",
+              "name": "CPC",
+              "value": "29.2745",
+              "unit": "$"
+            },
+            {
+              "id": "lnj6uxk9",
+              "name": "CTR",
+              "value": "0.860",
+              "unit": "%"
+            },
+            {
+              "id": "730psgul",
+              "name": "Conversaciones Iniciadas",
+              "value": "5",
+              "unit": ""
+            },
+            {
+              "id": "4cecj8ot",
+              "name": "Costo / Inversión",
+              "value": "353.63",
+              "unit": "$"
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "2yqexi0l",
+          "name": "WhatsApp - Roger",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "rlotkdek",
+              "name": "Importe Gastado",
+              "value": "1181.31",
+              "unit": "$"
+            },
+            {
+              "id": "9rpmh6wf",
+              "name": "Impresiones",
+              "value": "5096",
+              "unit": ""
+            },
+            {
+              "id": "mh5cu355",
+              "name": "CPM",
+              "value": "235.47",
+              "unit": "$"
+            },
+            {
+              "id": "11xwdgfs",
+              "name": "Alcance",
+              "value": "3398",
+              "unit": ""
+            },
+            {
+              "id": "asu0ryd1",
+              "name": "Frecuencia",
+              "value": "1.50",
+              "unit": ""
+            },
+            {
+              "id": "fl0cigop",
+              "name": "Clics",
+              "value": "35",
+              "unit": ""
+            },
+            {
+              "id": "8ae3kks4",
+              "name": "CPC",
+              "value": "33.80",
+              "unit": "$"
+            },
+            {
+              "id": "gfqtb01i",
+              "name": "CTR",
+              "value": "1.38",
+              "unit": "%"
+            },
+            {
+              "id": "gqv660sp",
+              "name": "Conversaciones Iniciadas",
+              "value": "7",
+              "unit": ""
+            },
+            {
+              "id": "82md5hoe",
+              "name": "Costo / Inversión",
+              "value": "172.87",
+              "unit": "$"
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "vo17fyyj",
+          "name": "WhatsApp - Emerging Teams",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "jw1emloq",
+              "name": "Importe Gastado",
+              "value": 268.26,
+              "unit": ""
+            },
+            {
+              "id": "qiw203gm",
+              "name": "Impresiones",
+              "value": 3812,
+              "unit": ""
+            },
+            {
+              "id": "4bwuihg8",
+              "name": "CPM",
+              "value": 70.372508,
+              "unit": ""
+            },
+            {
+              "id": "5354yfl0",
+              "name": "Alcance",
+              "value": 2960,
+              "unit": ""
+            },
+            {
+              "id": "sffh89ji",
+              "name": "Frecuencia",
+              "value": 1.287838,
+              "unit": ""
+            },
+            {
+              "id": "ushbki43",
+              "name": "VCR",
+              "value": 695,
+              "unit": ""
+            },
+            {
+              "id": "9mcxbtwy",
+              "name": "Clics",
+              "value": 27,
+              "unit": ""
+            },
+            {
+              "id": "79fehow8",
+              "name": "CPC",
+              "value": 9.935556,
+              "unit": ""
+            },
+            {
+              "id": "nsgt5wvg",
+              "name": "CTR",
+              "value": 0.70829,
+              "unit": "%"
+            },
+            {
+              "id": "ngb8s9pd",
+              "name": "Conversaciones Iniciadas",
+              "value": 5,
+              "unit": ""
+            },
+            {
+              "id": "b474fjdg",
+              "name": "Costo / Inversión",
+              "value": 53.652,
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "cuvmvwzn",
+          "name": "Forms - Emerging Teams",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "z47zhd5v",
+              "name": "Importe Gastado",
+              "value": 2365.56,
+              "unit": ""
+            },
+            {
+              "id": "rvaermkb",
+              "name": "Impresiones",
+              "value": 16572,
+              "unit": ""
+            },
+            {
+              "id": "j7f9qv8v",
+              "name": "CPM",
+              "value": 142.744388,
+              "unit": ""
+            },
+            {
+              "id": "kscoiu1a",
+              "name": "Alcance",
+              "value": 5704,
+              "unit": ""
+            },
+            {
+              "id": "ml4d0iba",
+              "name": "Frecuencia",
+              "value": 2.90533,
+              "unit": ""
+            },
+            {
+              "id": "rzgscdos",
+              "name": "VCR",
+              "value": 176,
+              "unit": ""
+            },
+            {
+              "id": "plfare1d",
+              "name": "Clics",
+              "value": 98,
+              "unit": ""
+            },
+            {
+              "id": "pscen676",
+              "name": "CPC",
+              "value": 24.138367,
+              "unit": ""
+            },
+            {
+              "id": "k2lx61sg",
+              "name": "CTR",
+              "value": 0.591359,
+              "unit": "%"
+            },
+            {
+              "id": "5xffqcfp",
+              "name": "Leads",
+              "value": 24,
+              "unit": ""
+            },
+            {
+              "id": "lcdn58bb",
+              "name": "Costo / Inversión",
+              "value": 98.565,
+              "unit": ""
+            },
+            {
+              "id": "gf3ofrcv",
+              "name": "Conversaciones Iniciadas",
+              "value": 2,
+              "unit": ""
+            },
+            {
+              "id": "vw4vurex",
+              "name": "Costo / Inversión",
+              "value": 1182.78,
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "ymu3tum1",
+          "name": "Forms - Roger",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "f2vvo407",
+              "name": "Importe Gastado",
+              "value": 2057.6,
+              "unit": ""
+            },
+            {
+              "id": "om7lbz82",
+              "name": "Impresiones",
+              "value": 14337,
+              "unit": ""
+            },
+            {
+              "id": "f3vp9vcg",
+              "name": "CPM",
+              "value": 143.516775,
+              "unit": ""
+            },
+            {
+              "id": "rlpnkhog",
+              "name": "Alcance",
+              "value": 7742,
+              "unit": ""
+            },
+            {
+              "id": "sie7fdqf",
+              "name": "Frecuencia",
+              "value": 1.851847,
+              "unit": ""
+            },
+            {
+              "id": "3snoz147",
+              "name": "VCR",
+              "value": 31,
+              "unit": ""
+            },
+            {
+              "id": "vg1agr5a",
+              "name": "Clics",
+              "value": 79,
+              "unit": ""
+            },
+            {
+              "id": "j3y24wjf",
+              "name": "CPC",
+              "value": 26.04557,
+              "unit": ""
+            },
+            {
+              "id": "ldz33tni",
+              "name": "CTR",
+              "value": 0.551022,
+              "unit": "%"
+            },
+            {
+              "id": "4f7c2q67",
+              "name": "Leads",
+              "value": 8,
+              "unit": ""
+            },
+            {
+              "id": "97hgcfmb",
+              "name": "Costo / Inversión",
+              "value": 257.2,
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "8uuiugwc",
+          "name": "Forms - Reforma Aduanera",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "mc1ss2lp",
+              "name": "Importe Gastado",
+              "value": 2591.23,
+              "unit": ""
+            },
+            {
+              "id": "65foihaw",
+              "name": "Impresiones",
+              "value": 18832,
+              "unit": ""
+            },
+            {
+              "id": "3i8qfwur",
+              "name": "CPM",
+              "value": 137.597175,
+              "unit": ""
+            },
+            {
+              "id": "d9wdx9ki",
+              "name": "Alcance",
+              "value": 7303,
+              "unit": ""
+            },
+            {
+              "id": "54xm3hmv",
+              "name": "Frecuencia",
+              "value": 2.578666,
+              "unit": ""
+            },
+            {
+              "id": "vq3zh6by",
+              "name": "VCR",
+              "value": 446,
+              "unit": ""
+            },
+            {
+              "id": "glhnizcn",
+              "name": "Clics",
+              "value": 186,
+              "unit": ""
+            },
+            {
+              "id": "93v5c0vx",
+              "name": "CPC",
+              "value": 13.931344,
+              "unit": ""
+            },
+            {
+              "id": "1hs19ch5",
+              "name": "CTR",
+              "value": 0.987681,
+              "unit": "%"
+            },
+            {
+              "id": "oqkldn1z",
+              "name": "Leads",
+              "value": 33,
+              "unit": ""
+            },
+            {
+              "id": "4034g49f",
+              "name": "Costo / Inversión",
+              "value": 78.522121,
+              "unit": ""
+            },
+            {
+              "id": "mw0xuznx",
+              "name": "Conversaciones Iniciadas",
+              "value": 1,
+              "unit": ""
+            },
+            {
+              "id": "bxfpen1a",
+              "name": "Costo / Inversión",
+              "value": 2591.23,
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "k4wfzbzb",
+          "name": "Forms - Roger Logistic Worlds",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "gpie6wxv",
+              "name": "Importe Gastado",
+              "value": 693.64,
+              "unit": ""
+            },
+            {
+              "id": "axg7g3gv",
+              "name": "Impresiones",
+              "value": 4212,
+              "unit": ""
+            },
+            {
+              "id": "83vfnzrc",
+              "name": "CPM",
+              "value": 164.681861,
+              "unit": ""
+            },
+            {
+              "id": "7ms8m9ac",
+              "name": "Alcance",
+              "value": 2833,
+              "unit": ""
+            },
+            {
+              "id": "sjoa1hsv",
+              "name": "Frecuencia",
+              "value": 1.486763,
+              "unit": ""
+            },
+            {
+              "id": "rel6axe3",
+              "name": "VCR",
+              "value": 29,
+              "unit": ""
+            },
+            {
+              "id": "akgergh1",
+              "name": "Clics",
+              "value": 27,
+              "unit": ""
+            },
+            {
+              "id": "c43leghz",
+              "name": "CPC",
+              "value": 25.69037,
+              "unit": ""
+            },
+            {
+              "id": "vfzkdh0p",
+              "name": "CTR",
+              "value": 0.641026,
+              "unit": "%"
+            },
+            {
+              "id": "l32a4vml",
+              "name": "Leads",
+              "value": 2,
+              "unit": ""
+            },
+            {
+              "id": "89ixewq8",
+              "name": "Costo / Inversión",
+              "value": 346.82,
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "omuzqzbj",
+          "name": "Forms - Emerging Teams Logistic Worlds",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "ikvnby1w",
+              "name": "Importe Gastado",
+              "value": 748.36,
+              "unit": ""
+            },
+            {
+              "id": "djtdql75",
+              "name": "Impresiones",
+              "value": 5020,
+              "unit": ""
+            },
+            {
+              "id": "sdk520sj",
+              "name": "CPM",
+              "value": 149.075697,
+              "unit": ""
+            },
+            {
+              "id": "qq58ykx5",
+              "name": "Alcance",
+              "value": 3423,
+              "unit": ""
+            },
+            {
+              "id": "m9fxut15",
+              "name": "Frecuencia",
+              "value": 1.46655,
+              "unit": ""
+            },
+            {
+              "id": "psooo21h",
+              "name": "VCR",
+              "value": 81,
+              "unit": ""
+            },
+            {
+              "id": "kry7lccg",
+              "name": "Clics",
+              "value": 18,
+              "unit": ""
+            },
+            {
+              "id": "3xa4rjzg",
+              "name": "CPC",
+              "value": 41.575556,
+              "unit": ""
+            },
+            {
+              "id": "rkf3x4lm",
+              "name": "CTR",
+              "value": 0.358566,
+              "unit": "%"
+            },
+            {
+              "id": "nyz6dlv7",
+              "name": "Leads",
+              "value": 2,
+              "unit": ""
+            },
+            {
+              "id": "1svf1aag",
+              "name": "Costo / Inversión",
+              "value": 374.18,
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "7efnevi3",
+          "name": "Forms - Reforma Aduanera Logistic Worlds",
+          "channel": "Facebook Ads",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "5jqiylkk",
+              "name": "Importe Gastado",
+              "value": 944.98,
+              "unit": ""
+            },
+            {
+              "id": "a0ytqcld",
+              "name": "Impresiones",
+              "value": 5348,
+              "unit": ""
+            },
+            {
+              "id": "iq6nb3je",
+              "name": "CPM",
+              "value": 176.697831,
+              "unit": ""
+            },
+            {
+              "id": "knmp4ct9",
+              "name": "Alcance",
+              "value": 3752,
+              "unit": ""
+            },
+            {
+              "id": "ju6gu3rn",
+              "name": "Frecuencia",
+              "value": 1.425373,
+              "unit": ""
+            },
+            {
+              "id": "a8z5pgce",
+              "name": "VCR",
+              "value": 75,
+              "unit": ""
+            },
+            {
+              "id": "4ctsyph4",
+              "name": "Clics",
+              "value": 33,
+              "unit": ""
+            },
+            {
+              "id": "hufbyznj",
+              "name": "CPC",
+              "value": 28.635758,
+              "unit": ""
+            },
+            {
+              "id": "xszq76n5",
+              "name": "CTR",
+              "value": 0.617053,
+              "unit": "%"
+            },
+            {
+              "id": "edtni1ai",
+              "name": "Leads",
+              "value": 1,
+              "unit": ""
+            },
+            {
+              "id": "61kfkrtc",
+              "name": "Costo / Inversión",
+              "value": 944.98,
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        }
+      ],
+      "socialChannels": [],
+      "preloadedMetrics": []
+    }
+  },
+  "globalMetrics": []
+}
