@@ -75,13 +75,33 @@
             },
             {
               "id": "4cecj8ot",
-              "name": "Costo / Inversión",
+              "name": "Costo / Conversación",
               "value": "353.63",
               "unit": "$"
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "9s3ayove",
+              "image": "https://drive.google.com/file/d/1RrYRUaumo27gQg6euA0WlDll5gACbm9G/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "6mmz8nhv",
+                  "name": "Conversaciones Iniciadas",
+                  "value": "2",
+                  "unit": ""
+                },
+                {
+                  "id": "uvvr1zrb",
+                  "name": "Costo / Inversión",
+                  "value": "$133.92",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -147,13 +167,33 @@
             },
             {
               "id": "82md5hoe",
-              "name": "Costo / Inversión",
+              "name": "Costo / Conversación",
               "value": "172.87",
               "unit": "$"
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "7222gqe3",
+              "image": "https://drive.google.com/file/d/19A6UXrUllUaEspVkFi8poUwvntZRXt7R/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "3tfh15tk",
+                  "name": "Conversaciones Iniciadas",
+                  "value": "4",
+                  "unit": ""
+                },
+                {
+                  "id": "882fuxrn",
+                  "name": "Costo / Conversación",
+                  "value": "$181",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -225,13 +265,33 @@
             },
             {
               "id": "b474fjdg",
-              "name": "Costo / Inversión",
+              "name": "Costo / Conversación",
               "value": 53.652,
               "unit": ""
             }
           ],
           "evidences": [],
-          "bestContent": [],
+          "bestContent": [
+            {
+              "id": "4wa22nl5",
+              "image": "https://drive.google.com/file/d/1P1SyH7_Q44hxeEv8n49CQEqpPwyA6Q9f/view?usp=drive_link",
+              "imageType": "url",
+              "metrics": [
+                {
+                  "id": "su89zbh0",
+                  "name": "Conversaciones Iniciadas",
+                  "value": "2",
+                  "unit": ""
+                },
+                {
+                  "id": "bpaekb6l",
+                  "name": "Costo / Conversación",
+                  "value": "$28.47",
+                  "unit": ""
+                }
+              ]
+            }
+          ],
           "observations": ""
         },
         {
@@ -303,20 +363,8 @@
             },
             {
               "id": "lcdn58bb",
-              "name": "Costo / Inversión",
+              "name": "Costo Por Lead",
               "value": 98.565,
-              "unit": ""
-            },
-            {
-              "id": "gf3ofrcv",
-              "name": "Conversaciones Iniciadas",
-              "value": 2,
-              "unit": ""
-            },
-            {
-              "id": "vw4vurex",
-              "name": "Costo / Inversión",
-              "value": 1182.78,
               "unit": ""
             }
           ],
@@ -393,7 +441,7 @@
             },
             {
               "id": "97hgcfmb",
-              "name": "Costo / Inversión",
+              "name": "Costo Por Lead",
               "value": 257.2,
               "unit": ""
             }
@@ -471,20 +519,8 @@
             },
             {
               "id": "4034g49f",
-              "name": "Costo / Inversión",
+              "name": "Costo Por Lead",
               "value": 78.522121,
-              "unit": ""
-            },
-            {
-              "id": "mw0xuznx",
-              "name": "Conversaciones Iniciadas",
-              "value": 1,
-              "unit": ""
-            },
-            {
-              "id": "bxfpen1a",
-              "name": "Costo / Inversión",
-              "value": 2591.23,
               "unit": ""
             }
           ],
@@ -561,7 +597,7 @@
             },
             {
               "id": "89ixewq8",
-              "name": "Costo / Inversión",
+              "name": "Costo Por Lead",
               "value": 346.82,
               "unit": ""
             }
@@ -639,7 +675,7 @@
             },
             {
               "id": "1svf1aag",
-              "name": "Costo / Inversión",
+              "name": "Costo Por Lead",
               "value": 374.18,
               "unit": ""
             }
@@ -717,7 +753,7 @@
             },
             {
               "id": "61kfkrtc",
-              "name": "Costo / Inversión",
+              "name": "Costo Por Lead",
               "value": 944.98,
               "unit": ""
             }
