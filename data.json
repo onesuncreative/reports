@@ -883,7 +883,98 @@
           "observations": ""
         }
       ],
-      "socialChannels": [],
+      "socialChannels": [
+        {
+          "id": "9haymcsm",
+          "name": "Instagram",
+          "icon": "📱",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "m4cxtoco",
+              "name": "Vistas",
+              "value": "40,100",
+              "unit": ""
+            },
+            {
+              "id": "vdam7xki",
+              "name": "Alcance",
+              "value": "12,064",
+              "unit": ""
+            },
+            {
+              "id": "u887mixi",
+              "name": "Seguidores",
+              "value": "34",
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "gfhkp1xd",
+          "name": "Facebook",
+          "icon": "📱",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "cg9t3sim",
+              "name": "Vistas",
+              "value": "50112",
+              "unit": ""
+            },
+            {
+              "id": "jsuriou8",
+              "name": "Alcance",
+              "value": "20231",
+              "unit": ""
+            },
+            {
+              "id": "er7l7pu7",
+              "name": "Seguidores",
+              "value": "15",
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        },
+        {
+          "id": "l2kq6d5f",
+          "name": "LinkedIn",
+          "icon": "📱",
+          "startDate": "2026-03-01",
+          "endDate": "2026-03-31",
+          "metrics": [
+            {
+              "id": "a1egabmu",
+              "name": "Vistas",
+              "value": "",
+              "unit": ""
+            },
+            {
+              "id": "77x48adn",
+              "name": "Alcance",
+              "value": "224",
+              "unit": ""
+            },
+            {
+              "id": "e5odaepp",
+              "name": "Seguidores",
+              "value": "",
+              "unit": ""
+            }
+          ],
+          "evidences": [],
+          "bestContent": [],
+          "observations": ""
+        }
+      ],
       "preloadedMetrics": []
     }
   },
