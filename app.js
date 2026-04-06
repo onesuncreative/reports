@@ -14,8 +14,20 @@ const DB = {
     catch { return { clients: {}, globalMetrics: [] }; }
   },
   save(data) { localStorage.setItem(STORE_KEY, JSON.stringify(data)); },
-  getClients() { return this.load().clients || {}; },
-  getClient(slug) { return this.load().clients[slug] || null; },
+  getClients() {
+    const clients = this.load().clients || {};
+    let dirty = false;
+    for (const slug in clients) {
+      if (!clients[slug].brands) { migrateClient(clients[slug]); dirty = true; }
+    }
+    if (dirty) this.save(this.load()); // persist migration - load full data to keep globalMetrics
+    return clients;
+  },
+  getClient(slug) {
+    const c = this.load().clients[slug] || null;
+    if (c && !c.brands) { migrateClient(c); this.saveClient(c); }
+    return c;
+  },
   saveClient(client) {
     const data = this.load();
     if (!data.clients) data.clients = {};
@@ -330,9 +342,18 @@ function newClient(name, slug, password) {
     reportSubtitle: 'Campañas Digitales',
     viewStart: '',
     viewEnd: '',
-    campaigns: [],
-    socialChannels: [],
+    brands: [],
     preloadedMetrics: []
+  };
+}
+
+function newBrand(name = 'Nueva Marca') {
+  return {
+    id: uid(), name,
+    logo: '',
+    color: CHART_COLORS[Math.floor(Math.random() * CHART_COLORS.length)],
+    campaigns: [],
+    socialChannels: []
   };
 }
 
@@ -352,6 +373,18 @@ function newSocialChannel(name = 'Instagram') {
     metrics: [], evidences: [], bestContent: [],
     observations: ''
   };
+}
+
+// Migrate legacy clients that have campaigns/socialChannels at root level
+function migrateClient(client) {
+  if (client.brands) return client; // already migrated
+  const brand = newBrand(client.name);
+  brand.campaigns = client.campaigns || [];
+  brand.socialChannels = client.socialChannels || [];
+  client.brands = [brand];
+  delete client.campaigns;
+  delete client.socialChannels;
+  return client;
 }
 
 function newMetric(n = '', v = '', u = '') { return { id: uid(), name: n, value: v, unit: u }; }
@@ -646,27 +679,57 @@ const App = {
     }
   },
 
+  // Helper: get all campaigns/socials across all brands
+  _allCampaigns(client) {
+    return (client.brands || []).flatMap(b => (b.campaigns || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color })));
+  },
+  _allSocials(client) {
+    return (client.brands || []).flatMap(b => (b.socialChannels || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color })));
+  },
+
   renderCampaignsTab(client) {
-    if (!client.campaigns || client.campaigns.length === 0) {
+    const brands = (client.brands || []).filter(b => (b.campaigns || []).length > 0);
+    if (brands.length === 0) {
       return `<div class="section-content"><div class="empty-state"><div class="empty-icon">📊</div><h3>Sin campañas</h3><p>Aún no hay campañas registradas para este reporte.</p></div></div>`;
     }
+    const totalCampaigns = brands.reduce((sum, b) => sum + b.campaigns.length, 0);
     return `<div class="section-content">
-      <div class="section-header"><h2>Campañas Digitales</h2><span class="badge">${client.campaigns.length} campaña${client.campaigns.length !== 1 ? 's' : ''}</span></div>
-      <div class="campaign-list">
-        ${client.campaigns.map(c => this.renderCampaignCard(c)).join('')}
-      </div>
+      <div class="section-header"><h2>Campañas Digitales</h2><span class="badge">${totalCampaigns} campaña${totalCampaigns !== 1 ? 's' : ''}</span></div>
+      ${brands.map(brand => `
+        <div style="margin-bottom:24px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">
+            ${brand.logo ? `<img src="${esc(brand.logo)}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
+            <h3 style="font-size:1.05rem;margin:0;">${esc(brand.name)}</h3>
+            <span class="badge" style="font-size:0.72rem;">${brand.campaigns.length}</span>
+          </div>
+          <div class="campaign-list">
+            ${brand.campaigns.map(c => this.renderCampaignCard(c)).join('')}
+          </div>
+        </div>
+      `).join('')}
     </div>`;
   },
 
   renderSocialTab(client) {
-    if (!client.socialChannels || client.socialChannels.length === 0) {
+    const brands = (client.brands || []).filter(b => (b.socialChannels || []).length > 0);
+    if (brands.length === 0) {
       return `<div class="section-content"><div class="empty-state"><div class="empty-icon">📱</div><h3>Sin canales</h3><p>Aún no hay canales de redes sociales registrados.</p></div></div>`;
     }
+    const totalSocials = brands.reduce((sum, b) => sum + b.socialChannels.length, 0);
     return `<div class="section-content">
-      <div class="section-header"><h2>Redes Sociales</h2><span class="badge">${client.socialChannels.length} canal${client.socialChannels.length !== 1 ? 'es' : ''}</span></div>
-      <div class="campaign-list">
-        ${client.socialChannels.map(c => this.renderCampaignCard(c, true)).join('')}
-      </div>
+      <div class="section-header"><h2>Redes Sociales</h2><span class="badge">${totalSocials} canal${totalSocials !== 1 ? 'es' : ''}</span></div>
+      ${brands.map(brand => `
+        <div style="margin-bottom:24px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">
+            ${brand.logo ? `<img src="${esc(brand.logo)}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
+            <h3 style="font-size:1.05rem;margin:0;">${esc(brand.name)}</h3>
+            <span class="badge" style="font-size:0.72rem;">${brand.socialChannels.length}</span>
+          </div>
+          <div class="campaign-list">
+            ${brand.socialChannels.map(c => this.renderCampaignCard(c, true)).join('')}
+          </div>
+        </div>
+      `).join('')}
     </div>`;
   },
 
@@ -727,8 +790,8 @@ const App = {
 
   renderComparisonTab(client) {
     const allItems = [
-      ...(client.campaigns || []).map(c => ({ ...c, _type: 'campaign' })),
-      ...(client.socialChannels || []).map(c => ({ ...c, _type: 'social' }))
+      ...this._allCampaigns(client).map(c => ({ ...c, _type: 'campaign' })),
+      ...this._allSocials(client).map(c => ({ ...c, _type: 'social' }))
     ];
 
     if (allItems.length === 0) {
@@ -802,8 +865,8 @@ const App = {
     if (!activeMetric || activeItems.length === 0) return;
 
     const allItems = [
-      ...(client.campaigns || []).map(c => ({ ...c, _type: 'campaign' })),
-      ...(client.socialChannels || []).map(c => ({ ...c, _type: 'social' }))
+      ...this._allCampaigns(client).map(c => ({ ...c, _type: 'campaign' })),
+      ...this._allSocials(client).map(c => ({ ...c, _type: 'social' }))
     ];
 
     const selected = allItems.filter(i => activeItems.includes(i.id));
@@ -836,8 +899,8 @@ const App = {
     const client = DB.getClient(this._currentSlug);
     const activeItems = [...document.querySelectorAll('#comp-items .chip.active')].map(b => b.dataset.id);
     const allItems = [
-      ...(client.campaigns || []).map(c => ({ ...c, _type: 'campaign' })),
-      ...(client.socialChannels || []).map(c => ({ ...c, _type: 'social' }))
+      ...this._allCampaigns(client).map(c => ({ ...c, _type: 'campaign' })),
+      ...this._allSocials(client).map(c => ({ ...c, _type: 'social' }))
     ];
     const selected = allItems.filter(i => activeItems.includes(i.id));
     const allMetricNames = [...new Set(selected.flatMap(i => (i.metrics || []).map(m => m.name)))];
@@ -937,8 +1000,49 @@ const App = {
   renderEditorSidebar(client) {
     const sidebar = document.getElementById('editor-sidebar');
     if (!sidebar) return;
-    const campaigns = client.campaigns || [];
-    const socials = client.socialChannels || [];
+    const brands = client.brands || [];
+
+    const brandsHtml = brands.map(brand => {
+      const campaigns = brand.campaigns || [];
+      const socials = brand.socialChannels || [];
+      const isActiveBrand = this._editorSection === 'brand' && this._editorItemId === brand.id;
+      return `
+      <div class="sidebar-section">
+        <div class="sidebar-section-title" style="display:flex;align-items:center;gap:6px;">
+          <span style="width:8px;height:8px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};flex-shrink:0;"></span>
+          <span style="flex:1;cursor:pointer;${isActiveBrand ? 'color:var(--primary);' : ''}" onclick="App.switchEditorSection('brand', '${esc(brand.id)}')">${esc(brand.name)}</span>
+          <button class="btn-icon" style="width:20px;height:20px;font-size:0.65rem;background:rgba(255,69,96,0.15);color:var(--danger);" onclick="event.stopPropagation(); App.deleteBrand('${esc(brand.id)}')" title="Eliminar marca">✕</button>
+        </div>
+        <div style="padding-left:4px;">
+          <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);padding:6px 12px 2px;display:flex;align-items:center;justify-content:space-between;">
+            Campañas
+            <button class="collapse-btn" onclick="App.addCampaign('${esc(brand.id)}')">+</button>
+          </div>
+          ${campaigns.map(c => `
+            <div class="sidebar-item ${this._editorSection === 'campaign' && this._editorItemId === c.id ? 'active' : ''}" onclick="App.switchEditorSection('campaign', '${esc(c.id)}')">
+              📊 ${esc(c.name)}
+              <span class="item-actions">
+                <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(0,221,255,0.15);" onclick="event.stopPropagation(); App.duplicateCampaign('${esc(c.id)}')">⧉</button>
+                <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(255,69,96,0.15);color:var(--danger);" onclick="event.stopPropagation(); App.deleteCampaignItem('${esc(c.id)}', 'campaign')">✕</button>
+              </span>
+            </div>`).join('')}
+          ${campaigns.length === 0 ? '<div class="sidebar-item" style="opacity:0.5;font-style:italic;cursor:default;font-size:0.8rem;">Sin campañas</div>' : ''}
+          <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);padding:6px 12px 2px;display:flex;align-items:center;justify-content:space-between;">
+            Redes Sociales
+            <button class="collapse-btn" onclick="App.addSocialChannel('${esc(brand.id)}')">+</button>
+          </div>
+          ${socials.map(c => `
+            <div class="sidebar-item ${this._editorSection === 'social' && this._editorItemId === c.id ? 'active' : ''}" onclick="App.switchEditorSection('social', '${esc(c.id)}')">
+              ${esc(c.icon || '📱')} ${esc(c.name)}
+              <span class="item-actions">
+                <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(0,221,255,0.15);" onclick="event.stopPropagation(); App.duplicateCampaign('${esc(c.id)}', true)">⧉</button>
+                <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(255,69,96,0.15);color:var(--danger);" onclick="event.stopPropagation(); App.deleteCampaignItem('${esc(c.id)}', 'social')">✕</button>
+              </span>
+            </div>`).join('')}
+          ${socials.length === 0 ? '<div class="sidebar-item" style="opacity:0.5;font-style:italic;cursor:default;font-size:0.8rem;">Sin canales</div>' : ''}
+        </div>
+      </div>`;
+    }).join('');
 
     sidebar.innerHTML = `
       <div class="sidebar-section">
@@ -948,34 +1052,12 @@ const App = {
       </div>
       <div class="sidebar-section">
         <div class="sidebar-section-title">
-          Campañas
-          <button class="collapse-btn" onclick="App.addCampaign()">+ Agregar</button>
+          Marcas
+          <button class="collapse-btn" onclick="App.addBrand()">+ Nueva marca</button>
         </div>
-        ${campaigns.map(c => `
-          <div class="sidebar-item ${this._editorSection === 'campaign' && this._editorItemId === c.id ? 'active' : ''}" onclick="App.switchEditorSection('campaign', '${esc(c.id)}')">
-            📊 ${esc(c.name)}
-            <span class="item-actions">
-              <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(0,221,255,0.15);" onclick="event.stopPropagation(); App.duplicateCampaign('${esc(c.id)}')">⧉</button>
-              <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(255,69,96,0.15);color:var(--danger);" onclick="event.stopPropagation(); App.deleteCampaignItem('${esc(c.id)}', 'campaign')">✕</button>
-            </span>
-          </div>`).join('')}
-        ${campaigns.length === 0 ? '<div class="sidebar-item" style="opacity:0.5;font-style:italic;cursor:default;">Sin campañas</div>' : ''}
+        ${brands.length === 0 ? '<div class="sidebar-item" style="opacity:0.5;font-style:italic;cursor:default;">Sin marcas</div>' : ''}
       </div>
-      <div class="sidebar-section">
-        <div class="sidebar-section-title">
-          Redes Sociales
-          <button class="collapse-btn" onclick="App.addSocialChannel()">+ Agregar</button>
-        </div>
-        ${socials.map(c => `
-          <div class="sidebar-item ${this._editorSection === 'social' && this._editorItemId === c.id ? 'active' : ''}" onclick="App.switchEditorSection('social', '${esc(c.id)}')">
-            ${esc(c.icon || '📱')} ${esc(c.name)}
-            <span class="item-actions">
-              <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(0,221,255,0.15);" onclick="event.stopPropagation(); App.duplicateCampaign('${esc(c.id)}', true)">⧉</button>
-              <button class="btn-icon" style="width:22px;height:22px;font-size:0.7rem;background:rgba(255,69,96,0.15);color:var(--danger);" onclick="event.stopPropagation(); App.deleteCampaignItem('${esc(c.id)}', 'social')">✕</button>
-            </span>
-          </div>`).join('')}
-        ${socials.length === 0 ? '<div class="sidebar-item" style="opacity:0.5;font-style:italic;cursor:default;">Sin canales</div>' : ''}
-      </div>`;
+      ${brandsHtml}`;
   },
 
   switchEditorSection(section, itemId = null) {
@@ -995,13 +1077,47 @@ const App = {
       main.innerHTML = this.renderSettingsEditor(client);
     } else if (section === 'preloaded') {
       main.innerHTML = this.renderPreloadedMetricsEditor(client);
-    } else if (section === 'campaign') {
-      const item = client.campaigns.find(c => c.id === itemId);
-      if (item) main.innerHTML = this.renderCampaignEditor(item, client, false);
-    } else if (section === 'social') {
-      const item = client.socialChannels.find(c => c.id === itemId);
-      if (item) main.innerHTML = this.renderCampaignEditor(item, client, true);
+    } else if (section === 'brand') {
+      const brand = (client.brands || []).find(b => b.id === itemId);
+      if (brand) main.innerHTML = this.renderBrandEditor(brand, client);
+    } else if (section === 'campaign' || section === 'social') {
+      const { item, isSocial } = this._findItem(itemId);
+      if (item) main.innerHTML = this.renderCampaignEditor(item, client, isSocial);
     }
+  },
+
+  renderBrandEditor(brand, client) {
+    return `<div>
+      <div class="editor-card">
+        <div class="editor-card-header"><h3>🏷️ Marca: ${esc(brand.name)}</h3></div>
+        <div class="form-row">
+          <div class="form-group"><label>Nombre de la marca</label>
+            <input type="text" id="b-name" value="${esc(brand.name)}" oninput="App.autoSaveBrand('${esc(brand.id)}')">
+          </div>
+          <div class="form-group"><label>Color identificador</label>
+            <input type="color" id="b-color" value="${esc(brand.color || '#0000ff')}" oninput="App.autoSaveBrand('${esc(brand.id)}')" style="height:38px;width:60px;padding:2px;cursor:pointer;">
+          </div>
+        </div>
+        <div class="form-group"><label>Logo de la marca (URL)</label>
+          <input type="text" id="b-logo" value="${esc(brand.logo || '')}" placeholder="https://..." oninput="App.autoSaveBrand('${esc(brand.id)}')">
+        </div>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px;">
+        <button class="btn btn-accent btn-sm" onclick="App.addCampaign('${esc(brand.id)}')">+ Campaña</button>
+        <button class="btn btn-ghost btn-sm" onclick="App.addSocialChannel('${esc(brand.id)}')">+ Red Social</button>
+      </div>
+    </div>`;
+  },
+
+  autoSaveBrand(brandId) {
+    const client = DB.getClient(this._currentSlug);
+    const brand = (client.brands || []).find(b => b.id === brandId);
+    if (!brand) return;
+    brand.name = document.getElementById('b-name')?.value || brand.name;
+    brand.color = document.getElementById('b-color')?.value || brand.color;
+    brand.logo = document.getElementById('b-logo')?.value || '';
+    DB.saveClient(client);
+    this.renderEditorSidebar(client);
   },
 
   renderSettingsEditor(client) {
@@ -1195,20 +1311,53 @@ const App = {
     }
   },
 
-  // ---- CAMPAIGN EDITOR ----
-  addCampaign() {
+  // ---- BRAND & CAMPAIGN EDITOR ----
+  addBrand() {
     const client = DB.getClient(this._currentSlug);
+    const b = newBrand();
+    client.brands.push(b);
+    DB.saveClient(client);
+    this.switchEditorSection('brand', b.id);
+    Toast.show('Marca creada');
+  },
+
+  deleteBrand(brandId) {
+    if (!confirm('¿Eliminar esta marca y todo su contenido?')) return;
+    const client = DB.getClient(this._currentSlug);
+    client.brands = (client.brands || []).filter(b => b.id !== brandId);
+    DB.saveClient(client);
+    this.switchEditorSection('settings');
+    Toast.show('Marca eliminada', 'info');
+  },
+
+  // Find which brand owns an item
+  _findBrandForItem(client, itemId) {
+    for (const brand of (client.brands || [])) {
+      let item = (brand.campaigns || []).find(c => c.id === itemId);
+      if (item) return { brand, item, isSocial: false };
+      item = (brand.socialChannels || []).find(c => c.id === itemId);
+      if (item) return { brand, item, isSocial: true };
+    }
+    return { brand: null, item: null, isSocial: false };
+  },
+
+  addCampaign(brandId) {
+    const client = DB.getClient(this._currentSlug);
+    const brand = (client.brands || []).find(b => b.id === brandId);
+    if (!brand) { Toast.show('Selecciona una marca primero', 'error'); return; }
     const c = newCampaign();
-    client.campaigns.push(c);
+    brand.campaigns.push(c);
     DB.saveClient(client);
     this.switchEditorSection('campaign', c.id);
     Toast.show('Campaña creada');
   },
 
-  addSocialChannel() {
+  addSocialChannel(brandId) {
     const client = DB.getClient(this._currentSlug);
+    const brand = (client.brands || []).find(b => b.id === brandId);
+    if (!brand) { Toast.show('Selecciona una marca primero', 'error'); return; }
     const c = newSocialChannel();
-    client.socialChannels.push(c);
+    brand.socialChannels.push(c);
     DB.saveClient(client);
     this.switchEditorSection('social', c.id);
     Toast.show('Canal creado');
@@ -1216,18 +1365,16 @@ const App = {
 
   duplicateCampaign(id, isSocial = false) {
     const client = DB.getClient(this._currentSlug);
-    const arr = isSocial ? client.socialChannels : client.campaigns;
-    const orig = arr.find(c => c.id === id);
-    if (!orig) return;
+    const { brand, item: orig } = this._findBrandForItem(client, id);
+    if (!brand || !orig) return;
+    const arr = isSocial ? brand.socialChannels : brand.campaigns;
     const copy = JSON.parse(JSON.stringify(orig));
     copy.id = uid();
     copy.name = copy.name + ' (copia)';
-    // new ids for sub-items
     copy.metrics = copy.metrics.map(m => ({ ...m, id: uid() }));
     copy.evidences = copy.evidences.map(e => ({ ...e, id: uid() }));
     copy.bestContent = copy.bestContent.map(bc => ({ ...bc, id: uid(), metrics: bc.metrics.map(m => ({ ...m, id: uid() })) }));
     arr.push(copy);
-    if (isSocial) client.socialChannels = arr; else client.campaigns = arr;
     DB.saveClient(client);
     this.switchEditorSection(isSocial ? 'social' : 'campaign', copy.id);
     Toast.show('Duplicado con éxito');
@@ -1236,13 +1383,12 @@ const App = {
   deleteCampaignItem(id, type) {
     if (!confirm('¿Eliminar este elemento?')) return;
     const client = DB.getClient(this._currentSlug);
-    if (type === 'campaign') client.campaigns = client.campaigns.filter(c => c.id !== id);
-    else client.socialChannels = client.socialChannels.filter(c => c.id !== id);
+    for (const brand of (client.brands || [])) {
+      if (type === 'campaign') brand.campaigns = (brand.campaigns || []).filter(c => c.id !== id);
+      else brand.socialChannels = (brand.socialChannels || []).filter(c => c.id !== id);
+    }
     DB.saveClient(client);
-    this._editorSection = 'settings';
-    this._editorItemId = null;
-    this.renderEditorSidebar(client);
-    this.renderEditorSection('settings');
+    this.switchEditorSection('settings');
     Toast.show('Eliminado', 'info');
   },
 
@@ -1386,19 +1532,20 @@ const App = {
     </div>`;
   },
 
-  // helpers to find item
+  // helpers to find item across all brands
   _findItem(itemId) {
     const client = DB.getClient(this._currentSlug);
-    let item = client.campaigns.find(c => c.id === itemId);
-    let isSocial = false;
-    if (!item) { item = client.socialChannels.find(c => c.id === itemId); isSocial = true; }
-    return { client, item, isSocial };
+    for (const brand of (client.brands || [])) {
+      let item = (brand.campaigns || []).find(c => c.id === itemId);
+      if (item) return { client, brand, item, isSocial: false };
+      item = (brand.socialChannels || []).find(c => c.id === itemId);
+      if (item) return { client, brand, item, isSocial: true };
+    }
+    return { client, brand: null, item: null, isSocial: false };
   },
 
   autoSaveCampaign(itemId, isSocial) {
-    const client = DB.getClient(this._currentSlug);
-    const arr = isSocial ? client.socialChannels : client.campaigns;
-    const item = arr.find(c => c.id === itemId);
+    const { client, item } = this._findItem(itemId);
     if (!item) return;
     item.name = document.getElementById('ci-name')?.value || item.name;
     if (isSocial) item.icon = document.getElementById('ci-icon')?.value || item.icon;
@@ -1717,12 +1864,20 @@ const BulkCSV = {
         <span style="color:var(--text-muted);">→</span>
         <span style="opacity:0.4;">3 Confirmar</span>
       </div>
-      <div class="form-group" style="margin-bottom:16px;">
-        <label>Cliente destino</label>
-        <select id="bulk-csv-client" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;color:var(--text);font-size:0.85rem;width:100%;">
-          <option value="">— Seleccionar cliente —</option>
-          ${options}
-        </select>
+      <div class="form-row" style="margin-bottom:16px;">
+        <div class="form-group" style="margin:0;flex:1;">
+          <label>Cliente destino</label>
+          <select id="bulk-csv-client" onchange="BulkCSV._updateBrandOptions()" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;color:var(--text);font-size:0.85rem;width:100%;">
+            <option value="">— Seleccionar cliente —</option>
+            ${options}
+          </select>
+        </div>
+        <div class="form-group" style="margin:0;flex:1;">
+          <label>Marca destino</label>
+          <select id="bulk-csv-brand" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;color:var(--text);font-size:0.85rem;width:100%;">
+            <option value="">— Selecciona un cliente primero —</option>
+          </select>
+        </div>
       </div>
       <div id="bulk-csv-dropzone" style="
         border: 2px dashed var(--border);
@@ -1833,10 +1988,25 @@ const BulkCSV = {
     input.addEventListener('change', () => { if (input.files[0]) this._readFile(input.files[0]); });
   },
 
+  _updateBrandOptions() {
+    const slug = document.getElementById('bulk-csv-client')?.value;
+    const sel = document.getElementById('bulk-csv-brand');
+    if (!sel) return;
+    if (!slug) { sel.innerHTML = '<option value="">— Selecciona un cliente primero —</option>'; return; }
+    const client = DB.getClient(slug);
+    const brands = client?.brands || [];
+    sel.innerHTML = brands.length === 0
+      ? '<option value="">Sin marcas — crea una primero</option>'
+      : brands.map(b => `<option value="${esc(b.id)}">${esc(b.name)}</option>`).join('');
+  },
+
   _readFile(file) {
     const slug = document.getElementById('bulk-csv-client')?.value;
+    const brandId = document.getElementById('bulk-csv-brand')?.value;
     if (!slug) { Toast.show('Selecciona un cliente primero', 'error'); return; }
+    if (!brandId) { Toast.show('Selecciona una marca destino', 'error'); return; }
     this._targetSlug = slug;
+    this._targetBrandId = brandId;
 
     const reader = new FileReader();
     reader.onload = e => {
@@ -1924,6 +2094,8 @@ const BulkCSV = {
   _doImport() {
     const client = DB.getClient(this._targetSlug);
     if (!client) { Toast.show('Cliente no encontrado', 'error'); return; }
+    const brand = (client.brands || []).find(b => b.id === this._targetBrandId);
+    if (!brand) { Toast.show('Marca no encontrada', 'error'); return; }
 
     // Get selected campaigns
     const checkboxes = document.querySelectorAll('[data-bulk-idx]');
@@ -1944,7 +2116,7 @@ const BulkCSV = {
         value: m.value,
         unit: m.unit
       }));
-      client.campaigns.push(campaign);
+      brand.campaigns.push(campaign);
     }
 
     DB.saveClient(client);
