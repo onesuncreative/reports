@@ -59,7 +59,92 @@
           "name": "Ford",
           "logo": "",
           "color": "#0000ff",
-          "campaigns": [],
+          "campaigns": [
+            {
+              "id": "e4n0z8v2",
+              "name": "Nueva Campaña",
+              "channel": "Google Ads",
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "3m44r0r6",
+                  "name": "Importe Gastado",
+                  "value": 7391.52,
+                  "unit": ""
+                },
+                {
+                  "id": "9lkg6oyd",
+                  "name": "Impresiones",
+                  "value": 1715284,
+                  "unit": ""
+                },
+                {
+                  "id": "ss1asxtz",
+                  "name": "CPM",
+                  "value": 9.75,
+                  "unit": ""
+                },
+                {
+                  "id": "lmxfjb5n",
+                  "name": "Alcance",
+                  "value": 501264,
+                  "unit": ""
+                },
+                {
+                  "id": "sup51i30",
+                  "name": "Frecuencia",
+                  "value": 8.3,
+                  "unit": ""
+                },
+                {
+                  "id": "eh8o5p8x",
+                  "name": "VCR",
+                  "value": 58264,
+                  "unit": ""
+                },
+                {
+                  "id": "u6h6d3ey",
+                  "name": "Clics",
+                  "value": 13981,
+                  "unit": ""
+                },
+                {
+                  "id": "ojhtxapl",
+                  "name": "CPC",
+                  "value": 1.3,
+                  "unit": ""
+                },
+                {
+                  "id": "xcjgnm1a",
+                  "name": "CTR",
+                  "value": 2.39,
+                  "unit": "%"
+                },
+                {
+                  "id": "nocxtaxl",
+                  "name": "Leads",
+                  "value": 199,
+                  "unit": "#"
+                },
+                {
+                  "id": "5sp5odi6",
+                  "name": "Llamadas",
+                  "value": 171,
+                  "unit": "#"
+                },
+                {
+                  "id": "ywzf5r1c",
+                  "name": "Costo Por Llamada",
+                  "value": 13.48,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ],
           "socialChannels": []
         },
         {
