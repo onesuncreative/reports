@@ -1,7 +1,119 @@
 {
   "clients": {
+    "avg": {
+      "id": "n3ruuxe7",
+      "slug": "avg",
+      "name": "Autos Vega Group",
+      "password": "Autos.V3ga",
+      "logo": "",
+      "theme": "dark",
+      "reportTitle": "Reporte de Resultados",
+      "reportSubtitle": "Campañas Digitales",
+      "viewStart": "",
+      "viewEnd": "",
+      "preloadedMetrics": [],
+      "brands": [
+        {
+          "id": "a2zaz33p",
+          "name": "Autos Vega Group",
+          "logo": "",
+          "color": "#9b59b6",
+          "campaigns": [
+            {
+              "id": "fwgjukww",
+              "name": "Nueva Campaña",
+              "channel": "Google Ads",
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "wh9c7p7a",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                }
+              ],
+              "evidences": [
+                {
+                  "id": "sp0kejoy",
+                  "type": "image",
+                  "src": "",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "itjptsky",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
+              "observations": ""
+            }
+          ],
+          "socialChannels": []
+        },
+        {
+          "id": "pf2u0hlu",
+          "name": "Ford",
+          "logo": "",
+          "color": "#0000ff",
+          "campaigns": [],
+          "socialChannels": []
+        },
+        {
+          "id": "zv0gc32q",
+          "name": "Lincoln",
+          "logo": "",
+          "color": "#ffa500",
+          "campaigns": [],
+          "socialChannels": []
+        },
+        {
+          "id": "sziou47f",
+          "name": "Volkswagen",
+          "logo": "",
+          "color": "#929292",
+          "campaigns": [],
+          "socialChannels": []
+        },
+        {
+          "id": "6n0wsagw",
+          "name": "San Juan Usados",
+          "logo": "",
+          "color": "#00ddff",
+          "campaigns": [],
+          "socialChannels": []
+        },
+        {
+          "id": "xxf964oj",
+          "name": "Hormigueros",
+          "logo": "",
+          "color": "#00ddff",
+          "campaigns": [],
+          "socialChannels": []
+        },
+        {
+          "id": "09cyls7s",
+          "name": "Guayama",
+          "logo": "",
+          "color": "#e5ff16",
+          "campaigns": [],
+          "socialChannels": []
+        },
+        {
+          "id": "ybprxu1l",
+          "name": "Hino Trucks",
+          "logo": "",
+          "color": "#ff2600",
+          "campaigns": [],
+          "socialChannels": []
+        }
+      ]
+    },
     "taskility": {
-      "id": "qyxc3lai",
+      "id": "5kug7j4l",
       "slug": "taskility",
       "name": "Taskility",
       "password": "Taskility.1",
@@ -11,1031 +123,294 @@
       "reportSubtitle": "Campañas Digitales",
       "viewStart": "",
       "viewEnd": "",
-      "campaigns": [
+      "preloadedMetrics": [],
+      "brands": [
         {
-          "id": "9nnzhjx3",
-          "name": "WhatsApp - Aduanas",
-          "channel": "Facebook Ads",
-          "startDate": "2026-02-25",
-          "endDate": "2026-03-31",
-          "metrics": [
+          "id": "hqr4wq4r",
+          "name": "Taskility",
+          "logo": "",
+          "color": "#16FFC3",
+          "campaigns": [
             {
-              "id": "1mi8d78r",
-              "name": "Importe Gastado",
-              "value": "1293.46",
-              "unit": "$"
-            },
-            {
-              "id": "vv3rz7ja",
-              "name": "Impresiones",
-              "value": "5281",
-              "unit": ""
-            },
-            {
-              "id": "rjkzmxeu",
-              "name": "CPM",
-              "value": "243.09",
-              "unit": "$"
-            },
-            {
-              "id": "5yzmvxze",
-              "name": "Alcance",
-              "value": 1944,
-              "unit": ""
-            },
-            {
-              "id": "pb87ff7h",
-              "name": "Frecuencia",
-              "value": "1.68",
-              "unit": ""
-            },
-            {
-              "id": "1lltwqyp",
-              "name": "Clics",
-              "value": "47",
-              "unit": ""
-            },
-            {
-              "id": "m1rmzmxd",
-              "name": "CPC",
-              "value": "29.2745",
-              "unit": "$"
-            },
-            {
-              "id": "lnj6uxk9",
-              "name": "CTR",
-              "value": "0.860",
-              "unit": "%"
-            },
-            {
-              "id": "730psgul",
-              "name": "Conversaciones Iniciadas",
-              "value": "5",
-              "unit": ""
-            },
-            {
-              "id": "4cecj8ot",
-              "name": "Costo / Conversación",
-              "value": "353.63",
-              "unit": "$"
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "9s3ayove",
-              "image": "https://drive.google.com/file/d/1RrYRUaumo27gQg6euA0WlDll5gACbm9G/view?usp=drive_link",
-              "imageType": "url",
+              "id": "q9l7oyxy",
+              "name": "WhatsApp - Reforma Aduanera",
+              "channel": "Google Ads",
+              "startDate": "",
+              "endDate": "",
               "metrics": [
                 {
-                  "id": "6mmz8nhv",
-                  "name": "Conversaciones Iniciadas",
-                  "value": "2",
-                  "unit": ""
+                  "id": "y7ultp9s",
+                  "name": "Importe Gastado",
+                  "value": 1293.46,
+                  "unit": "$"
                 },
                 {
-                  "id": "uvvr1zrb",
-                  "name": "Costo / Inversión",
-                  "value": "$133.92",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "2yqexi0l",
-          "name": "WhatsApp - Roger",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "rlotkdek",
-              "name": "Importe Gastado",
-              "value": "1181.31",
-              "unit": "$"
-            },
-            {
-              "id": "9rpmh6wf",
-              "name": "Impresiones",
-              "value": "5096",
-              "unit": ""
-            },
-            {
-              "id": "mh5cu355",
-              "name": "CPM",
-              "value": "235.47",
-              "unit": "$"
-            },
-            {
-              "id": "11xwdgfs",
-              "name": "Alcance",
-              "value": "3398",
-              "unit": ""
-            },
-            {
-              "id": "asu0ryd1",
-              "name": "Frecuencia",
-              "value": "1.50",
-              "unit": ""
-            },
-            {
-              "id": "fl0cigop",
-              "name": "Clics",
-              "value": "35",
-              "unit": ""
-            },
-            {
-              "id": "8ae3kks4",
-              "name": "CPC",
-              "value": "33.80",
-              "unit": "$"
-            },
-            {
-              "id": "gfqtb01i",
-              "name": "CTR",
-              "value": "1.38",
-              "unit": "%"
-            },
-            {
-              "id": "gqv660sp",
-              "name": "Conversaciones Iniciadas",
-              "value": "7",
-              "unit": ""
-            },
-            {
-              "id": "82md5hoe",
-              "name": "Costo / Conversación",
-              "value": "172.87",
-              "unit": "$"
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "7222gqe3",
-              "image": "https://drive.google.com/file/d/19A6UXrUllUaEspVkFi8poUwvntZRXt7R/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "3tfh15tk",
-                  "name": "Conversaciones Iniciadas",
-                  "value": "4",
-                  "unit": ""
-                },
-                {
-                  "id": "882fuxrn",
-                  "name": "Costo / Conversación",
-                  "value": "$181",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "vo17fyyj",
-          "name": "WhatsApp - Emerging Teams",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "jw1emloq",
-              "name": "Importe Gastado",
-              "value": 268.26,
-              "unit": ""
-            },
-            {
-              "id": "qiw203gm",
-              "name": "Impresiones",
-              "value": 3812,
-              "unit": ""
-            },
-            {
-              "id": "4bwuihg8",
-              "name": "CPM",
-              "value": 70.372508,
-              "unit": ""
-            },
-            {
-              "id": "5354yfl0",
-              "name": "Alcance",
-              "value": 2960,
-              "unit": ""
-            },
-            {
-              "id": "sffh89ji",
-              "name": "Frecuencia",
-              "value": 1.287838,
-              "unit": ""
-            },
-            {
-              "id": "ushbki43",
-              "name": "VCR",
-              "value": 695,
-              "unit": ""
-            },
-            {
-              "id": "9mcxbtwy",
-              "name": "Clics",
-              "value": 27,
-              "unit": ""
-            },
-            {
-              "id": "79fehow8",
-              "name": "CPC",
-              "value": 9.935556,
-              "unit": ""
-            },
-            {
-              "id": "nsgt5wvg",
-              "name": "CTR",
-              "value": 0.70829,
-              "unit": "%"
-            },
-            {
-              "id": "ngb8s9pd",
-              "name": "Conversaciones Iniciadas",
-              "value": 5,
-              "unit": ""
-            },
-            {
-              "id": "b474fjdg",
-              "name": "Costo / Conversación",
-              "value": 53.652,
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "4wa22nl5",
-              "image": "https://drive.google.com/file/d/1P1SyH7_Q44hxeEv8n49CQEqpPwyA6Q9f/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "su89zbh0",
-                  "name": "Conversaciones Iniciadas",
-                  "value": "2",
-                  "unit": ""
-                },
-                {
-                  "id": "bpaekb6l",
-                  "name": "Costo / Conversación",
-                  "value": "$28.47",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "cuvmvwzn",
-          "name": "Forms - Emerging Teams",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "z47zhd5v",
-              "name": "Importe Gastado",
-              "value": 2365.56,
-              "unit": ""
-            },
-            {
-              "id": "rvaermkb",
-              "name": "Impresiones",
-              "value": 16572,
-              "unit": ""
-            },
-            {
-              "id": "j7f9qv8v",
-              "name": "CPM",
-              "value": 142.744388,
-              "unit": ""
-            },
-            {
-              "id": "kscoiu1a",
-              "name": "Alcance",
-              "value": 5704,
-              "unit": ""
-            },
-            {
-              "id": "ml4d0iba",
-              "name": "Frecuencia",
-              "value": 2.90533,
-              "unit": ""
-            },
-            {
-              "id": "rzgscdos",
-              "name": "VCR",
-              "value": 176,
-              "unit": ""
-            },
-            {
-              "id": "plfare1d",
-              "name": "Clics",
-              "value": 98,
-              "unit": ""
-            },
-            {
-              "id": "pscen676",
-              "name": "CPC",
-              "value": 24.138367,
-              "unit": ""
-            },
-            {
-              "id": "k2lx61sg",
-              "name": "CTR",
-              "value": 0.591359,
-              "unit": "%"
-            },
-            {
-              "id": "5xffqcfp",
-              "name": "Leads",
-              "value": 24,
-              "unit": ""
-            },
-            {
-              "id": "lcdn58bb",
-              "name": "Costo Por Lead",
-              "value": 98.565,
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "nyo0m2z8",
-              "image": "https://drive.google.com/file/d/1lyS5yQYnaoZxyLFFwif_jle5WH7QxG9Q/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "swpfq4wc",
-                  "name": "Leads",
-                  "value": "23",
-                  "unit": ""
-                },
-                {
-                  "id": "ne36lmmh",
-                  "name": "Costo Por Lead",
-                  "value": "$90.09",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "ymu3tum1",
-          "name": "Forms - Roger",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "f2vvo407",
-              "name": "Importe Gastado",
-              "value": 2057.6,
-              "unit": ""
-            },
-            {
-              "id": "om7lbz82",
-              "name": "Impresiones",
-              "value": 14337,
-              "unit": ""
-            },
-            {
-              "id": "f3vp9vcg",
-              "name": "CPM",
-              "value": 143.516775,
-              "unit": ""
-            },
-            {
-              "id": "rlpnkhog",
-              "name": "Alcance",
-              "value": 7742,
-              "unit": ""
-            },
-            {
-              "id": "sie7fdqf",
-              "name": "Frecuencia",
-              "value": 1.851847,
-              "unit": ""
-            },
-            {
-              "id": "3snoz147",
-              "name": "VCR",
-              "value": 31,
-              "unit": ""
-            },
-            {
-              "id": "vg1agr5a",
-              "name": "Clics",
-              "value": 79,
-              "unit": ""
-            },
-            {
-              "id": "j3y24wjf",
-              "name": "CPC",
-              "value": 26.04557,
-              "unit": ""
-            },
-            {
-              "id": "ldz33tni",
-              "name": "CTR",
-              "value": 0.551022,
-              "unit": "%"
-            },
-            {
-              "id": "4f7c2q67",
-              "name": "Leads",
-              "value": 8,
-              "unit": ""
-            },
-            {
-              "id": "97hgcfmb",
-              "name": "Costo Por Lead",
-              "value": 257.2,
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "ia5qp8i7",
-              "image": "https://drive.google.com/file/d/1ZuOAwWGiGNmFx8sreSGBt8MBidD_tDA1/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "zf9a1zns",
-                  "name": "Leads",
-                  "value": "5",
-                  "unit": ""
-                },
-                {
-                  "id": "t1633e9u",
-                  "name": "Costo Por Lead",
-                  "value": "$256.09",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "8uuiugwc",
-          "name": "Forms - Reforma Aduanera",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "mc1ss2lp",
-              "name": "Importe Gastado",
-              "value": 2591.23,
-              "unit": ""
-            },
-            {
-              "id": "65foihaw",
-              "name": "Impresiones",
-              "value": 18832,
-              "unit": ""
-            },
-            {
-              "id": "3i8qfwur",
-              "name": "CPM",
-              "value": 137.597175,
-              "unit": ""
-            },
-            {
-              "id": "d9wdx9ki",
-              "name": "Alcance",
-              "value": 7303,
-              "unit": ""
-            },
-            {
-              "id": "54xm3hmv",
-              "name": "Frecuencia",
-              "value": 2.578666,
-              "unit": ""
-            },
-            {
-              "id": "vq3zh6by",
-              "name": "VCR",
-              "value": 446,
-              "unit": ""
-            },
-            {
-              "id": "glhnizcn",
-              "name": "Clics",
-              "value": 186,
-              "unit": ""
-            },
-            {
-              "id": "93v5c0vx",
-              "name": "CPC",
-              "value": 13.931344,
-              "unit": ""
-            },
-            {
-              "id": "1hs19ch5",
-              "name": "CTR",
-              "value": 0.987681,
-              "unit": "%"
-            },
-            {
-              "id": "oqkldn1z",
-              "name": "Leads",
-              "value": 33,
-              "unit": ""
-            },
-            {
-              "id": "4034g49f",
-              "name": "Costo Por Lead",
-              "value": 78.522121,
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "yddulir0",
-              "image": "https://drive.google.com/file/d/1OtQOWuQ_CyDIcDgERAVQ2r4goHM0Mtht/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "qtc56xev",
-                  "name": "Leads",
-                  "value": "19",
-                  "unit": ""
-                },
-                {
-                  "id": "22fr1yxt",
-                  "name": "Costo Por Lead",
-                  "value": "$98.58",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "k4wfzbzb",
-          "name": "Forms - Roger Logistic Worlds",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "gpie6wxv",
-              "name": "Importe Gastado",
-              "value": 693.64,
-              "unit": ""
-            },
-            {
-              "id": "axg7g3gv",
-              "name": "Impresiones",
-              "value": 4212,
-              "unit": ""
-            },
-            {
-              "id": "83vfnzrc",
-              "name": "CPM",
-              "value": 164.681861,
-              "unit": ""
-            },
-            {
-              "id": "7ms8m9ac",
-              "name": "Alcance",
-              "value": 2833,
-              "unit": ""
-            },
-            {
-              "id": "sjoa1hsv",
-              "name": "Frecuencia",
-              "value": 1.486763,
-              "unit": ""
-            },
-            {
-              "id": "rel6axe3",
-              "name": "VCR",
-              "value": 29,
-              "unit": ""
-            },
-            {
-              "id": "akgergh1",
-              "name": "Clics",
-              "value": 27,
-              "unit": ""
-            },
-            {
-              "id": "c43leghz",
-              "name": "CPC",
-              "value": 25.69037,
-              "unit": ""
-            },
-            {
-              "id": "vfzkdh0p",
-              "name": "CTR",
-              "value": 0.641026,
-              "unit": "%"
-            },
-            {
-              "id": "l32a4vml",
-              "name": "Leads",
-              "value": 2,
-              "unit": ""
-            },
-            {
-              "id": "89ixewq8",
-              "name": "Costo Por Lead",
-              "value": 346.82,
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "4f827fgv",
-              "image": "https://drive.google.com/file/d/1izMWOc4f7WCiVKU6KZdqh7sVl3K2k2bL/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "ggz9jn8h",
-                  "name": "Leads",
-                  "value": "2",
-                  "unit": ""
-                },
-                {
-                  "id": "u6g1zifw",
-                  "name": "Costo Por Lead",
-                  "value": "$228.27",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "omuzqzbj",
-          "name": "Forms - Emerging Teams Logistic Worlds",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "ikvnby1w",
-              "name": "Importe Gastado",
-              "value": 748.36,
-              "unit": ""
-            },
-            {
-              "id": "djtdql75",
-              "name": "Impresiones",
-              "value": 5020,
-              "unit": ""
-            },
-            {
-              "id": "sdk520sj",
-              "name": "CPM",
-              "value": 149.075697,
-              "unit": ""
-            },
-            {
-              "id": "qq58ykx5",
-              "name": "Alcance",
-              "value": 3423,
-              "unit": ""
-            },
-            {
-              "id": "m9fxut15",
-              "name": "Frecuencia",
-              "value": 1.46655,
-              "unit": ""
-            },
-            {
-              "id": "psooo21h",
-              "name": "VCR",
-              "value": 81,
-              "unit": ""
-            },
-            {
-              "id": "kry7lccg",
-              "name": "Clics",
-              "value": 18,
-              "unit": ""
-            },
-            {
-              "id": "3xa4rjzg",
-              "name": "CPC",
-              "value": 41.575556,
-              "unit": ""
-            },
-            {
-              "id": "rkf3x4lm",
-              "name": "CTR",
-              "value": 0.358566,
-              "unit": "%"
-            },
-            {
-              "id": "nyz6dlv7",
-              "name": "Leads",
-              "value": 2,
-              "unit": ""
-            },
-            {
-              "id": "1svf1aag",
-              "name": "Costo Por Lead",
-              "value": 374.18,
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "czp101r8",
-              "image": "https://drive.google.com/file/d/1lyS5yQYnaoZxyLFFwif_jle5WH7QxG9Q/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "uyk28irn",
-                  "name": "Leads",
-                  "value": "2",
-                  "unit": ""
-                },
-                {
-                  "id": "zwv3bcjc",
-                  "name": "Costo Por Lead",
-                  "value": "$329.04",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "7efnevi3",
-          "name": "Forms - Reforma Aduanera Logistic Worlds",
-          "channel": "Facebook Ads",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "5jqiylkk",
-              "name": "Importe Gastado",
-              "value": 944.98,
-              "unit": ""
-            },
-            {
-              "id": "a0ytqcld",
-              "name": "Impresiones",
-              "value": 5348,
-              "unit": ""
-            },
-            {
-              "id": "iq6nb3je",
-              "name": "CPM",
-              "value": 176.697831,
-              "unit": ""
-            },
-            {
-              "id": "knmp4ct9",
-              "name": "Alcance",
-              "value": 3752,
-              "unit": ""
-            },
-            {
-              "id": "ju6gu3rn",
-              "name": "Frecuencia",
-              "value": 1.425373,
-              "unit": ""
-            },
-            {
-              "id": "a8z5pgce",
-              "name": "VCR",
-              "value": 75,
-              "unit": ""
-            },
-            {
-              "id": "4ctsyph4",
-              "name": "Clics",
-              "value": 33,
-              "unit": ""
-            },
-            {
-              "id": "hufbyznj",
-              "name": "CPC",
-              "value": 28.635758,
-              "unit": ""
-            },
-            {
-              "id": "xszq76n5",
-              "name": "CTR",
-              "value": 0.617053,
-              "unit": "%"
-            },
-            {
-              "id": "edtni1ai",
-              "name": "Leads",
-              "value": 1,
-              "unit": ""
-            },
-            {
-              "id": "61kfkrtc",
-              "name": "Costo Por Lead",
-              "value": 944.98,
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "99g0z9ui",
-              "image": "https://drive.google.com/file/d/1OtQOWuQ_CyDIcDgERAVQ2r4goHM0Mtht/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "qbtbqnxo",
-                  "name": "Leads",
-                  "value": "1",
-                  "unit": ""
-                },
-                {
-                  "id": "2ds69sl2",
-                  "name": "Costo Por Lead",
-                  "value": "$933.44",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        }
-      ],
-      "socialChannels": [
-        {
-          "id": "9haymcsm",
-          "name": "Instagram",
-          "icon": "📱",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "m4cxtoco",
-              "name": "Vistas",
-              "value": "40,100",
-              "unit": ""
-            },
-            {
-              "id": "vdam7xki",
-              "name": "Alcance",
-              "value": "12,064",
-              "unit": ""
-            },
-            {
-              "id": "u887mixi",
-              "name": "Seguidores",
-              "value": "34",
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "y3lw6rv3",
-              "image": "https://drive.google.com/file/d/18cDGZ5okJdX0NPUn5T6nNkkg0cX6Uq_8/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "w5dtq7z7",
-                  "name": "Vistas",
-                  "value": "86",
-                  "unit": ""
-                },
-                {
-                  "id": "8jokf3xx",
-                  "name": "Alcance",
-                  "value": "73",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "gfhkp1xd",
-          "name": "Facebook",
-          "icon": "📱",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "cg9t3sim",
-              "name": "Vistas",
-              "value": "50112",
-              "unit": ""
-            },
-            {
-              "id": "jsuriou8",
-              "name": "Alcance",
-              "value": "20231",
-              "unit": ""
-            },
-            {
-              "id": "er7l7pu7",
-              "name": "Seguidores",
-              "value": "15",
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "tkxncf5h",
-              "image": "https://drive.google.com/file/d/18cDGZ5okJdX0NPUn5T6nNkkg0cX6Uq_8/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "kj4xxxz6",
-                  "name": "Vistas",
-                  "value": "106",
-                  "unit": ""
-                },
-                {
-                  "id": "4moo1f6z",
-                  "name": "Alcance",
-                  "value": "99",
-                  "unit": ""
-                }
-              ]
-            }
-          ],
-          "observations": ""
-        },
-        {
-          "id": "l2kq6d5f",
-          "name": "LinkedIn",
-          "icon": "📱",
-          "startDate": "2026-03-01",
-          "endDate": "2026-03-31",
-          "metrics": [
-            {
-              "id": "a1egabmu",
-              "name": "Impresiones",
-              "value": "548",
-              "unit": ""
-            },
-            {
-              "id": "77x48adn",
-              "name": "Alcance",
-              "value": "224",
-              "unit": ""
-            },
-            {
-              "id": "e5odaepp",
-              "name": "Seguidores",
-              "value": "1",
-              "unit": ""
-            }
-          ],
-          "evidences": [],
-          "bestContent": [
-            {
-              "id": "d47myu86",
-              "image": "https://drive.google.com/file/d/1dsIwTB91r8wKQeooMdp3pTsf-xZn3Nm9/view?usp=drive_link",
-              "imageType": "url",
-              "metrics": [
-                {
-                  "id": "eusjlysn",
+                  "id": "p6e9ytc5",
                   "name": "Impresiones",
-                  "value": "38",
-                  "unit": ""
+                  "value": 5281,
+                  "unit": "#"
                 },
                 {
-                  "id": "q75voasx",
+                  "id": "pgbetld2",
+                  "name": "CPM",
+                  "value": 243.0936195,
+                  "unit": "$"
+                },
+                {
+                  "id": "p9bucmua",
                   "name": "Alcance",
-                  "value": "14",
-                  "unit": ""
+                  "value": 3184,
+                  "unit": "#"
+                },
+                {
+                  "id": "i2mg17vf",
+                  "name": "Frecuencia",
+                  "value": 1.6805575,
+                  "unit": "#"
+                },
+                {
+                  "id": "zmazw4hf",
+                  "name": "Clics en enlace",
+                  "value": 47,
+                  "unit": "#"
+                },
+                {
+                  "id": "i09u7q8v",
+                  "name": "CPC",
+                  "value": 29.2745,
+                  "unit": "$"
+                },
+                {
+                  "id": "yqiqd03h",
+                  "name": "CTR",
+                  "value": 0.8603225,
+                  "unit": "%"
+                },
+                {
+                  "id": "ev0wuhzj",
+                  "name": "Conversaciones Iniciadas",
+                  "value": 5,
+                  "unit": "#"
+                },
+                {
+                  "id": "mee0kn03",
+                  "name": "Costo por Conversación",
+                  "value": 353.63,
+                  "unit": "$"
                 }
-              ]
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "jjzx272j",
+                  "image": "https://drive.google.com/file/d/1RrYRUaumo27gQg6euA0WlDll5gACbm9G/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "o6lgn4sr",
+                      "name": "Conversaciones Iniciadas",
+                      "value": "2",
+                      "unit": ""
+                    },
+                    {
+                      "id": "gs44959p",
+                      "name": "Costo por Conversación",
+                      "value": "$133.92",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": "Se comprobó que los esfuerzos de campañas de WhatsApp, si bien efectivos suelen ser más costosos que los formularios."
+            },
+            {
+              "id": "cjso2gss",
+              "name": "WhatsApp - Roger",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-04-15",
+              "metrics": [
+                {
+                  "id": "uxv3rgtv",
+                  "name": "Costo / Inversión",
+                  "value": 1181.31,
+                  "unit": "$"
+                },
+                {
+                  "id": "pigiac26",
+                  "name": "Impresiones",
+                  "value": 5096,
+                  "unit": "#"
+                },
+                {
+                  "id": "xwqntm41",
+                  "name": "CPM",
+                  "value": "235.47",
+                  "unit": "$"
+                },
+                {
+                  "id": "h5wzej4x",
+                  "name": "Alcance",
+                  "value": 3398,
+                  "unit": "#"
+                },
+                {
+                  "id": "70wazcge",
+                  "name": "Frecuencia",
+                  "value": "1.50",
+                  "unit": "#"
+                },
+                {
+                  "id": "u2hthd79",
+                  "name": "Clics en enlace",
+                  "value": 35,
+                  "unit": "#"
+                },
+                {
+                  "id": "2lhs9mew",
+                  "name": "CPC",
+                  "value": "33.80",
+                  "unit": "$"
+                },
+                {
+                  "id": "l72la9i7",
+                  "name": "CTR",
+                  "value": "1.38",
+                  "unit": "%"
+                },
+                {
+                  "id": "o0t113xk",
+                  "name": "Conversaciones Iniciadas",
+                  "value": 7,
+                  "unit": "#"
+                },
+                {
+                  "id": "h06lkbc4",
+                  "name": "Costo por Conversación",
+                  "value": "172.87",
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "54qsh2zm",
+                  "image": "https://drive.google.com/file/d/19A6UXrUllUaEspVkFi8poUwvntZRXt7R/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "ii854f18",
+                      "name": "Conversaciones",
+                      "value": "4",
+                      "unit": ""
+                    },
+                    {
+                      "id": "05pnxhfn",
+                      "name": "Costo por Conversación",
+                      "value": "$181.0",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": "Se migró a una campaña de formulario para perfilar mejor el tipo de usuario que contacta a Taskility."
+            },
+            {
+              "id": "2u3e6fvc",
+              "name": "WhatsApp - Emerging Teams",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "62i2582q",
+                  "name": "Importe Gastado",
+                  "value": 268.26,
+                  "unit": "$"
+                },
+                {
+                  "id": "bktilr3t",
+                  "name": "Impresiones",
+                  "value": 3812,
+                  "unit": "#"
+                },
+                {
+                  "id": "valitdnq",
+                  "name": "CPM",
+                  "value": 70.372508,
+                  "unit": "$"
+                },
+                {
+                  "id": "5oxqvb64",
+                  "name": "Alcance",
+                  "value": 2960,
+                  "unit": "#"
+                },
+                {
+                  "id": "83qimcva",
+                  "name": "Frecuencia",
+                  "value": 1.287838,
+                  "unit": "#"
+                },
+                {
+                  "id": "gy1kvnl9",
+                  "name": "Clics en enlace",
+                  "value": 27,
+                  "unit": "#"
+                },
+                {
+                  "id": "ado25m7e",
+                  "name": "CPC",
+                  "value": 9.935556,
+                  "unit": "#"
+                },
+                {
+                  "id": "mkccjvvp",
+                  "name": "CTR",
+                  "value": 0.70829,
+                  "unit": "%"
+                },
+                {
+                  "id": "k6f9em1z",
+                  "name": "Conversaciones Iniciadas",
+                  "value": 5,
+                  "unit": "#"
+                },
+                {
+                  "id": "ah5q9u53",
+                  "name": "Costo por Conversación",
+                  "value": 53.652,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "wazqh2d2",
+                  "image": "https://drive.google.com/file/d/1P1SyH7_Q44hxeEv8n49CQEqpPwyA6Q9f/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "gef1cx5v",
+                      "name": "Conversaciones Iniciadas",
+                      "value": "2",
+                      "unit": ""
+                    },
+                    {
+                      "id": "2x5lci2k",
+                      "name": "Costo por Conversación",
+                      "value": "$28.47",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
             }
           ],
-          "observations": ""
+          "socialChannels": []
         }
-      ],
-      "preloadedMetrics": []
+      ]
     }
   },
   "globalMetrics": []
