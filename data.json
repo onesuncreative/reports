@@ -413,5 +413,61 @@
       ]
     }
   },
-  "globalMetrics": []
+  "globalMetrics": [
+    {
+      "id": "fxpojzuo",
+      "name": "Importe Gastado",
+      "unit": "#"
+    },
+    {
+      "id": "ii72jkf1",
+      "name": "Impresiones",
+      "unit": "#"
+    },
+    {
+      "id": "ij1rn4rv",
+      "name": "Alcance",
+      "unit": "#"
+    },
+    {
+      "id": "eicgbf76",
+      "name": "Frecuencia",
+      "unit": "#"
+    },
+    {
+      "id": "miup591l",
+      "name": "Clicks",
+      "unit": "#"
+    },
+    {
+      "id": "9dclgfac",
+      "name": "CPC",
+      "unit": "$"
+    },
+    {
+      "id": "4w8uh0ov",
+      "name": "CTR",
+      "unit": "%"
+    },
+    {
+      "id": "l7byz8tr",
+      "name": "Leads",
+      "unit": "#"
+    },
+    {
+      "id": "oy9zdbkt",
+      "name": "CPL",
+      "unit": "$"
+    },
+    {
+      "id": "ret1p1s8",
+      "name": "Followers",
+      "unit": "#"
+    },
+    {
+      "id": "etq4oqjp",
+      "name": "Costo Por Follower",
+      "unit": "$"
+    }
+  ]
 }
