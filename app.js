@@ -209,6 +209,20 @@ const CloudSync = {
 const uid = () => Math.random().toString(36).slice(2, 10);
 const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const fmtDate = d => d ? new Date(d + 'T00:00:00').toLocaleDateString('es-MX', { month:'short', day:'numeric', year:'numeric' }) : '';
+// Convert Google Drive / Dropbox share URLs to direct image URLs
+const imgSrc = url => {
+  if (!url) return '';
+  // Google Drive: /file/d/ID/view → thumbnail
+  let m = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+  if (m) return `https://drive.google.com/thumbnail?id=${m[1]}&sz=w1200`;
+  // Google Drive: open?id=ID
+  m = url.match(/drive\.google\.com\/open\?id=([^&]+)/);
+  if (m) return `https://drive.google.com/thumbnail?id=${m[1]}&sz=w1200`;
+  // Google Drive: uc?id=ID (already direct, keep it)
+  // Dropbox: change dl=0 to dl=1
+  if (url.includes('dropbox.com') && url.includes('dl=0')) return url.replace('dl=0', 'dl=1');
+  return url;
+};
 const fmtNum = n => {
   const num = parseFloat(n);
   if (isNaN(num)) return n;
@@ -343,7 +357,8 @@ function newClient(name, slug, password) {
     viewStart: '',
     viewEnd: '',
     brands: [],
-    preloadedMetrics: []
+    preloadedMetrics: [],
+    globalMetrics: []
   };
 }
 
@@ -593,7 +608,7 @@ const App = {
     document.getElementById('app').innerHTML = `
       <div class="login-screen">
         <div class="login-card">
-          <div class="logo-big">${client.logo ? `<img src="${esc(client.logo)}" style="width:100%;height:100%;object-fit:cover;border-radius:14px;">` : esc(client.name[0])}</div>
+          <div class="logo-big">${client.logo ? `<img src="${esc(imgSrc(client.logo))}" style="width:100%;height:100%;object-fit:cover;border-radius:14px;">` : esc(client.name[0])}</div>
           <h2>${esc(client.name)}</h2>
           <p>Ingresa la contraseña para ver tus reportes</p>
           <div class="login-error" id="client-login-error">Contraseña incorrecta</div>
@@ -632,7 +647,7 @@ const App = {
       </div>` : ''}
       <header class="app-header">
         <div class="logo">
-          ${client.logo ? `<img src="${esc(client.logo)}" style="width:32px;height:32px;border-radius:8px;object-fit:cover;">` : `<span class="logo-badge">${esc(client.name[0])}</span>`}
+          ${client.logo ? `<img src="${esc(imgSrc(client.logo))}" style="width:32px;height:32px;border-radius:8px;object-fit:cover;">` : `<span class="logo-badge">${esc(client.name[0])}</span>`}
           <span>${esc(client.name)}</span>
         </div>
         <div class="header-actions">
@@ -645,12 +660,20 @@ const App = {
       </header>
       <div class="client-hero">
         <div class="client-hero-content">
-          <div class="client-logo">${client.logo ? `<img src="${esc(client.logo)}" alt="${esc(client.name)}">` : esc(client.name[0])}</div>
+          <div class="client-logo">${client.logo ? `<img src="${esc(imgSrc(client.logo))}" alt="${esc(client.name)}">` : esc(client.name[0])}</div>
           <h1>${esc(client.reportTitle || client.name)}</h1>
           <p class="subtitle">${esc(client.reportSubtitle || 'Reporte de Resultados Digitales')}</p>
           ${(client.viewStart || client.viewEnd) ? `<div class="date-range-badge">📅 ${fmtDate(client.viewStart)} – ${fmtDate(client.viewEnd)}</div>` : ''}
         </div>
       </div>
+      ${(client.globalMetrics || []).length > 0 ? `
+        <div class="global-metrics-bar">
+          ${client.globalMetrics.map(m => `
+            <div class="global-metric-item">
+              <div class="global-metric-value">${fmtNum(m.value)}</div>
+              <div class="global-metric-name">${esc(m.name)}${m.unit ? ` <span class="global-metric-unit">${esc(m.unit)}</span>` : ''}</div>
+            </div>`).join('')}
+        </div>` : ''}
       <div class="tabs-bar" id="main-tabs">
         <button class="tab-btn active" data-tab="campaigns" onclick="App.switchTab('campaigns')">📊 Campañas</button>
         <button class="tab-btn" data-tab="social" onclick="App.switchTab('social')">📱 Redes Sociales</button>
@@ -761,7 +784,7 @@ const App = {
       ${brands.map(brand => `
         <div style="margin-bottom:24px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">
-            ${brand.logo ? `<img src="${esc(brand.logo)}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
+            ${brand.logo ? `<img src="${esc(imgSrc(brand.logo))}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
             <h3 style="font-size:1.05rem;margin:0;">${esc(brand.name)}</h3>
             <span class="badge" style="font-size:0.72rem;">${brand.campaigns.length}</span>
           </div>
@@ -787,7 +810,7 @@ const App = {
       ${brands.map(brand => `
         <div style="margin-bottom:24px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">
-            ${brand.logo ? `<img src="${esc(brand.logo)}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
+            ${brand.logo ? `<img src="${esc(imgSrc(brand.logo))}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
             <h3 style="font-size:1.05rem;margin:0;">${esc(brand.name)}</h3>
             <span class="badge" style="font-size:0.72rem;">${brand.socialChannels.length}</span>
           </div>
@@ -812,13 +835,13 @@ const App = {
       if (e.type === 'link' || (e.src && e.src.startsWith('http'))) {
         return `<a href="${esc(e.src)}" target="_blank" class="evidence-btn">🔗 ${esc(e.name)}</a>`;
       }
-      return `<button class="evidence-btn" onclick="Lightbox.open('${esc(e.src)}')">🖼 ${esc(e.name)}</button>`;
+      return `<button class="evidence-btn" onclick="Lightbox.open('${esc(imgSrc(e.src))}')">🖼 ${esc(e.name)}</button>`;
     }).join('');
 
     const bestContent = (c.bestContent || []).slice(0, 3).map(bc => `
       <div class="content-card">
-        <div class="content-card-img" ${bc.image ? `onclick="${bc.imageType === 'link' ? `window.open('${esc(bc.image)}','_blank')` : `Lightbox.open('${esc(bc.image)}')`}"` : ''}>
-          ${bc.image ? `<img src="${esc(bc.image)}" alt="Contenido" style="width:100%;height:100%;object-fit:cover;">` : '<span style="font-size:2rem;color:var(--text-muted)">🖼</span>'}
+        <div class="content-card-img" ${bc.image ? `onclick="${bc.imageType === 'link' ? `window.open('${esc(bc.image)}','_blank')` : `Lightbox.open('${esc(imgSrc(bc.image))}')`}"` : ''}>
+          ${bc.image ? `<img src="${esc(imgSrc(bc.image))}" alt="Contenido" style="width:100%;height:100%;object-fit:cover;">` : '<span style="font-size:2rem;color:var(--text-muted)">🖼</span>'}
         </div>
         <div class="content-card-body">
           <div class="content-metrics">
@@ -868,7 +891,8 @@ const App = {
     const allMetricNames = [...new Set(allItems.flatMap(i => (i.metrics || []).map(m => m.name)))];
 
     const brandNames = [...new Set(allItems.map(c => c._brandName))];
-    const itemChips = allItems.map((c, i) => `<button class="chip ${i < 5 ? 'active' : ''}" data-id="${esc(c.id)}" data-brand="${esc(c._brandName)}" onclick="App.toggleCompChip(this)">${esc(c.icon || '')} ${esc(c.name)}</button>`).join('');
+    const channelNames = [...new Set(allItems.map(c => c.channel || c.icon || '').filter(Boolean))];
+    const itemChips = allItems.map((c, i) => `<button class="chip ${i < 5 ? 'active' : ''}" data-id="${esc(c.id)}" data-brand="${esc(c._brandName)}" data-channel="${esc(c.channel || c.icon || '')}" onclick="App.toggleCompChip(this)">${esc(c.icon || '')} ${esc(c.name)}</button>`).join('');
     const metricChips = allMetricNames.map((m, i) => `<button class="chip ${i === 0 ? 'active' : ''}" data-metric="${esc(m)}" onclick="App.toggleCompMetricChip(this)">${esc(m)}</button>`).join('');
 
     const brandFilter = brandNames.length > 1 ? `
@@ -878,12 +902,20 @@ const App = {
         ${brandNames.map(b => `<button class="chip chip-brand active" data-brandfilter="${esc(b)}" onclick="App.toggleCompBrandChip(this)">${esc(b)}</button>`).join('')}
       </div>` : '';
 
+    const channelFilter = channelNames.length > 1 ? `
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+        <div class="section-label" style="margin:0;font-size:0.72rem;color:var(--text-muted);">Canales:</div>
+        <button class="chip chip-channel active" data-channelfilter="__all__" onclick="App.selectCompChannel('__all__')">Todos</button>
+        ${channelNames.map(ch => `<button class="chip chip-channel active" data-channelfilter="${esc(ch)}" onclick="App.toggleCompChannelChip(this)">${esc(ch)}</button>`).join('')}
+      </div>` : '';
+
     return `<div class="section-content" id="comparison-root">
       <div class="section-header"><h2>Comparativas</h2></div>
       <div class="comparison-controls">
         <div>
           <div class="section-label" style="margin-bottom:8px;">Campañas / Canales</div>
           ${brandFilter}
+          ${channelFilter}
           <div class="chip-group" id="comp-items">${itemChips}</div>
         </div>
         <div style="margin-top:12px;">
@@ -943,7 +975,7 @@ const App = {
       const allActive = [...brandChips].every(b => b.classList.contains('active'));
       brandChips.forEach(b => b.classList.toggle('active', !allActive));
       if (allBtn) allBtn.classList.toggle('active', !allActive);
-      this._applyBrandFilter();
+      this._applyCompFilters();
       return;
     }
   },
@@ -955,18 +987,46 @@ const App = {
     const allBtn = document.querySelector('.chip-brand[data-brandfilter="__all__"]');
     const allActive = [...brandChips].every(b => b.classList.contains('active'));
     if (allBtn) allBtn.classList.toggle('active', allActive);
-    this._applyBrandFilter();
+    this._applyCompFilters();
   },
 
-  _applyBrandFilter() {
+  _applyCompFilters() {
     const activeBrands = new Set(
       [...document.querySelectorAll('.chip-brand.active[data-brandfilter]:not([data-brandfilter="__all__"])')]
         .map(b => b.dataset.brandfilter)
     );
+    const activeChannels = new Set(
+      [...document.querySelectorAll('.chip-channel.active[data-channelfilter]:not([data-channelfilter="__all__"])')]
+        .map(b => b.dataset.channelfilter)
+    );
+    const hasBrandFilter = document.querySelectorAll('.chip-brand[data-brandfilter]').length > 0;
+    const hasChannelFilter = document.querySelectorAll('.chip-channel[data-channelfilter]').length > 0;
     document.querySelectorAll('#comp-items .chip').forEach(b => {
-      b.classList.toggle('active', activeBrands.has(b.dataset.brand));
+      const brandOk = !hasBrandFilter || activeBrands.has(b.dataset.brand);
+      const channelOk = !hasChannelFilter || activeChannels.has(b.dataset.channel);
+      b.classList.toggle('active', brandOk && channelOk);
     });
     this.initComparisonCharts(DB.getClient(this._currentSlug));
+  },
+
+  selectCompChannel(value) {
+    const channelChips = document.querySelectorAll('.chip-channel[data-channelfilter]:not([data-channelfilter="__all__"])');
+    const allBtn = document.querySelector('.chip-channel[data-channelfilter="__all__"]');
+    if (value === '__all__') {
+      const allActive = [...channelChips].every(b => b.classList.contains('active'));
+      channelChips.forEach(b => b.classList.toggle('active', !allActive));
+      if (allBtn) allBtn.classList.toggle('active', !allActive);
+      this._applyCompFilters();
+    }
+  },
+
+  toggleCompChannelChip(btn) {
+    btn.classList.toggle('active');
+    const channelChips = document.querySelectorAll('.chip-channel[data-channelfilter]:not([data-channelfilter="__all__"])');
+    const allBtn = document.querySelector('.chip-channel[data-channelfilter="__all__"]');
+    const allActive = [...channelChips].every(b => b.classList.contains('active'));
+    if (allBtn) allBtn.classList.toggle('active', allActive);
+    this._applyCompFilters();
   },
 
   initComparisonCharts(client) {
@@ -1159,6 +1219,7 @@ const App = {
         <div class="sidebar-section-title">General</div>
         <div class="sidebar-item ${this._editorSection === 'settings' ? 'active' : ''}" onclick="App.switchEditorSection('settings')">⚙️ Configuración</div>
         <div class="sidebar-item ${this._editorSection === 'preloaded' ? 'active' : ''}" onclick="App.switchEditorSection('preloaded')">📋 Métricas precargadas</div>
+        <div class="sidebar-item ${this._editorSection === 'globalMetrics' ? 'active' : ''}" onclick="App.switchEditorSection('globalMetrics')">🌐 Métricas globales</div>
       </div>
       <div class="sidebar-section">
         <div class="sidebar-section-title">
@@ -1187,6 +1248,8 @@ const App = {
       main.innerHTML = this.renderSettingsEditor(client);
     } else if (section === 'preloaded') {
       main.innerHTML = this.renderPreloadedMetricsEditor(client);
+    } else if (section === 'globalMetrics') {
+      main.innerHTML = this.renderGlobalMetricsEditor(client);
     } else if (section === 'brand') {
       const brand = (client.brands || []).find(b => b.id === itemId);
       if (brand) main.innerHTML = this.renderBrandEditor(brand, client);
@@ -1361,6 +1424,55 @@ const App = {
     client.preloadedMetrics = (client.preloadedMetrics || []).filter(m => m.id !== id);
     DB.saveClient(client);
     this.renderEditorSection('preloaded');
+  },
+
+  // ---- GLOBAL METRICS (per client, not tied to campaigns) ----
+  renderGlobalMetricsEditor(client) {
+    const gm = client.globalMetrics || [];
+    return `<div>
+      <div class="editor-card">
+        <div class="editor-card-header">
+          <h3>🌐 Métricas globales del cliente</h3>
+          <button class="btn btn-sm btn-primary" onclick="App.addGlobalMetric()">+ Agregar</button>
+        </div>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:16px;">
+          Métricas generales del cliente que no pertenecen a ninguna campaña específica (ej. inversión total, visitas al sitio, leads totales).
+        </p>
+        <div id="global-metrics-editor" style="display:flex;flex-direction:column;gap:8px;">
+          ${gm.map(m => `
+            <div class="metric-row" id="gm-${esc(m.id)}">
+              <input type="text" value="${esc(m.name)}" placeholder="Nombre" onchange="App.updateGlobalMetric('${esc(m.id)}', 'name', this.value)">
+              <input type="text" value="${esc(m.value)}" placeholder="Valor" onchange="App.updateGlobalMetric('${esc(m.id)}', 'value', this.value)">
+              <input type="text" value="${esc(m.unit)}" placeholder="Unidad" onchange="App.updateGlobalMetric('${esc(m.id)}', 'unit', this.value)">
+              <button class="btn-icon-sm" onclick="App.removeGlobalMetric('${esc(m.id)}')">✕</button>
+            </div>`).join('')}
+          ${gm.length === 0 ? '<div style="color:var(--text-muted);font-size:0.85rem;padding:8px 0;">Sin métricas globales. Haz clic en "+ Agregar" para añadir una.</div>' : ''}
+        </div>
+      </div>
+    </div>`;
+  },
+
+  addGlobalMetric() {
+    const client = DB.getClient(this._currentSlug);
+    if (!client.globalMetrics) client.globalMetrics = [];
+    const m = newMetric();
+    client.globalMetrics.push(m);
+    DB.saveClient(client);
+    this.renderEditorSection('globalMetrics');
+  },
+
+  updateGlobalMetric(metricId, field, value) {
+    const client = DB.getClient(this._currentSlug);
+    const m = (client.globalMetrics || []).find(m => m.id === metricId);
+    if (m) { m[field] = value; DB.saveClient(client); }
+  },
+
+  removeGlobalMetric(metricId) {
+    const client = DB.getClient(this._currentSlug);
+    client.globalMetrics = (client.globalMetrics || []).filter(m => m.id !== metricId);
+    DB.saveClient(client);
+    document.getElementById(`gm-${metricId}`)?.remove();
+    if ((client.globalMetrics || []).length === 0) this.renderEditorSection('globalMetrics');
   },
 
   showGlobalMetricsModal() {
@@ -1632,7 +1744,7 @@ const App = {
       <div class="form-group">
         <label>Imagen (URL o base64)</label>
         <input type="text" value="${esc(bc.image || '')}" placeholder="https://..." onchange="App.updateContentField('${esc(bc.id)}', 'image', this.value)" style="font-size:0.82rem;">
-        ${bc.image ? `<img src="${esc(bc.image)}" style="width:100%;height:80px;object-fit:cover;border-radius:6px;margin-top:6px;cursor:pointer;" onclick="Lightbox.open('${esc(bc.image)}')">` : ''}
+        ${bc.image ? `<img src="${esc(imgSrc(bc.image))}" style="width:100%;height:80px;object-fit:cover;border-radius:6px;margin-top:6px;cursor:pointer;" onclick="Lightbox.open('${esc(imgSrc(bc.image))}')">` : ''}
       </div>
       <div class="section-label" style="margin-bottom:6px;">Métricas del contenido</div>
       <div id="cm-${esc(bc.id)}" style="display:flex;flex-direction:column;gap:6px;margin-bottom:8px;">${metricsHtml}</div>

@@ -1259,8 +1259,46 @@ body.dark .badge { color: var(--secondary1); background: rgba(0,221,255,0.15); }
 }
 
 /* ===== COMPARISON BRAND FILTER ===== */
-.chip-brand {
+.chip-brand, .chip-channel {
   font-size: 0.76rem;
   padding: 4px 10px;
   border-style: dashed;
+}
+
+/* ===== GLOBAL METRICS BAR ===== */
+.global-metrics-bar {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 18px 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.global-metric-item {
+  text-align: center;
+  padding: 8px 28px;
+  border-right: 1px solid var(--border);
+}
+.global-metric-item:last-child { border-right: none; }
+.global-metric-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+.global-metric-name {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+.global-metric-unit {
+  color: var(--primary);
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .global-metric-item { padding: 6px 16px; }
+  .global-metric-value { font-size: 1.15rem; }
 }
