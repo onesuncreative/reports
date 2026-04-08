@@ -1102,9 +1102,10 @@ const App = {
           <input type="text" id="b-logo" value="${esc(brand.logo || '')}" placeholder="https://..." oninput="App.autoSaveBrand('${esc(brand.id)}')">
         </div>
       </div>
-      <div style="margin-top:12px;display:flex;gap:8px;">
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
         <button class="btn btn-accent btn-sm" onclick="App.addCampaign('${esc(brand.id)}')">+ Campaña</button>
         <button class="btn btn-ghost btn-sm" onclick="App.addSocialChannel('${esc(brand.id)}')">+ Red Social</button>
+        <button class="btn btn-ghost btn-sm" onclick="BulkCSV.openForBrand('${esc(client.slug)}', '${esc(brand.id)}')" style="border-color:var(--secondary2);color:var(--secondary2);">📂 Importar campañas (CSV)</button>
       </div>
     </div>`;
   },
@@ -1822,6 +1823,18 @@ const BulkCSV = {
     this._parsed = null;
     this._targetSlug = null;
     this._pendingFile = null;
+    this._preselected = false;
+    this._renderModal();
+  },
+
+  // Called from brand editor with pre-selected client+brand
+  openForBrand(slug, brandId) {
+    this._step = 1;
+    this._parsed = null;
+    this._targetSlug = slug;
+    this._targetBrandId = brandId;
+    this._pendingFile = null;
+    this._preselected = true;
     this._renderModal();
   },
 
@@ -1864,8 +1877,18 @@ const BulkCSV = {
   _renderStep1() {
     const clients = DB.getClients();
     const options = Object.values(clients).map(c =>
-      `<option value="${esc(c.slug)}">${esc(c.name)}</option>`
+      `<option value="${esc(c.slug)}" ${this._targetSlug === c.slug ? 'selected' : ''}>${esc(c.name)}</option>`
     ).join('');
+
+    // Pre-build brand options if client is pre-selected
+    let brandOptionsHtml = '<option value="">— Selecciona un cliente primero —</option>';
+    if (this._preselected && this._targetSlug) {
+      const client = DB.getClient(this._targetSlug);
+      const brands = client?.brands || [];
+      brandOptionsHtml = brands.map(b =>
+        `<option value="${esc(b.id)}" ${this._targetBrandId === b.id ? 'selected' : ''}>${esc(b.name)}</option>`
+      ).join('');
+    }
 
     return `
       <div style="margin-bottom:16px; display:flex; gap:8px; align-items:center;">
@@ -1876,7 +1899,7 @@ const BulkCSV = {
         <span style="color:var(--text-muted);">→</span>
         <span style="opacity:0.4;">3 Confirmar</span>
       </div>
-      <div class="form-row" style="margin-bottom:16px;">
+      ${this._preselected ? '' : `<div class="form-row" style="margin-bottom:16px;">
         <div class="form-group" style="margin:0;flex:1;">
           <label>Cliente destino</label>
           <select id="bulk-csv-client" onchange="BulkCSV._updateBrandOptions()" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;color:var(--text);font-size:0.85rem;width:100%;">
@@ -1887,10 +1910,10 @@ const BulkCSV = {
         <div class="form-group" style="margin:0;flex:1;">
           <label>Marca destino</label>
           <select id="bulk-csv-brand" style="background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;color:var(--text);font-size:0.85rem;width:100%;">
-            <option value="">— Selecciona un cliente primero —</option>
+            ${brandOptionsHtml}
           </select>
         </div>
-      </div>
+      </div>`}
       <div id="bulk-csv-dropzone" style="
         border: 2px dashed var(--border);
         border-radius: var(--radius);
@@ -2018,8 +2041,8 @@ const BulkCSV = {
   },
 
   _readFile(file) {
-    const slug = document.getElementById('bulk-csv-client')?.value;
-    const brandId = document.getElementById('bulk-csv-brand')?.value;
+    const slug = document.getElementById('bulk-csv-client')?.value || this._targetSlug;
+    const brandId = document.getElementById('bulk-csv-brand')?.value || this._targetBrandId;
     if (!slug) { Toast.show('Selecciona un cliente primero', 'error'); return; }
     if (!brandId) { Toast.show('Selecciona una marca destino', 'error'); return; }
     this._targetSlug = slug;
