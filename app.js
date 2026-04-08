@@ -687,6 +687,66 @@ const App = {
     return (client.brands || []).flatMap(b => (b.socialChannels || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color })));
   },
 
+  // Metrics that should be averaged instead of summed
+  // These are rates, ratios, or per-unit costs
+  _avgMetrics: new Set([
+    'CTR', 'CPC', 'CPM', 'CPA', 'ROAS', 'Frecuencia',
+    'Tasa de Engagement', 'VCR', 'Tasa de Completado de Video',
+    'Costo por Conversación', 'Costo por Lead', 'Costo por Llamada',
+    'Costo por Resultado', 'Puntuación de calidad', 'Puntuación'
+  ]),
+
+  // Aggregate metrics across a list of items (campaigns or socialChannels)
+  _aggregateMetrics(items) {
+    const metricMap = {}; // name → { values:[], unit }
+    for (const item of items) {
+      for (const m of (item.metrics || [])) {
+        const val = parseFloat(String(m.value).replace(/,/g, ''));
+        if (isNaN(val)) continue;
+        if (!metricMap[m.name]) metricMap[m.name] = { values: [], unit: m.unit || '' };
+        metricMap[m.name].values.push(val);
+      }
+    }
+    const results = [];
+    for (const [name, data] of Object.entries(metricMap)) {
+      const isAvg = this._avgMetrics.has(name);
+      const total = data.values.reduce((a, b) => a + b, 0);
+      const count = data.values.length;
+      results.push({
+        name,
+        value: isAvg ? (count > 0 ? total / count : 0) : total,
+        unit: data.unit,
+        type: isAvg ? 'avg' : 'sum',
+        count
+      });
+    }
+    return results;
+  },
+
+  renderMetricsSummary(items, brandId) {
+    const agg = this._aggregateMetrics(items);
+    if (agg.length === 0) return '';
+    const id = `summary-${brandId}`;
+    return `
+      <div class="metrics-summary" id="${esc(id)}">
+        <div class="metrics-summary-header" onclick="document.getElementById('${esc(id)}').classList.toggle('collapsed')">
+          <span class="metrics-summary-title">Resumen de métricas</span>
+          <span class="metrics-summary-toggle">▼</span>
+        </div>
+        <div class="metrics-summary-body">
+          <div class="metrics-grid">
+            ${agg.map(m => `
+              <div class="metric-card">
+                <div class="metric-name">${esc(m.name)}</div>
+                <div class="metric-value">${m.type === 'avg' ? fmtNum(m.value.toFixed(2)) : fmtNum(m.value)}</div>
+                ${m.unit ? `<div class="metric-unit">${esc(m.unit)}</div>` : ''}
+                <div class="metric-agg-label">${m.type === 'avg' ? `Promedio (${m.count})` : `Total (${m.count})`}</div>
+              </div>`).join('')}
+          </div>
+        </div>
+      </div>`;
+  },
+
   renderCampaignsTab(client) {
     const brands = (client.brands || []).filter(b => (b.campaigns || []).length > 0);
     if (brands.length === 0) {
@@ -702,6 +762,7 @@ const App = {
             <h3 style="font-size:1.05rem;margin:0;">${esc(brand.name)}</h3>
             <span class="badge" style="font-size:0.72rem;">${brand.campaigns.length}</span>
           </div>
+          ${this.renderMetricsSummary(brand.campaigns, brand.id)}
           <div class="campaign-list">
             ${brand.campaigns.map(c => this.renderCampaignCard(c)).join('')}
           </div>
@@ -725,6 +786,7 @@ const App = {
             <h3 style="font-size:1.05rem;margin:0;">${esc(brand.name)}</h3>
             <span class="badge" style="font-size:0.72rem;">${brand.socialChannels.length}</span>
           </div>
+          ${this.renderMetricsSummary(brand.socialChannels, 'social-' + brand.id)}
           <div class="campaign-list">
             ${brand.socialChannels.map(c => this.renderCampaignCard(c, true)).join('')}
           </div>
