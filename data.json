@@ -1500,8 +1500,66 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "9rk650bd",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1-VK97VzPyMs-plEY4SQ27EE02BzucIo7/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "sdlwd4u7",
+                  "image": "https://drive.google.com/file/d/1F25PYvIPVjxB33QuS9YeR_TsldaBr4iK/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "hq1ftv39",
+                      "name": "Importe Gastado",
+                      "value": "$143.36",
+                      "unit": ""
+                    },
+                    {
+                      "id": "h6mx7x2x",
+                      "name": "Leads",
+                      "value": "14",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5p87li0k",
+                      "name": "Costo Por Lead",
+                      "value": "$10.44",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2lot8e1g",
+                  "image": "https://drive.google.com/file/d/1UPNXNH3D2WE-FSp_8g3AkXtXbf1f9_vP/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "mtrx115i",
+                      "name": "Importe Gastado",
+                      "value": "$36.73",
+                      "unit": ""
+                    },
+                    {
+                      "id": "di9xnu6t",
+                      "name": "Interacciones",
+                      "value": "437",
+                      "unit": ""
+                    },
+                    {
+                      "id": "no1p6anp",
+                      "name": "Costo Por Interacciones",
+                      "value": "$0.08",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -1566,8 +1624,41 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "kz703hqm",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1efDVwDv9BYzxBI8VK8_jfPjodZPNboth/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "cnb32yr5",
+                  "image": "https://drive.google.com/file/d/1QCjcufcfLzGEsFsilmQXJnD9GFESrD8A/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "q7at0yzh",
+                      "name": "Importe Gastado",
+                      "value": "$83.37",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5j3tar4g",
+                      "name": "Leads",
+                      "value": "11",
+                      "unit": ""
+                    },
+                    {
+                      "id": "a84rxk2m",
+                      "name": "Costo Por Lead",
+                      "value": "$7.58",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
