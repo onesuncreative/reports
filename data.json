@@ -148,19 +148,27 @@
               ],
               "evidences": [
                 {
-                  "id": "p3wuqn8g",
+                  "id": "8l4lkp10",
                   "type": "image",
-                  "src": "",
-                  "name": "Evidencia"
-                },
-                {
-                  "id": "hsqu948j",
-                  "type": "image",
-                  "src": "",
+                  "src": "https://drive.google.com/file/d/1Q8kqmZ8S0GHt5ZCl6ZGvZf9Fc8fqU8U6/view?usp=drive_link",
                   "name": "Evidencia"
                 }
               ],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "8hlruxi4",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "cfquf99o",
+                      "name": "",
+                      "value": "",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
