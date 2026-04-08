@@ -141,9 +141,28 @@
                 },
                 {
                   "id": "xfg8661y",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/1kxdN52jzBbYkdvORXOydIzNlrAcn6Zcs/view?usp=drive_link",
                   "imageType": "url",
-                  "metrics": []
+                  "metrics": [
+                    {
+                      "id": "btbs229t",
+                      "name": "Importe Gastado",
+                      "value": "$99.89",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5q95nlce",
+                      "name": "Post Engagement",
+                      "value": "54,061",
+                      "unit": ""
+                    },
+                    {
+                      "id": "jiasvfem",
+                      "name": "Costo Por Post Engagement",
+                      "value": "$0.002",
+                      "unit": ""
+                    }
+                  ]
                 }
               ],
               "observations": ""
