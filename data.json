@@ -448,25 +448,25 @@
               "bestContent": [
                 {
                   "id": "p2gigl51",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/17g-pbFu-tphVoCGafbUAq07wRxwlxGHN/view?usp=drive_link",
                   "imageType": "url",
                   "metrics": [
                     {
                       "id": "pxstndiq",
-                      "name": "",
-                      "value": "",
+                      "name": "Importe Gastado",
+                      "value": "$24.42",
                       "unit": ""
                     },
                     {
                       "id": "yw3z38c6",
-                      "name": "Video",
-                      "value": "5,406",
+                      "name": "Clicks",
+                      "value": "46",
                       "unit": ""
                     },
                     {
                       "id": "tcbf5wdl",
-                      "name": "",
-                      "value": "98.61",
+                      "name": "CPC",
+                      "value": "$3.88",
                       "unit": ""
                     }
                   ]
@@ -517,12 +517,12 @@
               "bestContent": [
                 {
                   "id": "xctuzhhd",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/1a_xIzoqjpGQitZIaixM_8bYfWlsAODaC/view?usp=drive_link",
                   "imageType": "url",
                   "metrics": [
                     {
                       "id": "v0xexch7",
-                      "name": "",
+                      "name": "Importe Gastado",
                       "value": "$128.11",
                       "unit": ""
                     },
