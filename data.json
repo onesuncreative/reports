@@ -1623,7 +1623,128 @@
           "name": "Hino Trucks",
           "logo": "",
           "color": "#ff2600",
-          "campaigns": [],
+          "campaigns": [
+            {
+              "id": "tg2dyy0n",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "ess7l18n",
+                  "name": "Importe Gastado",
+                  "value": 149.63,
+                  "unit": ""
+                },
+                {
+                  "id": "u1zvbfok",
+                  "name": "Impresiones",
+                  "value": 95453,
+                  "unit": ""
+                },
+                {
+                  "id": "f37083xf",
+                  "name": "CPM",
+                  "value": 1.57,
+                  "unit": ""
+                },
+                {
+                  "id": "0hg6q1ue",
+                  "name": "Alcance",
+                  "value": 45468,
+                  "unit": ""
+                },
+                {
+                  "id": "h0k2r3eg",
+                  "name": "Frecuencia",
+                  "value": 2.16,
+                  "unit": ""
+                },
+                {
+                  "id": "jriwc5z8",
+                  "name": "VCR",
+                  "value": 0,
+                  "unit": ""
+                },
+                {
+                  "id": "g0723kpt",
+                  "name": "Clics",
+                  "value": 584,
+                  "unit": ""
+                },
+                {
+                  "id": "vct2uz8g",
+                  "name": "CPC",
+                  "value": 0.43,
+                  "unit": ""
+                },
+                {
+                  "id": "phf52wwa",
+                  "name": "CTR",
+                  "value": 0.61,
+                  "unit": "%"
+                },
+                {
+                  "id": "lgrsgzmf",
+                  "name": "Leads",
+                  "value": 8,
+                  "unit": ""
+                },
+                {
+                  "id": "treveqdu",
+                  "name": "Costo por Lead",
+                  "value": 7.15,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "sw5v69lw",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "e5tvqkz9",
+                  "name": "Importe Gastado",
+                  "value": 40.7,
+                  "unit": ""
+                },
+                {
+                  "id": "w7ghqrmj",
+                  "name": "Impresiones",
+                  "value": 42555,
+                  "unit": ""
+                },
+                {
+                  "id": "pvgiqchy",
+                  "name": "Clics",
+                  "value": 193,
+                  "unit": ""
+                },
+                {
+                  "id": "h9sjvijh",
+                  "name": "CPC",
+                  "value": 0.21,
+                  "unit": ""
+                },
+                {
+                  "id": "sj0v0q2e",
+                  "name": "CTR",
+                  "value": 0.45,
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ],
           "socialChannels": []
         }
       ]
