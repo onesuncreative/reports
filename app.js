@@ -723,14 +723,15 @@ const App = {
     return results;
   },
 
-  renderMetricsSummary(items, brandId) {
+  renderMetricsSummary(items, brandId, title) {
     const agg = this._aggregateMetrics(items);
     if (agg.length === 0) return '';
     const id = `summary-${brandId}`;
+    const isClient = brandId.startsWith('client-');
     return `
-      <div class="metrics-summary" id="${esc(id)}">
+      <div class="metrics-summary${isClient ? ' metrics-summary-client' : ''}" id="${esc(id)}">
         <div class="metrics-summary-header" onclick="document.getElementById('${esc(id)}').classList.toggle('collapsed')">
-          <span class="metrics-summary-title">Resumen de métricas</span>
+          <span class="metrics-summary-title">${title || 'Resumen de métricas'}</span>
           <span class="metrics-summary-toggle">▼</span>
         </div>
         <div class="metrics-summary-body">
@@ -753,8 +754,10 @@ const App = {
       return `<div class="section-content"><div class="empty-state"><div class="empty-icon">📊</div><h3>Sin campañas</h3><p>Aún no hay campañas registradas para este reporte.</p></div></div>`;
     }
     const totalCampaigns = brands.reduce((sum, b) => sum + b.campaigns.length, 0);
+    const allCampaigns = brands.flatMap(b => b.campaigns || []);
     return `<div class="section-content">
       <div class="section-header"><h2>Campañas Digitales</h2><span class="badge">${totalCampaigns} campaña${totalCampaigns !== 1 ? 's' : ''}</span></div>
+      ${brands.length > 1 ? this.renderMetricsSummary(allCampaigns, 'client-campaigns', `Total ${esc(client.name)} — Campañas`) : ''}
       ${brands.map(brand => `
         <div style="margin-bottom:24px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">
@@ -777,8 +780,10 @@ const App = {
       return `<div class="section-content"><div class="empty-state"><div class="empty-icon">📱</div><h3>Sin canales</h3><p>Aún no hay canales de redes sociales registrados.</p></div></div>`;
     }
     const totalSocials = brands.reduce((sum, b) => sum + b.socialChannels.length, 0);
+    const allSocials = brands.flatMap(b => b.socialChannels || []);
     return `<div class="section-content">
       <div class="section-header"><h2>Redes Sociales</h2><span class="badge">${totalSocials} canal${totalSocials !== 1 ? 'es' : ''}</span></div>
+      ${brands.length > 1 ? this.renderMetricsSummary(allSocials, 'client-socials', `Total ${esc(client.name)} — Redes`) : ''}
       ${brands.map(brand => `
         <div style="margin-bottom:24px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">

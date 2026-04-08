@@ -1247,3 +1247,13 @@ body.dark .badge { color: var(--secondary1); background: rgba(0,221,255,0.15); }
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+.metrics-summary-client {
+  border: 2px solid var(--primary);
+  margin-bottom: 24px;
+}
+.metrics-summary-client .metrics-summary-header {
+  background: color-mix(in srgb, var(--primary) 15%, transparent);
+}
+.metrics-summary-client .metrics-summary-title {
+  font-size: 0.95rem;
+}
