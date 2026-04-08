@@ -61,83 +61,281 @@
           "color": "#0000ff",
           "campaigns": [
             {
-              "id": "e4n0z8v2",
-              "name": "Nueva Campaña",
-              "channel": "Google Ads",
-              "startDate": "",
-              "endDate": "",
+              "id": "e6mkqx9l",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
               "metrics": [
                 {
-                  "id": "3m44r0r6",
-                  "name": "Importe Gastado",
-                  "value": 7391.52,
+                  "id": "a1zknrfy",
+                  "name": "Costo / Inversión",
+                  "value": 5086.38,
                   "unit": ""
                 },
                 {
-                  "id": "9lkg6oyd",
+                  "id": "mx36fcxt",
                   "name": "Impresiones",
-                  "value": 1715284,
+                  "value": 1089096,
                   "unit": ""
                 },
                 {
-                  "id": "ss1asxtz",
+                  "id": "xw5i9us5",
                   "name": "CPM",
-                  "value": 9.75,
+                  "value": 15.82,
                   "unit": ""
                 },
                 {
-                  "id": "lmxfjb5n",
+                  "id": "h77urh7y",
                   "name": "Alcance",
-                  "value": 501264,
+                  "value": 380739,
                   "unit": ""
                 },
                 {
-                  "id": "sup51i30",
+                  "id": "qtujw34o",
                   "name": "Frecuencia",
-                  "value": 8.3,
+                  "value": 3.06,
                   "unit": ""
                 },
                 {
-                  "id": "eh8o5p8x",
+                  "id": "l187z6h6",
                   "name": "VCR",
-                  "value": 58264,
+                  "value": 53757,
                   "unit": ""
                 },
                 {
-                  "id": "u6h6d3ey",
+                  "id": "8ktlnsih",
                   "name": "Clics",
-                  "value": 13981,
+                  "value": 12177,
                   "unit": ""
                 },
                 {
-                  "id": "ojhtxapl",
+                  "id": "kqzgbzc1",
                   "name": "CPC",
-                  "value": 1.3,
+                  "value": 0.47,
                   "unit": ""
                 },
                 {
-                  "id": "xcjgnm1a",
+                  "id": "2kaa4uwe",
                   "name": "CTR",
-                  "value": 2.39,
+                  "value": 1.18,
                   "unit": "%"
                 },
                 {
-                  "id": "nocxtaxl",
+                  "id": "9v513hse",
                   "name": "Leads",
                   "value": 199,
-                  "unit": "#"
+                  "unit": ""
                 },
                 {
-                  "id": "5sp5odi6",
+                  "id": "iue6dkmj",
+                  "name": "Costo por Lead",
+                  "value": 23.49,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "e6jacnd8",
+              "name": "Click To Call Servicios",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "4f2237et",
+                  "name": "Costo / Inversión",
+                  "value": 2305.14,
+                  "unit": ""
+                },
+                {
+                  "id": "aoe09bkc",
+                  "name": "Impresiones",
+                  "value": 626188,
+                  "unit": ""
+                },
+                {
+                  "id": "4ameuxfp",
+                  "name": "CPM",
+                  "value": 3.68,
+                  "unit": ""
+                },
+                {
+                  "id": "vx0q210h",
+                  "name": "Alcance",
+                  "value": 120525,
+                  "unit": ""
+                },
+                {
+                  "id": "21v1f57k",
+                  "name": "Frecuencia",
+                  "value": 5.195503,
+                  "unit": ""
+                },
+                {
+                  "id": "nv685jus",
+                  "name": "VCR",
+                  "value": 4507,
+                  "unit": ""
+                },
+                {
+                  "id": "wcpnoasa",
+                  "name": "Clics",
+                  "value": 1804,
+                  "unit": ""
+                },
+                {
+                  "id": "m45kx08g",
+                  "name": "CPC",
+                  "value": 1.28,
+                  "unit": ""
+                },
+                {
+                  "id": "t274cfdb",
+                  "name": "CTR",
+                  "value": 0.288092,
+                  "unit": "%"
+                },
+                {
+                  "id": "s82s5jjf",
                   "name": "Llamadas",
                   "value": 171,
-                  "unit": "#"
+                  "unit": ""
                 },
                 {
-                  "id": "ywzf5r1c",
-                  "name": "Costo Por Llamada",
+                  "id": "iiiyjkuk",
+                  "name": "Costo por Llamada",
                   "value": 13.48,
                   "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "3xud0qz6",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "ahwkjshh",
+                  "name": "Costo / Inversión",
+                  "value": 155.37,
+                  "unit": ""
+                },
+                {
+                  "id": "k4iblbma",
+                  "name": "Impresiones",
+                  "value": 4597,
+                  "unit": ""
+                },
+                {
+                  "id": "ia63lpoj",
+                  "name": "Clics",
+                  "value": 279,
+                  "unit": ""
+                },
+                {
+                  "id": "3snbsdf8",
+                  "name": "CTR",
+                  "value": 6.07,
+                  "unit": "%"
+                },
+                {
+                  "id": "5fxu36j8",
+                  "name": "Leads",
+                  "value": 0,
+                  "unit": ""
+                },
+                {
+                  "id": "0k8d1vmp",
+                  "name": "Costo por Lead",
+                  "value": "$-",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "fjbu43nr",
+              "name": "Ford Native - StackAdapt",
+              "channel": "StackAdapt",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "a3n6f129",
+                  "name": "Costo / Inversión",
+                  "value": 480.03,
+                  "unit": ""
+                },
+                {
+                  "id": "81mcat7g",
+                  "name": "Impresiones",
+                  "value": 123405,
+                  "unit": ""
+                },
+                {
+                  "id": "166pq8qi",
+                  "name": "Clics",
+                  "value": 1210,
+                  "unit": ""
+                },
+                {
+                  "id": "m4oi75n2",
+                  "name": "CPC",
+                  "value": 0.4,
+                  "unit": ""
+                },
+                {
+                  "id": "rhlmzqyu",
+                  "name": "CTR",
+                  "value": 0.98,
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "au3kqerq",
+              "name": "Ford CTV - StackAdapt",
+              "channel": "StackAdapt",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "u3mjxfqs",
+                  "name": "Costo / Inversión",
+                  "value": 481.07,
+                  "unit": ""
+                },
+                {
+                  "id": "0rzzlab1",
+                  "name": "Impresiones",
+                  "value": 20049,
+                  "unit": ""
+                },
+                {
+                  "id": "dei69kms",
+                  "name": "Video Completado",
+                  "value": 43109,
+                  "unit": ""
+                },
+                {
+                  "id": "5y7axuj5",
+                  "name": "Tasa de Completado de Video",
+                  "value": 98.55,
+                  "unit": "%"
                 }
               ],
               "evidences": [],
