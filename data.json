@@ -1698,8 +1698,66 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "8qpsrxpe",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1Eicwr2VuqNjZEL8s2nY5SFYZT7eVlx7q/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "grd0kvqj",
+                  "image": "https://drive.google.com/file/d/1pXCG5B6hueIPX5w5BuJo00gQNW9gxfns/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "gb8x1esx",
+                      "name": "Importe Gastado",
+                      "value": "$29.09",
+                      "unit": ""
+                    },
+                    {
+                      "id": "s1zan3mm",
+                      "name": "Leads",
+                      "value": "7",
+                      "unit": ""
+                    },
+                    {
+                      "id": "1dzo6r9z",
+                      "name": "Costo Por Lead",
+                      "value": "$4.16",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "jm0kgqx3",
+                  "image": "https://drive.google.com/file/d/1d7J81CS0I1vjHFzGVoY6GFT0vQczhfgd/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "4xkjh9qh",
+                      "name": "Importe Gastado",
+                      "value": "$45.61",
+                      "unit": ""
+                    },
+                    {
+                      "id": "8gvj3881",
+                      "name": "Landing Page View",
+                      "value": "292",
+                      "unit": ""
+                    },
+                    {
+                      "id": "mw0vdb0i",
+                      "name": "Costo Por Post Engagement",
+                      "value": "0.16",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
