@@ -1082,7 +1082,7 @@
                   "id": "e6txdlyx",
                   "name": "CPM",
                   "value": 3.93,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "q9ghiotn",
@@ -1112,7 +1112,7 @@
                   "id": "qlvssjl1",
                   "name": "CPC",
                   "value": 0.62,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "gtdj9tjk",
@@ -1130,7 +1130,7 @@
                   "id": "0wnlza0q",
                   "name": "Costo por Lead",
                   "value": 20.46,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "f2wl82is",
@@ -1142,11 +1142,69 @@
                   "id": "nx0n2fec",
                   "name": "Costo por Llamada",
                   "value": 141.85,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "7hqrp76r",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1F9p-lCQBMSX2nnvyx17-J7ZbiRpwJBlx/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "rk9x7p6u",
+                  "image": "https://drive.google.com/file/d/1Lq6J6Ni9f1eNsThD1T5eIFskUjl5ClB8/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "lbj90f58",
+                      "name": "Importe Gastado",
+                      "value": "$523.99",
+                      "unit": ""
+                    },
+                    {
+                      "id": "pf2bhq6a",
+                      "name": "Leads",
+                      "value": "34",
+                      "unit": ""
+                    },
+                    {
+                      "id": "jaambpod",
+                      "name": "Costo Por Lead",
+                      "value": "$15.41",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "6afv5b4b",
+                  "image": "https://drive.google.com/file/d/1uj-UavgSFK2FXAxaKN1oKegi0Qrrg439/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "zlxkjyc6",
+                      "name": "Importe Gastado",
+                      "value": "$34.21",
+                      "unit": ""
+                    },
+                    {
+                      "id": "0sqbypex",
+                      "name": "Post Engagement",
+                      "value": "27,025",
+                      "unit": ""
+                    },
+                    {
+                      "id": "d2v00nuj",
+                      "name": "Costo Por Post Engagement",
+                      "value": "$0.001",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -1211,8 +1269,41 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "45kr0c0b",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/12adyFeJPJSIqJP-3_S1A0kQWbsGR6x_t/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "6xv4a8su",
+                  "image": "https://drive.google.com/file/d/10W4BSM8ktycJsPL5y9ueRw6-1MNqaiVS/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "h2lxyroj",
+                      "name": "Importe Gastado",
+                      "value": "$10.48",
+                      "unit": ""
+                    },
+                    {
+                      "id": "io1dnny2",
+                      "name": "Clicks",
+                      "value": "36",
+                      "unit": ""
+                    },
+                    {
+                      "id": "63kha8y3",
+                      "name": "CPC",
+                      "value": "$0.29",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -1277,8 +1368,41 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "qnuq2ydd",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1H3kGM8N0npKSaWwHMlf-YQHRotyAuAMF/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "jvylwq3h",
+                  "image": "https://drive.google.com/file/d/1Drys3Ad_YwnJHb50nOwNW7wc-QRch7V2/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "l2z44z3t",
+                      "name": "Importe Gastado",
+                      "value": "$231.05",
+                      "unit": ""
+                    },
+                    {
+                      "id": "d4peb91o",
+                      "name": "Leads",
+                      "value": "20",
+                      "unit": ""
+                    },
+                    {
+                      "id": "f2e0zy55",
+                      "name": "Costo Por Lead",
+                      "value": "$11.36",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
