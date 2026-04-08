@@ -2519,6 +2519,22 @@ const CSVImporter = {
         if (!result.headers.length || !result.rows.length) {
           Toast.show('El archivo no tiene datos válidos', 'error'); return;
         }
+
+        // Detect if this is a multi-campaign CSV (has a name column with different values)
+        const normalize = s => String(s).toLowerCase().trim().replace(/[_\-\.]/g, ' ').replace(/\s+/g, ' ');
+        const nameAliases = ['nombre campaña', 'nombre de campaña', 'campaign name', 'campaña', 'nombre', 'campaign'];
+        const nameCol = result.headers.find(h => nameAliases.includes(normalize(h)));
+        if (nameCol && result.rows.length > 1) {
+          const uniqueNames = new Set(result.rows.map(r => String(r[nameCol] || '').trim()).filter(Boolean));
+          if (uniqueNames.size > 1) {
+            // Multiple campaigns detected — redirect to Bulk CSV importer
+            document.getElementById('csv-importer-overlay')?.remove();
+            Toast.show('CSV con múltiples campañas detectado. Usa el importador masivo.', 'info', 3000);
+            setTimeout(() => BulkCSV.open(), 300);
+            return;
+          }
+        }
+
         this._parsed = result;
         this._aggregated = this.aggregate(result.rows, result.headers);
         this._step = 2;
