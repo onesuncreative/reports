@@ -69,9 +69,9 @@
               "metrics": [
                 {
                   "id": "a1zknrfy",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 5086.38,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "mx36fcxt",
@@ -83,7 +83,7 @@
                   "id": "xw5i9us5",
                   "name": "CPM",
                   "value": 15.82,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "h77urh7y",
@@ -113,7 +113,7 @@
                   "id": "kqzgbzc1",
                   "name": "CPC",
                   "value": 0.47,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "2kaa4uwe",
@@ -131,7 +131,7 @@
                   "id": "iue6dkmj",
                   "name": "Costo por Lead",
                   "value": 23.49,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "2mwf0bqw",
@@ -142,8 +142,8 @@
                 {
                   "id": "5vcdqmgf",
                   "name": "Costo Por Llamadas",
-                  "value": "",
-                  "unit": ""
+                  "value": "99.73",
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -180,7 +180,7 @@
               "metrics": [
                 {
                   "id": "4f2237et",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 2305.14,
                   "unit": ""
                 },
@@ -278,7 +278,7 @@
               "metrics": [
                 {
                   "id": "ahwkjshh",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 155.37,
                   "unit": ""
                 },
@@ -322,7 +322,7 @@
                   "id": "ogj77jr2",
                   "name": "Costo Por Llamadas",
                   "value": "77.63",
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -345,7 +345,7 @@
               "metrics": [
                 {
                   "id": "a3n6f129",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 480.03,
                   "unit": ""
                 },
@@ -412,7 +412,7 @@
               "metrics": [
                 {
                   "id": "u3mjxfqs",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 481.07,
                   "unit": ""
                 },
