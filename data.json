@@ -445,7 +445,33 @@
                   "name": "Evidencia"
                 }
               ],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "p2gigl51",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "pxstndiq",
+                      "name": "",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "yw3z38c6",
+                      "name": "Video",
+                      "value": "5,406",
+                      "unit": ""
+                    },
+                    {
+                      "id": "tcbf5wdl",
+                      "name": "",
+                      "value": "98.61",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -493,7 +519,26 @@
                   "id": "xctuzhhd",
                   "image": "",
                   "imageType": "url",
-                  "metrics": []
+                  "metrics": [
+                    {
+                      "id": "v0xexch7",
+                      "name": "",
+                      "value": "$128.11",
+                      "unit": ""
+                    },
+                    {
+                      "id": "m74sujlo",
+                      "name": "Video Completado",
+                      "value": "5,406",
+                      "unit": ""
+                    },
+                    {
+                      "id": "dwdn11z3",
+                      "name": "Tasa de Completado de Video",
+                      "value": "98.61%",
+                      "unit": ""
+                    }
+                  ]
                 }
               ],
               "observations": ""
