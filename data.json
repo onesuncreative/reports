@@ -712,7 +712,7 @@
                   "id": "h82m32js",
                   "name": "CPC",
                   "value": 0.516435,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "tm15lygu",
@@ -730,7 +730,7 @@
                   "id": "r5dliyyv",
                   "name": "Costo por Lead",
                   "value": 19.61,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -806,7 +806,7 @@
                   "id": "3a8c9fe8",
                   "name": "Importe Gastado",
                   "value": 745.97,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "nhnxp0xg",
@@ -824,7 +824,7 @@
                   "id": "iie4udo7",
                   "name": "CPC",
                   "value": 0.93,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "63vvqjso",
@@ -842,7 +842,7 @@
                   "id": "nop04ze4",
                   "name": "Costo por Lead",
                   "value": 8.99,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "gxma0onn",
@@ -854,7 +854,7 @@
                   "id": "6c5ul8kd",
                   "name": "Costo por Llamada",
                   "value": 74.597,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -905,7 +905,7 @@
                   "id": "nuxicd6k",
                   "name": "Importe Gastado",
                   "value": 560.01,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "trgx4lzm",
@@ -929,7 +929,7 @@
                   "id": "jrfxp34j",
                   "name": "CPC",
                   "value": 0.8,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "bqs7y0yt",
@@ -947,7 +947,7 @@
                   "id": "hvshb3nz",
                   "name": "Costo por Llamada",
                   "value": 32.94,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -998,7 +998,7 @@
                   "id": "rmnmnskd",
                   "name": "Importe Gastado",
                   "value": 560.12,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "t2maqvsp",
@@ -1218,7 +1218,7 @@
                   "id": "vqrdu276",
                   "name": "Importe Gastado",
                   "value": 400.75,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "9sem1tkt",
@@ -1248,7 +1248,7 @@
                   "id": "tn4w4qlq",
                   "name": "CPC",
                   "value": 0.29,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "dlmd983k",
@@ -1266,7 +1266,7 @@
                   "id": "ae0d744g",
                   "name": "Costo por Llamada",
                   "value": 2.78,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -1317,7 +1317,7 @@
                   "id": "nrx9s7eu",
                   "name": "Importe Gastado",
                   "value": 620.67,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "he7v7c2d",
@@ -1335,7 +1335,7 @@
                   "id": "soh99ogo",
                   "name": "CPC",
                   "value": 1.46,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "v0duci29",
@@ -1353,7 +1353,7 @@
                   "id": "ym2zyo65",
                   "name": "Costo por Lead",
                   "value": 14.11,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "nr6lu52j",
@@ -1365,7 +1365,7 @@
                   "id": "4mjxmijy",
                   "name": "Costo por Llamada",
                   "value": 24.83,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -1425,7 +1425,7 @@
                   "id": "sygtt1yq",
                   "name": "Importe Gastado",
                   "value": 1660.85,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "ligzc03l",
@@ -1437,7 +1437,7 @@
                   "id": "smg4qiqv",
                   "name": "CPM",
                   "value": 5.01,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "scas74m6",
@@ -1467,7 +1467,7 @@
                   "id": "2bws539d",
                   "name": "CPC",
                   "value": 0.45,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "vxayo3y2",
@@ -1485,7 +1485,7 @@
                   "id": "vd3qsdvd",
                   "name": "Costo por Lead",
                   "value": 16.48,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "b9ll4z4c",
@@ -1497,7 +1497,7 @@
                   "id": "3dwgyui5",
                   "name": "Costo por Llamada",
                   "value": 118.6321429,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -1573,7 +1573,7 @@
                   "id": "57hzvjkl",
                   "name": "Importe Gastado",
                   "value": 343.03,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "oy3qjprt",
@@ -1591,7 +1591,7 @@
                   "id": "zv1a4513",
                   "name": "CPC",
                   "value": 0.85,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "gk83ioi2",
@@ -1609,7 +1609,7 @@
                   "id": "dj4wo11s",
                   "name": "Costo por Lead",
                   "value": 14.29,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "xgw77elb",
@@ -1621,7 +1621,7 @@
                   "id": "la001tip",
                   "name": "Costo por Llamada",
                   "value": 2.157421384,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -1681,7 +1681,7 @@
                   "id": "2c5hspfi",
                   "name": "Importe Gastado",
                   "value": 1475.15,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "6sm14gn3",
@@ -1693,7 +1693,7 @@
                   "id": "1wr8iwrd",
                   "name": "CPM",
                   "value": 4.38,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "4wgxi1p0",
@@ -1723,7 +1723,7 @@
                   "id": "83ujh1gj",
                   "name": "CPC",
                   "value": 0.9,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "hp4ogqhv",
@@ -1741,7 +1741,7 @@
                   "id": "2lm2wifb",
                   "name": "Costo por Lead",
                   "value": 103.17,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "afe62ipj",
@@ -1753,7 +1753,7 @@
                   "id": "l6shlay1",
                   "name": "Costo por Llamada",
                   "value": 368.7875,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -1829,7 +1829,7 @@
                   "id": "yutj1zno",
                   "name": "Importe Gastado",
                   "value": 20.44,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "1p9u7no8",
@@ -1841,7 +1841,7 @@
                   "id": "tufgpbz6",
                   "name": "CPM",
                   "value": 4.86,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "1dq7bir5",
@@ -1859,7 +1859,7 @@
                   "id": "o7vnc50z",
                   "name": "CPC",
                   "value": 1.2,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "i6atuf68",
@@ -1877,7 +1877,7 @@
                   "id": "ozi2ljkk",
                   "name": "Costo por Llamada",
                   "value": 3.406666667,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -1928,7 +1928,7 @@
                   "id": "4y363h5q",
                   "name": "Importe Gastado",
                   "value": 388.54,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "f66m0lx6",
@@ -1940,7 +1940,7 @@
                   "id": "fh3adv9m",
                   "name": "Clics",
                   "value": 328,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "nzt074yv",
@@ -1964,7 +1964,7 @@
                   "id": "lhf3yiha",
                   "name": "Costo por Lead",
                   "value": 12.53,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "oneh7x68",
@@ -1976,7 +1976,7 @@
                   "id": "g03f208f",
                   "name": "Costo por Llamada",
                   "value": 2.522987013,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -2029,7 +2029,7 @@
                   "id": "naa32qut",
                   "name": "Importe Gastado",
                   "value": 1649.9,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "icsc70if",
@@ -2041,7 +2041,7 @@
                   "id": "6a97ggwq",
                   "name": "CPM",
                   "value": 3.39,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "6gsu2ynb",
@@ -2071,7 +2071,7 @@
                   "id": "2obb0gl0",
                   "name": "CPC",
                   "value": 0.47,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "0te5z3d7",
@@ -2089,7 +2089,7 @@
                   "id": "m0esbyn5",
                   "name": "Costo por Lead",
                   "value": 12.69,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "mw5tefcf",
@@ -2171,7 +2171,7 @@
                   "id": "3ec39tcd",
                   "name": "Importe Gastado",
                   "value": 300.02,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "t9ty52vz",
@@ -2189,7 +2189,7 @@
                   "id": "s83qe53y",
                   "name": "CPC",
                   "value": 0.74,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "di3w4a7e",
@@ -2207,13 +2207,19 @@
                   "id": "jdrhe2wz",
                   "name": "Costo por Lead",
                   "value": 8.57,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "3qep7ggo",
                   "name": "Llamadas",
                   "value": 136,
                   "unit": ""
+                },
+                {
+                  "id": "jdn5ch40",
+                  "name": "Costo Por Llamadas",
+                  "value": "2.2",
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -2273,7 +2279,7 @@
                   "id": "ess7l18n",
                   "name": "Importe Gastado",
                   "value": 149.63,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "u1zvbfok",
@@ -2285,7 +2291,7 @@
                   "id": "f37083xf",
                   "name": "CPM",
                   "value": 1.57,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "0hg6q1ue",
@@ -2300,12 +2306,6 @@
                   "unit": ""
                 },
                 {
-                  "id": "jriwc5z8",
-                  "name": "VCR",
-                  "value": 0,
-                  "unit": ""
-                },
-                {
                   "id": "g0723kpt",
                   "name": "Clics",
                   "value": 584,
@@ -2315,7 +2315,7 @@
                   "id": "vct2uz8g",
                   "name": "CPC",
                   "value": 0.43,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "phf52wwa",
@@ -2333,7 +2333,7 @@
                   "id": "treveqdu",
                   "name": "Costo por Lead",
                   "value": 7.15,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [
@@ -2409,7 +2409,7 @@
                   "id": "e5tvqkz9",
                   "name": "Importe Gastado",
                   "value": 40.7,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "w7ghqrmj",
@@ -2427,7 +2427,7 @@
                   "id": "h9sjvijh",
                   "name": "CPC",
                   "value": 0.21,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "sj0v0q2e",
