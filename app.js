@@ -1724,7 +1724,6 @@ const App = {
         DB.save(data);
         break;
       }
-      }
     }
     document.getElementById(`mr-${metricId}`)?.remove();
   },
