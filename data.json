@@ -14,47 +14,6 @@
       "preloadedMetrics": [],
       "brands": [
         {
-          "id": "a2zaz33p",
-          "name": "Autos Vega Group",
-          "logo": "",
-          "color": "#9b59b6",
-          "campaigns": [
-            {
-              "id": "fwgjukww",
-              "name": "Nueva Campaña",
-              "channel": "Google Ads",
-              "startDate": "",
-              "endDate": "",
-              "metrics": [
-                {
-                  "id": "wh9c7p7a",
-                  "name": "",
-                  "value": "",
-                  "unit": ""
-                }
-              ],
-              "evidences": [
-                {
-                  "id": "sp0kejoy",
-                  "type": "image",
-                  "src": "",
-                  "name": "Evidencia"
-                }
-              ],
-              "bestContent": [
-                {
-                  "id": "itjptsky",
-                  "image": "",
-                  "imageType": "url",
-                  "metrics": []
-                }
-              ],
-              "observations": ""
-            }
-          ],
-          "socialChannels": []
-        },
-        {
           "id": "pf2u0hlu",
           "name": "Ford",
           "logo": "",
