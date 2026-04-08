@@ -1799,7 +1799,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "vqjqiykf",
+                  "image": "https://drive.google.com/file/d/1yR23D0sZfQgVYRYL95qH_iLYE572EMLy/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "dr6tjrhr",
+                      "name": "Importe Gastado",
+                      "value": "$40.70",
+                      "unit": ""
+                    },
+                    {
+                      "id": "leinsu06",
+                      "name": "Clicks",
+                      "value": "193",
+                      "unit": ""
+                    },
+                    {
+                      "id": "y9fnxxrf",
+                      "name": "CPC",
+                      "value": "0.21",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
