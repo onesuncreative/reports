@@ -134,7 +134,14 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
+              "evidences": [
+                {
+                  "id": "p3wuqn8g",
+                  "type": "image",
+                  "src": "",
+                  "name": "Evidencia"
+                }
+              ],
               "bestContent": [],
               "observations": ""
             },
@@ -280,7 +287,14 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
+              "evidences": [
+                {
+                  "id": "uxijjasc",
+                  "type": "image",
+                  "src": "",
+                  "name": "Evidencia"
+                }
+              ],
               "bestContent": [],
               "observations": ""
             },
@@ -322,7 +336,20 @@
                   "unit": "%"
                 }
               ],
-              "evidences": [],
+              "evidences": [
+                {
+                  "id": "m5lmp9pi",
+                  "type": "image",
+                  "src": "",
+                  "name": "Evidencia"
+                },
+                {
+                  "id": "a6xqc2m2",
+                  "type": "image",
+                  "src": "",
+                  "name": "Evidencia"
+                }
+              ],
               "bestContent": [],
               "observations": ""
             },
@@ -358,8 +385,22 @@
                   "unit": "%"
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "tznmb33r",
+                  "type": "image",
+                  "src": "",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "xctuzhhd",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
               "observations": ""
             }
           ],
