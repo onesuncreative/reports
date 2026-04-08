@@ -1821,7 +1821,19 @@ const BulkCSV = {
     this._step = 1;
     this._parsed = null;
     this._targetSlug = null;
+    this._pendingFile = null;
     this._renderModal();
+  },
+
+  // Called from per-campaign CSV importer when "multiple campaigns" checkbox is checked
+  openWithFile(file) {
+    this._step = 1;
+    this._parsed = null;
+    this._targetSlug = null;
+    this._pendingFile = file;
+    this._renderModal();
+    // Auto-read file once user selects client+brand
+    Toast.show('Selecciona un cliente y marca, luego el archivo se procesará automáticamente.', 'info', 4000);
   },
 
   _renderModal() {
@@ -1998,6 +2010,11 @@ const BulkCSV = {
     sel.innerHTML = brands.length === 0
       ? '<option value="">Sin marcas — crea una primero</option>'
       : brands.map(b => `<option value="${esc(b.id)}">${esc(b.name)}</option>`).join('');
+    // Auto-process pending file if both client and brand are selected
+    if (this._pendingFile && brands.length > 0) {
+      setTimeout(() => this._readFile(this._pendingFile), 100);
+      this._pendingFile = null;
+    }
   },
 
   _readFile(file) {
@@ -2031,17 +2048,19 @@ const BulkCSV = {
 
     // Find special columns by normalized name
     const normalize = s => String(s).toLowerCase().trim().replace(/[_\-\.]/g, ' ').replace(/\s+/g, ' ');
-    const nameAliases = ['nombre campaña', 'nombre de campaña', 'campaign name', 'campaña', 'nombre', 'campaign'];
+    const nameAliases = ['nombre campaña', 'nombre de campaña', 'nombre de campana', 'campaign name', 'campaña', 'campana', 'nombre', 'campaign'];
     const startAliases = ['fecha inicio', 'fecha de inicio', 'start date', 'inicio', 'start'];
     const endAliases = ['fecha de término', 'fecha termino', 'fecha de termino', 'fecha fin', 'end date', 'fin', 'end', 'fecha de fin'];
+    const channelAliases = ['canal', 'channel', 'plataforma', 'platform', 'fuente', 'source', 'medio', 'medium'];
 
     const findCol = (aliases) => headers.find(h => aliases.includes(normalize(h)));
     const nameCol = findCol(nameAliases) || headers[0]; // fallback to first column
     const startCol = findCol(startAliases);
     const endCol = findCol(endAliases);
+    const channelCol = findCol(channelAliases);
 
-    // Metric columns = everything that's not name/start/end
-    const specialCols = new Set([nameCol, startCol, endCol].filter(Boolean));
+    // Metric columns = everything that's not name/start/end/channel
+    const specialCols = new Set([nameCol, startCol, endCol, channelCol].filter(Boolean));
     const metricHeaders = headers.filter(h => !specialCols.has(h));
 
     // Parse date: handle dd/mm/yy, dd/mm/yyyy, yyyy-mm-dd
@@ -2082,6 +2101,7 @@ const BulkCSV = {
           });
         return {
           name: String(row[nameCol]).trim(),
+          channel: channelCol ? String(row[channelCol] || '').trim() : '',
           startDate: parseDate(row[startCol]),
           endDate: parseDate(row[endCol]),
           metrics
@@ -2108,6 +2128,7 @@ const BulkCSV = {
     for (const c of toImport) {
       const campaign = newCampaign();
       campaign.name = c.name;
+      if (c.channel) campaign.channel = c.channel;
       campaign.startDate = c.startDate;
       campaign.endDate = c.endDate;
       campaign.metrics = c.metrics.map(m => ({
@@ -2204,6 +2225,16 @@ const CSVImporter = {
     'clics en enlace':  { name: 'Clics en enlace',  unit: '' },
     'messaging conversations started': { name: 'Conversaciones Iniciadas', unit: '' },
     'cost per messaging conversation started': { name: 'Costo por Conversación', unit: '' },
+    leads:              { name: 'Leads',             unit: '' },
+    'costo por lead':   { name: 'Costo por Lead',   unit: '' },
+    'cost per lead':    { name: 'Costo por Lead',   unit: '' },
+    llamadas:           { name: 'Llamadas',          unit: '' },
+    calls:              { name: 'Llamadas',          unit: '' },
+    'costo por llamada': { name: 'Costo por Llamada', unit: '' },
+    'cost per call':    { name: 'Costo por Llamada', unit: '' },
+    vcr:                { name: 'VCR',               unit: '' },
+    'video completed':  { name: 'Video Completado',  unit: '' },
+    'video completion rate': { name: 'Tasa de Completado de Video', unit: '%' },
   },
 
   // Parse CSV text → array of row objects
@@ -2365,6 +2396,10 @@ const CSVImporter = {
         <button class="btn btn-ghost btn-sm" onclick="document.getElementById('csv-file-input').click()">Seleccionar archivo</button>
         <input type="file" id="csv-file-input" accept=".csv,.tsv,.txt" style="display:none;">
       </div>
+      <label style="display:flex;align-items:center;gap:8px;margin-bottom:14px;cursor:pointer;font-size:0.88rem;">
+        <input type="checkbox" id="csv-multi-campaign" style="width:16px;height:16px;accent-color:var(--primary);">
+        <span>Mi archivo contiene <strong>múltiples campañas</strong> (cada fila = una campaña diferente)</span>
+      </label>
       <div style="color:var(--text-muted);font-size:0.78rem;line-height:1.6;">
         <strong>Formatos soportados:</strong> CSV exportado de Google Ads, Meta Ads Manager, TikTok Ads, LinkedIn Campaign Manager, entre otros.<br>
         Los delimitadores soportados son: coma, punto y coma, tabulador o pipe.
@@ -2512,6 +2547,15 @@ const CSVImporter = {
   },
 
   _readFile(file) {
+    const isMultiCampaign = document.getElementById('csv-multi-campaign')?.checked;
+
+    if (isMultiCampaign) {
+      // Redirect to Bulk CSV importer with the file
+      document.getElementById('csv-importer-overlay')?.remove();
+      BulkCSV.openWithFile(file);
+      return;
+    }
+
     const reader = new FileReader();
     reader.onload = e => {
       try {
@@ -2519,22 +2563,6 @@ const CSVImporter = {
         if (!result.headers.length || !result.rows.length) {
           Toast.show('El archivo no tiene datos válidos', 'error'); return;
         }
-
-        // Detect if this is a multi-campaign CSV (has a name column with different values)
-        const normalize = s => String(s).toLowerCase().trim().replace(/[_\-\.]/g, ' ').replace(/\s+/g, ' ');
-        const nameAliases = ['nombre campaña', 'nombre de campaña', 'campaign name', 'campaña', 'nombre', 'campaign'];
-        const nameCol = result.headers.find(h => nameAliases.includes(normalize(h)));
-        if (nameCol && result.rows.length > 1) {
-          const uniqueNames = new Set(result.rows.map(r => String(r[nameCol] || '').trim()).filter(Boolean));
-          if (uniqueNames.size > 1) {
-            // Multiple campaigns detected — redirect to Bulk CSV importer
-            document.getElementById('csv-importer-overlay')?.remove();
-            Toast.show('CSV con múltiples campañas detectado. Usa el importador masivo.', 'info', 3000);
-            setTimeout(() => BulkCSV.open(), 300);
-            return;
-          }
-        }
-
         this._parsed = result;
         this._aggregated = this.aggregate(result.rows, result.headers);
         this._step = 2;
