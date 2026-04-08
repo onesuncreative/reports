@@ -2238,7 +2238,7 @@ const CSVImporter = {
     costo:              { name: 'Costo / Inversión', unit: '' },
     inversion:          { name: 'Costo / Inversión', unit: '' },
     inversión:          { name: 'Costo / Inversión', unit: '' },
-    'importe gastado':  { name: 'Costo / Inversión', unit: '' },
+    'importe gastado':  { name: 'Importe Gastado', unit: '' },
     interacciones:      { name: 'Interacciones',    unit: '' },
     reacciones:         { name: 'Reacciones',        unit: '' },
     'conversaciones iniciadas': { name: 'Conversaciones Iniciadas', unit: '' },
