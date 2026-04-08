@@ -1257,3 +1257,20 @@ body.dark .badge { color: var(--secondary1); background: rgba(0,221,255,0.15); }
 .metrics-summary-client .metrics-summary-title {
   font-size: 0.95rem;
 }
+
+/* ===== COMPARISON BRAND SELECT ===== */
+.comp-brand-select {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  font-size: 0.82rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.comp-brand-select:hover,
+.comp-brand-select:focus {
+  border-color: var(--primary);
+}

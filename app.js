@@ -681,10 +681,10 @@ const App = {
 
   // Helper: get all campaigns/socials across all brands
   _allCampaigns(client) {
-    return (client.brands || []).flatMap(b => (b.campaigns || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color })));
+    return (client.brands || []).flatMap(b => (b.campaigns || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color, _brandId: b.id })));
   },
   _allSocials(client) {
-    return (client.brands || []).flatMap(b => (b.socialChannels || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color })));
+    return (client.brands || []).flatMap(b => (b.socialChannels || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color, _brandId: b.id })));
   },
 
   // Metrics that should be averaged instead of summed
@@ -867,14 +867,26 @@ const App = {
 
     const allMetricNames = [...new Set(allItems.flatMap(i => (i.metrics || []).map(m => m.name)))];
 
-    const itemChips = allItems.map((c, i) => `<button class="chip ${i < 5 ? 'active' : ''}" data-id="${esc(c.id)}" onclick="App.toggleCompChip(this)">${esc(c.icon || '')} ${esc(c.name)}</button>`).join('');
+    const brandNames = [...new Set(allItems.map(c => c._brandName))];
+    const itemChips = allItems.map((c, i) => `<button class="chip ${i < 5 ? 'active' : ''}" data-id="${esc(c.id)}" data-brand="${esc(c._brandName)}" onclick="App.toggleCompChip(this)">${esc(c.icon || '')} ${esc(c.name)}</button>`).join('');
     const metricChips = allMetricNames.map((m, i) => `<button class="chip ${i === 0 ? 'active' : ''}" data-metric="${esc(m)}" onclick="App.toggleCompMetricChip(this)">${esc(m)}</button>`).join('');
+
+    const brandDropdown = brandNames.length > 1 ? `
+      <select class="comp-brand-select" onchange="App.selectCompBrand(this.value)">
+        <option value="">Filtrar por marca...</option>
+        <option value="__all__">Todas las marcas</option>
+        <option value="__none__">Ninguna</option>
+        ${brandNames.map(b => `<option value="${esc(b)}">${esc(b)}</option>`).join('')}
+      </select>` : '';
 
     return `<div class="section-content" id="comparison-root">
       <div class="section-header"><h2>Comparativas</h2></div>
       <div class="comparison-controls">
         <div>
-          <div class="section-label" style="margin-bottom:8px;">Campañas / Canales</div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+            <div class="section-label" style="margin:0;">Campañas / Canales</div>
+            ${brandDropdown}
+          </div>
           <div class="chip-group" id="comp-items">${itemChips}</div>
         </div>
         <div style="margin-top:12px;">
@@ -923,6 +935,18 @@ const App = {
   toggleCompMetricChip(btn) {
     document.querySelectorAll('[data-metric]').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    this.initComparisonCharts(DB.getClient(this._currentSlug));
+  },
+
+  selectCompBrand(value) {
+    const chips = document.querySelectorAll('#comp-items .chip');
+    if (value === '__all__') {
+      chips.forEach(b => b.classList.add('active'));
+    } else if (value === '__none__') {
+      chips.forEach(b => b.classList.remove('active'));
+    } else if (value) {
+      chips.forEach(b => b.classList.toggle('active', b.dataset.brand === value));
+    }
     this.initComparisonCharts(DB.getClient(this._currentSlug));
   },
 
