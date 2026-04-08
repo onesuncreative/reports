@@ -303,6 +303,18 @@
                   "name": "Costo por Lead",
                   "value": "$-",
                   "unit": ""
+                },
+                {
+                  "id": "nvzyvqdt",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "ogj77jr2",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
                 }
               ],
               "evidences": [
@@ -352,6 +364,18 @@
                   "name": "CTR",
                   "value": 0.98,
                   "unit": "%"
+                },
+                {
+                  "id": "0tzolrb5",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "wzxm2o39",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
                 }
               ],
               "evidences": [
