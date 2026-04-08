@@ -212,8 +212,28 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "x4b3n8uh",
+                  "type": "image",
+                  "src": "",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "oa6ac3jq",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": []
+                },
+                {
+                  "id": "r42uuauf",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
               "observations": ""
             },
             {
