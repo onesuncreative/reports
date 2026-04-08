@@ -871,22 +871,19 @@ const App = {
     const itemChips = allItems.map((c, i) => `<button class="chip ${i < 5 ? 'active' : ''}" data-id="${esc(c.id)}" data-brand="${esc(c._brandName)}" onclick="App.toggleCompChip(this)">${esc(c.icon || '')} ${esc(c.name)}</button>`).join('');
     const metricChips = allMetricNames.map((m, i) => `<button class="chip ${i === 0 ? 'active' : ''}" data-metric="${esc(m)}" onclick="App.toggleCompMetricChip(this)">${esc(m)}</button>`).join('');
 
-    const brandDropdown = brandNames.length > 1 ? `
-      <select class="comp-brand-select" onchange="App.selectCompBrand(this.value)">
-        <option value="">Filtrar por marca...</option>
-        <option value="__all__">Todas las marcas</option>
-        <option value="__none__">Ninguna</option>
-        ${brandNames.map(b => `<option value="${esc(b)}">${esc(b)}</option>`).join('')}
-      </select>` : '';
+    const brandFilter = brandNames.length > 1 ? `
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+        <div class="section-label" style="margin:0;font-size:0.72rem;color:var(--text-muted);">Marcas:</div>
+        <button class="chip chip-brand active" data-brandfilter="__all__" onclick="App.selectCompBrand('__all__')">Todas</button>
+        ${brandNames.map(b => `<button class="chip chip-brand active" data-brandfilter="${esc(b)}" onclick="App.toggleCompBrandChip(this)">${esc(b)}</button>`).join('')}
+      </div>` : '';
 
     return `<div class="section-content" id="comparison-root">
       <div class="section-header"><h2>Comparativas</h2></div>
       <div class="comparison-controls">
         <div>
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
-            <div class="section-label" style="margin:0;">Campañas / Canales</div>
-            ${brandDropdown}
-          </div>
+          <div class="section-label" style="margin-bottom:8px;">Campañas / Canales</div>
+          ${brandFilter}
           <div class="chip-group" id="comp-items">${itemChips}</div>
         </div>
         <div style="margin-top:12px;">
@@ -939,14 +936,36 @@ const App = {
   },
 
   selectCompBrand(value) {
-    const chips = document.querySelectorAll('#comp-items .chip');
+    // "Todas" toggle: activate all brand chips and all item chips
+    const brandChips = document.querySelectorAll('.chip-brand[data-brandfilter]:not([data-brandfilter="__all__"])');
+    const allBtn = document.querySelector('.chip-brand[data-brandfilter="__all__"]');
     if (value === '__all__') {
-      chips.forEach(b => b.classList.add('active'));
-    } else if (value === '__none__') {
-      chips.forEach(b => b.classList.remove('active'));
-    } else if (value) {
-      chips.forEach(b => b.classList.toggle('active', b.dataset.brand === value));
+      const allActive = [...brandChips].every(b => b.classList.contains('active'));
+      brandChips.forEach(b => b.classList.toggle('active', !allActive));
+      if (allBtn) allBtn.classList.toggle('active', !allActive);
+      this._applyBrandFilter();
+      return;
     }
+  },
+
+  toggleCompBrandChip(btn) {
+    btn.classList.toggle('active');
+    // Update "Todas" button state
+    const brandChips = document.querySelectorAll('.chip-brand[data-brandfilter]:not([data-brandfilter="__all__"])');
+    const allBtn = document.querySelector('.chip-brand[data-brandfilter="__all__"]');
+    const allActive = [...brandChips].every(b => b.classList.contains('active'));
+    if (allBtn) allBtn.classList.toggle('active', allActive);
+    this._applyBrandFilter();
+  },
+
+  _applyBrandFilter() {
+    const activeBrands = new Set(
+      [...document.querySelectorAll('.chip-brand.active[data-brandfilter]:not([data-brandfilter="__all__"])')]
+        .map(b => b.dataset.brandfilter)
+    );
+    document.querySelectorAll('#comp-items .chip').forEach(b => {
+      b.classList.toggle('active', activeBrands.has(b.dataset.brand));
+    });
     this.initComparisonCharts(DB.getClient(this._currentSlug));
   },
 
