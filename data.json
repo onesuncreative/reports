@@ -857,8 +857,41 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "1tjswwnx",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1TjQdAOEaKt4qtpLL5etg33Qvzv-s9jkS/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "2if5gbkd",
+                  "image": "https://drive.google.com/file/d/1FifGAsf4cLEV0myyTvjt5Xuy_R-2Ejwl/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "epppt8oh",
+                      "name": "Importe Gastado",
+                      "value": "$161.23",
+                      "unit": ""
+                    },
+                    {
+                      "id": "r99rtes1",
+                      "name": "Leads",
+                      "value": "12",
+                      "unit": ""
+                    },
+                    {
+                      "id": "o3jgetyj",
+                      "name": "Costo Por Lead",
+                      "value": "$13.44",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -917,8 +950,41 @@
                   "unit": ""
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "4rp4rl0g",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1TvX-OLU2p-0N4CjK404XSzq138qzNKN5/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "yogp020r",
+                  "image": "https://drive.google.com/file/d/16gyrL5bzYCNNu_gub8U9ZYnrLUfhVBNE/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "e3ocitho",
+                      "name": "Importe Gastado",
+                      "value": "$49.22",
+                      "unit": ""
+                    },
+                    {
+                      "id": "qo8kgob5",
+                      "name": "Clicks",
+                      "value": "56",
+                      "unit": ""
+                    },
+                    {
+                      "id": "nb2who34",
+                      "name": "CPC",
+                      "value": "$0.88",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -937,7 +1003,7 @@
                 {
                   "id": "t2maqvsp",
                   "name": "Video Completado",
-                  "value": 23049,
+                  "value": "23,049",
                   "unit": ""
                 },
                 {
@@ -947,8 +1013,41 @@
                   "unit": "%"
                 }
               ],
-              "evidences": [],
-              "bestContent": [],
+              "evidences": [
+                {
+                  "id": "6sehrct1",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1TvX-OLU2p-0N4CjK404XSzq138qzNKN5/view?usp=drive_link",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "e1dtuiqy",
+                  "image": "https://drive.google.com/file/d/1Suix8sn9jEHdmaOV_3TFXSVyCVpm1yLg/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "7ol64yyh",
+                      "name": "Importe Gastado",
+                      "value": "560.12",
+                      "unit": ""
+                    },
+                    {
+                      "id": "9i3sb2i5",
+                      "name": "Video Completado",
+                      "value": "23,049",
+                      "unit": ""
+                    },
+                    {
+                      "id": "bggeq2k7",
+                      "name": "Tasa de Completado de Video",
+                      "value": "98.57%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
