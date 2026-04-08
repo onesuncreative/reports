@@ -1074,7 +1074,164 @@
           "name": "San Juan Usados",
           "logo": "",
           "color": "#00ddff",
-          "campaigns": [],
+          "campaigns": [
+            {
+              "id": "9oi185xr",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "sygtt1yq",
+                  "name": "Importe Gastado",
+                  "value": 1660.85,
+                  "unit": ""
+                },
+                {
+                  "id": "ligzc03l",
+                  "name": "Impresiones",
+                  "value": 331398,
+                  "unit": ""
+                },
+                {
+                  "id": "smg4qiqv",
+                  "name": "CPM",
+                  "value": 5.01,
+                  "unit": ""
+                },
+                {
+                  "id": "scas74m6",
+                  "name": "Alcance",
+                  "value": 110516,
+                  "unit": ""
+                },
+                {
+                  "id": "h3y8nfaj",
+                  "name": "Frecuencia",
+                  "value": 3.1,
+                  "unit": ""
+                },
+                {
+                  "id": "vxirgb5z",
+                  "name": "VCR",
+                  "value": 2.19,
+                  "unit": ""
+                },
+                {
+                  "id": "a313s3ed",
+                  "name": "Clics",
+                  "value": 5898,
+                  "unit": ""
+                },
+                {
+                  "id": "2bws539d",
+                  "name": "CPC",
+                  "value": 0.45,
+                  "unit": ""
+                },
+                {
+                  "id": "vxayo3y2",
+                  "name": "CTR",
+                  "value": 1.78,
+                  "unit": "%"
+                },
+                {
+                  "id": "9e45w4bj",
+                  "name": "Leads",
+                  "value": 79,
+                  "unit": ""
+                },
+                {
+                  "id": "vd3qsdvd",
+                  "name": "Costo por Lead",
+                  "value": 16.48,
+                  "unit": ""
+                },
+                {
+                  "id": "b9ll4z4c",
+                  "name": "Llamadas",
+                  "value": 14,
+                  "unit": ""
+                },
+                {
+                  "id": "3dwgyui5",
+                  "name": "Costo por Llamada",
+                  "value": 118.6321429,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "7jlvrhmi",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "57hzvjkl",
+                  "name": "Importe Gastado",
+                  "value": 343.03,
+                  "unit": ""
+                },
+                {
+                  "id": "oy3qjprt",
+                  "name": "Impresiones",
+                  "value": 35292,
+                  "unit": ""
+                },
+                {
+                  "id": "i0tblj5u",
+                  "name": "Clics",
+                  "value": 403,
+                  "unit": ""
+                },
+                {
+                  "id": "zv1a4513",
+                  "name": "CPC",
+                  "value": 0.85,
+                  "unit": ""
+                },
+                {
+                  "id": "gk83ioi2",
+                  "name": "CTR",
+                  "value": 1.114,
+                  "unit": "%"
+                },
+                {
+                  "id": "tu2q2wr3",
+                  "name": "Leads",
+                  "value": 24,
+                  "unit": ""
+                },
+                {
+                  "id": "dj4wo11s",
+                  "name": "Costo por Lead",
+                  "value": 14.29,
+                  "unit": ""
+                },
+                {
+                  "id": "xgw77elb",
+                  "name": "Llamadas",
+                  "value": 159,
+                  "unit": ""
+                },
+                {
+                  "id": "la001tip",
+                  "name": "Costo por Llamada",
+                  "value": 2.157421384,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ],
           "socialChannels": []
         },
         {
@@ -1082,7 +1239,230 @@
           "name": "Hormigueros",
           "logo": "",
           "color": "#00ddff",
-          "campaigns": [],
+          "campaigns": [
+            {
+              "id": "jj5ow7e2",
+              "name": "Hormigueros Usados",
+              "channel": "Facebook",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "2c5hspfi",
+                  "name": "Importe Gastado",
+                  "value": 1475.15,
+                  "unit": ""
+                },
+                {
+                  "id": "6sm14gn3",
+                  "name": "Impresiones",
+                  "value": 336606,
+                  "unit": ""
+                },
+                {
+                  "id": "1wr8iwrd",
+                  "name": "CPM",
+                  "value": 4.38,
+                  "unit": ""
+                },
+                {
+                  "id": "4wgxi1p0",
+                  "name": "Alcance",
+                  "value": 163533,
+                  "unit": ""
+                },
+                {
+                  "id": "p1ag6htn",
+                  "name": "Frecuencia",
+                  "value": 2.2,
+                  "unit": ""
+                },
+                {
+                  "id": "b6cdumto",
+                  "name": "VCR",
+                  "value": 4.1,
+                  "unit": ""
+                },
+                {
+                  "id": "9zsiteld",
+                  "name": "Clics",
+                  "value": 2928,
+                  "unit": ""
+                },
+                {
+                  "id": "83ujh1gj",
+                  "name": "CPC",
+                  "value": 0.9,
+                  "unit": ""
+                },
+                {
+                  "id": "hp4ogqhv",
+                  "name": "CTR",
+                  "value": 0.87,
+                  "unit": "%"
+                },
+                {
+                  "id": "x9kuk2rv",
+                  "name": "Leads",
+                  "value": 26,
+                  "unit": ""
+                },
+                {
+                  "id": "2lm2wifb",
+                  "name": "Costo por Lead",
+                  "value": 103.17,
+                  "unit": ""
+                },
+                {
+                  "id": "afe62ipj",
+                  "name": "Llamadas",
+                  "value": 4,
+                  "unit": ""
+                },
+                {
+                  "id": "l6shlay1",
+                  "name": "Costo por Llamada",
+                  "value": 368.7875,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "jcz53uy7",
+              "name": "Display",
+              "channel": "StackAdapt",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "yutj1zno",
+                  "name": "Importe Gastado",
+                  "value": 20.44,
+                  "unit": ""
+                },
+                {
+                  "id": "1p9u7no8",
+                  "name": "Impresiones",
+                  "value": 4207,
+                  "unit": ""
+                },
+                {
+                  "id": "tufgpbz6",
+                  "name": "CPM",
+                  "value": 4.86,
+                  "unit": ""
+                },
+                {
+                  "id": "1dq7bir5",
+                  "name": "VCR",
+                  "value": 0,
+                  "unit": ""
+                },
+                {
+                  "id": "ly5thob5",
+                  "name": "Clics",
+                  "value": 17,
+                  "unit": ""
+                },
+                {
+                  "id": "o7vnc50z",
+                  "name": "CPC",
+                  "value": 1.2,
+                  "unit": ""
+                },
+                {
+                  "id": "i6atuf68",
+                  "name": "CTR",
+                  "value": 0.4,
+                  "unit": "%"
+                },
+                {
+                  "id": "dte1dcg3",
+                  "name": "Llamadas",
+                  "value": 6,
+                  "unit": ""
+                },
+                {
+                  "id": "ozi2ljkk",
+                  "name": "Costo por Llamada",
+                  "value": 3.406666667,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "zhfgp91n",
+              "name": "Google Ads",
+              "channel": "Google",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "4y363h5q",
+                  "name": "Importe Gastado",
+                  "value": 388.54,
+                  "unit": ""
+                },
+                {
+                  "id": "f66m0lx6",
+                  "name": "Impresiones",
+                  "value": 7492,
+                  "unit": ""
+                },
+                {
+                  "id": "fh3adv9m",
+                  "name": "Clics",
+                  "value": 328,
+                  "unit": ""
+                },
+                {
+                  "id": "nzt074yv",
+                  "name": "CPC",
+                  "value": 1.18,
+                  "unit": ""
+                },
+                {
+                  "id": "tqcup8ht",
+                  "name": "CTR",
+                  "value": 4.38,
+                  "unit": "%"
+                },
+                {
+                  "id": "wh0dl2gu",
+                  "name": "Leads",
+                  "value": 31,
+                  "unit": ""
+                },
+                {
+                  "id": "lhf3yiha",
+                  "name": "Costo por Lead",
+                  "value": 12.53,
+                  "unit": ""
+                },
+                {
+                  "id": "oneh7x68",
+                  "name": "Llamadas",
+                  "value": 154,
+                  "unit": ""
+                },
+                {
+                  "id": "g03f208f",
+                  "name": "Costo por Llamada",
+                  "value": 2.522987013,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ],
           "socialChannels": []
         },
         {
@@ -1090,7 +1470,152 @@
           "name": "Guayama",
           "logo": "",
           "color": "#e5ff16",
-          "campaigns": [],
+          "campaigns": [
+            {
+              "id": "cyzqrgtw",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "naa32qut",
+                  "name": "Importe Gastado",
+                  "value": 1649.9,
+                  "unit": ""
+                },
+                {
+                  "id": "icsc70if",
+                  "name": "Impresiones",
+                  "value": 486081,
+                  "unit": ""
+                },
+                {
+                  "id": "6a97ggwq",
+                  "name": "CPM",
+                  "value": 3.39,
+                  "unit": ""
+                },
+                {
+                  "id": "6gsu2ynb",
+                  "name": "Alcance",
+                  "value": 137243,
+                  "unit": ""
+                },
+                {
+                  "id": "nsva4quw",
+                  "name": "Frecuencia",
+                  "value": 3.74,
+                  "unit": ""
+                },
+                {
+                  "id": "go9417qz",
+                  "name": "VCR",
+                  "value": 0.98,
+                  "unit": ""
+                },
+                {
+                  "id": "onzgpzgn",
+                  "name": "Clics",
+                  "value": 5944,
+                  "unit": ""
+                },
+                {
+                  "id": "2obb0gl0",
+                  "name": "CPC",
+                  "value": 0.47,
+                  "unit": ""
+                },
+                {
+                  "id": "0te5z3d7",
+                  "name": "CTR",
+                  "value": 1.22,
+                  "unit": "%"
+                },
+                {
+                  "id": "tab1ud1q",
+                  "name": "Leads",
+                  "value": 118,
+                  "unit": ""
+                },
+                {
+                  "id": "m0esbyn5",
+                  "name": "Costo por Lead",
+                  "value": 12.69,
+                  "unit": ""
+                },
+                {
+                  "id": "mw5tefcf",
+                  "name": "Llamadas",
+                  "value": 46,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "94ni626x",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
+              "metrics": [
+                {
+                  "id": "3ec39tcd",
+                  "name": "Importe Gastado",
+                  "value": 300.02,
+                  "unit": ""
+                },
+                {
+                  "id": "t9ty52vz",
+                  "name": "Impresiones",
+                  "value": 15214,
+                  "unit": ""
+                },
+                {
+                  "id": "z7t0h3y0",
+                  "name": "Clics",
+                  "value": 406,
+                  "unit": ""
+                },
+                {
+                  "id": "s83qe53y",
+                  "name": "CPC",
+                  "value": 0.74,
+                  "unit": ""
+                },
+                {
+                  "id": "di3w4a7e",
+                  "name": "CTR",
+                  "value": 737,
+                  "unit": "%"
+                },
+                {
+                  "id": "7ujpd39v",
+                  "name": "Leads",
+                  "value": 35,
+                  "unit": ""
+                },
+                {
+                  "id": "jdrhe2wz",
+                  "name": "Costo por Lead",
+                  "value": 8.57,
+                  "unit": ""
+                },
+                {
+                  "id": "3qep7ggo",
+                  "name": "Llamadas",
+                  "value": 136,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ],
           "socialChannels": []
         },
         {
