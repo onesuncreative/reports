@@ -1590,22 +1590,31 @@ const App = {
     sel.value = '';
   },
 
+  // Helper: iterate all campaign/social items across all brands in raw data
+  _allItemsInData(data) {
+    const items = [];
+    for (const c of Object.values(data.clients || {})) {
+      for (const brand of (c.brands || [])) {
+        for (const item of (brand.campaigns || [])) items.push(item);
+        for (const item of (brand.socialChannels || [])) items.push(item);
+      }
+    }
+    return items;
+  },
+
   updateMetricField(metricId, field, value) {
     const data = DB.load();
-    const clients = Object.values(data.clients);
-    for (const c of clients) {
-      const found = [...(c.campaigns || []), ...(c.socialChannels || [])].flatMap(item => item.metrics || []).find(m => m.id === metricId);
+    for (const item of this._allItemsInData(data)) {
+      const found = (item.metrics || []).find(m => m.id === metricId);
       if (found) { found[field] = value; DB.save(data); return; }
     }
   },
 
   removeMetricFromItem(metricId) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const idx = (item.metrics || []).findIndex(m => m.id === metricId);
-        if (idx !== -1) { item.metrics.splice(idx, 1); DB.save(data); break; }
-      }
+    for (const item of this._allItemsInData(data)) {
+      const idx = (item.metrics || []).findIndex(m => m.id === metricId);
+      if (idx !== -1) { item.metrics.splice(idx, 1); DB.save(data); break; }
     }
     document.getElementById(`mr-${metricId}`)?.remove();
   },
@@ -1626,21 +1635,17 @@ const App = {
 
   updateEvidenceField(evidenceId, field, value) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const found = (item.evidences || []).find(e => e.id === evidenceId);
-        if (found) { found[field] = value; DB.save(data); return; }
-      }
+    for (const item of this._allItemsInData(data)) {
+      const found = (item.evidences || []).find(e => e.id === evidenceId);
+      if (found) { found[field] = value; DB.save(data); return; }
     }
   },
 
   removeEvidenceFromItem(evidenceId) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const idx = (item.evidences || []).findIndex(e => e.id === evidenceId);
-        if (idx !== -1) { item.evidences.splice(idx, 1); DB.save(data); break; }
-      }
+    for (const item of this._allItemsInData(data)) {
+      const idx = (item.evidences || []).findIndex(e => e.id === evidenceId);
+      if (idx !== -1) { item.evidences.splice(idx, 1); DB.save(data); break; }
     }
     document.getElementById(`er-${evidenceId}`)?.remove();
   },
@@ -1663,71 +1668,62 @@ const App = {
 
   removeContent(contentId) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const idx = (item.bestContent || []).findIndex(bc => bc.id === contentId);
-        if (idx !== -1) { item.bestContent.splice(idx, 1); DB.save(data); break; }
-      }
+    for (const item of this._allItemsInData(data)) {
+      const idx = (item.bestContent || []).findIndex(bc => bc.id === contentId);
+      if (idx !== -1) { item.bestContent.splice(idx, 1); DB.save(data); break; }
     }
     document.getElementById(`bce-${contentId}`)?.remove();
   },
 
   updateContentField(contentId, field, value) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const found = (item.bestContent || []).find(bc => bc.id === contentId);
-        if (found) { found[field] = value; DB.save(data); return; }
-      }
+    for (const item of this._allItemsInData(data)) {
+      const found = (item.bestContent || []).find(bc => bc.id === contentId);
+      if (found) { found[field] = value; DB.save(data); return; }
     }
   },
 
   addContentMetric(contentId) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const found = (item.bestContent || []).find(bc => bc.id === contentId);
-        if (found) {
-          if (!found.metrics) found.metrics = [];
-          const m = newMetric();
-          found.metrics.push(m);
-          DB.save(data);
-          const container = document.getElementById(`cm-${contentId}`);
-          if (container) container.insertAdjacentHTML('beforeend', `
+    for (const item of this._allItemsInData(data)) {
+      const found = (item.bestContent || []).find(bc => bc.id === contentId);
+      if (found) {
+        if (!found.metrics) found.metrics = [];
+        const m = newMetric();
+        found.metrics.push(m);
+        DB.save(data);
+        const container = document.getElementById(`cm-${contentId}`);
+        if (container) container.insertAdjacentHTML('beforeend', `
             <div class="metric-row" id="mr-${esc(m.id)}" style="grid-template-columns:1fr 80px 28px;">
               <input type="text" value="" placeholder="Métrica" onchange="App.updateContentMetricField('${esc(contentId)}', '${esc(m.id)}', 'name', this.value)" style="background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:5px 8px;color:var(--text);font-size:0.78rem;width:100%;outline:none;">
               <input type="text" value="" placeholder="Valor" onchange="App.updateContentMetricField('${esc(contentId)}', '${esc(m.id)}', 'value', this.value)" style="background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:5px 8px;color:var(--text);font-size:0.78rem;width:100%;outline:none;">
               <button class="btn-icon-sm" style="width:24px;height:24px;" onclick="App.removeContentMetric('${esc(contentId)}', '${esc(m.id)}')">✕</button>
             </div>`);
-          return;
-        }
+        return;
       }
     }
   },
 
   updateContentMetricField(contentId, metricId, field, value) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const found = (item.bestContent || []).find(bc => bc.id === contentId);
-        if (found) {
-          const m = (found.metrics || []).find(m => m.id === metricId);
-          if (m) { m[field] = value; DB.save(data); return; }
-        }
+    for (const item of this._allItemsInData(data)) {
+      const found = (item.bestContent || []).find(bc => bc.id === contentId);
+      if (found) {
+        const m = (found.metrics || []).find(m => m.id === metricId);
+        if (m) { m[field] = value; DB.save(data); return; }
       }
     }
   },
 
   removeContentMetric(contentId, metricId) {
     const data = DB.load();
-    for (const c of Object.values(data.clients)) {
-      for (const item of [...(c.campaigns || []), ...(c.socialChannels || [])]) {
-        const found = (item.bestContent || []).find(bc => bc.id === contentId);
-        if (found) {
-          found.metrics = (found.metrics || []).filter(m => m.id !== metricId);
-          DB.save(data);
-          break;
-        }
+    for (const item of this._allItemsInData(data)) {
+      const found = (item.bestContent || []).find(bc => bc.id === contentId);
+      if (found) {
+        found.metrics = (found.metrics || []).filter(m => m.id !== metricId);
+        DB.save(data);
+        break;
+      }
       }
     }
     document.getElementById(`mr-${metricId}`)?.remove();
