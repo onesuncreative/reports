@@ -1672,8 +1672,8 @@
           "campaigns": [
             {
               "id": "jj5ow7e2",
-              "name": "Hormigueros Usados",
-              "channel": "Facebook",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
               "startDate": "2026-03-01",
               "endDate": "2026-03-31",
               "metrics": [
