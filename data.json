@@ -2770,6 +2770,125 @@
           "socialChannels": []
         }
       ]
+    },
+    "blambox": {
+      "id": "4rux6n90",
+      "slug": "blambox",
+      "name": "BlamBox",
+      "password": "Blam.Box",
+      "logo": "",
+      "theme": "dark",
+      "reportTitle": "Reporte de Resultados",
+      "reportSubtitle": "Campañas Digitales",
+      "viewStart": "",
+      "viewEnd": "",
+      "brands": [
+        {
+          "id": "56imgo0m",
+          "name": "BlamBox",
+          "logo": "",
+          "color": "#9b59b6",
+          "campaigns": [
+            {
+              "id": "nsujnq9l",
+              "name": "Campaña A WhatsApp",
+              "channel": "Facebook Ads",
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "qc3e10qx",
+                  "name": "Importe Gastado",
+                  "value": "4,749.83",
+                  "unit": "$"
+                },
+                {
+                  "id": "911ay49h",
+                  "name": "Alcance",
+                  "value": "90,186",
+                  "unit": ""
+                },
+                {
+                  "id": "qqepfooa",
+                  "name": "Conversaciones Iniciadas",
+                  "value": "172",
+                  "unit": ""
+                },
+                {
+                  "id": "5zqmwxhz",
+                  "name": "Costo Por Conversación",
+                  "value": "27.62",
+                  "unit": "$"
+                }
+              ],
+              "evidences": [
+                {
+                  "id": "pdew14oy",
+                  "type": "image",
+                  "src": "https://drive.google.com/file/d/1rbiYTdBvcLL9gidabKQJLWN5XEVcezho/view?usp=sharing",
+                  "name": "Evidencia"
+                }
+              ],
+              "bestContent": [
+                {
+                  "id": "4aw8igsy",
+                  "image": "https://drive.google.com/file/d/1t2dFAnYBJ8_u07N-stDEt-e3ehZeUdnz/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "1ostaoxl",
+                      "name": "Importe Gastado",
+                      "value": "$1,814.31",
+                      "unit": ""
+                    },
+                    {
+                      "id": "mwy33tve",
+                      "name": "Conversaciones Iniciadas",
+                      "value": "59",
+                      "unit": ""
+                    },
+                    {
+                      "id": "rdhfy148",
+                      "name": "Costo Por Conversación",
+                      "value": "$30.75",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "tl2qzouc",
+                  "image": "https://drive.google.com/file/d/1Ztoz42nCQbyZhaGEiIMQf3J-_xAIhC03/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "zo263wgi",
+                      "name": "Importe Gastado",
+                      "value": "$630.46",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7vp0vk2d",
+                      "name": "Conversaciones Iniciadas",
+                      "value": "34",
+                      "unit": ""
+                    },
+                    {
+                      "id": "2s3masil",
+                      "name": "Costo Por Conversación",
+                      "value": "$18.54",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            }
+          ],
+          "socialChannels": []
+        }
+      ],
+      "preloadedMetrics": [],
+      "globalMetrics": []
     }
   },
   "globalMetrics": [
