@@ -704,6 +704,92 @@ const App = {
     }
   },
 
+  // ===== DATE FILTER (viewer) =====
+  _dateFrom: '',
+  _dateTo: '',
+  _datePreset: '',
+
+  _filterByDate(items) {
+    if (!this._dateFrom && !this._dateTo) return items;
+    const from = this._dateFrom || '0000-01-01';
+    const to   = this._dateTo   || '9999-12-31';
+    return items.filter(c => {
+      const s = c.startDate || '';
+      const e = c.endDate   || '';
+      // If item has no dates at all, always show it
+      if (!s && !e) return true;
+      // Item overlaps range if its start ≤ filter-end AND its end ≥ filter-start
+      const itemStart = s || e;
+      const itemEnd   = e || s;
+      return itemStart <= to && itemEnd >= from;
+    });
+  },
+
+  renderDateFilter() {
+    const presets = [
+      { key: '7d',  label: 'Últimos 7 días' },
+      { key: '30d', label: 'Últimos 30 días' },
+      { key: 'week', label: 'Semana pasada' },
+      { key: 'month', label: 'Mes pasado' },
+    ];
+    return `
+      <div class="date-filter-bar">
+        <div class="date-filter-presets">
+          <button class="chip ${!this._datePreset && !this._dateFrom && !this._dateTo ? 'active' : ''}" onclick="App.clearDateFilter()">Todas</button>
+          ${presets.map(p => `<button class="chip ${this._datePreset === p.key ? 'active' : ''}" onclick="App.setDatePreset('${p.key}')">${p.label}</button>`).join('')}
+        </div>
+        <div class="date-filter-custom">
+          <label class="date-filter-label">Desde</label>
+          <input type="date" class="date-filter-input" value="${esc(this._dateFrom)}" onchange="App.setCustomDate('from', this.value)">
+          <label class="date-filter-label">Hasta</label>
+          <input type="date" class="date-filter-input" value="${esc(this._dateTo)}" onchange="App.setCustomDate('to', this.value)">
+        </div>
+      </div>`;
+  },
+
+  clearDateFilter() {
+    this._dateFrom = '';
+    this._dateTo = '';
+    this._datePreset = '';
+    this.switchTab(this._currentTab);
+  },
+
+  setDatePreset(key) {
+    const today = new Date();
+    let from, to;
+    if (key === '7d') {
+      to = new Date(today);
+      from = new Date(today);
+      from.setDate(from.getDate() - 6);
+    } else if (key === '30d') {
+      to = new Date(today);
+      from = new Date(today);
+      from.setDate(from.getDate() - 29);
+    } else if (key === 'week') {
+      // Last full week (Mon–Sun)
+      const dayOfWeek = today.getDay() || 7; // Mon=1 … Sun=7
+      to = new Date(today);
+      to.setDate(today.getDate() - dayOfWeek);
+      from = new Date(to);
+      from.setDate(to.getDate() - 6);
+    } else if (key === 'month') {
+      from = new Date(today.getFullYear(), today.getMonth() - 1, 1);
+      to = new Date(today.getFullYear(), today.getMonth(), 0);
+    }
+    const pad = d => d.toISOString().slice(0, 10);
+    this._dateFrom = pad(from);
+    this._dateTo = pad(to);
+    this._datePreset = key;
+    this.switchTab(this._currentTab);
+  },
+
+  setCustomDate(which, val) {
+    if (which === 'from') this._dateFrom = val;
+    else this._dateTo = val;
+    this._datePreset = '';
+    this.switchTab(this._currentTab);
+  },
+
   // Helper: get all campaigns/socials across all brands
   _allCampaigns(client) {
     return (client.brands || []).flatMap(b => (b.campaigns || []).map(c => ({ ...c, _brandName: b.name, _brandColor: b.color, _brandId: b.id })));
@@ -802,19 +888,24 @@ const App = {
   },
 
   renderCampaignsTab(client) {
-    const brands = (client.brands || []).filter(b => (b.campaigns || []).some(c => !c.hidden));
-    if (brands.length === 0) {
+    const allVisible = (client.brands || []).flatMap(b => (b.campaigns || []).filter(c => !c.hidden));
+    if (allVisible.length === 0) {
       return `<div class="section-content"><div class="empty-state"><div class="empty-icon">📊</div><h3>Sin campañas</h3><p>Aún no hay campañas registradas para este reporte.</p></div></div>`;
     }
-    const visibleCampaigns = brands.flatMap(b => (b.campaigns || []).filter(c => !c.hidden));
-    const totalCampaigns = visibleCampaigns.length;
+    // Build date-filtered brand data
+    const brandData = (client.brands || []).map(brand => {
+      const visible = this._filterByDate((brand.campaigns || []).filter(c => !c.hidden));
+      return { brand, visible };
+    }).filter(d => d.visible.length > 0);
+    const totalCampaigns = brandData.reduce((s, d) => s + d.visible.length, 0);
+    const allFiltered = brandData.flatMap(d => d.visible);
+    const hasDateFilter = !!(this._dateFrom || this._dateTo);
     return `<div class="section-content">
       <div class="section-header"><h2>Campañas Digitales</h2><span class="badge">${totalCampaigns} campaña${totalCampaigns !== 1 ? 's' : ''}</span></div>
-      ${brands.length > 1 ? this.renderMetricsSummary(visibleCampaigns, 'client-campaigns', `Total ${esc(client.name)} — Campañas`) : ''}
-      ${brands.map(brand => {
-        const visible = (brand.campaigns || []).filter(c => !c.hidden);
-        if (visible.length === 0) return '';
-        return `
+      ${this.renderDateFilter()}
+      ${totalCampaigns === 0 && hasDateFilter ? '<div style="color:var(--text-muted);font-size:0.9rem;padding:18px 0;text-align:center;">No hay campañas en el rango seleccionado.</div>' : ''}
+      ${brandData.length > 1 ? this.renderMetricsSummary(allFiltered, 'client-campaigns', `Total ${esc(client.name)} — Campañas`) : ''}
+      ${brandData.map(({ brand, visible }) => `
         <div style="margin-bottom:24px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">
             ${brand.logo ? `<img src="${esc(imgSrc(brand.logo))}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
@@ -822,26 +913,29 @@ const App = {
             <span class="badge" style="font-size:0.72rem;">${visible.length}</span>
           </div>
           ${this.renderMetricsSummary(visible, brand.id)}
-          ${this._renderGroupedCards(brand.campaigns, false, brand.id)}
-        </div>`;
-      }).join('')}
+          ${this._renderGroupedCards(visible, false, brand.id)}
+        </div>`).join('')}
     </div>`;
   },
 
   renderSocialTab(client) {
-    const brands = (client.brands || []).filter(b => (b.socialChannels || []).some(c => !c.hidden));
-    if (brands.length === 0) {
+    const allVisible = (client.brands || []).flatMap(b => (b.socialChannels || []).filter(c => !c.hidden));
+    if (allVisible.length === 0) {
       return `<div class="section-content"><div class="empty-state"><div class="empty-icon">📱</div><h3>Sin canales</h3><p>Aún no hay canales de redes sociales registrados.</p></div></div>`;
     }
-    const visibleSocials = brands.flatMap(b => (b.socialChannels || []).filter(c => !c.hidden));
-    const totalSocials = visibleSocials.length;
+    const brandData = (client.brands || []).map(brand => {
+      const visible = this._filterByDate((brand.socialChannels || []).filter(c => !c.hidden));
+      return { brand, visible };
+    }).filter(d => d.visible.length > 0);
+    const totalSocials = brandData.reduce((s, d) => s + d.visible.length, 0);
+    const allFiltered = brandData.flatMap(d => d.visible);
+    const hasDateFilter = !!(this._dateFrom || this._dateTo);
     return `<div class="section-content">
       <div class="section-header"><h2>Redes Sociales</h2><span class="badge">${totalSocials} canal${totalSocials !== 1 ? 'es' : ''}</span></div>
-      ${brands.length > 1 ? this.renderMetricsSummary(visibleSocials, 'client-socials', `Total ${esc(client.name)} — Redes`) : ''}
-      ${brands.map(brand => {
-        const visible = (brand.socialChannels || []).filter(c => !c.hidden);
-        if (visible.length === 0) return '';
-        return `
+      ${this.renderDateFilter()}
+      ${totalSocials === 0 && hasDateFilter ? '<div style="color:var(--text-muted);font-size:0.9rem;padding:18px 0;text-align:center;">No hay canales en el rango seleccionado.</div>' : ''}
+      ${brandData.length > 1 ? this.renderMetricsSummary(allFiltered, 'client-socials', `Total ${esc(client.name)} — Redes`) : ''}
+      ${brandData.map(({ brand, visible }) => `
         <div style="margin-bottom:24px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid ${esc(brand.color || 'var(--border)')};">
             ${brand.logo ? `<img src="${esc(imgSrc(brand.logo))}" style="width:24px;height:24px;border-radius:6px;object-fit:cover;">` : `<span style="width:10px;height:10px;border-radius:50%;background:${esc(brand.color || 'var(--primary)')};"></span>`}
@@ -849,9 +943,8 @@ const App = {
             <span class="badge" style="font-size:0.72rem;">${visible.length}</span>
           </div>
           ${this.renderMetricsSummary(visible, 'social-' + brand.id)}
-          ${this._renderGroupedCards(brand.socialChannels, true, brand.id)}
-        </div>`;
-      }).join('')}
+          ${this._renderGroupedCards(visible, true, brand.id)}
+        </div>`).join('')}
     </div>`;
   },
 

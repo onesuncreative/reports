@@ -1333,3 +1333,55 @@ body.dark .badge { color: var(--secondary1); background: rgba(0,221,255,0.15); }
   gap: 8px;
   border-bottom: 1px dashed var(--border);
 }
+
+/* Date filter bar */
+.date-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 10px 0 14px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.date-filter-presets {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.date-filter-custom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}
+.date-filter-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.date-filter-input {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 5px 10px;
+  font-size: 0.82rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  max-width: 150px;
+}
+.date-filter-input:focus {
+  border-color: var(--primary);
+}
+/* Calendar icon color for dark theme */
+.date-filter-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.7);
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .date-filter-bar { flex-direction: column; align-items: flex-start; }
+  .date-filter-custom { margin-left: 0; }
+}
