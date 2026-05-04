@@ -3223,7 +3223,7 @@
                 {
                   "id": "vvmegngv",
                   "name": "",
-                  "value": "",
+                  "value": "16",
                   "unit": ""
                 }
               ],
@@ -3259,7 +3259,38 @@
               "hidden": false,
               "startDate": "2026-04-01",
               "endDate": "2026-04-30",
-              "metrics": [],
+              "metrics": [
+                {
+                  "id": "dnef8ovp",
+                  "name": "Impresiones",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "g6we1byx",
+                  "name": "Alcance",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "543amb6e",
+                  "name": "Reacciones",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "vg73lews",
+                  "name": "Video Views",
+                  "value": "1213",
+                  "unit": ""
+                },
+                {
+                  "id": "kn5l2m4t",
+                  "name": "Seguidores",
+                  "value": "31",
+                  "unit": ""
+                }
+              ],
               "evidences": [],
               "bestContent": [
                 {
