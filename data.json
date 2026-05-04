@@ -3109,7 +3109,52 @@
               "observations": ""
             }
           ],
-          "socialChannels": []
+          "socialChannels": [
+            {
+              "id": "0ly1qc2b",
+              "name": "LinkedIn",
+              "icon": "📱",
+              "group": "Abril 2026",
+              "hidden": true,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "ak6ndx2m",
+                  "name": "Impresiones",
+                  "value": "596",
+                  "unit": ""
+                },
+                {
+                  "id": "iaju62ob",
+                  "name": "Alcance",
+                  "value": "30",
+                  "unit": ""
+                },
+                {
+                  "id": "i9yvpcgb",
+                  "name": "Reacciones",
+                  "value": "33",
+                  "unit": ""
+                },
+                {
+                  "id": "qremhipn",
+                  "name": "Seguidores",
+                  "value": "171",
+                  "unit": ""
+                },
+                {
+                  "id": "lo1ftvhd",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ]
         }
       ]
     },
