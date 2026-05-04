@@ -3079,7 +3079,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "rne3m7iy",
+                  "image": "https://drive.google.com/file/d/18NEU7_Sj-aE_KSMMEeiWwn_cF941UVGG/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "pfgpynvc",
+                      "name": "Importe Gastado",
+                      "value": "$3,461.27",
+                      "unit": ""
+                    },
+                    {
+                      "id": "9kexr893",
+                      "name": "Leads",
+                      "value": "30",
+                      "unit": ""
+                    },
+                    {
+                      "id": "0kztkub6",
+                      "name": "Costo Por Lead",
+                      "value": "$115.38",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
