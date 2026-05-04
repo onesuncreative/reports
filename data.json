@@ -3186,6 +3186,90 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "ogqjk7zs",
+              "name": "Instagram",
+              "icon": "📱",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "lxlou30r",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "vm8jk64y",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "plqads3k",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "uj87kr01",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "vvmegngv",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "bpr8qm5h",
+                  "image": "https://www.instagram.com/reel/DVeRbw2EQjq/?hl=es",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "3dcu3yjh",
+                      "name": "Views",
+                      "value": "55",
+                      "unit": ""
+                    },
+                    {
+                      "id": "nw6pjiqm",
+                      "name": "Reacciones",
+                      "value": "3",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "qwqu7t0r",
+              "name": "Facebook",
+              "icon": "📱",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "55jw7rjr",
+                  "image": "https://www.instagram.com/reel/DX15qXpByOQ/?hl=es",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
+              "observations": ""
             }
           ]
         }
