@@ -2911,6 +2911,239 @@
       ],
       "preloadedMetrics": [],
       "globalMetrics": []
+    },
+    "sail-away": {
+      "id": "6raovnj8",
+      "slug": "sail-away",
+      "name": "Sail Away",
+      "password": "Sail.Aw4y",
+      "logo": "",
+      "theme": "dark",
+      "reportTitle": "Reporte de Resultados",
+      "reportSubtitle": "Campañas Digitales",
+      "viewStart": "",
+      "viewEnd": "",
+      "brands": [
+        {
+          "id": "3l9aw472",
+          "name": "Curso Prospección",
+          "logo": "",
+          "color": "#0000ff",
+          "campaigns": [
+            {
+              "id": "xil7i7fg",
+              "name": "Tráfico - Webinar",
+              "channel": "X Ads",
+              "group": "Abril 2026",
+              "hidden": true,
+              "startDate": "2026-04-07",
+              "endDate": "2026-05-15",
+              "metrics": [
+                {
+                  "id": "vthxg9yb",
+                  "name": "Impresiones",
+                  "value": 500724,
+                  "unit": ""
+                },
+                {
+                  "id": "ywkggtfh",
+                  "name": "Impore Gastado",
+                  "value": 1056.02,
+                  "unit": "$"
+                },
+                {
+                  "id": "v27ra8qh",
+                  "name": "Clics en enlace",
+                  "value": 1516,
+                  "unit": ""
+                },
+                {
+                  "id": "hwmsk964",
+                  "name": "CTR",
+                  "value": 0.3,
+                  "unit": "%"
+                },
+                {
+                  "id": "6h5tiee2",
+                  "name": "CPM",
+                  "value": 2.11,
+                  "unit": "$"
+                },
+                {
+                  "id": "sl2216ov",
+                  "name": "Clics",
+                  "value": 0.7,
+                  "unit": ""
+                },
+                {
+                  "id": "fol91nhq",
+                  "name": "Regsitros",
+                  "value": 81,
+                  "unit": ""
+                },
+                {
+                  "id": "84o9560d",
+                  "name": "Costo / Inversión",
+                  "value": 13.04,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "c8kydc4c",
+                  "image": "https://drive.google.com/file/d/1Rtqj86vPJHGCsohAuQVzgFlMxHK6Ugx6/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "mje5f0e9",
+                      "name": "Importe Gastado",
+                      "value": "$819.22",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ulpqan84",
+                      "name": "Clics",
+                      "value": "1113",
+                      "unit": ""
+                    },
+                    {
+                      "id": "hfxwxfst",
+                      "name": "CTR",
+                      "value": "0.29%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "m5i0gxt5",
+              "name": "Tráfico - Curso Prospección",
+              "channel": "X Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-05-10",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "rtiyb9v8",
+                  "name": "Impresiones",
+                  "value": 1120819,
+                  "unit": ""
+                },
+                {
+                  "id": "ffh36akj",
+                  "name": "Importe Gastado",
+                  "value": 2729.41,
+                  "unit": "$"
+                },
+                {
+                  "id": "oytezn1u",
+                  "name": "Clics en enlace",
+                  "value": 3310,
+                  "unit": ""
+                },
+                {
+                  "id": "77ol68c0",
+                  "name": "CTR",
+                  "value": 0.3,
+                  "unit": "%"
+                },
+                {
+                  "id": "w1fqn3m6",
+                  "name": "CPM",
+                  "value": 2.44,
+                  "unit": "$"
+                },
+                {
+                  "id": "tmkc22ts",
+                  "name": "Clics",
+                  "value": 0.82,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "jg8v88n0",
+                  "image": "https://drive.google.com/file/d/1z40slOQ7SvAhRwFLemy8b8clDw7ihWWG/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "l5n8xwg1",
+                      "name": "Importe Gastado",
+                      "value": "$994.87",
+                      "unit": ""
+                    },
+                    {
+                      "id": "zvvr5wql",
+                      "name": "Clics",
+                      "value": "1,422",
+                      "unit": ""
+                    },
+                    {
+                      "id": "cwwjz26a",
+                      "name": "CTR",
+                      "value": "0.34%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "6y27uc53",
+              "name": "WhatsApp - Leads - Curso Prospección",
+              "channel": "Facebook Ads",
+              "group": "Abril 2026",
+              "hidden": true,
+              "startDate": "2026-04-02",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "97cumzpx",
+                  "name": "Importe Gastado",
+                  "value": "5,290.07",
+                  "unit": "$"
+                },
+                {
+                  "id": "2hitnqlh",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "nwjfp25a",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "kqkia2bm",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "k8tio4bu",
+                  "name": "",
+                  "value": "",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ],
+          "socialChannels": []
+        }
+      ],
+      "preloadedMetrics": [],
+      "globalMetrics": []
     }
   },
   "globalMetrics": [
