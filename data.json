@@ -3100,7 +3100,7 @@
               "channel": "Facebook Ads",
               "group": "Abril 2026",
               "hidden": true,
-              "startDate": "2026-04-02",
+              "startDate": "2026-03-24",
               "endDate": "2026-04-30",
               "metrics": [
                 {
@@ -3111,31 +3111,100 @@
                 },
                 {
                   "id": "2hitnqlh",
-                  "name": "",
-                  "value": "",
+                  "name": "Impresiones",
+                  "value": "56,093",
                   "unit": ""
                 },
                 {
                   "id": "nwjfp25a",
-                  "name": "",
-                  "value": "",
+                  "name": "CPM",
+                  "value": "$94.31",
                   "unit": ""
                 },
                 {
                   "id": "kqkia2bm",
-                  "name": "",
-                  "value": "",
+                  "name": "Clics",
+                  "value": "415",
                   "unit": ""
                 },
                 {
                   "id": "k8tio4bu",
-                  "name": "",
-                  "value": "",
+                  "name": "CP",
+                  "value": "12.75",
+                  "unit": "$"
+                },
+                {
+                  "id": "v4vdompw",
+                  "name": "CTR",
+                  "value": "0.74",
+                  "unit": "%"
+                },
+                {
+                  "id": "76it9kkj",
+                  "name": "Conversaciones Iniciadas",
+                  "value": "155",
                   "unit": ""
+                },
+                {
+                  "id": "lhaosng8",
+                  "name": "Costo Por Conversación Iniciada",
+                  "value": "34.13",
+                  "unit": "$"
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "tb9adokx",
+                  "image": "https://drive.google.com/file/d/1WSOkcvkj46tqhF-1pXekHzuUqlR63tD4/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "kz902psl",
+                      "name": "Importe Gastado",
+                      "value": "$1,988.28",
+                      "unit": ""
+                    },
+                    {
+                      "id": "rh4q16jl",
+                      "name": "Conversaciones Iniciadas",
+                      "value": "74",
+                      "unit": ""
+                    },
+                    {
+                      "id": "e6w4u9w3",
+                      "name": "Costo Por Conversación Iniciada",
+                      "value": "$26.87",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "x7u5qxnw",
+                  "image": "https://drive.google.com/file/d/1pBZ2K-KHitSbMiGdIDJdICdFm8eWnQGI/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "a5j9ryji",
+                      "name": "Importe Gastado",
+                      "value": "$1,787.54",
+                      "unit": ""
+                    },
+                    {
+                      "id": "csgc5gsp",
+                      "name": "Conversaciones Iniciadas",
+                      "value": "66",
+                      "unit": ""
+                    },
+                    {
+                      "id": "jugiuuon",
+                      "name": "Costo Por Conversación Iniciada",
+                      "value": "$27.08",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
