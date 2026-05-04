@@ -3197,32 +3197,26 @@
               "endDate": "2026-04-30",
               "metrics": [
                 {
-                  "id": "lxlou30r",
-                  "name": "",
-                  "value": "",
-                  "unit": ""
-                },
-                {
                   "id": "vm8jk64y",
-                  "name": "",
-                  "value": "",
+                  "name": "Alcance",
+                  "value": "9165",
                   "unit": ""
                 },
                 {
                   "id": "plqads3k",
-                  "name": "",
-                  "value": "",
+                  "name": "Interacciones",
+                  "value": "292",
                   "unit": ""
                 },
                 {
                   "id": "uj87kr01",
-                  "name": "",
-                  "value": "",
+                  "name": "Video Views",
+                  "value": "35,749",
                   "unit": ""
                 },
                 {
                   "id": "vvmegngv",
-                  "name": "",
+                  "name": "Seguidores",
                   "value": "16",
                   "unit": ""
                 }
@@ -3261,21 +3255,9 @@
               "endDate": "2026-04-30",
               "metrics": [
                 {
-                  "id": "dnef8ovp",
-                  "name": "Impresiones",
-                  "value": "",
-                  "unit": ""
-                },
-                {
-                  "id": "g6we1byx",
-                  "name": "Alcance",
-                  "value": "",
-                  "unit": ""
-                },
-                {
                   "id": "543amb6e",
                   "name": "Reacciones",
-                  "value": "",
+                  "value": "296",
                   "unit": ""
                 },
                 {
