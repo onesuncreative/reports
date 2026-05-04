@@ -2602,7 +2602,9 @@
                   ]
                 }
               ],
-              "observations": "Se comprobó que los esfuerzos de campañas de WhatsApp, si bien efectivos suelen ser más costosos que los formularios."
+              "observations": "Se comprobó que los esfuerzos de campañas de WhatsApp, si bien efectivos suelen ser más costosos que los formularios.",
+              "group": "Marzo 2026",
+              "hidden": true
             },
             {
               "id": "cjso2gss",
@@ -2694,7 +2696,9 @@
                   ]
                 }
               ],
-              "observations": "Se migró a una campaña de formulario para perfilar mejor el tipo de usuario que contacta a Taskility."
+              "observations": "Se migró a una campaña de formulario para perfilar mejor el tipo de usuario que contacta a Taskility.",
+              "group": "Marzo 2026",
+              "hidden": true
             },
             {
               "id": "2u3e6fvc",
@@ -2786,6 +2790,245 @@
                   ]
                 }
               ],
+              "observations": "",
+              "group": "Marzo 2026",
+              "hidden": true
+            },
+            {
+              "id": "z04ysxax",
+              "name": "Leads - Forms - Reforma Aduanera",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "it0juv13",
+                  "name": "Importe Gastado",
+                  "value": 3997.88,
+                  "unit": "$"
+                },
+                {
+                  "id": "pwgz4brg",
+                  "name": "Alcance",
+                  "value": 13473,
+                  "unit": ""
+                },
+                {
+                  "id": "a4qe0uzt",
+                  "name": "Impresiones",
+                  "value": 44318,
+                  "unit": ""
+                },
+                {
+                  "id": "08erogv9",
+                  "name": "Clics",
+                  "value": 970,
+                  "unit": ""
+                },
+                {
+                  "id": "1ya4v79k",
+                  "name": "CPC",
+                  "value": 4.12,
+                  "unit": "$"
+                },
+                {
+                  "id": "jk0ddgtr",
+                  "name": "CTR",
+                  "value": 2.19,
+                  "unit": "%"
+                },
+                {
+                  "id": "gcg3s3p7",
+                  "name": "Leads",
+                  "value": 22,
+                  "unit": ""
+                },
+                {
+                  "id": "kv9d2pd4",
+                  "name": "Costo por Lead",
+                  "value": 90.93,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "p3vlrmnt",
+                  "image": "https://drive.google.com/file/d/1Kt-jVY3uncRljQ4io5U5dxF2WRWSVoxK/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "bgye4uf2",
+                      "name": "Importe Gastado",
+                      "value": "$1,819.67",
+                      "unit": ""
+                    },
+                    {
+                      "id": "vzqdldno",
+                      "name": "Leads",
+                      "value": "36",
+                      "unit": ""
+                    },
+                    {
+                      "id": "29ahx67s",
+                      "name": "Costo por Lead",
+                      "value": "$50.55",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "jnyta5k1",
+                  "image": "https://drive.google.com/file/d/1wlCpTY45AMt3WH0wL10pQDrrKgDXZ-qt/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "6ro8zclh",
+                      "name": "Importe Gastado",
+                      "value": "$1,059.98",
+                      "unit": ""
+                    },
+                    {
+                      "id": "hx1rt8hl",
+                      "name": "Leads",
+                      "value": "25",
+                      "unit": ""
+                    },
+                    {
+                      "id": "bp9pku45",
+                      "name": "Costo por Lead",
+                      "value": "$42.40",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "9xyef0o1",
+              "name": "Leads - Forms - Emerging Teams",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "t60n76q5",
+                  "name": "Importe Gastado",
+                  "value": 2000.55,
+                  "unit": "$"
+                },
+                {
+                  "id": "u5zv4zuj",
+                  "name": "Alcance",
+                  "value": 8911,
+                  "unit": ""
+                },
+                {
+                  "id": "wsoy88yu",
+                  "name": "Impresiones",
+                  "value": 18628,
+                  "unit": ""
+                },
+                {
+                  "id": "gyszi5tj",
+                  "name": "Clics",
+                  "value": 279,
+                  "unit": ""
+                },
+                {
+                  "id": "zo3mvwu7",
+                  "name": "CPC",
+                  "value": 7.17,
+                  "unit": "$"
+                },
+                {
+                  "id": "sd0bsjmu",
+                  "name": "CTR",
+                  "value": 1.5,
+                  "unit": "%"
+                },
+                {
+                  "id": "4wyzq96e",
+                  "name": "Leads",
+                  "value": 76,
+                  "unit": ""
+                },
+                {
+                  "id": "wwffeg6a",
+                  "name": "Costo por Lead",
+                  "value": 52.6,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "c9ly0x5r",
+              "name": "Leads - Forms - Roger",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "u4anm2c9",
+                  "name": "Importe Gastado",
+                  "value": 3918.35,
+                  "unit": "$"
+                },
+                {
+                  "id": "4bxn6qtz",
+                  "name": "Alcance",
+                  "value": 11596,
+                  "unit": ""
+                },
+                {
+                  "id": "rbzftas3",
+                  "name": "Impresiones",
+                  "value": 29538,
+                  "unit": ""
+                },
+                {
+                  "id": "lyn946rl",
+                  "name": "Clics",
+                  "value": 506,
+                  "unit": ""
+                },
+                {
+                  "id": "9i9oyza6",
+                  "name": "CPC",
+                  "value": 7.74,
+                  "unit": "$"
+                },
+                {
+                  "id": "r6qct2oz",
+                  "name": "CTR",
+                  "value": 1.71,
+                  "unit": "%"
+                },
+                {
+                  "id": "1xyscxo0",
+                  "name": "Leads",
+                  "value": 31,
+                  "unit": ""
+                },
+                {
+                  "id": "j8569szb",
+                  "name": "Costo por Lead",
+                  "value": 126.4,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
               "observations": ""
             }
           ],
