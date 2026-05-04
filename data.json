@@ -2604,7 +2604,7 @@
               ],
               "observations": "Se comprobó que los esfuerzos de campañas de WhatsApp, si bien efectivos suelen ser más costosos que los formularios.",
               "group": "Marzo 2026",
-              "hidden": true
+              "hidden": false
             },
             {
               "id": "cjso2gss",
@@ -2698,7 +2698,7 @@
               ],
               "observations": "Se migró a una campaña de formulario para perfilar mejor el tipo de usuario que contacta a Taskility.",
               "group": "Marzo 2026",
-              "hidden": true
+              "hidden": false
             },
             {
               "id": "2u3e6fvc",
@@ -2792,7 +2792,7 @@
               ],
               "observations": "",
               "group": "Marzo 2026",
-              "hidden": true
+              "hidden": false
             },
             {
               "id": "z04ysxax",
@@ -3115,7 +3115,7 @@
               "name": "LinkedIn",
               "icon": "📱",
               "group": "Abril 2026",
-              "hidden": true,
+              "hidden": false,
               "startDate": "2026-04-01",
               "endDate": "2026-04-30",
               "metrics": [
@@ -3128,7 +3128,7 @@
                 {
                   "id": "iaju62ob",
                   "name": "Alcance",
-                  "value": "30",
+                  "value": "282",
                   "unit": ""
                 },
                 {
@@ -3142,16 +3142,49 @@
                   "name": "Seguidores",
                   "value": "171",
                   "unit": ""
-                },
-                {
-                  "id": "lo1ftvhd",
-                  "name": "",
-                  "value": "",
-                  "unit": ""
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "2qenm2vs",
+                  "image": "https://www.linkedin.com/posts/taskility_fabricantesimmex-manifestaciondevalor-mve-activity-7452386938160017408-sANC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACKoLI8Bmn5JO8NqyavHshdtuSQIHdFoOrg",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "ov8dcc3e",
+                      "name": "Impresiones",
+                      "value": "54",
+                      "unit": ""
+                    },
+                    {
+                      "id": "4pgs7kto",
+                      "name": "Reacciones",
+                      "value": "2",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ia9m1q3s",
+                  "image": "https://www.linkedin.com/feed/update/urn:li:activity:7452023331387674625/?actorCompanyId=64725652",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "277ouo77",
+                      "name": "Impresiones",
+                      "value": "40",
+                      "unit": ""
+                    },
+                    {
+                      "id": "wc0g85nh",
+                      "name": "Reacciones",
+                      "value": "4",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ]
