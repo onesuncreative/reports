@@ -3266,7 +3266,20 @@
                   "id": "55jw7rjr",
                   "image": "https://www.instagram.com/reel/DX15qXpByOQ/?hl=es",
                   "imageType": "url",
-                  "metrics": []
+                  "metrics": [
+                    {
+                      "id": "tl9dfnds",
+                      "name": "Views",
+                      "value": "156",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xnet072f",
+                      "name": "Reacciones",
+                      "value": "0",
+                      "unit": ""
+                    }
+                  ]
                 }
               ],
               "observations": ""
