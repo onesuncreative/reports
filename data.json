@@ -2966,7 +2966,58 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "8cx1uau1",
+                  "image": "https://drive.google.com/file/d/1FuS4E6VAyBQLpR7qkXHtBb-Npi9y1PwA/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "u7vvlsbp",
+                      "name": "Importe Gastado",
+                      "value": "$863.16",
+                      "unit": ""
+                    },
+                    {
+                      "id": "nyrs76ro",
+                      "name": "Leads",
+                      "value": "11",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5z44hclu",
+                      "name": "Costo Por Lead",
+                      "value": "$78.47",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "jd2ry5g9",
+                  "image": "https://drive.google.com/file/d/1tCYJjzjtnj6xgTGp0toxaXoaZYB6tJqW/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "lqwiyqac",
+                      "name": "Importe Gastado",
+                      "value": "$1,067.19",
+                      "unit": ""
+                    },
+                    {
+                      "id": "6iirn551",
+                      "name": "Leads",
+                      "value": "11",
+                      "unit": ""
+                    },
+                    {
+                      "id": "tq9yrai7",
+                      "name": "Costo Por Lead",
+                      "value": "$97.02",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
