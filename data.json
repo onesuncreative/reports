@@ -574,7 +574,7 @@
                   "id": "6w93lsy6",
                   "name": "CPM",
                   "value": 5.86,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "0hzn4npm",
@@ -604,7 +604,7 @@
                   "id": "wrt84a7w",
                   "name": "Costo / Inversión",
                   "value": 27.48,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "kdfwlgrf",
@@ -616,7 +616,7 @@
                   "id": "401nn1qu",
                   "name": "Costo por Llamada",
                   "value": 149,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -1287,7 +1287,7 @@
                   "id": "dv3nmh4c",
                   "name": "CPM",
                   "value": 4.21,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "zbm14h7c",
@@ -1315,9 +1315,9 @@
                 },
                 {
                   "id": "ozppycdr",
-                  "name": "Costo / Inversión",
+                  "name": "Costo Por Lead",
                   "value": 26.34,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "1yxhzbze",
@@ -1329,7 +1329,7 @@
                   "id": "b55cyevy",
                   "name": "Costo por Llamada",
                   "value": 125.6,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -1342,7 +1342,7 @@
               "channel": "Google Ads",
               "group": "Abril 2026",
               "hidden": false,
-              "startDate": "2026-04-01",
+              "startDate": "2026-04-25",
               "endDate": "2026-04-30",
               "metrics": [
                 {
@@ -1395,15 +1395,15 @@
                 },
                 {
                   "id": "u6erc491",
-                  "name": "Leads",
+                  "name": "Conversaciones",
                   "value": 6,
                   "unit": ""
                 },
                 {
                   "id": "jhticqez",
-                  "name": "Costo / Inversión",
+                  "name": "Costo Por Conversación",
                   "value": 13.79,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -1465,7 +1465,7 @@
                   "id": "5qjkj7wl",
                   "name": "Costo por Llamada",
                   "value": 140,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -1866,14 +1866,291 @@
               "group": "Marzo 2026"
             },
             {
-              "id": "1s4f4f72",
-              "name": "Google Ads",
+              "id": "iqg9wdqf",
+              "name": "Facebook Ads - Volkswagen - Abril 2026",
               "channel": "Google Ads",
               "group": "Abril 2026",
               "hidden": false,
-              "startDate": "2026-04-01",
+              "startDate": "",
               "endDate": "",
-              "metrics": [],
+              "metrics": [
+                {
+                  "id": "n8wd2ubf",
+                  "name": "Dealer",
+                  "value": "Volkswagen",
+                  "unit": ""
+                },
+                {
+                  "id": "329fzmua",
+                  "name": "Importe Invertido",
+                  "value": 13292.28,
+                  "unit": "$"
+                },
+                {
+                  "id": "4ic9fnnk",
+                  "name": "Impresiones",
+                  "value": 1540042,
+                  "unit": ""
+                },
+                {
+                  "id": "07uo315d",
+                  "name": "Alcance",
+                  "value": 492032,
+                  "unit": ""
+                },
+                {
+                  "id": "f4pqiini",
+                  "name": "Frecuencia",
+                  "value": 3.13,
+                  "unit": ""
+                },
+                {
+                  "id": "sil1ifp9",
+                  "name": "CPM",
+                  "value": 8.63,
+                  "unit": "$"
+                },
+                {
+                  "id": "ubriy1sx",
+                  "name": "Clics",
+                  "value": 25037,
+                  "unit": ""
+                },
+                {
+                  "id": "9drd3i8e",
+                  "name": "CTR",
+                  "value": 1.63,
+                  "unit": "%"
+                },
+                {
+                  "id": "rw1v6z0m",
+                  "name": "CPC",
+                  "value": 0.53,
+                  "unit": ""
+                },
+                {
+                  "id": "ekohd8rm",
+                  "name": "Leads",
+                  "value": 247,
+                  "unit": ""
+                },
+                {
+                  "id": "hqnb0a65",
+                  "name": "Costo Por Lead",
+                  "value": 53.81,
+                  "unit": "$"
+                },
+                {
+                  "id": "9xqlh9gr",
+                  "name": "Llamadas",
+                  "value": 34,
+                  "unit": ""
+                },
+                {
+                  "id": "5q1x4aal",
+                  "name": "Costo por Llamada",
+                  "value": 390.95,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "dlaiiibw",
+              "name": "StackAdapt - Native - Volkswagen - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "ddo16s2u",
+                  "name": "Dealer",
+                  "value": "Volkswagen",
+                  "unit": ""
+                },
+                {
+                  "id": "xpl8whxp",
+                  "name": "Importe Invertido",
+                  "value": 290.22,
+                  "unit": "$"
+                },
+                {
+                  "id": "u0p68ijs",
+                  "name": "Impresiones",
+                  "value": 16616,
+                  "unit": ""
+                },
+                {
+                  "id": "fkzsqo8s",
+                  "name": "CPM",
+                  "value": 17.47,
+                  "unit": ""
+                },
+                {
+                  "id": "i64squ0u",
+                  "name": "Clics",
+                  "value": 894,
+                  "unit": ""
+                },
+                {
+                  "id": "47lyszxp",
+                  "name": "CTR",
+                  "value": 5.38,
+                  "unit": "%"
+                },
+                {
+                  "id": "pmamz396",
+                  "name": "CPC",
+                  "value": 0.33,
+                  "unit": ""
+                },
+                {
+                  "id": "ii0f4v0w",
+                  "name": "Leads",
+                  "value": 3,
+                  "unit": ""
+                },
+                {
+                  "id": "smwehocd",
+                  "name": "Costo / Inversión",
+                  "value": 96.74,
+                  "unit": ""
+                },
+                {
+                  "id": "zi86ru02",
+                  "name": "Llamadas",
+                  "value": 30,
+                  "unit": ""
+                },
+                {
+                  "id": "b161xaq4",
+                  "name": "Costo por Llamada",
+                  "value": 9.67,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "q1pbvvzg",
+              "name": "StackAdapt - CTV - Volkswagen - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "h3o4cqha",
+                  "name": "Dealer",
+                  "value": "Volkswagen",
+                  "unit": ""
+                },
+                {
+                  "id": "w2hkrxh3",
+                  "name": "Importe Invertido",
+                  "value": 3602.68,
+                  "unit": "$"
+                },
+                {
+                  "id": "fjihgk2n",
+                  "name": "Tasa de video completado",
+                  "value": 97.63,
+                  "unit": ""
+                },
+                {
+                  "id": "i9mbi6lm",
+                  "name": "Video Completado",
+                  "value": 166396,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "et335ujw",
+              "name": "Google Ads - PMAX - Volkswagen  - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "e4yqgkjf",
+                  "name": "Dealer",
+                  "value": "Volkswagen",
+                  "unit": ""
+                },
+                {
+                  "id": "7o4tofb2",
+                  "name": "Importe Invertido",
+                  "value": 4235.88,
+                  "unit": "$"
+                },
+                {
+                  "id": "ns8dx7bu",
+                  "name": "Impresiones",
+                  "value": 275708,
+                  "unit": ""
+                },
+                {
+                  "id": "w3ptdstw",
+                  "name": "CPM",
+                  "value": 15.36,
+                  "unit": ""
+                },
+                {
+                  "id": "aq9h12ww",
+                  "name": "Clics",
+                  "value": 2756,
+                  "unit": ""
+                },
+                {
+                  "id": "u20tpne5",
+                  "name": "CTR",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "id": "pscj0cr1",
+                  "name": "CPC",
+                  "value": 1.54,
+                  "unit": ""
+                },
+                {
+                  "id": "swy4lkcs",
+                  "name": "Leads",
+                  "value": 52,
+                  "unit": ""
+                },
+                {
+                  "id": "b6hz02ji",
+                  "name": "Costo / Inversión",
+                  "value": 81.46,
+                  "unit": ""
+                },
+                {
+                  "id": "280uvxun",
+                  "name": "Llamadas",
+                  "value": 28,
+                  "unit": ""
+                },
+                {
+                  "id": "nxec5bxw",
+                  "name": "Costo por Llamada",
+                  "value": 151.28,
+                  "unit": ""
+                }
+              ],
               "evidences": [],
               "bestContent": [],
               "observations": ""
