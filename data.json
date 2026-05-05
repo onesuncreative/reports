@@ -1673,7 +1673,39 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "inaroik9",
+                  "image": "https://drive.google.com/file/d/1HnbGjwJglezA6fjDcFrPbrD70G61tPCn/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "22wiubc0",
+                      "name": "Importe Gastado",
+                      "value": "$70.00",
+                      "unit": ""
+                    },
+                    {
+                      "id": "b9y5typr",
+                      "name": "Clicks",
+                      "value": "140",
+                      "unit": ""
+                    },
+                    {
+                      "id": "13ebqccn",
+                      "name": "CPC",
+                      "value": "$0.50",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7r1js9ga",
+                      "name": "CTR",
+                      "value": "6.58%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -1695,7 +1727,7 @@
                   "id": "qzcro9n0",
                   "name": "Tasa de video completado",
                   "value": 97.92,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "1xdec0jw",
@@ -1705,7 +1737,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "jyy084g7",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "tr6y3g2z",
+                      "name": "Importe Gastado",
+                      "value": "799.98",
+                      "unit": ""
+                    },
+                    {
+                      "id": "rye0kfnt",
+                      "name": "Tasa de video completado",
+                      "value": "97.92%",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ei2vfh9g",
+                      "name": "Video Completado",
+                      "value": "44748",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
