@@ -3675,6 +3675,80 @@
               "observations": "",
               "hidden": false,
               "group": "Marzo 2026"
+            },
+            {
+              "id": "yjyilcm6",
+              "name": "Facebook Ads - Hino - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "zn9565jp",
+                  "name": "Importe Invertido",
+                  "value": 422.96,
+                  "unit": "$"
+                },
+                {
+                  "id": "3htfp37i",
+                  "name": "Impresiones",
+                  "value": 139128,
+                  "unit": ""
+                },
+                {
+                  "id": "mqhg3lwr",
+                  "name": "Alcance",
+                  "value": 39305,
+                  "unit": ""
+                },
+                {
+                  "id": "spiqdfkp",
+                  "name": "Frecuencia",
+                  "value": 3.54,
+                  "unit": ""
+                },
+                {
+                  "id": "9ogntvwb",
+                  "name": "CPM",
+                  "value": 3.04,
+                  "unit": "$"
+                },
+                {
+                  "id": "rp9xzzpe",
+                  "name": "Clics",
+                  "value": 1560,
+                  "unit": ""
+                },
+                {
+                  "id": "iylwzspm",
+                  "name": "CTR",
+                  "value": 1.12,
+                  "unit": "%"
+                },
+                {
+                  "id": "4c6l0tij",
+                  "name": "CPC",
+                  "value": 0.27,
+                  "unit": ""
+                },
+                {
+                  "id": "gop4u0dn",
+                  "name": "Leads",
+                  "value": 7,
+                  "unit": ""
+                },
+                {
+                  "id": "7hzivk87",
+                  "name": "Costo / Inversión",
+                  "value": 60.42,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
