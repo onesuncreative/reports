@@ -1226,7 +1226,8 @@
                 }
               ],
               "observations": "",
-              "hidden": true
+              "hidden": false,
+              "group": "Marzo 2026"
             },
             {
               "id": "0gd9an20",
@@ -1429,6 +1430,19 @@
               "observations": "",
               "hidden": false,
               "group": "Marzo 2026"
+            },
+            {
+              "id": "1s4f4f72",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "",
+              "metrics": [],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
@@ -1689,6 +1703,26 @@
               "observations": "",
               "hidden": false,
               "group": "Marzo 2026"
+            },
+            {
+              "id": "w0hdyo78",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-03",
+              "metrics": [
+                {
+                  "id": "1s5xxrda",
+                  "name": "Llamadas",
+                  "value": "3",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
@@ -2043,6 +2077,26 @@
               "observations": "",
               "hidden": false,
               "group": "Marzo 2026"
+            },
+            {
+              "id": "5wph4hn2",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "byw8an9s",
+                  "name": "Llamadas",
+                  "value": "31",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
@@ -2297,6 +2351,26 @@
               "observations": "",
               "hidden": false,
               "group": "Marzo 2026"
+            },
+            {
+              "id": "40puy2dp",
+              "name": "Google Ads",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "h4ustz3o",
+                  "name": "Llamadas",
+                  "value": "4",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
