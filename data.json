@@ -2994,7 +2994,7 @@
                   "id": "nmy6uop2",
                   "name": "CPM",
                   "value": 3.63,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "l9jucaa9",
@@ -3311,6 +3311,154 @@
                   "name": "Llamadas",
                   "value": "4",
                   "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "w7klrfd9",
+              "name": "Facebook Ads - Guayama - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "clm8eber",
+                  "name": "Importe Invertido",
+                  "value": 1731.17,
+                  "unit": "$"
+                },
+                {
+                  "id": "velsczs5",
+                  "name": "Impresiones",
+                  "value": 547435,
+                  "unit": ""
+                },
+                {
+                  "id": "d4dkf17a",
+                  "name": "Alcance",
+                  "value": 129300,
+                  "unit": ""
+                },
+                {
+                  "id": "1zglqr30",
+                  "name": "Frecuencia",
+                  "value": 4.23,
+                  "unit": ""
+                },
+                {
+                  "id": "xs4lzxxe",
+                  "name": "CPM",
+                  "value": 3.16,
+                  "unit": ""
+                },
+                {
+                  "id": "xn7rvrhr",
+                  "name": "Clics",
+                  "value": 12703,
+                  "unit": ""
+                },
+                {
+                  "id": "bgdx5np6",
+                  "name": "CTR",
+                  "value": 2.32,
+                  "unit": "%"
+                },
+                {
+                  "id": "e1btgc30",
+                  "name": "CPC",
+                  "value": 0.14,
+                  "unit": ""
+                },
+                {
+                  "id": "ddsfvw3d",
+                  "name": "Leads",
+                  "value": 133,
+                  "unit": ""
+                },
+                {
+                  "id": "8ng7wkis",
+                  "name": "Costo Por Lead",
+                  "value": 13.02,
+                  "unit": "$"
+                },
+                {
+                  "id": "6wkql0zg",
+                  "name": "Llamadas",
+                  "value": 24,
+                  "unit": ""
+                },
+                {
+                  "id": "ofslrkzb",
+                  "name": "Costo por Llamada",
+                  "value": 72.13,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "109zsj1f",
+              "name": "StackAdapt - Native - Guayama - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "r3l4icdl",
+                  "name": "Importe Invertido",
+                  "value": 240.5,
+                  "unit": "$"
+                },
+                {
+                  "id": "kqf86b0s",
+                  "name": "Impresiones",
+                  "value": 9293,
+                  "unit": ""
+                },
+                {
+                  "id": "4inkwyuy",
+                  "name": "CPM",
+                  "value": 25.88,
+                  "unit": ""
+                },
+                {
+                  "id": "aqbdxtqr",
+                  "name": "Clics",
+                  "value": 481,
+                  "unit": ""
+                },
+                {
+                  "id": "cbajj71j",
+                  "name": "CTR",
+                  "value": 5.18,
+                  "unit": "%"
+                },
+                {
+                  "id": "ngyrz6v5",
+                  "name": "CPC",
+                  "value": 0.5,
+                  "unit": "$"
+                },
+                {
+                  "id": "xahxavl8",
+                  "name": "Llamadas",
+                  "value": 2,
+                  "unit": ""
+                },
+                {
+                  "id": "8do36ncx",
+                  "name": "Costo por Llamada",
+                  "value": 120.25,
+                  "unit": "$"
                 }
               ],
               "evidences": [],
