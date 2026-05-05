@@ -1249,6 +1249,260 @@
               "observations": "",
               "hidden": false,
               "group": "Marzo 2026"
+            },
+            {
+              "id": "txjz2dan",
+              "name": "Facebook Ads - Lincoln - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "986h8obp",
+                  "name": "Importe Invertido",
+                  "value": 1632.86,
+                  "unit": "$"
+                },
+                {
+                  "id": "ep3xvs25",
+                  "name": "Impresiones",
+                  "value": 387732,
+                  "unit": ""
+                },
+                {
+                  "id": "jr8rjxln",
+                  "name": "Alcance",
+                  "value": 129105,
+                  "unit": ""
+                },
+                {
+                  "id": "1t87evzv",
+                  "name": "Frecuencia",
+                  "value": 3,
+                  "unit": ""
+                },
+                {
+                  "id": "dv3nmh4c",
+                  "name": "CPM",
+                  "value": 4.21,
+                  "unit": ""
+                },
+                {
+                  "id": "zbm14h7c",
+                  "name": "Clics",
+                  "value": 9189,
+                  "unit": ""
+                },
+                {
+                  "id": "tjqpvfbh",
+                  "name": "CTR",
+                  "value": 2.37,
+                  "unit": "%"
+                },
+                {
+                  "id": "ed3rkzhw",
+                  "name": "CPC",
+                  "value": 0.18,
+                  "unit": ""
+                },
+                {
+                  "id": "52rmsl0g",
+                  "name": "Leads",
+                  "value": 62,
+                  "unit": ""
+                },
+                {
+                  "id": "ozppycdr",
+                  "name": "Costo / Inversión",
+                  "value": 26.34,
+                  "unit": ""
+                },
+                {
+                  "id": "1yxhzbze",
+                  "name": "Llamadas",
+                  "value": 13,
+                  "unit": ""
+                },
+                {
+                  "id": "b55cyevy",
+                  "name": "Costo por Llamada",
+                  "value": 125.6,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "gidr25bg",
+              "name": "Facebook Ads - WhatsApp - Lincoln - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "jvkd7i03",
+                  "name": "Importe Invertido",
+                  "value": 82.74,
+                  "unit": "$"
+                },
+                {
+                  "id": "24vwbyvf",
+                  "name": "Impresiones",
+                  "value": 11856,
+                  "unit": ""
+                },
+                {
+                  "id": "rqnhhz9o",
+                  "name": "Alcance",
+                  "value": 4755,
+                  "unit": ""
+                },
+                {
+                  "id": "6ni1kt7z",
+                  "name": "Frecuencia",
+                  "value": 2.49,
+                  "unit": ""
+                },
+                {
+                  "id": "v2cnrgd5",
+                  "name": "CPM",
+                  "value": 6.98,
+                  "unit": ""
+                },
+                {
+                  "id": "pzut77uf",
+                  "name": "Clics",
+                  "value": 347,
+                  "unit": ""
+                },
+                {
+                  "id": "epvmm5yh",
+                  "name": "CTR",
+                  "value": 2.93,
+                  "unit": "%"
+                },
+                {
+                  "id": "quelfojr",
+                  "name": "CPC",
+                  "value": 0.24,
+                  "unit": ""
+                },
+                {
+                  "id": "u6erc491",
+                  "name": "Leads",
+                  "value": 6,
+                  "unit": ""
+                },
+                {
+                  "id": "jhticqez",
+                  "name": "Costo / Inversión",
+                  "value": 13.79,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "vqrf66b0",
+              "name": "StackAdapt - Native - Lincoln - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "x4gqweky",
+                  "name": "Importe Invertido",
+                  "value": 560,
+                  "unit": "$"
+                },
+                {
+                  "id": "u1c8oa2t",
+                  "name": "Impresiones",
+                  "value": 19534,
+                  "unit": ""
+                },
+                {
+                  "id": "yw0ildvp",
+                  "name": "CPM",
+                  "value": 28.67,
+                  "unit": ""
+                },
+                {
+                  "id": "czbt27q1",
+                  "name": "Clics",
+                  "value": 1120,
+                  "unit": ""
+                },
+                {
+                  "id": "qavoyp33",
+                  "name": "CTR",
+                  "value": 5.73,
+                  "unit": "%"
+                },
+                {
+                  "id": "66qewsw7",
+                  "name": "CPC",
+                  "value": 1.71,
+                  "unit": ""
+                },
+                {
+                  "id": "b6cruy2e",
+                  "name": "Llamadas",
+                  "value": 4,
+                  "unit": ""
+                },
+                {
+                  "id": "5qjkj7wl",
+                  "name": "Costo por Llamada",
+                  "value": 140,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "stplun01",
+              "name": "StackAdapt - CTV - Lincoln - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "2esufhyy",
+                  "name": "Importe Invertido",
+                  "value": 799.98,
+                  "unit": "$"
+                },
+                {
+                  "id": "qzcro9n0",
+                  "name": "Tasa de video completado",
+                  "value": 97.92,
+                  "unit": ""
+                },
+                {
+                  "id": "1xdec0jw",
+                  "name": "Video Completado",
+                  "value": 44748,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
