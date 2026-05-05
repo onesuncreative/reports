@@ -2524,7 +2524,7 @@
             {
               "id": "vzmkzqef",
               "name": "StackAdapt - Native - San Juan - Abril 2026",
-              "channel": "Facebook Ads",
+              "channel": "StackAdapt - Native",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
@@ -2546,7 +2546,7 @@
                   "id": "ea2ifjw0",
                   "name": "CPM",
                   "value": 28.4,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "wgws4fsa",
@@ -2951,6 +2951,92 @@
                   "name": "Llamadas",
                   "value": "31",
                   "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "bo8a4kc3",
+              "name": "Facebook Ads - Hormigueros - Abril 2026",
+              "channel": "Facebook Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "0ga0yvs1",
+                  "name": "Importe Invertido",
+                  "value": 1713.61,
+                  "unit": "$"
+                },
+                {
+                  "id": "5xp8o8em",
+                  "name": "Impresiones",
+                  "value": 471466,
+                  "unit": ""
+                },
+                {
+                  "id": "d57hqsnf",
+                  "name": "Alcance",
+                  "value": 165694,
+                  "unit": ""
+                },
+                {
+                  "id": "mfb80v0w",
+                  "name": "Frecuencia",
+                  "value": 2.85,
+                  "unit": ""
+                },
+                {
+                  "id": "nmy6uop2",
+                  "name": "CPM",
+                  "value": 3.63,
+                  "unit": ""
+                },
+                {
+                  "id": "l9jucaa9",
+                  "name": "Clics",
+                  "value": 9038,
+                  "unit": ""
+                },
+                {
+                  "id": "osv3dhae",
+                  "name": "CTR",
+                  "value": 1.92,
+                  "unit": "%"
+                },
+                {
+                  "id": "wro4maus",
+                  "name": "CPC",
+                  "value": 0.19,
+                  "unit": ""
+                },
+                {
+                  "id": "dmc4y1sf",
+                  "name": "Leads",
+                  "value": 35,
+                  "unit": ""
+                },
+                {
+                  "id": "c45cnsok",
+                  "name": "Costo Por Lead",
+                  "value": 48.96,
+                  "unit": "$"
+                },
+                {
+                  "id": "ts3w964k",
+                  "name": "Llamadas",
+                  "value": 5,
+                  "unit": ""
+                },
+                {
+                  "id": "mh48oqpl",
+                  "name": "Costo por Llamada",
+                  "value": 342.72,
+                  "unit": "$"
                 }
               ],
               "evidences": [],
