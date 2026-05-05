@@ -1448,7 +1448,64 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "plxvgjub",
+                  "image": "https://drive.google.com/file/d/16iXSq-S4W7XRqn8zS2sqhhOW3hDC6p2Y/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "1jnluigy",
+                      "name": "Importe Gastado",
+                      "value": "$322.53",
+                      "unit": ""
+                    },
+                    {
+                      "id": "70f9zy5j",
+                      "name": "Leads",
+                      "value": "22",
+                      "unit": ""
+                    },
+                    {
+                      "id": "826fknnk",
+                      "name": "Costo Por Lead",
+                      "value": "$14.66",
+                      "unit": ""
+                    },
+                    {
+                      "id": "z9hg9516",
+                      "name": "CTR",
+                      "value": "2.38%",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "pxr9hqdb",
+                  "image": "https://drive.google.com/file/d/14QdvFV8Cz73NCIxtWa10k93Aynk9XjVn/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "u7v6c0rd",
+                      "name": "Importe Gastado",
+                      "value": "$36.52",
+                      "unit": ""
+                    },
+                    {
+                      "id": "fne45xd9",
+                      "name": "Visitas A Perfil",
+                      "value": "398",
+                      "unit": ""
+                    },
+                    {
+                      "id": "2f6dxpow",
+                      "name": "Costo Por Visita",
+                      "value": "$0.09",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -1522,7 +1579,14 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "i7jdmxcd",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
               "observations": ""
             },
             {
