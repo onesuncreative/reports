@@ -540,7 +540,7 @@
             {
               "id": "1lb0yp27",
               "name": "Facebook Ads - Ford - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
@@ -626,7 +626,7 @@
             {
               "id": "0xnh8ay4",
               "name": "StackAdapt - Native - Ford - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "StackAdapt - Native",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
@@ -688,7 +688,7 @@
             {
               "id": "s3k5545b",
               "name": "StackAdapt - CTV - Ford - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "StackAdapt - CTV",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
@@ -1253,7 +1253,7 @@
             {
               "id": "txjz2dan",
               "name": "Facebook Ads - Lincoln - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
@@ -1339,7 +1339,7 @@
             {
               "id": "gidr25bg",
               "name": "Facebook Ads - WhatsApp - Lincoln - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-25",
@@ -1413,7 +1413,7 @@
             {
               "id": "vqrf66b0",
               "name": "StackAdapt - Native - Lincoln - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "StackAdapt - Native",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
@@ -1475,7 +1475,7 @@
             {
               "id": "stplun01",
               "name": "StackAdapt - CTV - Lincoln - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "StackAdapt - CTV",
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
@@ -1868,11 +1868,11 @@
             {
               "id": "iqg9wdqf",
               "name": "Facebook Ads - Volkswagen - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Abril 2026",
               "hidden": false,
-              "startDate": "",
-              "endDate": "",
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
               "metrics": [
                 {
                   "id": "n8wd2ubf",
@@ -1960,11 +1960,11 @@
             {
               "id": "dlaiiibw",
               "name": "StackAdapt - Native - Volkswagen - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "StackAdapt - Native",
               "group": "Abril 2026",
               "hidden": false,
-              "startDate": "",
-              "endDate": "",
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
               "metrics": [
                 {
                   "id": "ddo16s2u",
@@ -2040,11 +2040,11 @@
             {
               "id": "q1pbvvzg",
               "name": "StackAdapt - CTV - Volkswagen - Abril 2026",
-              "channel": "Google Ads",
+              "channel": "StackAdapt - CTV",
               "group": "Abril 2026",
               "hidden": false,
-              "startDate": "",
-              "endDate": "",
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
               "metrics": [
                 {
                   "id": "h3o4cqha",
@@ -2422,13 +2422,161 @@
               "group": "Abril 2026",
               "hidden": false,
               "startDate": "2026-04-01",
-              "endDate": "2026-04-03",
+              "endDate": "2026-04-30",
               "metrics": [
                 {
                   "id": "1s5xxrda",
                   "name": "Llamadas",
                   "value": "3",
                   "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "0vy3y9cg",
+              "name": "Facebook Ads - San Juan - Abril 2026",
+              "channel": "Facebook Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "ecbq3zgc",
+                  "name": "Importe Invertido",
+                  "value": 2138.49,
+                  "unit": "$"
+                },
+                {
+                  "id": "pd1ayku0",
+                  "name": "Impresiones",
+                  "value": 638985,
+                  "unit": ""
+                },
+                {
+                  "id": "nincu64m",
+                  "name": "Alcance",
+                  "value": 239503,
+                  "unit": ""
+                },
+                {
+                  "id": "k4wgc47b",
+                  "name": "Frecuencia",
+                  "value": 2.67,
+                  "unit": ""
+                },
+                {
+                  "id": "fycvtkbw",
+                  "name": "CPM",
+                  "value": 3.35,
+                  "unit": "$"
+                },
+                {
+                  "id": "pwhrp02p",
+                  "name": "Clics",
+                  "value": 10270,
+                  "unit": ""
+                },
+                {
+                  "id": "fu8d3bl7",
+                  "name": "CTR",
+                  "value": 1.61,
+                  "unit": "%"
+                },
+                {
+                  "id": "wvy79vcm",
+                  "name": "CPC",
+                  "value": 0.21,
+                  "unit": ""
+                },
+                {
+                  "id": "5vzytlnp",
+                  "name": "Leads",
+                  "value": 97,
+                  "unit": ""
+                },
+                {
+                  "id": "hzfsj23s",
+                  "name": "Costo Por Lead",
+                  "value": 22.05,
+                  "unit": "$"
+                },
+                {
+                  "id": "h0ynyhh9",
+                  "name": "Llamadas",
+                  "value": 26,
+                  "unit": ""
+                },
+                {
+                  "id": "h535ijy3",
+                  "name": "Costo por Llamada",
+                  "value": 82.25,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "vzmkzqef",
+              "name": "StackAdapt - Native - San Juan - Abril 2026",
+              "channel": "Facebook Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "2026-04-01",
+              "endDate": "2026-04-30",
+              "metrics": [
+                {
+                  "id": "k71ev3qo",
+                  "name": "Importe Invertido",
+                  "value": 240.03,
+                  "unit": "$"
+                },
+                {
+                  "id": "yqtuj9bn",
+                  "name": "Impresiones",
+                  "value": 8451,
+                  "unit": ""
+                },
+                {
+                  "id": "ea2ifjw0",
+                  "name": "CPM",
+                  "value": 28.4,
+                  "unit": ""
+                },
+                {
+                  "id": "wgws4fsa",
+                  "name": "Clics",
+                  "value": 610,
+                  "unit": ""
+                },
+                {
+                  "id": "6b1m074t",
+                  "name": "CTR",
+                  "value": 7.22,
+                  "unit": "%"
+                },
+                {
+                  "id": "xxt0a9m1",
+                  "name": "CPC",
+                  "value": 0.39,
+                  "unit": ""
+                },
+                {
+                  "id": "5h9cm4p8",
+                  "name": "Llamadas",
+                  "value": 7,
+                  "unit": ""
+                },
+                {
+                  "id": "skn9ordf",
+                  "name": "Costo por Llamada",
+                  "value": 34.29,
+                  "unit": "$"
                 }
               ],
               "evidences": [],
