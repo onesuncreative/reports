@@ -2216,7 +2216,64 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "tn4swdh2",
+                  "image": "https://drive.google.com/file/d/1jA5QAM4LinQ1qB75XS4T8BbAHf3TysqD/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "umulpja2",
+                      "name": "Importe Gastado",
+                      "value": "$783.40",
+                      "unit": ""
+                    },
+                    {
+                      "id": "wqayhjjb",
+                      "name": "Leads",
+                      "value": "34",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xv2cpvyp",
+                      "name": "Costo Por Lead",
+                      "value": "$23.04",
+                      "unit": ""
+                    },
+                    {
+                      "id": "c4sfmvil",
+                      "name": "CTR",
+                      "value": "1.47%",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d64lnxzc",
+                  "image": "https://drive.google.com/file/d/1UiptwQhFCz6c9rJmx7A_pNbwDLds-6lw/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "fuu5ixz8",
+                      "name": "Importe Gastado",
+                      "value": "$105.86",
+                      "unit": ""
+                    },
+                    {
+                      "id": "6nhbu1q0",
+                      "name": "Post Engagement",
+                      "value": "1,255",
+                      "unit": ""
+                    },
+                    {
+                      "id": "8deuhj4o",
+                      "name": "Costo Por Post Engagement",
+                      "value": "$0.08",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -2296,7 +2353,39 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "llyt9tz5",
+                  "image": "https://drive.google.com/file/d/1aGlKloeQrGXzmzr2ND2oWw1dLioXtPZS/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "exqccwk7",
+                      "name": "Importe Gastado",
+                      "value": "$9.57",
+                      "unit": ""
+                    },
+                    {
+                      "id": "0898uvgo",
+                      "name": "Clicks",
+                      "value": "30",
+                      "unit": ""
+                    },
+                    {
+                      "id": "55md0q1x",
+                      "name": "CPC",
+                      "value": "$0.32",
+                      "unit": ""
+                    },
+                    {
+                      "id": "vkgpg66v",
+                      "name": "CTR",
+                      "value": "5.48%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -2316,7 +2405,7 @@
                 },
                 {
                   "id": "w2hkrxh3",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 3602.68,
                   "unit": "$"
                 },
@@ -2324,7 +2413,7 @@
                   "id": "fjihgk2n",
                   "name": "Tasa de video completado",
                   "value": 97.63,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "i9mbi6lm",
@@ -2334,7 +2423,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "wlq22vyp",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "dm8za1p8",
+                      "name": "Importe Gastado",
+                      "value": "3602.68",
+                      "unit": ""
+                    },
+                    {
+                      "id": "mhyx69qd",
+                      "name": "Tasa de video completado",
+                      "value": "97.63%",
+                      "unit": ""
+                    },
+                    {
+                      "id": "2ff7o9e0",
+                      "name": "Video Completado",
+                      "value": "166396",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -2708,7 +2823,7 @@
               "metrics": [
                 {
                   "id": "ecbq3zgc",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 2138.49,
                   "unit": "$"
                 },
@@ -2780,7 +2895,64 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "5p9hp33x",
+                  "image": "https://drive.google.com/file/d/12iSzm9XlLq_QfU7gwQ23ckd5OW8jotwr/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "b4nrxvw1",
+                      "name": "Importe Gastado",
+                      "value": "$149.04",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xzb1ordt",
+                      "name": "Leads",
+                      "value": "15",
+                      "unit": ""
+                    },
+                    {
+                      "id": "zwv7ioju",
+                      "name": "Costo Por Lead",
+                      "value": "$9.94",
+                      "unit": ""
+                    },
+                    {
+                      "id": "wdbo0mbj",
+                      "name": "CTR",
+                      "value": "4.90%",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "1qoe0b8p",
+                  "image": "https://drive.google.com/file/d/1TlnBPLSg5fh7cQv7vZX_j1YoXDzF8r1R/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "3suot5bv",
+                      "name": "Importe Gastado",
+                      "value": "$48.45",
+                      "unit": ""
+                    },
+                    {
+                      "id": "o2hhxntc",
+                      "name": "Visitas A Perfil",
+                      "value": "360",
+                      "unit": ""
+                    },
+                    {
+                      "id": "g4lj1yj7",
+                      "name": "Costo Por Visita",
+                      "value": "$0.13",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -2794,7 +2966,7 @@
               "metrics": [
                 {
                   "id": "k71ev3qo",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 240.03,
                   "unit": "$"
                 },
@@ -2826,7 +2998,7 @@
                   "id": "xxt0a9m1",
                   "name": "CPC",
                   "value": 0.39,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "5h9cm4p8",
@@ -2842,7 +3014,39 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "z3dnatfk",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "5eub7z7u",
+                      "name": "Importe Gastado",
+                      "value": "$26.61",
+                      "unit": ""
+                    },
+                    {
+                      "id": "jbri5q4m",
+                      "name": "Clicks",
+                      "value": "64",
+                      "unit": ""
+                    },
+                    {
+                      "id": "63rchb7q",
+                      "name": "CPC",
+                      "value": "$0.42",
+                      "unit": ""
+                    },
+                    {
+                      "id": "8pdoec3c",
+                      "name": "CTR",
+                      "value": "11.37%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
