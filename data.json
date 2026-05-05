@@ -1582,9 +1582,34 @@
               "bestContent": [
                 {
                   "id": "i7jdmxcd",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/1rflz8zsWDT1KSe9QOun4ccZBEeeO67W1/view?usp=drive_link",
                   "imageType": "url",
-                  "metrics": []
+                  "metrics": [
+                    {
+                      "id": "v8timyxw",
+                      "name": "Importe Gastado",
+                      "value": "$10.38",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5gct0ihn",
+                      "name": "Conversaciones",
+                      "value": "2",
+                      "unit": ""
+                    },
+                    {
+                      "id": "0os9s5xm",
+                      "name": "Costo Por Conversación",
+                      "value": "$5.42",
+                      "unit": ""
+                    },
+                    {
+                      "id": "noo2brwa",
+                      "name": "CTR",
+                      "value": "4.52%",
+                      "unit": ""
+                    }
+                  ]
                 }
               ],
               "observations": ""
