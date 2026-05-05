@@ -536,6 +536,186 @@
               "observations": "",
               "hidden": false,
               "group": "Marzo 2026"
+            },
+            {
+              "id": "1lb0yp27",
+              "name": "Facebook Ads - Ford - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "e8g0gx6v",
+                  "name": "Importe Invertido",
+                  "value": 7748.08,
+                  "unit": "$"
+                },
+                {
+                  "id": "o5ps8vpq",
+                  "name": "Impresiones",
+                  "value": 1323269,
+                  "unit": ""
+                },
+                {
+                  "id": "o7yn60m7",
+                  "name": "Alcance",
+                  "value": 498347,
+                  "unit": ""
+                },
+                {
+                  "id": "hxe1ooyt",
+                  "name": "Frecuencia",
+                  "value": 2.66,
+                  "unit": ""
+                },
+                {
+                  "id": "6w93lsy6",
+                  "name": "CPM",
+                  "value": 5.86,
+                  "unit": ""
+                },
+                {
+                  "id": "0hzn4npm",
+                  "name": "Clics",
+                  "value": 28345,
+                  "unit": ""
+                },
+                {
+                  "id": "56l8lwpm",
+                  "name": "CTR",
+                  "value": 2.14,
+                  "unit": "%"
+                },
+                {
+                  "id": "ogketccj",
+                  "name": "CPC",
+                  "value": 0.27,
+                  "unit": ""
+                },
+                {
+                  "id": "u1uyef8a",
+                  "name": "Leads",
+                  "value": 282,
+                  "unit": ""
+                },
+                {
+                  "id": "wrt84a7w",
+                  "name": "Costo / Inversión",
+                  "value": 27.48,
+                  "unit": ""
+                },
+                {
+                  "id": "kdfwlgrf",
+                  "name": "Llamadas",
+                  "value": 52,
+                  "unit": ""
+                },
+                {
+                  "id": "401nn1qu",
+                  "name": "Costo por Llamada",
+                  "value": 149,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "0xnh8ay4",
+              "name": "StackAdapt - Native - Ford - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "8vtcj684",
+                  "name": "Importe Invertido",
+                  "value": 400.79,
+                  "unit": "$"
+                },
+                {
+                  "id": "fygogpzo",
+                  "name": "Impresiones",
+                  "value": 13029,
+                  "unit": ""
+                },
+                {
+                  "id": "8zaxzs4p",
+                  "name": "CPM",
+                  "value": 30.76,
+                  "unit": ""
+                },
+                {
+                  "id": "8l20o3qn",
+                  "name": "Clics",
+                  "value": 944,
+                  "unit": ""
+                },
+                {
+                  "id": "zhlswtpg",
+                  "name": "CTR",
+                  "value": 7.25,
+                  "unit": "%"
+                },
+                {
+                  "id": "azmmdsmx",
+                  "name": "CPC",
+                  "value": 0.43,
+                  "unit": ""
+                },
+                {
+                  "id": "uem4so4p",
+                  "name": "Llamadas",
+                  "value": 30,
+                  "unit": ""
+                },
+                {
+                  "id": "1i74it8e",
+                  "name": "Costo por Llamada",
+                  "value": 13.36,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "s3k5545b",
+              "name": "StackAdapt - CTV - Ford - Abril 2026",
+              "channel": "Google Ads",
+              "group": "Abril 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "7dnacbgc",
+                  "name": "Importe Invertido",
+                  "value": 801.36,
+                  "unit": "$"
+                },
+                {
+                  "id": "gi72qbr4",
+                  "name": "Tasa de video completado",
+                  "value": 98.04,
+                  "unit": ""
+                },
+                {
+                  "id": "wm7389un",
+                  "name": "Video Completado",
+                  "value": 44660,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
