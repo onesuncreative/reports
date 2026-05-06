@@ -548,7 +548,7 @@
               "metrics": [
                 {
                   "id": "e8g0gx6v",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 7748.08,
                   "unit": "$"
                 },
@@ -691,7 +691,7 @@
               "metrics": [
                 {
                   "id": "8vtcj684",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 400.79,
                   "unit": "$"
                 },
@@ -785,7 +785,7 @@
               "metrics": [
                 {
                   "id": "7dnacbgc",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 801.36,
                   "unit": "$"
                 },
@@ -1376,7 +1376,7 @@
               "metrics": [
                 {
                   "id": "986h8obp",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 1632.86,
                   "unit": "$"
                 },
@@ -1519,7 +1519,7 @@
               "metrics": [
                 {
                   "id": "jvkd7i03",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 82.74,
                   "unit": "$"
                 },
@@ -1625,7 +1625,7 @@
               "metrics": [
                 {
                   "id": "x4gqweky",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 560,
                   "unit": "$"
                 },
@@ -1719,7 +1719,7 @@
               "metrics": [
                 {
                   "id": "2esufhyy",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 799.98,
                   "unit": "$"
                 },
@@ -2137,14 +2137,8 @@
               "endDate": "2026-04-30",
               "metrics": [
                 {
-                  "id": "n8wd2ubf",
-                  "name": "Dealer",
-                  "value": "Volkswagen",
-                  "unit": ""
-                },
-                {
                   "id": "329fzmua",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 13292.28,
                   "unit": "$"
                 },
@@ -2286,14 +2280,8 @@
               "endDate": "2026-04-30",
               "metrics": [
                 {
-                  "id": "ddo16s2u",
-                  "name": "Dealer",
-                  "value": "Volkswagen",
-                  "unit": ""
-                },
-                {
                   "id": "xpl8whxp",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 290.22,
                   "unit": "$"
                 },
@@ -2398,12 +2386,6 @@
               "endDate": "2026-04-30",
               "metrics": [
                 {
-                  "id": "h3o4cqha",
-                  "name": "Dealer",
-                  "value": "Volkswagen",
-                  "unit": ""
-                },
-                {
                   "id": "w2hkrxh3",
                   "name": "Importe Gastado",
                   "value": 3602.68,
@@ -2462,14 +2444,8 @@
               "endDate": "",
               "metrics": [
                 {
-                  "id": "e4yqgkjf",
-                  "name": "Dealer",
-                  "value": "Volkswagen",
-                  "unit": ""
-                },
-                {
                   "id": "7o4tofb2",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 4235.88,
                   "unit": "$"
                 },
@@ -3017,7 +2993,7 @@
               "bestContent": [
                 {
                   "id": "z3dnatfk",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/14SNDwrDMN20M_706VdsKMZoXUxhR3q6d/view?usp=drive_link",
                   "imageType": "url",
                   "metrics": [
                     {
@@ -3434,7 +3410,7 @@
               "metrics": [
                 {
                   "id": "0ga0yvs1",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 1713.61,
                   "unit": "$"
                 },
@@ -3506,7 +3482,58 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "mdi6px1c",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "cvc8tzoq",
+                      "name": "Importe Gastado",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "bcdwy1mi",
+                      "name": "Leads",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ejcpy9ac",
+                      "name": "Costo Por Lead",
+                      "value": "",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "976l2i5x",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "nyvgtnuq",
+                      "name": "Importe Gastado",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "urlb6lc0",
+                      "name": "",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "qof6bk9g",
+                      "name": "",
+                      "value": "",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
@@ -3794,7 +3821,7 @@
               "metrics": [
                 {
                   "id": "clm8eber",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 1731.17,
                   "unit": "$"
                 },
@@ -3880,7 +3907,7 @@
               "metrics": [
                 {
                   "id": "r3l4icdl",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 240.5,
                   "unit": "$"
                 },
@@ -4153,7 +4180,7 @@
               "metrics": [
                 {
                   "id": "zn9565jp",
-                  "name": "Importe Invertido",
+                  "name": "Importe Gastado",
                   "value": 422.96,
                   "unit": "$"
                 },
