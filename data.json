@@ -3899,7 +3899,20 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "hwedfb5u",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": []
+                },
+                {
+                  "id": "ohnhnbwn",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
               "observations": ""
             },
             {
@@ -4246,7 +4259,64 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "ghrqhi0t",
+                  "image": "https://drive.google.com/file/d/1wtIImGaaj9FuDdAOFUZIadWodOvwgJDg/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "fgst8f75",
+                      "name": "Importe Gastado",
+                      "value": "$99.91",
+                      "unit": ""
+                    },
+                    {
+                      "id": "455j1k3d",
+                      "name": "Leads",
+                      "value": "5",
+                      "unit": ""
+                    },
+                    {
+                      "id": "emm49uv5",
+                      "name": "Costo Por Lead",
+                      "value": "$19.98",
+                      "unit": ""
+                    },
+                    {
+                      "id": "je9mq7g3",
+                      "name": "CTR",
+                      "value": "1.04%",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "zt0cf6vc",
+                  "image": "https://drive.google.com/file/d/1P_FNQWsFdmlBJY0Bof3mltiVpts0MbdB/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "9bd82r3b",
+                      "name": "Importe Gastado",
+                      "value": "$27.23",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7rhp5f3k",
+                      "name": "Visita Al Perfil",
+                      "value": "175",
+                      "unit": ""
+                    },
+                    {
+                      "id": "q8rij8dj",
+                      "name": "Costo Por Visita Al Perfil",
+                      "value": "$0.16",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
