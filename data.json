@@ -3902,15 +3902,59 @@
               "bestContent": [
                 {
                   "id": "hwedfb5u",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/1zTX0LUSdlp8p_OkwIRFWENAhlofSklx_/view?usp=drive_link",
                   "imageType": "url",
-                  "metrics": []
+                  "metrics": [
+                    {
+                      "id": "6v94ker3",
+                      "name": "Importe Gastado",
+                      "value": "$528.39",
+                      "unit": ""
+                    },
+                    {
+                      "id": "hlao4p2j",
+                      "name": "Leads",
+                      "value": "90",
+                      "unit": ""
+                    },
+                    {
+                      "id": "nh4xv54b",
+                      "name": "Costo Por Lead",
+                      "value": "$5.87",
+                      "unit": ""
+                    },
+                    {
+                      "id": "3ehh2uo5",
+                      "name": "CTR",
+                      "value": "1.15%",
+                      "unit": ""
+                    }
+                  ]
                 },
                 {
                   "id": "ohnhnbwn",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/1vHinXO0lLTPS1kOwYA3c-XJ79Eu17L6K/view?usp=drive_link",
                   "imageType": "url",
-                  "metrics": []
+                  "metrics": [
+                    {
+                      "id": "bpy1kvz5",
+                      "name": "Importe Gastado",
+                      "value": "$57.46",
+                      "unit": ""
+                    },
+                    {
+                      "id": "k63sav8t",
+                      "name": "Visitas A Perfil",
+                      "value": "656",
+                      "unit": ""
+                    },
+                    {
+                      "id": "shk9xyve",
+                      "name": "Costo Por Visitas A Perfil",
+                      "value": "$0.09",
+                      "unit": ""
+                    }
+                  ]
                 }
               ],
               "observations": ""
@@ -3974,7 +4018,39 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "p7c9wg90",
+                  "image": "https://drive.google.com/file/d/1lWcsj-2qfmD_Zt_7tB3f-4TMcKWD254U/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "ucb9u9sz",
+                      "name": "Importe Gastado",
+                      "value": "$22.50",
+                      "unit": ""
+                    },
+                    {
+                      "id": "t5l4n1c3",
+                      "name": "Clicks",
+                      "value": "45",
+                      "unit": ""
+                    },
+                    {
+                      "id": "i7iovsy0",
+                      "name": "CPC",
+                      "value": "$0.50",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xu22f1om",
+                      "name": "CTR",
+                      "value": "5.33%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
