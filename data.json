@@ -3485,50 +3485,56 @@
               "bestContent": [
                 {
                   "id": "mdi6px1c",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/104Gak5GXev1FdaGigxSp8nNSsMiEaIKm/view?usp=drive_link",
                   "imageType": "url",
                   "metrics": [
                     {
                       "id": "cvc8tzoq",
                       "name": "Importe Gastado",
-                      "value": "",
+                      "value": "$104.72",
                       "unit": ""
                     },
                     {
                       "id": "bcdwy1mi",
                       "name": "Leads",
-                      "value": "",
+                      "value": "6",
                       "unit": ""
                     },
                     {
                       "id": "ejcpy9ac",
                       "name": "Costo Por Lead",
-                      "value": "",
+                      "value": "$17.45",
+                      "unit": ""
+                    },
+                    {
+                      "id": "9ex6do30",
+                      "name": "CTR",
+                      "value": "1.61%",
                       "unit": ""
                     }
                   ]
                 },
                 {
                   "id": "976l2i5x",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/1u0tJFY0f7N-HmWcurbURd928UwarSaCJ/view?usp=drive_link",
                   "imageType": "url",
                   "metrics": [
                     {
                       "id": "nyvgtnuq",
                       "name": "Importe Gastado",
-                      "value": "",
+                      "value": "$21.42",
                       "unit": ""
                     },
                     {
                       "id": "urlb6lc0",
-                      "name": "",
-                      "value": "",
+                      "name": "Post engagements",
+                      "value": "747",
                       "unit": ""
                     },
                     {
                       "id": "qof6bk9g",
-                      "name": "",
-                      "value": "",
+                      "name": "Costo Por Post engagements",
+                      "value": "$0.03",
                       "unit": ""
                     }
                   ]
