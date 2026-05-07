@@ -5392,13 +5392,13 @@
                 },
                 {
                   "id": "fol91nhq",
-                  "name": "Regsitros",
+                  "name": "Registros",
                   "value": 81,
                   "unit": ""
                 },
                 {
                   "id": "84o9560d",
-                  "name": "Costo / Inversión",
+                  "name": "Costo Por Registro",
                   "value": 13.04,
                   "unit": "$"
                 }
@@ -5521,7 +5521,7 @@
                 {
                   "id": "97cumzpx",
                   "name": "Importe Gastado",
-                  "value": "5,290.07",
+                  "value": "5290.07",
                   "unit": "$"
                 },
                 {
@@ -5533,8 +5533,8 @@
                 {
                   "id": "nwjfp25a",
                   "name": "CPM",
-                  "value": "$94.31",
-                  "unit": ""
+                  "value": "94.31",
+                  "unit": "$"
                 },
                 {
                   "id": "kqkia2bm",
