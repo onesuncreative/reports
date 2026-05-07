@@ -5350,7 +5350,7 @@
               "name": "Tráfico - Webinar",
               "channel": "X Ads",
               "group": "Abril 2026",
-              "hidden": true,
+              "hidden": false,
               "startDate": "2026-04-07",
               "endDate": "2026-05-15",
               "metrics": [
@@ -5514,7 +5514,7 @@
               "name": "WhatsApp - Leads - Curso Prospección",
               "channel": "Facebook Ads",
               "group": "Abril 2026",
-              "hidden": true,
+              "hidden": false,
               "startDate": "2026-03-24",
               "endDate": "2026-04-30",
               "metrics": [
