@@ -4421,10 +4421,10 @@
           "campaigns": [
             {
               "id": "q9l7oyxy",
-              "name": "WhatsApp - Reforma Aduanera",
-              "channel": "Google Ads",
-              "startDate": "",
-              "endDate": "",
+              "name": "Forms - Reforma Aduanera",
+              "channel": "Facebook Ads",
+              "startDate": "2026-03-01",
+              "endDate": "2026-03-31",
               "metrics": [
                 {
                   "id": "y7ultp9s",
