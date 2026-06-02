@@ -7222,7 +7222,7 @@
               "id": "im57tvd1",
               "name": "Últimos Días - TikTok Ads",
               "channel": "TikTok Ads",
-              "group": "",
+              "group": "Mayo 2026",
               "hidden": false,
               "startDate": "2026-05-20",
               "endDate": "2026-05-30",
@@ -7310,6 +7310,222 @@
                   ]
                 }
               ],
+              "observations": ""
+            },
+            {
+              "id": "1t3gtqq7",
+              "name": "Display - Mayo 2026 - StackAdapt",
+              "channel": "StackAdapt - Display",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "km4py4yv",
+                  "name": "Importe Gastado",
+                  "value": 1833.42,
+                  "unit": "$"
+                },
+                {
+                  "id": "zhplfq5a",
+                  "name": "Impresiones",
+                  "value": 437138,
+                  "unit": ""
+                },
+                {
+                  "id": "u2lbkcg2",
+                  "name": "Clics",
+                  "value": 2037,
+                  "unit": ""
+                },
+                {
+                  "id": "wdsa1gfp",
+                  "name": "CPM",
+                  "value": 4.19,
+                  "unit": "$"
+                },
+                {
+                  "id": "5s7vdlet",
+                  "name": "CPC",
+                  "value": 0.9,
+                  "unit": "$"
+                },
+                {
+                  "id": "kqzz2lu6",
+                  "name": "CTR",
+                  "value": 0.47,
+                  "unit": "%"
+                },
+                {
+                  "id": "3zq0d6hp",
+                  "name": "Conversiones",
+                  "value": 101,
+                  "unit": ""
+                },
+                {
+                  "id": "j12zefej",
+                  "name": "CVR",
+                  "value": 4.96,
+                  "unit": "%"
+                },
+                {
+                  "id": "ysdqjmos",
+                  "name": "CPA",
+                  "value": 18.15,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "0ri3sg6m",
+              "name": "Native - Mayo 2026 - StackAdapt",
+              "channel": "StackAdapt - Native",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "eg5rkxr6",
+                  "name": "Importe Gastado",
+                  "value": 1331.01,
+                  "unit": "$"
+                },
+                {
+                  "id": "s5dswa0h",
+                  "name": "Impresiones",
+                  "value": 131166,
+                  "unit": ""
+                },
+                {
+                  "id": "fgfvkwuv",
+                  "name": "Clics",
+                  "value": 674,
+                  "unit": ""
+                },
+                {
+                  "id": "pa27fgr6",
+                  "name": "CPM",
+                  "value": 10.15,
+                  "unit": "$"
+                },
+                {
+                  "id": "potab9l2",
+                  "name": "CPC",
+                  "value": 1.97,
+                  "unit": "$"
+                },
+                {
+                  "id": "t0mtvo69",
+                  "name": "CTR",
+                  "value": 0.51,
+                  "unit": "%"
+                },
+                {
+                  "id": "c8l7gz2d",
+                  "name": "Conversiones",
+                  "value": 190,
+                  "unit": ""
+                },
+                {
+                  "id": "0bqta9mk",
+                  "name": "CVR",
+                  "value": 28.19,
+                  "unit": "%"
+                },
+                {
+                  "id": "kovqflkv",
+                  "name": "CPA",
+                  "value": 7.01,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "1liviuq3",
+              "name": "Video - Mayo 2026 - StackAdapt",
+              "channel": "StackAdapt - Video",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "d4ax1d7i",
+                  "name": "Importe Gastado",
+                  "value": 1834.62,
+                  "unit": "$"
+                },
+                {
+                  "id": "16n7w7gl",
+                  "name": "Impresiones",
+                  "value": 55781,
+                  "unit": ""
+                },
+                {
+                  "id": "exmr0tas",
+                  "name": "Clics",
+                  "value": 3290,
+                  "unit": ""
+                },
+                {
+                  "id": "nht71tss",
+                  "name": "CPM",
+                  "value": 32.89,
+                  "unit": "$"
+                },
+                {
+                  "id": "rzg15yye",
+                  "name": "CPC",
+                  "value": 0.56,
+                  "unit": "$"
+                },
+                {
+                  "id": "kop3fvcj",
+                  "name": "CTR",
+                  "value": 5.9,
+                  "unit": "%"
+                },
+                {
+                  "id": "kz8vcltk",
+                  "name": "Conversiones",
+                  "value": 2592,
+                  "unit": ""
+                },
+                {
+                  "id": "b9y4h77y",
+                  "name": "CVR",
+                  "value": 78.78,
+                  "unit": "%"
+                },
+                {
+                  "id": "tpkflwmh",
+                  "name": "CPA",
+                  "value": 0.71,
+                  "unit": "$"
+                },
+                {
+                  "id": "cqogxx1e",
+                  "name": "Video Completado",
+                  "value": 48066,
+                  "unit": ""
+                },
+                {
+                  "id": "b7nxayov",
+                  "name": "Tasa de Completado de Video",
+                  "value": 86.17,
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
               "observations": ""
             }
           ],
