@@ -5715,7 +5715,7 @@
             },
             {
               "id": "dw2ne65w",
-              "name": "Tráfico - Webinar - Mayo 2026 Campaign",
+              "name": "Tráfico - Webinar - Mayo 2026",
               "channel": "Facebook Ads",
               "group": "",
               "hidden": false,
@@ -5814,17 +5814,49 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "7ooj7buw",
+                  "image": "https://drive.google.com/file/d/14HjPxHB0ymIH6tMODjr5QKxUMp9c-X9t/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "b9s84l4a",
+                      "name": "Importe Gastado",
+                      "value": "$248.55",
+                      "unit": ""
+                    },
+                    {
+                      "id": "qlf80itz",
+                      "name": "Landing Page View",
+                      "value": "120",
+                      "unit": ""
+                    },
+                    {
+                      "id": "6dqyzd5o",
+                      "name": "Costo Por Landing Page View",
+                      "value": "$2.07",
+                      "unit": ""
+                    },
+                    {
+                      "id": "paxmhq83",
+                      "name": "CTR",
+                      "value": "2.58%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
               "id": "w5hubniv",
               "name": "Leads + Engagement - Curso Maximiza Cuentas (Unificado)",
-              "channel": "Google Ads",
-              "group": "",
+              "channel": "Facebook Ads",
+              "group": "Mayo 2026",
               "hidden": false,
-              "startDate": "2026-05-16",
-              "endDate": "2026-06-22",
+              "startDate": "2026-05-11",
+              "endDate": "2026-05-14",
               "metrics": [
                 {
                   "id": "un9ncdp3",
