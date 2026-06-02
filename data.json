@@ -5252,7 +5252,7 @@
                   "id": "l9ek1cjp",
                   "name": "Importe Gastado",
                   "value": 2264.61,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "bnok2r8y",
@@ -5264,7 +5264,7 @@
                   "id": "r3linx13",
                   "name": "CPM",
                   "value": "139.33",
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "6l86m01j",
@@ -5294,24 +5294,18 @@
                   "id": "o74t0ssk",
                   "name": "CPC",
                   "value": 22.6461,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "3tnyavtm",
                   "name": "CTR",
                   "value": 0.615271,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "fcbaxf5o",
                   "name": "Frecuencia",
                   "value": 2.338225,
-                  "unit": ""
-                },
-                {
-                  "id": "2en6edcx",
-                  "name": "Costo / Inversión",
-                  "value": 566.1525,
                   "unit": ""
                 },
                 {
@@ -5324,7 +5318,7 @@
                   "id": "joqweque",
                   "name": "CPL",
                   "value": "251.62",
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -5536,12 +5530,6 @@
                   "id": "5gkkzb6j",
                   "name": "Frecuencia",
                   "value": 1.520492,
-                  "unit": ""
-                },
-                {
-                  "id": "qykrmny0",
-                  "name": "Costo / Inversión",
-                  "value": 61.76,
                   "unit": ""
                 },
                 {
@@ -5774,6 +5762,38 @@
                   ]
                 }
               ],
+              "observations": ""
+            },
+            {
+              "id": "1iio3i37",
+              "name": "Facebook",
+              "icon": "📱",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "jfrfs5mx",
+                  "name": "Reacciones",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "sdsvr6e2",
+                  "name": "Video Views",
+                  "value": "",
+                  "unit": ""
+                },
+                {
+                  "id": "2zflllay",
+                  "name": "Seguidores",
+                  "value": "20",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
               "observations": ""
             }
           ]
