@@ -7377,7 +7377,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "wkqomjm2",
+                  "image": "https://drive.google.com/file/d/1M5hrQwZ5BMdccG6E9KzIB0Z_4mXVHEy6/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "692i5ia4",
+                      "name": "Importe Gastado",
+                      "value": "$26.91",
+                      "unit": ""
+                    },
+                    {
+                      "id": "duepyque",
+                      "name": "Conversiones",
+                      "value": "62",
+                      "unit": ""
+                    },
+                    {
+                      "id": "l2fjp2uy",
+                      "name": "CPA",
+                      "value": "$0.40",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -7445,7 +7471,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "qy38wtlt",
+                  "image": "https://drive.google.com/file/d/1vt03LLEfawTCpgVI283B0DjGLT7oMTjd/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "g7ss74sm",
+                      "name": "Importe Gastado",
+                      "value": "$156.17",
+                      "unit": ""
+                    },
+                    {
+                      "id": "dv8poy2m",
+                      "name": "Conversiones",
+                      "value": "31",
+                      "unit": ""
+                    },
+                    {
+                      "id": "g125lq4b",
+                      "name": "CPA",
+                      "value": "$5.04",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
