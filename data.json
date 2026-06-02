@@ -6689,7 +6689,7 @@
           "campaigns": [
             {
               "id": "h64i1cz1",
-              "name": "Boost: Carousel Programas",
+              "name": "Boost: Carousel Programas - Facebook Ads",
               "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
@@ -6795,7 +6795,7 @@
             },
             {
               "id": "988j3cyr",
-              "name": "Engagement Boost Post",
+              "name": "Engagement Boost Post - Facebook Ads",
               "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
@@ -6895,7 +6895,7 @@
             },
             {
               "id": "8xj19ito",
-              "name": "Ongoing Instant Forms - Leads Matrícula",
+              "name": "Ongoing Instant Forms - Leads Matrícula - Facebook Ads",
               "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
@@ -7038,7 +7038,7 @@
             },
             {
               "id": "wqvhipwi",
-              "name": "Ongoing Leads - Dynamic Ad Sets",
+              "name": "Ongoing Leads - Dynamic Ad Sets - Facebook Ads",
               "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
@@ -7156,7 +7156,7 @@
             },
             {
               "id": "lqrwye3z",
-              "name": "PR Necesita Mecánicos",
+              "name": "PR Necesita Mecánicos - Facebook Ads",
               "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
@@ -7211,6 +7211,100 @@
                       "id": "yffmng7e",
                       "name": "Alcance",
                       "value": "274476",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "im57tvd1",
+              "name": "Últimos Días - TikTok Ads",
+              "channel": "TikTok Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "2026-05-20",
+              "endDate": "2026-05-30",
+              "metrics": [
+                {
+                  "id": "yd5iid6w",
+                  "name": "Importe Gastado",
+                  "value": "331.80",
+                  "unit": "$"
+                },
+                {
+                  "id": "3f9ggx80",
+                  "name": "Impresiones",
+                  "value": "234311",
+                  "unit": ""
+                },
+                {
+                  "id": "jydor8an",
+                  "name": "CPM",
+                  "value": "1.42",
+                  "unit": "$"
+                },
+                {
+                  "id": "v3ut0lsx",
+                  "name": "Alcance",
+                  "value": "154283",
+                  "unit": ""
+                },
+                {
+                  "id": "e8w8c8x6",
+                  "name": "Clics",
+                  "value": "1010",
+                  "unit": ""
+                },
+                {
+                  "id": "2quwm2qi",
+                  "name": "CPC",
+                  "value": "0.33",
+                  "unit": "$"
+                },
+                {
+                  "id": "8kcay86p",
+                  "name": "CTR",
+                  "value": "0.43",
+                  "unit": "%"
+                },
+                {
+                  "id": "5kqfmg0k",
+                  "name": "Leads",
+                  "value": "22",
+                  "unit": ""
+                },
+                {
+                  "id": "khxiylnr",
+                  "name": "CPL",
+                  "value": "15.08",
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "dmwtkjx9",
+                  "image": "https://drive.google.com/file/d/163TTEBW-ahXFiVUaYeVOE5A1irvN_h3Q/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "qj31j1cr",
+                      "name": "Importe Gastado",
+                      "value": "$331.80",
+                      "unit": ""
+                    },
+                    {
+                      "id": "kpv5wpkz",
+                      "name": "Leads",
+                      "value": "22",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ztza8ckn",
+                      "name": "CPL",
+                      "value": "$15.08",
                       "unit": ""
                     }
                   ]
