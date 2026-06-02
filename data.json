@@ -6864,7 +6864,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "5en8np4j",
+                  "image": "https://drive.google.com/file/d/1oRQL39bGgqzhE8tCSV9AtgeMRD3cNrSK/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "swrzu8rw",
+                      "name": "Importe Gastado",
+                      "value": "$43.52",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7mtbm8j7",
+                      "name": "Visitas a perfil",
+                      "value": "322",
+                      "unit": ""
+                    },
+                    {
+                      "id": "uy9xaflz",
+                      "name": "Costo por visita al perfil",
+                      "value": "$0.14",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
