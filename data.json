@@ -6982,7 +6982,58 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "n9bb4is5",
+                  "image": "https://drive.google.com/file/d/1Wsk1L_jXoxpblEvG3lRh8SeoUbEw_MhP/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "j0smfl10",
+                      "name": "Importe Gastado",
+                      "value": "$1,333.97",
+                      "unit": ""
+                    },
+                    {
+                      "id": "gziz6iug",
+                      "name": "Leads",
+                      "value": "62",
+                      "unit": ""
+                    },
+                    {
+                      "id": "1szv6odp",
+                      "name": "CPL",
+                      "value": "$21.52",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "g2ckyskz",
+                  "image": "https://drive.google.com/file/d/1TjMVXPAh_XzvuXg2rrhsw1L-QJluwqEu/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "j1k8okcb",
+                      "name": "Importe Gastado",
+                      "value": "$1,597.12",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5iez04sj",
+                      "name": "Leads",
+                      "value": "58",
+                      "unit": ""
+                    },
+                    {
+                      "id": "gt0bixx0",
+                      "name": "CPL",
+                      "value": "$27.54",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -7074,8 +7125,34 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
-              "observations": ""
+              "bestContent": [
+                {
+                  "id": "h5hhjtn2",
+                  "image": "https://drive.google.com/file/d/1hnv2PaeBu4o-zOjNAUxLPsNLUzChYMed/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "ckoi0k5w",
+                      "name": "Importe Gastado",
+                      "value": "$427.38",
+                      "unit": ""
+                    },
+                    {
+                      "id": "vm4gtwuc",
+                      "name": "Leads",
+                      "value": "12",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ietomqmy",
+                      "name": "CPL",
+                      "value": "$35.62",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": "Las campañas con ads dinámicos están resultando menos efectivas que las campañas que solo dirigen al form. "
             },
             {
               "id": "lqrwye3z",
@@ -7118,7 +7195,27 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "mwufvz00",
+                  "image": "https://drive.google.com/file/d/1CLHb4OQ_tEyZmh-gSu4bXOhBg-sIGmWE/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "sstk9sx1",
+                      "name": "Importe Gastado",
+                      "value": "$490",
+                      "unit": ""
+                    },
+                    {
+                      "id": "yffmng7e",
+                      "name": "Alcance",
+                      "value": "274476",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
