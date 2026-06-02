@@ -5014,6 +5014,454 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "knewagdx",
+              "name": "Leads - Forms - Reforma Aduanera",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-06-30",
+              "metrics": [
+                {
+                  "id": "2r2j079z",
+                  "name": "Importe Gastado",
+                  "value": 2436.54,
+                  "unit": "$"
+                },
+                {
+                  "id": "ajh7jjim",
+                  "name": "Impresiones",
+                  "value": 26687,
+                  "unit": ""
+                },
+                {
+                  "id": "2nvgypot",
+                  "name": "CPM",
+                  "value": "91.30",
+                  "unit": "$"
+                },
+                {
+                  "id": "ilsbs3nm",
+                  "name": "Alcance",
+                  "value": 10550,
+                  "unit": ""
+                },
+                {
+                  "id": "bzkggoub",
+                  "name": "ThruPlay",
+                  "value": 2809,
+                  "unit": ""
+                },
+                {
+                  "id": "0d2qr44y",
+                  "name": "Video plays at 100%",
+                  "value": 788,
+                  "unit": ""
+                },
+                {
+                  "id": "uwrhbtq5",
+                  "name": "Clics",
+                  "value": 303,
+                  "unit": ""
+                },
+                {
+                  "id": "rj38ou6q",
+                  "name": "CPC",
+                  "value": 8.041386,
+                  "unit": "$"
+                },
+                {
+                  "id": "zcxigxh9",
+                  "name": "CTR",
+                  "value": 1.135384,
+                  "unit": "%"
+                },
+                {
+                  "id": "rclyqits",
+                  "name": "Frecuencia",
+                  "value": "2.52",
+                  "unit": ""
+                },
+                {
+                  "id": "360au7a3",
+                  "name": "Leads",
+                  "value": "44",
+                  "unit": ""
+                },
+                {
+                  "id": "1j5igq2h",
+                  "name": "CPL",
+                  "value": "55.38",
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "bvm1dlst",
+              "name": "Leads - Forms - Roger",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-06-30",
+              "metrics": [
+                {
+                  "id": "knpeqn7q",
+                  "name": "Importe Gastado",
+                  "value": 4050.04,
+                  "unit": ""
+                },
+                {
+                  "id": "jv7qzzph",
+                  "name": "Impresiones",
+                  "value": 23581,
+                  "unit": ""
+                },
+                {
+                  "id": "hoc01spb",
+                  "name": "CPM",
+                  "value": "171.75",
+                  "unit": ""
+                },
+                {
+                  "id": "l6sih34q",
+                  "name": "Alcance",
+                  "value": 8591,
+                  "unit": ""
+                },
+                {
+                  "id": "yijqu1ck",
+                  "name": "ThruPlay",
+                  "value": 2196,
+                  "unit": ""
+                },
+                {
+                  "id": "863aaogu",
+                  "name": "Video plays at 100%",
+                  "value": 267,
+                  "unit": ""
+                },
+                {
+                  "id": "1trphrze",
+                  "name": "Clics",
+                  "value": 177,
+                  "unit": ""
+                },
+                {
+                  "id": "u6wmrjt4",
+                  "name": "CPC",
+                  "value": 22.881582,
+                  "unit": ""
+                },
+                {
+                  "id": "7pmxwz1t",
+                  "name": "CTR",
+                  "value": 0.750604,
+                  "unit": ""
+                },
+                {
+                  "id": "ump89nl5",
+                  "name": "Frecuencia",
+                  "value": 2.744849,
+                  "unit": ""
+                },
+                {
+                  "id": "rijujhw9",
+                  "name": "Costo / Inversión",
+                  "value": 506.255,
+                  "unit": ""
+                },
+                {
+                  "id": "jgjrcd0x",
+                  "name": "Leads",
+                  "value": 17,
+                  "unit": ""
+                },
+                {
+                  "id": "gz4p1den",
+                  "name": "CPL",
+                  "value": "238.23",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "fvh1fo77",
+              "name": "Leads - Forms - Operadores Terrestres",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-30",
+              "metrics": [
+                {
+                  "id": "l9ek1cjp",
+                  "name": "Importe Gastado",
+                  "value": 2264.61,
+                  "unit": ""
+                },
+                {
+                  "id": "bnok2r8y",
+                  "name": "Impresiones",
+                  "value": 16253,
+                  "unit": ""
+                },
+                {
+                  "id": "r3linx13",
+                  "name": "CPM",
+                  "value": "139.33",
+                  "unit": ""
+                },
+                {
+                  "id": "6l86m01j",
+                  "name": "Alcance",
+                  "value": 6951,
+                  "unit": ""
+                },
+                {
+                  "id": "5cs8k1k0",
+                  "name": "ThruPlay",
+                  "value": 1151,
+                  "unit": ""
+                },
+                {
+                  "id": "1g4xkj79",
+                  "name": "Video plays at 100%",
+                  "value": 124,
+                  "unit": ""
+                },
+                {
+                  "id": "62uqk884",
+                  "name": "Clics",
+                  "value": 100,
+                  "unit": ""
+                },
+                {
+                  "id": "o74t0ssk",
+                  "name": "CPC",
+                  "value": 22.6461,
+                  "unit": ""
+                },
+                {
+                  "id": "3tnyavtm",
+                  "name": "CTR",
+                  "value": 0.615271,
+                  "unit": ""
+                },
+                {
+                  "id": "fcbaxf5o",
+                  "name": "Frecuencia",
+                  "value": 2.338225,
+                  "unit": ""
+                },
+                {
+                  "id": "2en6edcx",
+                  "name": "Costo / Inversión",
+                  "value": 566.1525,
+                  "unit": ""
+                },
+                {
+                  "id": "hoxi8q0b",
+                  "name": "Leads",
+                  "value": 9,
+                  "unit": ""
+                },
+                {
+                  "id": "joqweque",
+                  "name": "CPL",
+                  "value": "251.62",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "pzm3qquw",
+              "name": "Leads - Web/Forms - Operadores Terrestres",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-30",
+              "metrics": [
+                {
+                  "id": "h0bwzn2v",
+                  "name": "Importe Gastado",
+                  "value": 525.96,
+                  "unit": ""
+                },
+                {
+                  "id": "u5am6eth",
+                  "name": "Impresiones",
+                  "value": 4315,
+                  "unit": ""
+                },
+                {
+                  "id": "dxp2q9o0",
+                  "name": "CPM",
+                  "value": "121.89",
+                  "unit": ""
+                },
+                {
+                  "id": "636e0346",
+                  "name": "Alcance",
+                  "value": 3014,
+                  "unit": ""
+                },
+                {
+                  "id": "pc0wbf34",
+                  "name": "ThruPlay",
+                  "value": 353,
+                  "unit": ""
+                },
+                {
+                  "id": "re49ha93",
+                  "name": "Video plays at 100%",
+                  "value": 15,
+                  "unit": ""
+                },
+                {
+                  "id": "ydbv21hk",
+                  "name": "Clics",
+                  "value": 40,
+                  "unit": ""
+                },
+                {
+                  "id": "sq1l725k",
+                  "name": "CPC",
+                  "value": 13.149,
+                  "unit": ""
+                },
+                {
+                  "id": "svxp49ii",
+                  "name": "CTR",
+                  "value": 0.926999,
+                  "unit": ""
+                },
+                {
+                  "id": "qkm8ab3q",
+                  "name": "Frecuencia",
+                  "value": 1.431652,
+                  "unit": ""
+                },
+                {
+                  "id": "lshe6j5l",
+                  "name": "Leads",
+                  "value": 2,
+                  "unit": ""
+                },
+                {
+                  "id": "jrhunddz",
+                  "name": "CPL",
+                  "value": 262.98,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "9spt60bi",
+              "name": "Leads - Forms - Expediente Digital",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-30",
+              "metrics": [
+                {
+                  "id": "bcqz863c",
+                  "name": "Importe Gastado",
+                  "value": 247.04,
+                  "unit": ""
+                },
+                {
+                  "id": "adxln2xd",
+                  "name": "Impresiones",
+                  "value": 1855,
+                  "unit": ""
+                },
+                {
+                  "id": "8uu8if96",
+                  "name": "CPM",
+                  "value": "133.17",
+                  "unit": ""
+                },
+                {
+                  "id": "7ncs527q",
+                  "name": "Alcance",
+                  "value": 1220,
+                  "unit": ""
+                },
+                {
+                  "id": "7f7ctv8x",
+                  "name": "ThruPlay",
+                  "value": 187,
+                  "unit": ""
+                },
+                {
+                  "id": "2j6op4ch",
+                  "name": "Video plays at 100%",
+                  "value": 32,
+                  "unit": ""
+                },
+                {
+                  "id": "l4du4dhj",
+                  "name": "Clics",
+                  "value": 33,
+                  "unit": ""
+                },
+                {
+                  "id": "ez3temv7",
+                  "name": "CPC",
+                  "value": 7.486061,
+                  "unit": ""
+                },
+                {
+                  "id": "x9jxha0u",
+                  "name": "CTR",
+                  "value": 1.778976,
+                  "unit": ""
+                },
+                {
+                  "id": "5gkkzb6j",
+                  "name": "Frecuencia",
+                  "value": 1.520492,
+                  "unit": ""
+                },
+                {
+                  "id": "qykrmny0",
+                  "name": "Costo / Inversión",
+                  "value": 61.76,
+                  "unit": ""
+                },
+                {
+                  "id": "e1zfseek",
+                  "name": "Leads",
+                  "value": 6,
+                  "unit": ""
+                },
+                {
+                  "id": "7a7z8t65",
+                  "name": "CPL",
+                  "value": "41.17",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": [
