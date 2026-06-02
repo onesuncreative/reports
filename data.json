@@ -7577,7 +7577,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "ca119pmp",
+                  "image": "https://drive.google.com/file/d/13sxwkKwB-rlvVAkn6s__YqU8ORUlm9y8/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "u4ee343e",
+                      "name": "Importe Gastado",
+                      "value": "$1,031.05",
+                      "unit": ""
+                    },
+                    {
+                      "id": "k3lim6dq",
+                      "name": "Video Completado",
+                      "value": "28050",
+                      "unit": ""
+                    },
+                    {
+                      "id": "4yogg5sc",
+                      "name": "Tasa de Completado de Video",
+                      "value": "90.43%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
