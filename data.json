@@ -5851,12 +5851,6 @@
                   "unit": ""
                 },
                 {
-                  "id": "fxm96xij",
-                  "name": "Costo / Inversión",
-                  "value": 82.453529,
-                  "unit": ""
-                },
-                {
                   "id": "xmvljmpw",
                   "name": "Clics",
                   "value": 1560,
@@ -5883,18 +5877,50 @@
                 {
                   "id": "sanl6s32",
                   "name": "Conversaciones Iniciadas",
-                  "value": 5,
+                  "value": "17",
                   "unit": ""
                 },
                 {
                   "id": "o56w87om",
                   "name": "Costo por conversaciones Iniciadas",
-                  "value": 280.342,
+                  "value": "82.45",
                   "unit": "$"
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "aymbnk7d",
+                  "image": "https://drive.google.com/file/d/1YnttOxpFUko_abWGu5FtCrAXECtoH8LW/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "b6b5xjsa",
+                      "name": "Importe Gastado",
+                      "value": "$672.45",
+                      "unit": ""
+                    },
+                    {
+                      "id": "bttswm5b",
+                      "name": "Conversaciones",
+                      "value": "13",
+                      "unit": ""
+                    },
+                    {
+                      "id": "qx6u1frh",
+                      "name": "Costo Por Conversaciones",
+                      "value": "$51.73",
+                      "unit": ""
+                    },
+                    {
+                      "id": "514bpdt8",
+                      "name": "CTR",
+                      "value": "14.44%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
