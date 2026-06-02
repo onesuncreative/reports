@@ -5624,6 +5624,97 @@
             }
           ],
           "socialChannels": []
+        },
+        {
+          "id": "lnpmsi0l",
+          "name": "CURSO MAXIMIZA TUS CUENTAS",
+          "logo": "",
+          "color": "#16ffc3",
+          "campaigns": [
+            {
+              "id": "ff3k145g",
+              "name": "Tráfico - Curso Maximiza Tus Cuentas",
+              "channel": "X Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-06-02",
+              "endDate": "2026-06-30",
+              "metrics": [
+                {
+                  "id": "poafw9z5",
+                  "name": "Importe Gastado",
+                  "value": "637.45",
+                  "unit": "$"
+                },
+                {
+                  "id": "hxi8tnua",
+                  "name": "Impresiones",
+                  "value": "234734",
+                  "unit": ""
+                },
+                {
+                  "id": "ekvghyom",
+                  "name": "CPM",
+                  "value": "2.71",
+                  "unit": "$"
+                },
+                {
+                  "id": "x6wmgnjw",
+                  "name": "Clics",
+                  "value": "392",
+                  "unit": ""
+                },
+                {
+                  "id": "seqjwrlp",
+                  "name": "CTR",
+                  "value": "0.16",
+                  "unit": "%"
+                },
+                {
+                  "id": "jr9kta33",
+                  "name": "CPC",
+                  "value": "1.62",
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "od67rwox",
+                  "image": "https://drive.google.com/file/d/1bX0G4jax85-fh8q3bh-0vk1RHbx9ohnq/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "yd04toh5",
+                      "name": "Importe Gastado",
+                      "value": "$342.50",
+                      "unit": ""
+                    },
+                    {
+                      "id": "wzaekex1",
+                      "name": "Clics",
+                      "value": "232",
+                      "unit": ""
+                    },
+                    {
+                      "id": "hjt6gr5g",
+                      "name": "CPC",
+                      "value": "$1.47",
+                      "unit": ""
+                    },
+                    {
+                      "id": "mjgqc3y9",
+                      "name": "CTR",
+                      "value": "0.16%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            }
+          ],
+          "socialChannels": []
         }
       ],
       "preloadedMetrics": [],
