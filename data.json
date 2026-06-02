@@ -5776,13 +5776,13 @@
                 {
                   "id": "jfrfs5mx",
                   "name": "Reacciones",
-                  "value": "",
+                  "value": "178",
                   "unit": ""
                 },
                 {
                   "id": "sdsvr6e2",
                   "name": "Video Views",
-                  "value": "",
+                  "value": "1532",
                   "unit": ""
                 },
                 {
@@ -5793,7 +5793,122 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "l05ousat",
+                  "image": "https://facebook.com/reel/1247454323955965/",
+                  "imageType": "url",
+                  "metrics": []
+                },
+                {
+                  "id": "b1o3hcw5",
+                  "image": "https://facebook.com/reel/1019976363895461/",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "zfdsjv7e",
+              "name": "Instagram",
+              "icon": "📱",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-06-30",
+              "metrics": [
+                {
+                  "id": "zy2p7cob",
+                  "name": "Alcance",
+                  "value": "146",
+                  "unit": ""
+                },
+                {
+                  "id": "qkdp84qw",
+                  "name": "Interacciones",
+                  "value": "151",
+                  "unit": ""
+                },
+                {
+                  "id": "2yxtci5q",
+                  "name": "Video Views",
+                  "value": "784",
+                  "unit": ""
+                },
+                {
+                  "id": "chl5z4lu",
+                  "name": "Seguidores",
+                  "value": "26",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "v1fnyhu5",
+                  "image": "https://www.instagram.com/reel/DYm1D66gPs0/",
+                  "imageType": "url",
+                  "metrics": []
+                },
+                {
+                  "id": "l449ajlb",
+                  "image": "https://www.instagram.com/reel/DY42ubzO6q0/",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "pyqtw371",
+              "name": "LinkedIn",
+              "icon": "📱",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-06-30",
+              "metrics": [
+                {
+                  "id": "op4kq3ma",
+                  "name": "Impresiones",
+                  "value": "435",
+                  "unit": ""
+                },
+                {
+                  "id": "i9dk727t",
+                  "name": "Alcance",
+                  "value": "192",
+                  "unit": ""
+                },
+                {
+                  "id": "umfffwud",
+                  "name": "Reacciones",
+                  "value": "10",
+                  "unit": ""
+                },
+                {
+                  "id": "rktgpqum",
+                  "name": "Seguidores",
+                  "value": "172",
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "hbn73azz",
+                  "image": "https://www.linkedin.com/feed/update/urn:li:activity:7462537299730419712/",
+                  "imageType": "url",
+                  "metrics": []
+                },
+                {
+                  "id": "aeglgbrl",
+                  "image": "https://www.linkedin.com/feed/update/urn:li:activity:7465071623415660547/?actorCompanyId=64725652",
+                  "imageType": "url",
+                  "metrics": []
+                }
+              ],
               "observations": ""
             }
           ]
