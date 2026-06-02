@@ -5018,7 +5018,7 @@
             {
               "id": "knewagdx",
               "name": "Leads - Forms - Reforma Aduanera",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
               "startDate": "2026-05-01",
@@ -5104,7 +5104,7 @@
             {
               "id": "bvm1dlst",
               "name": "Leads - Forms - Roger",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
               "startDate": "2026-05-01",
@@ -5114,7 +5114,7 @@
                   "id": "knpeqn7q",
                   "name": "Importe Gastado",
                   "value": 4050.04,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "jv7qzzph",
@@ -5126,7 +5126,7 @@
                   "id": "hoc01spb",
                   "name": "CPM",
                   "value": "171.75",
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "l6sih34q",
@@ -5156,24 +5156,18 @@
                   "id": "u6wmrjt4",
                   "name": "CPC",
                   "value": 22.881582,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "7pmxwz1t",
                   "name": "CTR",
                   "value": 0.750604,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "ump89nl5",
                   "name": "Frecuencia",
                   "value": 2.744849,
-                  "unit": ""
-                },
-                {
-                  "id": "rijujhw9",
-                  "name": "Costo / Inversión",
-                  "value": 506.255,
                   "unit": ""
                 },
                 {
@@ -5186,7 +5180,7 @@
                   "id": "gz4p1den",
                   "name": "CPL",
                   "value": "238.23",
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -5196,7 +5190,7 @@
             {
               "id": "fvh1fo77",
               "name": "Leads - Forms - Operadores Terrestres",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "",
               "hidden": false,
               "startDate": "2026-05-01",
@@ -5288,7 +5282,7 @@
             {
               "id": "pzm3qquw",
               "name": "Leads - Web/Forms - Operadores Terrestres",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
               "startDate": "2026-05-01",
@@ -5298,7 +5292,7 @@
                   "id": "h0bwzn2v",
                   "name": "Importe Gastado",
                   "value": 525.96,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "u5am6eth",
@@ -5310,7 +5304,7 @@
                   "id": "dxp2q9o0",
                   "name": "CPM",
                   "value": "121.89",
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "636e0346",
@@ -5340,13 +5334,13 @@
                   "id": "sq1l725k",
                   "name": "CPC",
                   "value": 13.149,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "svxp49ii",
                   "name": "CTR",
                   "value": 0.926999,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "qkm8ab3q",
@@ -5364,7 +5358,7 @@
                   "id": "jrhunddz",
                   "name": "CPL",
                   "value": 262.98,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -5374,7 +5368,7 @@
             {
               "id": "9spt60bi",
               "name": "Leads - Forms - Expediente Digital",
-              "channel": "Google Ads",
+              "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
               "startDate": "2026-05-01",
