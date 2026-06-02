@@ -7677,7 +7677,7 @@
                 },
                 {
                   "id": "b6tdkgok",
-                  "name": "Tass de Conversiones",
+                  "name": "Tasa de Conversiones",
                   "value": 3.6,
                   "unit": "%"
                 },
@@ -7689,41 +7689,61 @@
                 },
                 {
                   "id": "4w33nfkh",
-                  "name": "Costo / Inversión",
+                  "name": "Costo Por Conversión",
                   "value": 19.52,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "r5c2rmcg",
+                  "image": "https://drive.google.com/file/d/13sxwkKwB-rlvVAkn6s__YqU8ORUlm9y8/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "dww1erw4",
+                      "name": "Importe Gastado",
+                      "value": "$278.70",
+                      "unit": ""
+                    },
+                    {
+                      "id": "42l9z20y",
+                      "name": "Conversiones",
+                      "value": "15",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5ebligzf",
+                      "name": "Costo Por Conversión",
+                      "value": "$18.78",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
               "id": "vtai07il",
-              "name": "YouTube Engagement & Growth",
+              "name": "YouTube Engagement & Growth - Google Ads",
               "channel": "Google Ads",
-              "group": "",
+              "group": "Mayo 2026",
               "hidden": false,
-              "startDate": "",
-              "endDate": "",
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
               "metrics": [
                 {
                   "id": "ku92gelj",
                   "name": "Importe Gastado",
                   "value": 444.26,
-                  "unit": ""
-                },
-                {
-                  "id": "r5hruffg",
-                  "name": "Tipo de campaña",
-                  "value": "Demand Gen",
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "o45bwdhi",
                   "name": "CPM",
                   "value": 0.84,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "ymofwyip",
@@ -7739,21 +7759,21 @@
                 },
                 {
                   "id": "qsgtwbph",
-                  "name": "Interacciones",
+                  "name": "Tasa de interacciones",
                   "value": 2.74,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "u0wxu66y",
-                  "name": "Costo / Inversión",
+                  "name": "Costo por interacción",
                   "value": 0.03,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "sh64n3yr",
                   "name": "CPC",
                   "value": 0.09,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "rwiw9a5s",
@@ -7775,53 +7795,67 @@
                 },
                 {
                   "id": "qrg53y4a",
-                  "name": "Conversiones",
+                  "name": "Tasa de convesión",
                   "value": 24.46,
                   "unit": ""
                 },
                 {
                   "id": "lggihyod",
-                  "name": "Conversiones",
+                  "name": "Suscriptores",
                   "value": 3555,
                   "unit": ""
                 },
                 {
                   "id": "15rzvqox",
-                  "name": "Costo / Inversión",
+                  "name": "Costo por suscriptor",
                   "value": 0.12,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "l2ia77yz",
+                  "image": "https://drive.google.com/file/d/1zW7_WlLLxJG4ShCANbzU4Ad_9fXWj-_q/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "n5szmom4",
+                      "name": "Importe Gastado",
+                      "value": "$423.08",
+                      "unit": ""
+                    },
+                    {
+                      "id": "hfp88iv8",
+                      "name": "TrueView",
+                      "value": "8968",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
               "id": "n5zs0oiu",
-              "name": "Performance Max - Ongoing",
+              "name": "PMAX - Google Ads",
               "channel": "Google Ads",
-              "group": "",
+              "group": "Mayo 2026",
               "hidden": false,
-              "startDate": "",
-              "endDate": "",
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
               "metrics": [
                 {
                   "id": "tts7ptz3",
                   "name": "Importe Gastado",
                   "value": 1947,
-                  "unit": ""
-                },
-                {
-                  "id": "0u1qus9a",
-                  "name": "Tipo de campaña",
-                  "value": "Performance Max",
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "alj6a2to",
                   "name": "CPM",
                   "value": 23.05,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "vk7jcgad",
@@ -7837,21 +7871,21 @@
                 },
                 {
                   "id": "qn0ti6fd",
-                  "name": "Interacciones",
+                  "name": "Tasa de Interacciones",
                   "value": 14.45,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "wthzedoy",
-                  "name": "Costo / Inversión",
+                  "name": "Costo por interacción",
                   "value": 0.16,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "q0runemc",
                   "name": "CPC",
                   "value": 0.33,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "xj5wbmsq",
@@ -7866,18 +7900,6 @@
                   "unit": "%"
                 },
                 {
-                  "id": "ml1fn5ki",
-                  "name": "Video played to 100%",
-                  "value": "--",
-                  "unit": ""
-                },
-                {
-                  "id": "69ot4du7",
-                  "name": "Conversiones",
-                  "value": 2.4,
-                  "unit": ""
-                },
-                {
                   "id": "n909omkx",
                   "name": "Conversiones",
                   "value": 293.15,
@@ -7885,41 +7907,67 @@
                 },
                 {
                   "id": "bjeraf71",
-                  "name": "Costo / Inversión",
+                  "name": "Costo por conversión",
                   "value": 6.64,
-                  "unit": ""
+                  "unit": "$"
+                },
+                {
+                  "id": "mi7irnh7",
+                  "name": "Tasa de conversión",
+                  "value": "2.4",
+                  "unit": "%"
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "bggi1d6y",
+                  "image": "https://drive.google.com/file/d/1-6YE3K3jZgHxx6iJxHM3fwcup3ifwG6G/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "qbx7sped",
+                      "name": "Importe Gastado",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "loftnihs",
+                      "name": "Conversiones",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xvpmocww",
+                      "name": "Costo por conversión",
+                      "value": "",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
               "id": "vv60hlht",
-              "name": "automeca_lf_cpa__search_brand",
+              "name": "Search - Brand - Google Ads",
               "channel": "Google Ads",
-              "group": "",
+              "group": "Mayo 2026",
               "hidden": false,
-              "startDate": "",
-              "endDate": "",
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
               "metrics": [
                 {
                   "id": "qpt1k6uq",
                   "name": "Importe Gastado",
                   "value": 921.17,
-                  "unit": ""
-                },
-                {
-                  "id": "xymvqo14",
-                  "name": "Tipo de campaña",
-                  "value": "Search",
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "f9l698sl",
                   "name": "CPM",
                   "value": 82,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "fj1bf0p0",
@@ -7935,21 +7983,21 @@
                 },
                 {
                   "id": "6a0hrx4x",
-                  "name": "Interacciones",
+                  "name": "Tasa de Interacciones",
                   "value": 9.34,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "h6p3lub6",
-                  "name": "Costo / Inversión",
+                  "name": "Costo por interacción",
                   "value": 0.88,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "pqds1gum",
                   "name": "CPC",
                   "value": 0.88,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "vyw6s0v9",
@@ -7964,16 +8012,10 @@
                   "unit": "%"
                 },
                 {
-                  "id": "avg4ujjh",
-                  "name": "Video played to 100%",
-                  "value": "--",
-                  "unit": ""
-                },
-                {
                   "id": "9441ead0",
-                  "name": "Conversiones",
+                  "name": "Tasa de Conversiones",
                   "value": 5.99,
-                  "unit": ""
+                  "unit": "%"
                 },
                 {
                   "id": "u6e8n08f",
@@ -7983,13 +8025,39 @@
                 },
                 {
                   "id": "rw1g9sq4",
-                  "name": "Costo / Inversión",
+                  "name": "Costo por conversión",
                   "value": 14.65,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "diongz35",
+                  "image": "https://drive.google.com/file/d/1zQA3kvZUy2CnXF47pHvKJuFGjNFGpqxp/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "dfu0ycqe",
+                      "name": "Importe Gastado",
+                      "value": "$448.62",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xyihqwa0",
+                      "name": "Conversiones",
+                      "value": "40",
+                      "unit": ""
+                    },
+                    {
+                      "id": "4gi1mj55",
+                      "name": "Costo por conversión",
+                      "value": "$11.15",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
