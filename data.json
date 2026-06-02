@@ -5098,7 +5098,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "ec8hdrpr",
+                  "image": "https://drive.google.com/file/d/1DmLnKX3qz05T1pue7GVUmSPW3CVVBu98/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "uwynbef3",
+                      "name": "Importe Gastado",
+                      "value": "$1,344.92",
+                      "unit": ""
+                    },
+                    {
+                      "id": "twwh7pio",
+                      "name": "Leads",
+                      "value": "21",
+                      "unit": ""
+                    },
+                    {
+                      "id": "kisbz45z",
+                      "name": "CPL",
+                      "value": "$64.04",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -5184,7 +5210,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "5c4f2zny",
+                  "image": "https://drive.google.com/file/d/1zl3FT2zCJBbP5Gz14a4VXBDh16eVocfh/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "27o6eabp",
+                      "name": "Importe Gastado",
+                      "value": "$1082.47",
+                      "unit": ""
+                    },
+                    {
+                      "id": "yj7lmln8",
+                      "name": "Leads",
+                      "value": "7",
+                      "unit": ""
+                    },
+                    {
+                      "id": "3ya2majf",
+                      "name": "CPL",
+                      "value": "$154.64",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -5276,7 +5328,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "b682memi",
+                  "image": "https://drive.google.com/file/d/17sVWhWb7rXZx6N5lbDF1PLxMEDaz_SnR/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "0rpzlnr7",
+                      "name": "Importe Gastado",
+                      "value": "$1,833.52",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ytseulci",
+                      "name": "Leads",
+                      "value": "9",
+                      "unit": ""
+                    },
+                    {
+                      "id": "unmota1e",
+                      "name": "CPL",
+                      "value": "$203.72",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -5362,7 +5440,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "wxnkcnu3",
+                  "image": "https://drive.google.com/file/d/129extcHUnLxaBaY5xRI2HElCEMkYdqHa/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "xyrkbuhp",
+                      "name": "Importe Gastado",
+                      "value": "$399.53",
+                      "unit": ""
+                    },
+                    {
+                      "id": "9j3n9phh",
+                      "name": "Leads",
+                      "value": "2",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ec6m755l",
+                      "name": "CPL",
+                      "value": "$199.77",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -5454,7 +5558,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "mtigbti8",
+                  "image": "https://drive.google.com/file/d/1-Fkd66ymrXMyOPFyiZAKF2y5-qPIIWj9/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "5e0o6o99",
+                      "name": "Importe Gastado",
+                      "value": "$168.32",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ypkhulys",
+                      "name": "Leads",
+                      "value": "5",
+                      "unit": ""
+                    },
+                    {
+                      "id": "w2ypnxn8",
+                      "name": "CPL",
+                      "value": "$33.66",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
