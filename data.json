@@ -6764,7 +6764,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "h1tol5xo",
+                  "image": "https://drive.google.com/file/d/13ejtAsGSG4HcakMpT_uPv9ejYJgx6ILg/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "dijzx7yt",
+                      "name": "Interacciones",
+                      "value": "524",
+                      "unit": ""
+                    },
+                    {
+                      "id": "x36qe067",
+                      "name": "Costo Por Interacción",
+                      "value": "$0.77",
+                      "unit": ""
+                    },
+                    {
+                      "id": "rm2pv2j8",
+                      "name": "Importe Gastado",
+                      "value": "$404.4",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
