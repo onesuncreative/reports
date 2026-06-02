@@ -5637,8 +5637,8 @@
               "channel": "X Ads",
               "group": "Mayo 2026",
               "hidden": false,
-              "startDate": "2026-06-02",
-              "endDate": "2026-06-30",
+              "startDate": "2026-05-18",
+              "endDate": "2026-06-24",
               "metrics": [
                 {
                   "id": "poafw9z5",
@@ -5711,6 +5711,190 @@
                   ]
                 }
               ],
+              "observations": ""
+            },
+            {
+              "id": "dw2ne65w",
+              "name": "Tráfico - Webinar - Mayo 2026 Campaign",
+              "channel": "Facebook Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "tvdrckai",
+                  "name": "Reporting starts",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "6vpkmqs3",
+                  "name": "Reporting ends",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "tnh6g1qs",
+                  "name": "Objective",
+                  "value": "Traffic",
+                  "unit": ""
+                },
+                {
+                  "id": "gxq40b7v",
+                  "name": "Campaign delivery",
+                  "value": "inactive",
+                  "unit": ""
+                },
+                {
+                  "id": "8045ghxy",
+                  "name": "Importe Gastado",
+                  "value": 595.03,
+                  "unit": ""
+                },
+                {
+                  "id": "n8lu2rjn",
+                  "name": "Impresiones",
+                  "value": 20300,
+                  "unit": ""
+                },
+                {
+                  "id": "at709tu6",
+                  "name": "CPM",
+                  "value": 29.311823,
+                  "unit": ""
+                },
+                {
+                  "id": "sdma93x6",
+                  "name": "Alcance",
+                  "value": 18308,
+                  "unit": ""
+                },
+                {
+                  "id": "9dk7vlrr",
+                  "name": "Resultados",
+                  "value": 683,
+                  "unit": ""
+                },
+                {
+                  "id": "rcg3qil6",
+                  "name": "Result indicator",
+                  "value": "actions:link_click",
+                  "unit": ""
+                },
+                {
+                  "id": "c89sdzbk",
+                  "name": "Costo / Inversión",
+                  "value": 0.871201,
+                  "unit": ""
+                },
+                {
+                  "id": "nmxytzmj",
+                  "name": "Clics en enlace",
+                  "value": 683,
+                  "unit": ""
+                },
+                {
+                  "id": "1yclrt2e",
+                  "name": "Clics",
+                  "value": 3.364532,
+                  "unit": ""
+                },
+                {
+                  "id": "zsglnccx",
+                  "name": "Clics",
+                  "value": 0.871201,
+                  "unit": ""
+                },
+                {
+                  "id": "ui2ca0ee",
+                  "name": "Frecuencia",
+                  "value": 1.108805,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "w5hubniv",
+              "name": "Leads + Engagement - Curso Maximiza Cuentas (Unificado)",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "2026-05-16",
+              "endDate": "2026-06-22",
+              "metrics": [
+                {
+                  "id": "un9ncdp3",
+                  "name": "Importe Gastado",
+                  "value": 1401.71,
+                  "unit": "$"
+                },
+                {
+                  "id": "732b1sxc",
+                  "name": "Impresiones",
+                  "value": 18654,
+                  "unit": ""
+                },
+                {
+                  "id": "h6vxkoe7",
+                  "name": "CPM",
+                  "value": 75.142597,
+                  "unit": "$"
+                },
+                {
+                  "id": "0o7dtyh2",
+                  "name": "Alcance",
+                  "value": 16326,
+                  "unit": ""
+                },
+                {
+                  "id": "fxm96xij",
+                  "name": "Costo / Inversión",
+                  "value": 82.453529,
+                  "unit": ""
+                },
+                {
+                  "id": "xmvljmpw",
+                  "name": "Clics",
+                  "value": 1560,
+                  "unit": ""
+                },
+                {
+                  "id": "nm6vo2k1",
+                  "name": "CTR",
+                  "value": 8.362818,
+                  "unit": "%"
+                },
+                {
+                  "id": "mlyb4uan",
+                  "name": "Clics",
+                  "value": 0.898532,
+                  "unit": "$"
+                },
+                {
+                  "id": "l0mii3da",
+                  "name": "Frecuencia",
+                  "value": 1.142595,
+                  "unit": ""
+                },
+                {
+                  "id": "sanl6s32",
+                  "name": "Conversaciones Iniciadas",
+                  "value": 5,
+                  "unit": ""
+                },
+                {
+                  "id": "o56w87om",
+                  "name": "Costo por conversaciones Iniciadas",
+                  "value": 280.342,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
               "observations": ""
             }
           ],
