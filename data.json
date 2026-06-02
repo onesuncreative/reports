@@ -6668,6 +6668,725 @@
       ],
       "preloadedMetrics": [],
       "globalMetrics": []
+    },
+    "automeca": {
+      "id": "wvae18kf",
+      "slug": "automeca",
+      "name": "Automeca",
+      "password": "4ut0m3ca",
+      "logo": "",
+      "theme": "dark",
+      "reportTitle": "Reporte de Resultados",
+      "reportSubtitle": "Campañas Digitales",
+      "viewStart": "",
+      "viewEnd": "",
+      "brands": [
+        {
+          "id": "7pzgt6dj",
+          "name": "Matrícula Mayo ",
+          "logo": "",
+          "color": "#00ddff",
+          "campaigns": [
+            {
+              "id": "h64i1cz1",
+              "name": "Boost: Carousel Programas",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "t22cyaa4",
+                  "name": "Reporting starts",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "kv09ykpc",
+                  "name": "Reporting ends",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "55lyebnz",
+                  "name": "Ad set count",
+                  "value": 1,
+                  "unit": ""
+                },
+                {
+                  "id": "kqndswyx",
+                  "name": "Ad set names",
+                  "value": "Boost: Carousel Programas",
+                  "unit": ""
+                },
+                {
+                  "id": "6s9glhv1",
+                  "name": "Múltiples result indicators",
+                  "value": "No",
+                  "unit": ""
+                },
+                {
+                  "id": "9fjti1gn",
+                  "name": "Result indicator",
+                  "value": "actions:post_interaction_gross",
+                  "unit": ""
+                },
+                {
+                  "id": "xwdsowxz",
+                  "name": "Costo / Inversión",
+                  "value": 404.4,
+                  "unit": ""
+                },
+                {
+                  "id": "s76j5czc",
+                  "name": "Impresiones",
+                  "value": 96447,
+                  "unit": ""
+                },
+                {
+                  "id": "mmkhflaj",
+                  "name": "Impresiones",
+                  "value": 4.192976,
+                  "unit": ""
+                },
+                {
+                  "id": "ccapqp5s",
+                  "name": "Alcance",
+                  "value": 41471,
+                  "unit": ""
+                },
+                {
+                  "id": "b2b8ccye",
+                  "name": "Frecuencia",
+                  "value": 2.325649,
+                  "unit": ""
+                },
+                {
+                  "id": "m0hyjhyz",
+                  "name": "Resultados",
+                  "value": 524,
+                  "unit": ""
+                },
+                {
+                  "id": "dhlsnydl",
+                  "name": "Costo / Inversión",
+                  "value": 0.771756,
+                  "unit": ""
+                },
+                {
+                  "id": "kz11mt0x",
+                  "name": "Clics en enlace",
+                  "value": 35,
+                  "unit": ""
+                },
+                {
+                  "id": "29mslh2f",
+                  "name": "Clics",
+                  "value": 0.036289,
+                  "unit": ""
+                },
+                {
+                  "id": "1ajs5n8s",
+                  "name": "Clics",
+                  "value": 11.554286,
+                  "unit": ""
+                },
+                {
+                  "id": "xzsvgjrg",
+                  "name": "ThruPlay",
+                  "value": 4067,
+                  "unit": ""
+                },
+                {
+                  "id": "xmnp0voz",
+                  "name": "Video plays",
+                  "value": 95315,
+                  "unit": ""
+                },
+                {
+                  "id": "hjrzl3fx",
+                  "name": "Video plays at 100%",
+                  "value": 4051,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "988j3cyr",
+              "name": "Engagement Boost Post",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "mlojax78",
+                  "name": "Reporting starts",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "o2y4z5yy",
+                  "name": "Reporting ends",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "ewqm53my",
+                  "name": "Ad set count",
+                  "value": 1,
+                  "unit": ""
+                },
+                {
+                  "id": "kvwjuhun",
+                  "name": "Ad set names",
+                  "value": "Fajardo - Engagement",
+                  "unit": ""
+                },
+                {
+                  "id": "fca38ddv",
+                  "name": "Múltiples result indicators",
+                  "value": "No",
+                  "unit": ""
+                },
+                {
+                  "id": "vi2ah33p",
+                  "name": "Result indicator",
+                  "value": "total_profile_visits",
+                  "unit": ""
+                },
+                {
+                  "id": "znkbiijh",
+                  "name": "Costo / Inversión",
+                  "value": 43.52,
+                  "unit": ""
+                },
+                {
+                  "id": "xjnppeq2",
+                  "name": "Impresiones",
+                  "value": 23843,
+                  "unit": ""
+                },
+                {
+                  "id": "i50hfvcc",
+                  "name": "Impresiones",
+                  "value": 1.825274,
+                  "unit": ""
+                },
+                {
+                  "id": "sksps2v0",
+                  "name": "Alcance",
+                  "value": 13027,
+                  "unit": ""
+                },
+                {
+                  "id": "if6tg3h9",
+                  "name": "Frecuencia",
+                  "value": 1.830276,
+                  "unit": ""
+                },
+                {
+                  "id": "t11cjo30",
+                  "name": "Resultados",
+                  "value": 322,
+                  "unit": ""
+                },
+                {
+                  "id": "0h2op9zw",
+                  "name": "Costo / Inversión",
+                  "value": 0.135155,
+                  "unit": ""
+                },
+                {
+                  "id": "zfi9p4eo",
+                  "name": "Clics en enlace",
+                  "value": 244,
+                  "unit": ""
+                },
+                {
+                  "id": "g40tq7qi",
+                  "name": "Clics",
+                  "value": 1.023361,
+                  "unit": ""
+                },
+                {
+                  "id": "avrggewh",
+                  "name": "Clics",
+                  "value": 0.178361,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "8xj19ito",
+              "name": "Ongoing Instant Forms - Leads Matrícula",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "znpc7stt",
+                  "name": "Reporting starts",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "m037g00e",
+                  "name": "Reporting ends",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "sw4n3i29",
+                  "name": "Ad set count",
+                  "value": 6,
+                  "unit": ""
+                },
+                {
+                  "id": "7roalphn",
+                  "name": "Ad set names",
+                  "value": "Mayo 2026 | Mayo 2026 - Por Programa | Mayo 2026 - Aguadilla | UD Mayo 2026 | UD Mayo 2026 - Apoyo TRCA Aguadilla Nocturno | Matrícula Agosto 2026",
+                  "unit": ""
+                },
+                {
+                  "id": "zug70b3z",
+                  "name": "Múltiples result indicators",
+                  "value": "Sí",
+                  "unit": ""
+                },
+                {
+                  "id": "2zbxturp",
+                  "name": "Result indicator",
+                  "value": "actions:onsite_conversion.lead_grouped | actions:leadgen.other",
+                  "unit": ""
+                },
+                {
+                  "id": "hhc873di",
+                  "name": "Costo / Inversión",
+                  "value": 5132.28,
+                  "unit": ""
+                },
+                {
+                  "id": "grfuuq9s",
+                  "name": "Impresiones",
+                  "value": 1725516,
+                  "unit": ""
+                },
+                {
+                  "id": "4lkaeghx",
+                  "name": "Impresiones",
+                  "value": 2.974345,
+                  "unit": ""
+                },
+                {
+                  "id": "akzzjli4",
+                  "name": "Alcance",
+                  "value": 510106,
+                  "unit": ""
+                },
+                {
+                  "id": "oe236nfo",
+                  "name": "Frecuencia",
+                  "value": 3.382662,
+                  "unit": ""
+                },
+                {
+                  "id": "qrwbtu00",
+                  "name": "Resultados",
+                  "value": 262,
+                  "unit": ""
+                },
+                {
+                  "id": "5wa29x03",
+                  "name": "Costo / Inversión",
+                  "value": 19.588855,
+                  "unit": ""
+                },
+                {
+                  "id": "cl41w7oq",
+                  "name": "Leads",
+                  "value": 263,
+                  "unit": ""
+                },
+                {
+                  "id": "dinj6ylt",
+                  "name": "Costo / Inversión",
+                  "value": 19.514373,
+                  "unit": ""
+                },
+                {
+                  "id": "g4944z39",
+                  "name": "Clics en enlace",
+                  "value": 7504,
+                  "unit": ""
+                },
+                {
+                  "id": "u2e80buz",
+                  "name": "Clics",
+                  "value": 0.434884,
+                  "unit": ""
+                },
+                {
+                  "id": "5ffgm07c",
+                  "name": "Clics",
+                  "value": 0.683939,
+                  "unit": ""
+                },
+                {
+                  "id": "u97x8xw9",
+                  "name": "Vistas de página",
+                  "value": 53,
+                  "unit": ""
+                },
+                {
+                  "id": "5w2nw88c",
+                  "name": "Costo / Inversión",
+                  "value": 96.835472,
+                  "unit": ""
+                },
+                {
+                  "id": "fivt588x",
+                  "name": "Vistas / Reproducciones",
+                  "value": 53,
+                  "unit": ""
+                },
+                {
+                  "id": "yl3ynfez",
+                  "name": "Leads",
+                  "value": 263,
+                  "unit": ""
+                },
+                {
+                  "id": "g2j8g15n",
+                  "name": "ThruPlay",
+                  "value": 64208,
+                  "unit": ""
+                },
+                {
+                  "id": "l4vpt4p8",
+                  "name": "Video plays",
+                  "value": 1492445,
+                  "unit": ""
+                },
+                {
+                  "id": "vm2s08az",
+                  "name": "Video plays at 100%",
+                  "value": 30704,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "wqvhipwi",
+              "name": "Ongoing Leads - Dynamic Ad Sets",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "c4vzdfae",
+                  "name": "Reporting starts",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "org3eh18",
+                  "name": "Reporting ends",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "enwhw1f6",
+                  "name": "Ad set count",
+                  "value": 2,
+                  "unit": ""
+                },
+                {
+                  "id": "y4igin5o",
+                  "name": "Ad set names",
+                  "value": "Caguas Mayo 2026 | Fajardo Mayo 2026",
+                  "unit": ""
+                },
+                {
+                  "id": "9z2239c0",
+                  "name": "Múltiples result indicators",
+                  "value": "No",
+                  "unit": ""
+                },
+                {
+                  "id": "ffebuupu",
+                  "name": "Result indicator",
+                  "value": "actions:offsite_complete_registration_add_meta_leads",
+                  "unit": ""
+                },
+                {
+                  "id": "wb83v9lw",
+                  "name": "Costo / Inversión",
+                  "value": 1112.54,
+                  "unit": ""
+                },
+                {
+                  "id": "7h10le2t",
+                  "name": "Impresiones",
+                  "value": 335148,
+                  "unit": ""
+                },
+                {
+                  "id": "xq3bqxcm",
+                  "name": "Impresiones",
+                  "value": 3.319548,
+                  "unit": ""
+                },
+                {
+                  "id": "722yvq0h",
+                  "name": "Alcance",
+                  "value": 120912,
+                  "unit": ""
+                },
+                {
+                  "id": "upiix25f",
+                  "name": "Frecuencia",
+                  "value": 2.771834,
+                  "unit": ""
+                },
+                {
+                  "id": "fb82ec7n",
+                  "name": "Resultados",
+                  "value": 25,
+                  "unit": ""
+                },
+                {
+                  "id": "qfiy1el0",
+                  "name": "Costo / Inversión",
+                  "value": 44.5016,
+                  "unit": ""
+                },
+                {
+                  "id": "eg42jf1x",
+                  "name": "Leads",
+                  "value": 25,
+                  "unit": ""
+                },
+                {
+                  "id": "4uovueqk",
+                  "name": "Costo / Inversión",
+                  "value": 44.5016,
+                  "unit": ""
+                },
+                {
+                  "id": "8fqna9ya",
+                  "name": "Clics en enlace",
+                  "value": 795,
+                  "unit": ""
+                },
+                {
+                  "id": "r1rey87s",
+                  "name": "Clics",
+                  "value": 0.237209,
+                  "unit": ""
+                },
+                {
+                  "id": "mx4cdlnq",
+                  "name": "Clics",
+                  "value": 1.399421,
+                  "unit": ""
+                },
+                {
+                  "id": "7kny971k",
+                  "name": "Vistas de página",
+                  "value": 7,
+                  "unit": ""
+                },
+                {
+                  "id": "nedor49t",
+                  "name": "Costo / Inversión",
+                  "value": 158.934286,
+                  "unit": ""
+                },
+                {
+                  "id": "ayhytn3p",
+                  "name": "Vistas / Reproducciones",
+                  "value": 7,
+                  "unit": ""
+                },
+                {
+                  "id": "m0d1svu4",
+                  "name": "Leads",
+                  "value": 25,
+                  "unit": ""
+                },
+                {
+                  "id": "tyznarab",
+                  "name": "ThruPlay",
+                  "value": 10357,
+                  "unit": ""
+                },
+                {
+                  "id": "hh8jiz8u",
+                  "name": "Video plays",
+                  "value": 317863,
+                  "unit": ""
+                },
+                {
+                  "id": "bzl3hsji",
+                  "name": "Video plays at 100%",
+                  "value": 6585,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "lqrwye3z",
+              "name": "PR Necesita Mecánicos",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "2s08o4uf",
+                  "name": "Reporting starts",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "5huugy6k",
+                  "name": "Reporting ends",
+                  "value": 2026,
+                  "unit": ""
+                },
+                {
+                  "id": "ena2ylnj",
+                  "name": "Ad set count",
+                  "value": 1,
+                  "unit": ""
+                },
+                {
+                  "id": "po6dsh9p",
+                  "name": "Ad set names",
+                  "value": "PR Necesita Mecánicos",
+                  "unit": ""
+                },
+                {
+                  "id": "wkwlftau",
+                  "name": "Múltiples result indicators",
+                  "value": "No",
+                  "unit": ""
+                },
+                {
+                  "id": "9q20ib4c",
+                  "name": "Result indicator",
+                  "value": "reach",
+                  "unit": ""
+                },
+                {
+                  "id": "12dqhi90",
+                  "name": "Costo / Inversión",
+                  "value": 490,
+                  "unit": ""
+                },
+                {
+                  "id": "8yi5ijga",
+                  "name": "Impresiones",
+                  "value": 1016836,
+                  "unit": ""
+                },
+                {
+                  "id": "93ldn9uc",
+                  "name": "Impresiones",
+                  "value": 0.481887,
+                  "unit": ""
+                },
+                {
+                  "id": "0znpbghd",
+                  "name": "Alcance",
+                  "value": 274476,
+                  "unit": ""
+                },
+                {
+                  "id": "j1b0dquk",
+                  "name": "Frecuencia",
+                  "value": 3.704644,
+                  "unit": ""
+                },
+                {
+                  "id": "bm81dweb",
+                  "name": "Resultados",
+                  "value": 274476,
+                  "unit": ""
+                },
+                {
+                  "id": "n04su4yc",
+                  "name": "Costo / Inversión",
+                  "value": 0.001785,
+                  "unit": ""
+                },
+                {
+                  "id": "uvwrt59u",
+                  "name": "Clics en enlace",
+                  "value": 974,
+                  "unit": ""
+                },
+                {
+                  "id": "ln9icod8",
+                  "name": "Clics",
+                  "value": 0.095787,
+                  "unit": ""
+                },
+                {
+                  "id": "oz898tyx",
+                  "name": "Clics",
+                  "value": 0.50308,
+                  "unit": ""
+                },
+                {
+                  "id": "ufhmns53",
+                  "name": "Vistas de página",
+                  "value": 491,
+                  "unit": ""
+                },
+                {
+                  "id": "r3cn7vtb",
+                  "name": "Costo / Inversión",
+                  "value": 0.997963,
+                  "unit": ""
+                },
+                {
+                  "id": "6mbwtgxh",
+                  "name": "Vistas / Reproducciones",
+                  "value": 491,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            }
+          ],
+          "socialChannels": []
+        }
+      ],
+      "preloadedMetrics": [],
+      "globalMetrics": []
     }
   },
   "globalMetrics": [
