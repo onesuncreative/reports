@@ -7605,6 +7605,392 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "gh86401d",
+              "name": "Search - Non-Brand - Google Ads",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "ul3v4zkv",
+                  "name": "Importe Gastado",
+                  "value": 777.23,
+                  "unit": "$"
+                },
+                {
+                  "id": "6n9st3ad",
+                  "name": "Tipo de campaña",
+                  "value": "Search",
+                  "unit": ""
+                },
+                {
+                  "id": "u5k0367h",
+                  "name": "CPM",
+                  "value": 39.15,
+                  "unit": "$"
+                },
+                {
+                  "id": "n4moh3dz",
+                  "name": "Impresiones",
+                  "value": 19855,
+                  "unit": ""
+                },
+                {
+                  "id": "nuza34yd",
+                  "name": "Interacciones",
+                  "value": 1106,
+                  "unit": ""
+                },
+                {
+                  "id": "6et07g1n",
+                  "name": "Tasa de interacciones",
+                  "value": 5.57,
+                  "unit": "%"
+                },
+                {
+                  "id": "x9vzrp42",
+                  "name": "Costo por Interacción",
+                  "value": 0.7,
+                  "unit": "$"
+                },
+                {
+                  "id": "dqbzi5rc",
+                  "name": "CPC",
+                  "value": 0.7,
+                  "unit": "$"
+                },
+                {
+                  "id": "oxkh06fd",
+                  "name": "Clics",
+                  "value": 1106,
+                  "unit": ""
+                },
+                {
+                  "id": "7bdknnll",
+                  "name": "CTR",
+                  "value": 5.57,
+                  "unit": "%"
+                },
+                {
+                  "id": "b6tdkgok",
+                  "name": "Tass de Conversiones",
+                  "value": 3.6,
+                  "unit": "%"
+                },
+                {
+                  "id": "r0m5rxwn",
+                  "name": "Conversiones",
+                  "value": 39.83,
+                  "unit": ""
+                },
+                {
+                  "id": "4w33nfkh",
+                  "name": "Costo / Inversión",
+                  "value": 19.52,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "vtai07il",
+              "name": "YouTube Engagement & Growth",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "ku92gelj",
+                  "name": "Importe Gastado",
+                  "value": 444.26,
+                  "unit": ""
+                },
+                {
+                  "id": "r5hruffg",
+                  "name": "Tipo de campaña",
+                  "value": "Demand Gen",
+                  "unit": ""
+                },
+                {
+                  "id": "o45bwdhi",
+                  "name": "CPM",
+                  "value": 0.84,
+                  "unit": ""
+                },
+                {
+                  "id": "ymofwyip",
+                  "name": "Impresiones",
+                  "value": 530826,
+                  "unit": ""
+                },
+                {
+                  "id": "88ezw32a",
+                  "name": "Interacciones",
+                  "value": 14532,
+                  "unit": ""
+                },
+                {
+                  "id": "qsgtwbph",
+                  "name": "Interacciones",
+                  "value": 2.74,
+                  "unit": ""
+                },
+                {
+                  "id": "u0wxu66y",
+                  "name": "Costo / Inversión",
+                  "value": 0.03,
+                  "unit": ""
+                },
+                {
+                  "id": "sh64n3yr",
+                  "name": "CPC",
+                  "value": 0.09,
+                  "unit": ""
+                },
+                {
+                  "id": "rwiw9a5s",
+                  "name": "Clics",
+                  "value": 4696,
+                  "unit": ""
+                },
+                {
+                  "id": "ykdwk0rn",
+                  "name": "CTR",
+                  "value": 0.88,
+                  "unit": "%"
+                },
+                {
+                  "id": "rxbl81l4",
+                  "name": "Video played to 100%",
+                  "value": 16.24,
+                  "unit": "%"
+                },
+                {
+                  "id": "qrg53y4a",
+                  "name": "Conversiones",
+                  "value": 24.46,
+                  "unit": ""
+                },
+                {
+                  "id": "lggihyod",
+                  "name": "Conversiones",
+                  "value": 3555,
+                  "unit": ""
+                },
+                {
+                  "id": "15rzvqox",
+                  "name": "Costo / Inversión",
+                  "value": 0.12,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "n5zs0oiu",
+              "name": "Performance Max - Ongoing",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "tts7ptz3",
+                  "name": "Importe Gastado",
+                  "value": 1947,
+                  "unit": ""
+                },
+                {
+                  "id": "0u1qus9a",
+                  "name": "Tipo de campaña",
+                  "value": "Performance Max",
+                  "unit": ""
+                },
+                {
+                  "id": "alj6a2to",
+                  "name": "CPM",
+                  "value": 23.05,
+                  "unit": ""
+                },
+                {
+                  "id": "vk7jcgad",
+                  "name": "Impresiones",
+                  "value": 84475,
+                  "unit": ""
+                },
+                {
+                  "id": "zusn3yd5",
+                  "name": "Interacciones",
+                  "value": 12204,
+                  "unit": ""
+                },
+                {
+                  "id": "qn0ti6fd",
+                  "name": "Interacciones",
+                  "value": 14.45,
+                  "unit": ""
+                },
+                {
+                  "id": "wthzedoy",
+                  "name": "Costo / Inversión",
+                  "value": 0.16,
+                  "unit": ""
+                },
+                {
+                  "id": "q0runemc",
+                  "name": "CPC",
+                  "value": 0.33,
+                  "unit": ""
+                },
+                {
+                  "id": "xj5wbmsq",
+                  "name": "Clics",
+                  "value": 5893,
+                  "unit": ""
+                },
+                {
+                  "id": "kx01zmtu",
+                  "name": "CTR",
+                  "value": 6.98,
+                  "unit": "%"
+                },
+                {
+                  "id": "ml1fn5ki",
+                  "name": "Video played to 100%",
+                  "value": "--",
+                  "unit": ""
+                },
+                {
+                  "id": "69ot4du7",
+                  "name": "Conversiones",
+                  "value": 2.4,
+                  "unit": ""
+                },
+                {
+                  "id": "n909omkx",
+                  "name": "Conversiones",
+                  "value": 293.15,
+                  "unit": ""
+                },
+                {
+                  "id": "bjeraf71",
+                  "name": "Costo / Inversión",
+                  "value": 6.64,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "vv60hlht",
+              "name": "automeca_lf_cpa__search_brand",
+              "channel": "Google Ads",
+              "group": "",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "qpt1k6uq",
+                  "name": "Importe Gastado",
+                  "value": 921.17,
+                  "unit": ""
+                },
+                {
+                  "id": "xymvqo14",
+                  "name": "Tipo de campaña",
+                  "value": "Search",
+                  "unit": ""
+                },
+                {
+                  "id": "f9l698sl",
+                  "name": "CPM",
+                  "value": 82,
+                  "unit": ""
+                },
+                {
+                  "id": "fj1bf0p0",
+                  "name": "Impresiones",
+                  "value": 11234,
+                  "unit": ""
+                },
+                {
+                  "id": "mm0f3c4f",
+                  "name": "Interacciones",
+                  "value": 1049,
+                  "unit": ""
+                },
+                {
+                  "id": "6a0hrx4x",
+                  "name": "Interacciones",
+                  "value": 9.34,
+                  "unit": ""
+                },
+                {
+                  "id": "h6p3lub6",
+                  "name": "Costo / Inversión",
+                  "value": 0.88,
+                  "unit": ""
+                },
+                {
+                  "id": "pqds1gum",
+                  "name": "CPC",
+                  "value": 0.88,
+                  "unit": ""
+                },
+                {
+                  "id": "vyw6s0v9",
+                  "name": "Clics",
+                  "value": 1049,
+                  "unit": ""
+                },
+                {
+                  "id": "izui9tiv",
+                  "name": "CTR",
+                  "value": 9.34,
+                  "unit": "%"
+                },
+                {
+                  "id": "avg4ujjh",
+                  "name": "Video played to 100%",
+                  "value": "--",
+                  "unit": ""
+                },
+                {
+                  "id": "9441ead0",
+                  "name": "Conversiones",
+                  "value": 5.99,
+                  "unit": ""
+                },
+                {
+                  "id": "u6e8n08f",
+                  "name": "Conversiones",
+                  "value": 62.89,
+                  "unit": ""
+                },
+                {
+                  "id": "rw1g9sq4",
+                  "name": "Costo / Inversión",
+                  "value": 14.65,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
