@@ -6172,7 +6172,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "280xev4y",
+                  "image": "https://drive.google.com/file/d/1M25GbVTzmFm_Veryj8bzTv2F8wHsx5nZ/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "m5ykvnnb",
+                      "name": "Importe Gastado",
+                      "value": "$20",
+                      "unit": ""
+                    },
+                    {
+                      "id": "cbee6qsm",
+                      "name": "Clics",
+                      "value": "40",
+                      "unit": ""
+                    },
+                    {
+                      "id": "0poq0nm3",
+                      "name": "CPC",
+                      "value": "$0.50",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
