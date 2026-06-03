@@ -6294,7 +6294,126 @@
           "name": "TikTok Usados",
           "logo": "",
           "color": "#ff0000",
-          "campaigns": [],
+          "campaigns": [
+            {
+              "id": "vr5arpjf",
+              "name": "Leads - Instant Forms - Usados Todos",
+              "channel": "TikTok Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-13",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "f67nylxu",
+                  "name": "Importe Gastado",
+                  "value": 614.75,
+                  "unit": "$"
+                },
+                {
+                  "id": "55gjlts5",
+                  "name": "Impresiones",
+                  "value": 392158,
+                  "unit": ""
+                },
+                {
+                  "id": "n52bhh9k",
+                  "name": "CPM",
+                  "value": 1.57,
+                  "unit": "$"
+                },
+                {
+                  "id": "hpj4arb1",
+                  "name": "Alcance",
+                  "value": 153438,
+                  "unit": ""
+                },
+                {
+                  "id": "74wu2h68",
+                  "name": "Frecuencia",
+                  "value": 2.56,
+                  "unit": ""
+                },
+                {
+                  "id": "m4ppt6tr",
+                  "name": "Reproducciones",
+                  "value": 388683,
+                  "unit": ""
+                },
+                {
+                  "id": "emhms7c0",
+                  "name": "Reproducciones 6 Segundos",
+                  "value": 22422,
+                  "unit": ""
+                },
+                {
+                  "id": "it2rctdd",
+                  "name": "Reproducciones 100%",
+                  "value": 9309,
+                  "unit": ""
+                },
+                {
+                  "id": "mtd84i0b",
+                  "name": "Clics",
+                  "value": 1751,
+                  "unit": ""
+                },
+                {
+                  "id": "61zm0xd0",
+                  "name": "CPC",
+                  "value": 0.35,
+                  "unit": ""
+                },
+                {
+                  "id": "4lfg49o5",
+                  "name": "CTR",
+                  "value": 0.0045,
+                  "unit": "%"
+                },
+                {
+                  "id": "ja9uq5sq",
+                  "name": "Leads",
+                  "value": 7,
+                  "unit": ""
+                },
+                {
+                  "id": "ws7cqks4",
+                  "name": "CPL",
+                  "value": 87.82,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "fig49y2g",
+                  "image": "https://drive.google.com/file/d/18dkf4A8mAro70w0FkXKIAIMDBhVM4_1M/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "h72x2m0x",
+                      "name": "Importe Gastado",
+                      "value": "$375.61",
+                      "unit": ""
+                    },
+                    {
+                      "id": "cxg3ejyi",
+                      "name": "Leads",
+                      "value": "5",
+                      "unit": ""
+                    },
+                    {
+                      "id": "wjh9k811",
+                      "name": "CPL",
+                      "value": "$75.12",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            }
+          ],
           "socialChannels": []
         }
       ]
