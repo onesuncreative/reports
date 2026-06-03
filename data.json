@@ -834,8 +834,8 @@
             },
             {
               "id": "kklewfz9",
-              "name": "Facebook",
-              "channel": "Facebook",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
               "group": "Mayo 2026",
               "hidden": false,
               "startDate": "",
@@ -843,9 +843,9 @@
               "metrics": [
                 {
                   "id": "adeu4cnw",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 4209.14,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "mriv5k5x",
@@ -863,7 +863,7 @@
                   "id": "ub7xuege",
                   "name": "CPM",
                   "value": 3.75,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "fe9zbpge",
@@ -881,7 +881,7 @@
                   "id": "lgt264bu",
                   "name": "CPC",
                   "value": 0.26,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "6e3vqi0q",
@@ -897,13 +897,13 @@
                 },
                 {
                   "id": "y8dai7s1",
-                  "name": "Costo / Inversión",
+                  "name": "Costo Por Conversión",
                   "value": 41.27,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "6tckbnys",
-                  "name": "Vistas / Reproducciones",
+                  "name": "Video Plays 100%",
                   "value": 16567,
                   "unit": ""
                 },
@@ -914,16 +914,10 @@
                   "unit": ""
                 },
                 {
-                  "id": "fks9ek7b",
-                  "name": "Llamadas",
-                  "value": 136,
-                  "unit": ""
-                },
-                {
-                  "id": "f4sl2rj7",
-                  "name": "Costo / Inversión",
-                  "value": 30.95,
-                  "unit": ""
+                  "id": "ebi7zk5t",
+                  "name": "Costo Por Engagement",
+                  "value": "0.07",
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -941,9 +935,9 @@
               "metrics": [
                 {
                   "id": "jyvz90wl",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 903.29,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "ea7ghehy",
@@ -961,7 +955,7 @@
                   "id": "3do5tqmb",
                   "name": "CPM",
                   "value": 10.35,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "aos522x6",
@@ -979,7 +973,7 @@
                   "id": "lwxwbfud",
                   "name": "CPC",
                   "value": 0.52,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "uxe5l8sb",
@@ -995,9 +989,9 @@
                 },
                 {
                   "id": "wcyfhbuu",
-                  "name": "Costo / Inversión",
+                  "name": "Costo por Conversión",
                   "value": 18.82,
-                  "unit": ""
+                  "unit": "$"
                 }
               ],
               "evidences": [],
@@ -1015,9 +1009,9 @@
               "metrics": [
                 {
                   "id": "uyw7le39",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 900,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "ipzifhu8",
@@ -1035,7 +1029,7 @@
                   "id": "1so63kf7",
                   "name": "CPM",
                   "value": 1.14,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "swekb3yc",
@@ -1053,7 +1047,7 @@
                   "id": "z8sc2f7l",
                   "name": "CPC",
                   "value": 0.18,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "uoj4qh4o",
@@ -1063,31 +1057,31 @@
                 },
                 {
                   "id": "q79cgeil",
-                  "name": "Conversiones",
+                  "name": "Leads",
                   "value": 11,
                   "unit": ""
                 },
                 {
                   "id": "hgn7okja",
-                  "name": "Costo / Inversión",
+                  "name": "CPL",
                   "value": 81.82,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "qeyj8qgg",
-                  "name": "Vistas / Reproducciones",
+                  "name": "Video Views",
                   "value": 45910,
                   "unit": ""
                 },
                 {
                   "id": "9ex60397",
-                  "name": "Vistas / Reproducciones",
+                  "name": "Reproducciones 6 segundos",
                   "value": 719623,
                   "unit": ""
                 },
                 {
                   "id": "2oywpar3",
-                  "name": "Vistas / Reproducciones",
+                  "name": "Reproducciones 100%",
                   "value": 90151,
                   "unit": ""
                 }
@@ -1107,9 +1101,9 @@
               "metrics": [
                 {
                   "id": "p0odcd5t",
-                  "name": "Costo / Inversión",
+                  "name": "Importe Gastado",
                   "value": 767.84,
-                  "unit": ""
+                  "unit": "$"
                 },
                 {
                   "id": "6succ9g0",
