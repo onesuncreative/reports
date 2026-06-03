@@ -4522,6 +4522,12 @@
                   "name": "Engagement",
                   "value": 19112,
                   "unit": ""
+                },
+                {
+                  "id": "z4uuq8bj",
+                  "name": "Llamadas",
+                  "value": "17",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -4635,6 +4641,12 @@
                   "name": "Costo Por Conversaciones",
                   "value": 24.24,
                   "unit": "$"
+                },
+                {
+                  "id": "uipcfev0",
+                  "name": "Llamadas",
+                  "value": "117",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -4685,6 +4697,12 @@
                   "name": "CTR",
                   "value": 3.57,
                   "unit": "%"
+                },
+                {
+                  "id": "qxkbex8o",
+                  "name": "Llamadas",
+                  "value": "13",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -5314,6 +5332,12 @@
                   "name": "CTR",
                   "value": "3.44",
                   "unit": "%"
+                },
+                {
+                  "id": "3cewajqn",
+                  "name": "Llamadas",
+                  "value": "8",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -5427,6 +5451,12 @@
                   "name": "Costo Por Conversaciones",
                   "value": 20.99,
                   "unit": "$"
+                },
+                {
+                  "id": "ycofeylo",
+                  "name": "Llamadas",
+                  "value": "59",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -6006,6 +6036,12 @@
                   "name": "Engagement",
                   "value": 10725,
                   "unit": ""
+                },
+                {
+                  "id": "51pk53fk",
+                  "name": "Llamadas",
+                  "value": "25",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -6119,6 +6155,12 @@
                   "name": "Costo Por Conversión",
                   "value": 14.1,
                   "unit": "$"
+                },
+                {
+                  "id": "qzzvpgy3",
+                  "name": "Llamadas",
+                  "value": "75",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -6169,6 +6211,12 @@
                   "name": "CTR",
                   "value": 4.27,
                   "unit": "%"
+                },
+                {
+                  "id": "8c5obooz",
+                  "name": "Llamadas",
+                  "value": "4",
+                  "unit": ""
                 }
               ],
               "evidences": [],
