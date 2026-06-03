@@ -2591,7 +2591,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "chrxirhe",
+                  "image": "https://drive.google.com/file/d/1QwVL6tVv8keTGF_9hXr2OLb7V4A0_ROx/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "lo1qbj0a",
+                      "name": "Importe Gastado",
+                      "value": "$400.08",
+                      "unit": ""
+                    },
+                    {
+                      "id": "cxvc06gb",
+                      "name": "Vistas / Reproducciones",
+                      "value": "29099",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7gpqpd3b",
+                      "name": "Tasa de Completado de Video",
+                      "value": "98.13%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -2641,7 +2667,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "k3ij5lfj",
+                  "image": "https://drive.google.com/file/d/1aUu7FZ21uSVN4ykhmRVInQIaOlXVsCVP/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "7fjo22f6",
+                      "name": "Importe Gastado",
+                      "value": "$14.25",
+                      "unit": ""
+                    },
+                    {
+                      "id": "g4zm23th",
+                      "name": "Clics",
+                      "value": "30",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7rfd1dos",
+                      "name": "CPC",
+                      "value": "$0.47",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
