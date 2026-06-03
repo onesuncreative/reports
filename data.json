@@ -831,6 +831,302 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "kklewfz9",
+              "name": "Facebook",
+              "channel": "Facebook",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "adeu4cnw",
+                  "name": "Costo / Inversión",
+                  "value": 4209.14,
+                  "unit": ""
+                },
+                {
+                  "id": "mriv5k5x",
+                  "name": "Impresiones",
+                  "value": 1122712,
+                  "unit": ""
+                },
+                {
+                  "id": "l9puixdf",
+                  "name": "Alcance",
+                  "value": 270400,
+                  "unit": ""
+                },
+                {
+                  "id": "ub7xuege",
+                  "name": "CPM",
+                  "value": 3.75,
+                  "unit": ""
+                },
+                {
+                  "id": "fe9zbpge",
+                  "name": "Frecuencia",
+                  "value": 4.15,
+                  "unit": ""
+                },
+                {
+                  "id": "bsqaooy2",
+                  "name": "Clics",
+                  "value": 16440,
+                  "unit": ""
+                },
+                {
+                  "id": "lgt264bu",
+                  "name": "CPC",
+                  "value": 0.26,
+                  "unit": ""
+                },
+                {
+                  "id": "6e3vqi0q",
+                  "name": "CTR",
+                  "value": 1.4643,
+                  "unit": "%"
+                },
+                {
+                  "id": "a0m9tdib",
+                  "name": "Conversiones",
+                  "value": 102,
+                  "unit": ""
+                },
+                {
+                  "id": "y8dai7s1",
+                  "name": "Costo / Inversión",
+                  "value": 41.27,
+                  "unit": ""
+                },
+                {
+                  "id": "6tckbnys",
+                  "name": "Vistas / Reproducciones",
+                  "value": 16567,
+                  "unit": ""
+                },
+                {
+                  "id": "oxajdrr7",
+                  "name": "Engagement",
+                  "value": 63574,
+                  "unit": ""
+                },
+                {
+                  "id": "fks9ek7b",
+                  "name": "Llamadas",
+                  "value": 136,
+                  "unit": ""
+                },
+                {
+                  "id": "f4sl2rj7",
+                  "name": "Costo / Inversión",
+                  "value": 30.95,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "vq72cxc2",
+              "name": "Google (PMAX)",
+              "channel": "Google (PMAX)",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "jyvz90wl",
+                  "name": "Costo / Inversión",
+                  "value": 903.29,
+                  "unit": ""
+                },
+                {
+                  "id": "ea7ghehy",
+                  "name": "Impresiones",
+                  "value": 87275,
+                  "unit": ""
+                },
+                {
+                  "id": "m42fafo4",
+                  "name": "Alcance",
+                  "value": 50123,
+                  "unit": ""
+                },
+                {
+                  "id": "3do5tqmb",
+                  "name": "CPM",
+                  "value": 10.35,
+                  "unit": ""
+                },
+                {
+                  "id": "aos522x6",
+                  "name": "Frecuencia",
+                  "value": 1.7,
+                  "unit": ""
+                },
+                {
+                  "id": "a8xm9zbq",
+                  "name": "Clics",
+                  "value": 1739,
+                  "unit": ""
+                },
+                {
+                  "id": "lwxwbfud",
+                  "name": "CPC",
+                  "value": 0.52,
+                  "unit": ""
+                },
+                {
+                  "id": "uxe5l8sb",
+                  "name": "CTR",
+                  "value": 1.99,
+                  "unit": "%"
+                },
+                {
+                  "id": "uk3b5q94",
+                  "name": "Conversiones",
+                  "value": 48,
+                  "unit": ""
+                },
+                {
+                  "id": "wcyfhbuu",
+                  "name": "Costo / Inversión",
+                  "value": 18.82,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "3j1qp40o",
+              "name": "TikTok Ads",
+              "channel": "TikTok Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "uyw7le39",
+                  "name": "Costo / Inversión",
+                  "value": 900,
+                  "unit": ""
+                },
+                {
+                  "id": "ipzifhu8",
+                  "name": "Impresiones",
+                  "value": 786343,
+                  "unit": ""
+                },
+                {
+                  "id": "pvjbn2dq",
+                  "name": "Alcance",
+                  "value": 259993,
+                  "unit": ""
+                },
+                {
+                  "id": "1so63kf7",
+                  "name": "CPM",
+                  "value": 1.14,
+                  "unit": ""
+                },
+                {
+                  "id": "swekb3yc",
+                  "name": "Frecuencia",
+                  "value": 3.02,
+                  "unit": ""
+                },
+                {
+                  "id": "6h0k8kkf",
+                  "name": "Clics",
+                  "value": 4869,
+                  "unit": ""
+                },
+                {
+                  "id": "z8sc2f7l",
+                  "name": "CPC",
+                  "value": 0.18,
+                  "unit": ""
+                },
+                {
+                  "id": "uoj4qh4o",
+                  "name": "CTR",
+                  "value": 0.62,
+                  "unit": "%"
+                },
+                {
+                  "id": "q79cgeil",
+                  "name": "Conversiones",
+                  "value": 11,
+                  "unit": ""
+                },
+                {
+                  "id": "hgn7okja",
+                  "name": "Costo / Inversión",
+                  "value": 81.82,
+                  "unit": ""
+                },
+                {
+                  "id": "qeyj8qgg",
+                  "name": "Vistas / Reproducciones",
+                  "value": 45910,
+                  "unit": ""
+                },
+                {
+                  "id": "9ex60397",
+                  "name": "Vistas / Reproducciones",
+                  "value": 719623,
+                  "unit": ""
+                },
+                {
+                  "id": "2oywpar3",
+                  "name": "Vistas / Reproducciones",
+                  "value": 90151,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "6im2gv3m",
+              "name": "StackAdapt CTV",
+              "channel": "StackAdapt CTV",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "",
+              "endDate": "",
+              "metrics": [
+                {
+                  "id": "p0odcd5t",
+                  "name": "Costo / Inversión",
+                  "value": 767.84,
+                  "unit": ""
+                },
+                {
+                  "id": "6succ9g0",
+                  "name": "Vistas / Reproducciones",
+                  "value": 45202,
+                  "unit": ""
+                },
+                {
+                  "id": "lzmx9aji",
+                  "name": "Tasa de Completado de Video",
+                  "value": 97.88,
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
