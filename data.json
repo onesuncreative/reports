@@ -2294,6 +2294,12 @@
                   "name": "Costo Por Conversación",
                   "value": "23.01",
                   "unit": "$"
+                },
+                {
+                  "id": "7v345bcj",
+                  "name": "Llamadas",
+                  "value": "18",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -2438,6 +2444,12 @@
                   "name": "Costo Por Conversación",
                   "value": 31.18,
                   "unit": "$"
+                },
+                {
+                  "id": "c9kh4msd",
+                  "name": "Llamadas",
+                  "value": "21",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -2588,6 +2600,12 @@
                   "name": "Tasa de Completado de Video",
                   "value": 97.96,
                   "unit": "%"
+                },
+                {
+                  "id": "9hlejlkx",
+                  "name": "Llamadas",
+                  "value": "11",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -3432,6 +3450,328 @@
                   "name": "Costo por Llamada",
                   "value": 151.28,
                   "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "0ydh3ejx",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "fopkj0ft",
+                  "name": "Importe Gastado",
+                  "value": 3531.35,
+                  "unit": "$"
+                },
+                {
+                  "id": "k90cn8c3",
+                  "name": "Impresiones",
+                  "value": 610445,
+                  "unit": ""
+                },
+                {
+                  "id": "2bfv06fd",
+                  "name": "Alcance",
+                  "value": 223402,
+                  "unit": ""
+                },
+                {
+                  "id": "0hlz1kz4",
+                  "name": "CPM",
+                  "value": 5.78,
+                  "unit": "$"
+                },
+                {
+                  "id": "o793zg5d",
+                  "name": "Frecuencia",
+                  "value": 2.73,
+                  "unit": ""
+                },
+                {
+                  "id": "ul0o2jls",
+                  "name": "Conversiones",
+                  "value": 86,
+                  "unit": ""
+                },
+                {
+                  "id": "rn56ymfp",
+                  "name": "Costo por Conversación",
+                  "value": 41.06,
+                  "unit": "$"
+                },
+                {
+                  "id": "0mn8ksm3",
+                  "name": "VCR",
+                  "value": 11902,
+                  "unit": ""
+                },
+                {
+                  "id": "2ny1w636",
+                  "name": "Engagement",
+                  "value": 45505,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "cyrd720e",
+              "name": "Google (PMAX)",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "ngbfqi15",
+                  "name": "Importe Gastado",
+                  "value": 1244.63,
+                  "unit": "$"
+                },
+                {
+                  "id": "mc40xmck",
+                  "name": "Impresiones",
+                  "value": 95444,
+                  "unit": ""
+                },
+                {
+                  "id": "8bo9e91h",
+                  "name": "Alcance",
+                  "value": 13903,
+                  "unit": ""
+                },
+                {
+                  "id": "ht5siy61",
+                  "name": "CPM",
+                  "value": 13.04,
+                  "unit": "$"
+                },
+                {
+                  "id": "wjma26ae",
+                  "name": "Clics",
+                  "value": 1924,
+                  "unit": ""
+                },
+                {
+                  "id": "bztz1b5i",
+                  "name": "CPC",
+                  "value": 0.65,
+                  "unit": "$"
+                },
+                {
+                  "id": "2wa3k7e5",
+                  "name": "CTR",
+                  "value": 2.0158,
+                  "unit": "%"
+                },
+                {
+                  "id": "2bcwszas",
+                  "name": "Conversiones",
+                  "value": 5,
+                  "unit": ""
+                },
+                {
+                  "id": "o18h6c11",
+                  "name": "Costo Por Conversación",
+                  "value": 248.93,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "oi4al1py",
+              "name": "TikTok Ads",
+              "channel": "TikTok Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "z6x7ovyv",
+                  "name": "Importe Gastado",
+                  "value": 1250,
+                  "unit": "$"
+                },
+                {
+                  "id": "o2f5ljbe",
+                  "name": "Impresiones",
+                  "value": 1071996,
+                  "unit": ""
+                },
+                {
+                  "id": "ucxdsg4l",
+                  "name": "Alcance",
+                  "value": 297685,
+                  "unit": ""
+                },
+                {
+                  "id": "uk7bzlp1",
+                  "name": "CPM",
+                  "value": 1.17,
+                  "unit": "$"
+                },
+                {
+                  "id": "mbd3viww",
+                  "name": "Frecuencia",
+                  "value": 3.6,
+                  "unit": ""
+                },
+                {
+                  "id": "ur7i0si2",
+                  "name": "Clics",
+                  "value": 4474,
+                  "unit": ""
+                },
+                {
+                  "id": "3cwowna2",
+                  "name": "CPC",
+                  "value": 0.28,
+                  "unit": "$"
+                },
+                {
+                  "id": "1uwaz1in",
+                  "name": "CTR",
+                  "value": 0.42,
+                  "unit": "%"
+                },
+                {
+                  "id": "g7jgvk9b",
+                  "name": "Conversiones",
+                  "value": 27,
+                  "unit": ""
+                },
+                {
+                  "id": "lop1pd34",
+                  "name": "Costo Por Conversación",
+                  "value": 46.3,
+                  "unit": "$"
+                },
+                {
+                  "id": "z46mohug",
+                  "name": "Reproducciones",
+                  "value": 21443,
+                  "unit": ""
+                },
+                {
+                  "id": "pn0kcc1r",
+                  "name": "Reproducciones 6 Segundos",
+                  "value": 975193,
+                  "unit": ""
+                },
+                {
+                  "id": "cm85fff9",
+                  "name": "Reproducciones 100%",
+                  "value": 105561,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "r00882wq",
+              "name": "StackAdapt Native",
+              "channel": "StackAdapt Native",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "wbxsv2af",
+                  "name": "Importe Gastado",
+                  "value": 152.51,
+                  "unit": "$"
+                },
+                {
+                  "id": "n4zqwxfu",
+                  "name": "Impresiones",
+                  "value": 5649,
+                  "unit": ""
+                },
+                {
+                  "id": "5f46w0nk",
+                  "name": "CPM",
+                  "value": 27,
+                  "unit": "$"
+                },
+                {
+                  "id": "17zst9i4",
+                  "name": "Clics",
+                  "value": 455,
+                  "unit": ""
+                },
+                {
+                  "id": "wq0tk2mc",
+                  "name": "CPC",
+                  "value": 0.34,
+                  "unit": "$"
+                },
+                {
+                  "id": "zp1uto1t",
+                  "name": "CTR",
+                  "value": 8.06,
+                  "unit": "%"
+                },
+                {
+                  "id": "18vq0p9l",
+                  "name": "Conversiones",
+                  "value": 17,
+                  "unit": ""
+                },
+                {
+                  "id": "01lkc0cp",
+                  "name": "Costo Por Conversación",
+                  "value": 8.97,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "e0tczdre",
+              "name": "StackAdapt CTV",
+              "channel": "StackAdapt CTV",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "q4bw6e13",
+                  "name": "Importe Gastado",
+                  "value": 474.94,
+                  "unit": "$"
+                },
+                {
+                  "id": "q6be8j1q",
+                  "name": "Vistas / Reproducciones",
+                  "value": 29579,
+                  "unit": ""
+                },
+                {
+                  "id": "93y1m40g",
+                  "name": "Tasa de Completado de Video",
+                  "value": 98.21,
+                  "unit": "%"
                 }
               ],
               "evidences": [],
