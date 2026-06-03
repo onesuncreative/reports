@@ -5943,6 +5943,237 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "v19k76nu",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "3hykg2mc",
+                  "name": "Importe Gastado",
+                  "value": 1281.57,
+                  "unit": "$"
+                },
+                {
+                  "id": "8e86rv6z",
+                  "name": "Impresiones",
+                  "value": 394813,
+                  "unit": ""
+                },
+                {
+                  "id": "9fst64g5",
+                  "name": "Alcance",
+                  "value": 101601,
+                  "unit": ""
+                },
+                {
+                  "id": "47n3cj3s",
+                  "name": "CPM",
+                  "value": 3.25,
+                  "unit": "$"
+                },
+                {
+                  "id": "lgbb28gx",
+                  "name": "Frecuencia",
+                  "value": 3.89,
+                  "unit": ""
+                },
+                {
+                  "id": "fi3qk0ff",
+                  "name": "Conversiones",
+                  "value": 106,
+                  "unit": ""
+                },
+                {
+                  "id": "s4sf0g7n",
+                  "name": "Costo Por Conversión",
+                  "value": 12.09,
+                  "unit": "$"
+                },
+                {
+                  "id": "28nwurl5",
+                  "name": "VCR",
+                  "value": 1768,
+                  "unit": ""
+                },
+                {
+                  "id": "bec7zwy1",
+                  "name": "Engagement",
+                  "value": 10725,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "f5iot96e",
+                  "image": "https://drive.google.com/file/d/13VU8GLTYloKHNv7236WbcLG_uurpBpsg/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "96hqgxxv",
+                      "name": "Importe Gastado",
+                      "value": "$75.06",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ibpr3a8c",
+                      "name": "Post Engagement",
+                      "value": "857",
+                      "unit": ""
+                    },
+                    {
+                      "id": "8syrwzha",
+                      "name": "Costo Por Post Engagement",
+                      "value": "$0.09",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "of1dtnee",
+                  "image": "https://drive.google.com/file/d/1O13lmAIf8zG95czf2s9Opy75LbHpAXjH/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "g4yjlnwy",
+                      "name": " Importe Gastado",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xlfx40tn",
+                      "name": "Leads",
+                      "value": "78",
+                      "unit": ""
+                    },
+                    {
+                      "id": "1z0bb0yr",
+                      "name": "CPL",
+                      "value": "$4.11",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "hgyyu55q",
+              "name": "Google (PMAX)",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "jrtsttef",
+                  "name": "Importe Gastado",
+                  "value": 338.48,
+                  "unit": "$"
+                },
+                {
+                  "id": "8ruo8cwu",
+                  "name": "Impresiones",
+                  "value": 9805,
+                  "unit": ""
+                },
+                {
+                  "id": "prvrpgel",
+                  "name": "CPM",
+                  "value": 34.52,
+                  "unit": "$"
+                },
+                {
+                  "id": "do5g4cgn",
+                  "name": "Clics",
+                  "value": 316,
+                  "unit": ""
+                },
+                {
+                  "id": "snnotwvk",
+                  "name": "CPC",
+                  "value": 1.07,
+                  "unit": "$"
+                },
+                {
+                  "id": "yevddnpp",
+                  "name": "CTR",
+                  "value": 3.22,
+                  "unit": "%"
+                },
+                {
+                  "id": "894vy539",
+                  "name": "Conversiones",
+                  "value": 24,
+                  "unit": ""
+                },
+                {
+                  "id": "u9v063ct",
+                  "name": "Costo Por Conversión",
+                  "value": 14.1,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "hd3oi4od",
+              "name": "StackAdapt Native",
+              "channel": "StackAdapt Native",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "7n0nho13",
+                  "name": "Importe Gastado",
+                  "value": 200,
+                  "unit": "$"
+                },
+                {
+                  "id": "wlvovtsd",
+                  "name": "Impresiones",
+                  "value": 9371,
+                  "unit": ""
+                },
+                {
+                  "id": "wwwtac3z",
+                  "name": "CPM",
+                  "value": 21.34,
+                  "unit": "$"
+                },
+                {
+                  "id": "8wq92g4e",
+                  "name": "Clics",
+                  "value": 400,
+                  "unit": ""
+                },
+                {
+                  "id": "7g5bhf3x",
+                  "name": "CPC",
+                  "value": 0.5,
+                  "unit": "$"
+                },
+                {
+                  "id": "fdnsf36m",
+                  "name": "CTR",
+                  "value": 4.27,
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
