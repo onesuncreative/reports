@@ -4688,7 +4688,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "cieq1joz",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "3yncvn9p",
+                      "name": "Importe Gastado",
+                      "value": "$13.47",
+                      "unit": ""
+                    },
+                    {
+                      "id": "8t8kd9fm",
+                      "name": "Clics",
+                      "value": "34",
+                      "unit": ""
+                    },
+                    {
+                      "id": "bp6glyi0",
+                      "name": "CPC",
+                      "value": "$0.40",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
