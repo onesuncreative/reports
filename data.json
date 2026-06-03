@@ -3732,7 +3732,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "g8zdw2mv",
+                  "image": "https://drive.google.com/file/d/1fWxkj3Jyd2rTKX8McyYvKvzFeQCYuFDK/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "w6x61e5l",
+                      "name": "Importe Gastada",
+                      "value": "$355.28",
+                      "unit": ""
+                    },
+                    {
+                      "id": "vqniplry",
+                      "name": "Leads",
+                      "value": "15",
+                      "unit": ""
+                    },
+                    {
+                      "id": "t3marrn8",
+                      "name": "CPL",
+                      "value": "$23.69",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -3794,7 +3820,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "un91oavr",
+                  "image": "https://drive.google.com/file/d/1s7X3-8yU1Y5Wz4SSMWYAiQWaqtxPxESp/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "m17s6ebe",
+                      "name": "Importe Gastado",
+                      "value": "$5.96",
+                      "unit": ""
+                    },
+                    {
+                      "id": "4cilpeei",
+                      "name": "Clics",
+                      "value": "19",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5an2aa4u",
+                      "name": "CPC",
+                      "value": "$0.31",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
@@ -3826,7 +3878,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "rz53pug0",
+                  "image": "https://drive.google.com/file/d/1u_7JWrNjWaEQ1Kn-geNgMhADYBlxLA6o/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "8y54t9kr",
+                      "name": "Importe Gastado",
+                      "value": "$39.57",
+                      "unit": ""
+                    },
+                    {
+                      "id": "eqm5ff9e",
+                      "name": "Vistas / Reproducciones",
+                      "value": "2993",
+                      "unit": ""
+                    },
+                    {
+                      "id": "hgyg19cg",
+                      "name": "Tasa de Completado de Video",
+                      "value": "97.94%",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             }
           ],
