@@ -930,6 +930,12 @@
                   "name": "Costo Por Llamada A Servicio",
                   "value": "20.04",
                   "unit": "$"
+                },
+                {
+                  "id": "xhn0june",
+                  "name": "Llamadas",
+                  "value": "19",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -1242,6 +1248,12 @@
                   "name": "Tasa de Completado de Video",
                   "value": 97.88,
                   "unit": "%"
+                },
+                {
+                  "id": "khvkux2t",
+                  "name": "Llamadas",
+                  "value": "18",
+                  "unit": ""
                 }
               ],
               "evidences": [],
