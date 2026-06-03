@@ -5233,6 +5233,205 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "4hpb9bbf",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-02",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "wssthitv",
+                  "name": "Importe Gastado",
+                  "value": 1221.11,
+                  "unit": "$"
+                },
+                {
+                  "id": "d7snskhd",
+                  "name": "Impresiones",
+                  "value": 377558,
+                  "unit": ""
+                },
+                {
+                  "id": "k44q3pwe",
+                  "name": "Alcance",
+                  "value": 123797,
+                  "unit": ""
+                },
+                {
+                  "id": "moul78nj",
+                  "name": "CPM",
+                  "value": 3.23,
+                  "unit": "$"
+                },
+                {
+                  "id": "ok7q0da6",
+                  "name": "Frecuencia",
+                  "value": 3.05,
+                  "unit": ""
+                },
+                {
+                  "id": "2m73osl0",
+                  "name": "Conversiones",
+                  "value": 49,
+                  "unit": ""
+                },
+                {
+                  "id": "chag659s",
+                  "name": "Costo Por Conversiones",
+                  "value": 24.92,
+                  "unit": "$"
+                },
+                {
+                  "id": "y8gd7ca0",
+                  "name": "VCR",
+                  "value": 4461,
+                  "unit": ""
+                },
+                {
+                  "id": "r4pab0v5",
+                  "name": "Engagement",
+                  "value": 18603,
+                  "unit": ""
+                },
+                {
+                  "id": "vy6u4acu",
+                  "name": "Clics",
+                  "value": "501",
+                  "unit": ""
+                },
+                {
+                  "id": "hvf4gf8n",
+                  "name": "CPC",
+                  "value": "0.25",
+                  "unit": "$"
+                },
+                {
+                  "id": "cts691a3",
+                  "name": "CTR",
+                  "value": "3.44",
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "8l3nebte",
+                  "image": "https://drive.google.com/file/d/12xM3IQHNh_4YJIlP3I1qcv3ONMmi0Y_y/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "vo2n33zs",
+                      "name": "Importe Gastado",
+                      "value": "$48.08",
+                      "unit": ""
+                    },
+                    {
+                      "id": "2wr8n11n",
+                      "name": "Post Engagement",
+                      "value": "543",
+                      "unit": ""
+                    },
+                    {
+                      "id": "6q5pkfhq",
+                      "name": "Costo por Post Engagement",
+                      "value": "$0.09",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ixti4jc2",
+                  "image": "https://drive.google.com/file/d/1XfvdbrZwu_aDhdj_tDo6zlouWjNuQrzX/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "wm5mesfi",
+                      "name": "Importe Gastado",
+                      "value": "$256.99",
+                      "unit": ""
+                    },
+                    {
+                      "id": "bqbehxh1",
+                      "name": "Leads",
+                      "value": "22",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7a9p4o5f",
+                      "name": "CPL",
+                      "value": "$11.68",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
+            },
+            {
+              "id": "b0pccjuf",
+              "name": "Google (PMAX)",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "wwfcbga7",
+                  "name": "Importe Gastado",
+                  "value": 251.84,
+                  "unit": "$"
+                },
+                {
+                  "id": "akpf4k7z",
+                  "name": "Impresiones",
+                  "value": 14839,
+                  "unit": ""
+                },
+                {
+                  "id": "y07hkmq1",
+                  "name": "CPM",
+                  "value": 16.97,
+                  "unit": "$"
+                },
+                {
+                  "id": "9cpunu6f",
+                  "name": "Clics",
+                  "value": 300,
+                  "unit": ""
+                },
+                {
+                  "id": "1ib8j97s",
+                  "name": "CPC",
+                  "value": 0.84,
+                  "unit": "$"
+                },
+                {
+                  "id": "ghpwahus",
+                  "name": "CTR",
+                  "value": 2.02,
+                  "unit": "%"
+                },
+                {
+                  "id": "y4ssvma4",
+                  "name": "Conversiones",
+                  "value": 12,
+                  "unit": ""
+                },
+                {
+                  "id": "629diu4k",
+                  "name": "Costo Por Conversaciones",
+                  "value": 20.99,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
@@ -6088,6 +6287,14 @@
               "observations": ""
             }
           ],
+          "socialChannels": []
+        },
+        {
+          "id": "uj0cdeq1",
+          "name": "TikTok Usados",
+          "logo": "",
+          "color": "#ff0000",
+          "campaigns": [],
           "socialChannels": []
         }
       ]
