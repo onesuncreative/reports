@@ -2533,7 +2533,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "5sb3hgr5",
+                  "image": "https://drive.google.com/file/d/1Q2KHmIrtLizCpJdm1A74TThGOJqdg4Wk/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "48vjm1ny",
+                      "name": "Importe Gastado",
+                      "value": "$181.46",
+                      "unit": ""
+                    },
+                    {
+                      "id": "2gnqbw6o",
+                      "name": "Leads",
+                      "value": "3",
+                      "unit": ""
+                    },
+                    {
+                      "id": "vfsikarn",
+                      "name": "CPL",
+                      "value": "$60.49",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
