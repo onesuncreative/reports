@@ -3521,7 +3521,58 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "uk1wao2q",
+                  "image": "https://drive.google.com/file/d/1ryxcJvMr460kZGe8yXbfGCduii3SwhoX/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "udpzdrps",
+                      "name": "Importe Gastado",
+                      "value": "$505.64",
+                      "unit": ""
+                    },
+                    {
+                      "id": "xpotw9s4",
+                      "name": "Leads",
+                      "value": "18",
+                      "unit": ""
+                    },
+                    {
+                      "id": "0ypldhve",
+                      "name": "CPL",
+                      "value": "$28.09",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ppessapr",
+                  "image": "https://drive.google.com/file/d/1hwZQHidbNQLCN6Gcf1K41PbbFGEL1f2k/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "9wws0u5w",
+                      "name": "Importe Gastado",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "qixpbtrq",
+                      "name": "Post Engagement",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "5y344kl3",
+                      "name": "Costo Por Post Engagement",
+                      "value": "",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
