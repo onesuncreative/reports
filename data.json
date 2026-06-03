@@ -4441,6 +4441,204 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "u3669yli",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "rhodmskj",
+                  "name": "Importe Gastado",
+                  "value": 1939.86,
+                  "unit": "$"
+                },
+                {
+                  "id": "05gd5xq0",
+                  "name": "Impresiones",
+                  "value": 437740,
+                  "unit": ""
+                },
+                {
+                  "id": "6fxp1hhw",
+                  "name": "Alcance",
+                  "value": 155846,
+                  "unit": ""
+                },
+                {
+                  "id": "4dz8pheo",
+                  "name": "CPM",
+                  "value": 4.43,
+                  "unit": "$"
+                },
+                {
+                  "id": "b5nfkx68",
+                  "name": "Frecuencia",
+                  "value": 2.81,
+                  "unit": ""
+                },
+                {
+                  "id": "jify9chu",
+                  "name": "Clics",
+                  "value": 8310,
+                  "unit": ""
+                },
+                {
+                  "id": "fkkbtzyw",
+                  "name": "CPC",
+                  "value": 0.23,
+                  "unit": "$"
+                },
+                {
+                  "id": "b6e5h9nq",
+                  "name": "CTR",
+                  "value": 1.8984,
+                  "unit": "%"
+                },
+                {
+                  "id": "sbz33dao",
+                  "name": "Conversiones",
+                  "value": 97,
+                  "unit": ""
+                },
+                {
+                  "id": "ykoj2rce",
+                  "name": "Costo Por Conversación",
+                  "value": 20,
+                  "unit": "$"
+                },
+                {
+                  "id": "99turtll",
+                  "name": "VCR",
+                  "value": 3151,
+                  "unit": ""
+                },
+                {
+                  "id": "gcxbx20b",
+                  "name": "Engagement",
+                  "value": 19112,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "5rcxvi6c",
+              "name": "Google (PMAX)",
+              "channel": "Google Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "z6kf89x4",
+                  "name": "Importe Gastado",
+                  "value": 387.78,
+                  "unit": "$"
+                },
+                {
+                  "id": "a6bm65tv",
+                  "name": "Impresiones",
+                  "value": 23910,
+                  "unit": ""
+                },
+                {
+                  "id": "3svk7sbm",
+                  "name": "CPM",
+                  "value": 16.22,
+                  "unit": "$"
+                },
+                {
+                  "id": "tu1dcol1",
+                  "name": "Clics",
+                  "value": 648,
+                  "unit": ""
+                },
+                {
+                  "id": "vienkbkq",
+                  "name": "CPC",
+                  "value": 0.6,
+                  "unit": "$"
+                },
+                {
+                  "id": "yqqh025p",
+                  "name": "CTR",
+                  "value": 2.71,
+                  "unit": "%"
+                },
+                {
+                  "id": "i2c0xymz",
+                  "name": "Conversiones",
+                  "value": 16,
+                  "unit": ""
+                },
+                {
+                  "id": "v0wsyewf",
+                  "name": "Costo Por Conversaciones",
+                  "value": 24.24,
+                  "unit": "$"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
+            },
+            {
+              "id": "t7fkmito",
+              "name": "StackAdapt Native",
+              "channel": "StackAdapt Native",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "rt739jah",
+                  "name": "Importe Gastado",
+                  "value": 200.17,
+                  "unit": "$"
+                },
+                {
+                  "id": "9qwsee2t",
+                  "name": "Impresiones",
+                  "value": 14551,
+                  "unit": ""
+                },
+                {
+                  "id": "4yu5qfms",
+                  "name": "CPM",
+                  "value": 13.76,
+                  "unit": "$"
+                },
+                {
+                  "id": "2kvz4nch",
+                  "name": "Clics",
+                  "value": 519,
+                  "unit": ""
+                },
+                {
+                  "id": "hi9jjbse",
+                  "name": "CPC",
+                  "value": 0.39,
+                  "unit": "$"
+                },
+                {
+                  "id": "tuf3ml1e",
+                  "name": "CTR",
+                  "value": 3.57,
+                  "unit": "%"
+                }
+              ],
+              "evidences": [],
+              "bestContent": [],
+              "observations": ""
             }
           ],
           "socialChannels": []
