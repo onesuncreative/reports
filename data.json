@@ -918,10 +918,110 @@
                   "name": "Costo Por Engagement",
                   "value": "0.07",
                   "unit": "$"
+                },
+                {
+                  "id": "ifhfa25v",
+                  "name": "Llamadas A Servicio",
+                  "value": "136",
+                  "unit": ""
+                },
+                {
+                  "id": "ghqrtn10",
+                  "name": "Costo Por Llamada A Servicio",
+                  "value": "20.04",
+                  "unit": "$"
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "8ymky4pr",
+                  "image": "https://drive.google.com/file/d/1E_D_AzXU_55ebvar6-6i3K-RhYzvgk1y/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "nnqq8qay",
+                      "name": "Importe Gastado",
+                      "value": "$1,623.09",
+                      "unit": ""
+                    },
+                    {
+                      "id": "99xtracf",
+                      "name": "Leads",
+                      "value": "136",
+                      "unit": ""
+                    },
+                    {
+                      "id": "gcnd43y0",
+                      "name": "CPL",
+                      "value": "$20.04",
+                      "unit": ""
+                    },
+                    {
+                      "id": "3cfpnahe",
+                      "name": "",
+                      "value": "",
+                      "unit": ""
+                    },
+                    {
+                      "id": "qvfcmt6o",
+                      "name": "",
+                      "value": "",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "pmn5bxb7",
+                  "image": "https://drive.google.com/file/d/1XBvphrD0PTlgELA0uoPRmL8dyHI43nZF/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "bov393x4",
+                      "name": "Importe Gastado",
+                      "value": "$507.88",
+                      "unit": ""
+                    },
+                    {
+                      "id": "s7mzli4f",
+                      "name": "Leads",
+                      "value": "23",
+                      "unit": ""
+                    },
+                    {
+                      "id": "7sf5g8hi",
+                      "name": "CPL",
+                      "value": "$22.08",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "lg06lqgw",
+                  "image": "https://drive.google.com/file/d/17HPojvzEL-n4UVaROA06AI3nRkVxGrb_/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "myd5hdd0",
+                      "name": "Importe Gastado",
+                      "value": "$35.67",
+                      "unit": ""
+                    },
+                    {
+                      "id": "pumxvgom",
+                      "name": "Post Engagement",
+                      "value": "1055",
+                      "unit": ""
+                    },
+                    {
+                      "id": "tf710c45",
+                      "name": "Costo Por Post Engagement",
+                      "value": "$0.03",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
