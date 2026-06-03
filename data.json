@@ -2356,25 +2356,25 @@
                 },
                 {
                   "id": "f0gdglcb",
-                  "image": "",
+                  "image": "https://drive.google.com/file/d/1b7xgwv3thshGzqVyWzslfCj-kZceg4e_/view?usp=sharing",
                   "imageType": "url",
                   "metrics": [
                     {
                       "id": "ug9qcmj5",
-                      "name": "",
-                      "value": "",
+                      "name": "Importe Gastado",
+                      "value": "$3.10",
                       "unit": ""
                     },
                     {
                       "id": "vqry3m4z",
-                      "name": "",
-                      "value": "",
+                      "name": "Post Engagement",
+                      "value": "417",
                       "unit": ""
                     },
                     {
                       "id": "077bxpc5",
-                      "name": "",
-                      "value": "",
+                      "name": "Costo por Post Engagement",
+                      "value": "$0.01",
                       "unit": ""
                     }
                   ]
