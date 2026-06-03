@@ -3518,6 +3518,12 @@
                   "name": "Engagement",
                   "value": 45505,
                   "unit": ""
+                },
+                {
+                  "id": "2lt24d9o",
+                  "name": "Llamadas",
+                  "value": "22",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -3637,6 +3643,12 @@
                   "name": "Costo Por Conversación",
                   "value": 248.93,
                   "unit": "$"
+                },
+                {
+                  "id": "9qdjwydh",
+                  "name": "Llamadas",
+                  "value": "4",
+                  "unit": ""
                 }
               ],
               "evidences": [],
@@ -3875,6 +3887,12 @@
                   "name": "Tasa de Completado de Video",
                   "value": 98.21,
                   "unit": "%"
+                },
+                {
+                  "id": "z6mt4nls",
+                  "name": "Llamadas",
+                  "value": "3",
+                  "unit": ""
                 }
               ],
               "evidences": [],
