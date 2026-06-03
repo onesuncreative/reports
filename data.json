@@ -6542,6 +6542,143 @@
                 }
               ],
               "observations": ""
+            },
+            {
+              "id": "kkpwcy7p",
+              "name": "Facebook Ads",
+              "channel": "Facebook Ads",
+              "group": "Mayo 2026",
+              "hidden": false,
+              "startDate": "2026-05-01",
+              "endDate": "2026-05-31",
+              "metrics": [
+                {
+                  "id": "ib0jw52p",
+                  "name": "Importe Gastado",
+                  "value": 421.41,
+                  "unit": "$"
+                },
+                {
+                  "id": "ak2vb1xe",
+                  "name": "Impresiones",
+                  "value": 112764,
+                  "unit": ""
+                },
+                {
+                  "id": "mpxhuyej",
+                  "name": "Alcance",
+                  "value": 44581,
+                  "unit": ""
+                },
+                {
+                  "id": "y2kt92o5",
+                  "name": "CPM",
+                  "value": 3.74,
+                  "unit": "$"
+                },
+                {
+                  "id": "u3rd9e8i",
+                  "name": "Frecuencia",
+                  "value": 2.53,
+                  "unit": ""
+                },
+                {
+                  "id": "gg4g8gka",
+                  "name": "Clics",
+                  "value": 1547,
+                  "unit": ""
+                },
+                {
+                  "id": "morxi36x",
+                  "name": "CPC",
+                  "value": 0.27,
+                  "unit": "$"
+                },
+                {
+                  "id": "j7pl0rsl",
+                  "name": "CTR",
+                  "value": 1.3719,
+                  "unit": "%"
+                },
+                {
+                  "id": "k2784a8c",
+                  "name": "Conversiones",
+                  "value": 7,
+                  "unit": ""
+                },
+                {
+                  "id": "trmqne56",
+                  "name": "Costo Por Conversación",
+                  "value": 60.2,
+                  "unit": "$"
+                },
+                {
+                  "id": "iv8nikhd",
+                  "name": "VCR",
+                  "value": 1389,
+                  "unit": ""
+                },
+                {
+                  "id": "udxro8wo",
+                  "name": "Engagement",
+                  "value": 5900,
+                  "unit": ""
+                }
+              ],
+              "evidences": [],
+              "bestContent": [
+                {
+                  "id": "zsgm6cw2",
+                  "image": "https://drive.google.com/file/d/1FJ4TZsmhpb4WRmpptJak6xYfg__HG4RA/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "e81x87ld",
+                      "name": "Importe Gastado",
+                      "value": "$11.20",
+                      "unit": ""
+                    },
+                    {
+                      "id": "6vxn22tk",
+                      "name": "Visita A Perfil",
+                      "value": "111",
+                      "unit": ""
+                    },
+                    {
+                      "id": "lu88ewzl",
+                      "name": "Costo Por Visita A Perfil",
+                      "value": "$0.10",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "gkpzsijz",
+                  "image": "https://drive.google.com/file/d/1qw8urbZhqaMbfIMdGYor1w0Obuq6btPY/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "knjpbyuf",
+                      "name": "Importe Gastado",
+                      "value": "$301.70",
+                      "unit": ""
+                    },
+                    {
+                      "id": "ys00gcoq",
+                      "name": "Leads",
+                      "value": "6",
+                      "unit": ""
+                    },
+                    {
+                      "id": "0ki8i3kc",
+                      "name": "CPL",
+                      "value": "$50.28",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
+              "observations": ""
             }
           ],
           "socialChannels": []
