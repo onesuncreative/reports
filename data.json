@@ -1187,7 +1187,33 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "67x0eina",
+                  "image": "",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "kzfwueoj",
+                      "name": "Importe Gastado",
+                      "value": "$598.40",
+                      "unit": ""
+                    },
+                    {
+                      "id": "gz60apau",
+                      "name": "Leads",
+                      "value": "9",
+                      "unit": ""
+                    },
+                    {
+                      "id": "1x6u3q3d",
+                      "name": "CPL",
+                      "value": "$66.49",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
