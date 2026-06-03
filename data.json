@@ -4525,7 +4525,58 @@
                 }
               ],
               "evidences": [],
-              "bestContent": [],
+              "bestContent": [
+                {
+                  "id": "jkw1uw6w",
+                  "image": "https://drive.google.com/file/d/1u4X8xsi3gENmVGcKqWb8oVBc7RY7tsxf/view?usp=drive_link",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "95uelukz",
+                      "name": "Importe Gastado",
+                      "value": "$110.70",
+                      "unit": ""
+                    },
+                    {
+                      "id": "6vf0258l",
+                      "name": "Leads",
+                      "value": "13",
+                      "unit": ""
+                    },
+                    {
+                      "id": "9s9tpugy",
+                      "name": "CPL",
+                      "value": "$8.52",
+                      "unit": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "std9ph2y",
+                  "image": "https://drive.google.com/file/d/1fXv9bOD_IkaQNj1vGUiC5kjBcr8MIlAz/view?usp=sharing",
+                  "imageType": "url",
+                  "metrics": [
+                    {
+                      "id": "hextfjqs",
+                      "name": "Importe Gastado",
+                      "value": "$50.64",
+                      "unit": ""
+                    },
+                    {
+                      "id": "mftq9bu5",
+                      "name": "Visita a perfil",
+                      "value": "429",
+                      "unit": ""
+                    },
+                    {
+                      "id": "b5gyk3n0",
+                      "name": "Costo por Visita a perfil",
+                      "value": "$0.12",
+                      "unit": ""
+                    }
+                  ]
+                }
+              ],
               "observations": ""
             },
             {
